@@ -1,30 +1,32 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import './Navbar.css';
+import React from 'react'
+import './Navbar.css'
+import logo1 from '../../assets/images/logo1.png';
+import { CgFormatJustify } from "react-icons/cg";
+import { AiFillCloseSquare } from "react-icons/ai";
 
 
-const Navbar= ()=>{
-    const navItemStyle = {
-        marginRight: '2px',
-        padding: '15px',
-        
-    };
-    return(
-        <>
-        <div className="Navbar" >
-        <NavLink exact activeClassName="active_class" to='/' style={navItemStyle}> Home</NavLink>
-        <NavLink exact activeClassName="active_class" to='/about' style={navItemStyle}> About Us</NavLink>
-        <br/>
-        <NavLink exact activeClassName="active_class" to='/contact' style={navItemStyle}> Contact us</NavLink>
-        <br/>
-        <NavLink exact activeClassName="active_class" to='/gallery' style={navItemStyle}> Gallery</NavLink>
-        <br/>
-        <NavLink exact activeClassName="active_class" to='/group' style={navItemStyle}> Group companies</NavLink>
 
-        
+
+const Navbar = () => {
+  
+  return (
+    <>
+    <div className='navbar'>
+      <img src={logo1} alt="Logo" className='logo'/>
+      <ul className="navbar-menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Group </li>
+        <li>Gallery</li>
+        <li>Contact us</li>
+      </ul>
+      <div className="nav-btn">
+        <CgFormatJustify name="menu-outline" className='nav-icon'/>
+        <AiFillCloseSquare name="close-outline" className='close-outline nav-icon'/>
       </div>
-        
-        </>
-    );
-};
-export default Navbar;
+    </div>
+    </>
+  )
+}
+
+export default Navbar

@@ -1,24 +1,35 @@
-import React from "react";
-import {BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./Component/Navbar";
-import About from "./Component/About";
-import Contact from "./Component/Contact";
-import Gallery from "./Component/Gallery";
-import Groupcom from "./Component/Groupcom";
-import Home from "./Component/Home";
+import React from 'react'
+import Navbar from './Component/Navbar/Navbar'
+import { Route, Routes } from 'react-router'
+import About from './Component/Pages/Aboutus/About'
+import Group from './Component/Pages/Groupcom/Group'
+import Contact from './Component/Pages/Contactus/Contact'
+import Gallery from './Component/Pages/Gallery/Gallery'
+import Home from './Component/Pages/home/Home'
+import ContactForm from './Component/Pages/Contactus/Contact'
 
-const App=()=>{
+const App = () => {
     return (
         <>
-            <Navbar/>
-            <Routes>
-            <Route exact path="/" Component={Home}/>
-            <Route path="/about" Component={About}/>
-            <Route path="/contact" Component={Contact}/>
-            <Route path="/gallery" Component={Gallery}/>
-            <Route path="/group" Component={Groupcom}/>
-        </Routes>
+            <div className='app'>
+                <Navbar />
+
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/group' element={<Group />} />
+                    <Route path='/gallery' element={<Gallery />} />
+                    <Route path='/contact' element={<Contact />} />
+                </Routes>
+                <About />
+
+            </div>
+            <div>
+                <Gallery />
+                <ContactForm />
+            </div>
         </>
-    );
-};
-export default App;
+    )
+}
+
+export default App
