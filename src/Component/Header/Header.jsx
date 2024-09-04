@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import intro from '../../assets/images/intro.jpg';
+import intro from '/images/intro.jpg';
 
 const Header = () => {
     return (
@@ -8,9 +8,6 @@ const Header = () => {
             <div className='header'>
                 <img src={intro} alt="intro" className='intro' />
             </div>
-            
-            
-           
         </>
     )
 }

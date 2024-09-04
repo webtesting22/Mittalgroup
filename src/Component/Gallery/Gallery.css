@@ -1,0 +1,21 @@
+.imageContainer{
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+}
+.imageContainer img{
+    border-radius: 50px;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    opacity: 0.8;
+}
+.imageContainer img:hover{
+    opacity: 1;
+}
+.img-gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: #0e1111;
+    align-items: center;
+}

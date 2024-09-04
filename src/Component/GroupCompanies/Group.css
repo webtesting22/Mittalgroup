@@ -1,0 +1,126 @@
+.tile:nth-child(1) {
+  --clr: #2F3C7E;
+  --fontclr:#FBEAEB;
+}
+.tile:nth-child(2) {
+    
+  --clr: #FEE715;
+  /* --clr:#101820; */
+  /* --fontclr:#FEE715; */
+  --fontclr:#101820;
+}
+.tile:nth-child(3) {
+  --clr: #990011;
+  --fontclr:#FCF6F5;
+}
+.tile:nth-child(4) {
+  --clr: #00246B;
+  --fontclr:#CADCFC;
+}
+.tile:nth-child(5) {
+  --clr: #F98866;
+  --fontclr:#FFF2D7;
+}
+.tile:nth-child(6) {
+  --clr: #2C5F2D;
+  --fontclr:#97BC62;
+}
+
+.tile {
+  position: sticky; /* responsible for */
+  top: 10px; /*stacking effect*/
+  background-color: var(--clr);
+  color:var(--fontclr);
+  width: 100%;
+  height: 100vh;
+  /* font-size: 5rem; */
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.left h1,p,h2{
+    padding:10px 20px ;
+}
+.left h5{
+    padding: 5px 20px;
+}
+
+.first h1{
+    font-size: 4.5rem;
+}
+.first p{
+    font-size: 1.5rem;
+}
+.second h2{
+    padding: 5px 20px;
+}
+.second p{
+    font-weight: 500;
+}
+.third h1{
+    font-size: 3.2rem;
+}
+.third p{
+    font-size: 1.5rem;
+}
+.fourth h1{
+    font-size: 3rem;
+}
+.fourth h2{
+    font-size: 2.5rem;
+}
+.fourth p{
+    font-size: 2rem;
+}
+.sixth h1{
+    text-align: center;
+}
+.sixth p{
+    padding: 100px;
+    font-size: 2rem;
+}
+
+@media (max-width:576px){
+    .tile{
+        width: 100%;
+    }
+    .left p,h1,h2,h5{
+        padding: 10px 30px;
+    }
+    
+    .first h1{
+        font-size: 2rem;
+    }
+    .first p{
+        font-size: 1.2rem;
+    }
+    .third h1{
+        font-size: 2rem;
+    }
+    .third p{
+        font-size: 1.4rem;
+    }
+    .fourth h1{
+        font-size: 2rem;
+    }
+    .fourth p{
+        font-size: 1.4rem;
+    }
+    .fourth h2{
+        font-size: 2rem;
+    }
+    .sixth h1{
+        font-size: 2rem;
+    }
+    .sixth p{
+        padding: 30px;
+        font-size: 1.3rem;
+    }
+}
