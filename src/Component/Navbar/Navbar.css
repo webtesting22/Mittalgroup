@@ -27,8 +27,8 @@
 }
 .nav-toggler {
   background: transparent;
-  color: rgb(53, 62, 71);
-
+  /* color: rgb(53, 62, 71); */
+color: rgb(227, 184, 10);
   border: none;
   padding: 5px 10px;
   cursor: pointer;
