@@ -5,7 +5,7 @@ import AboutUs from './Component/AboutUs/AboutUs'
 import Group from './Component/GroupCompanies/Group'
 import ContactUs from './Component/ContactUs/ContactUs'
 import Gallery from './Component/Gallery/Gallery'
-import Home from './Component/home/Home'
+import Home from './Component/Home/Home'
 
 
 const App = () => {
