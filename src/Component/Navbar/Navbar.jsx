@@ -18,15 +18,15 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <Link to="/">
-          <img src={logo1} alt="Logo" className='logo' />
+          <img src={logo1} alt="Logo" className='MittalLogo' />
         </Link>
         <div className={`nav-menu ${isNavVisible ? 'open' : ''}`}>
           <ul className="navbar-menu">
-            <Link to="/"><li onClick={toggleNav}>Home</li></Link>
-            <Link to="/AboutUs"><li onClick={toggleNav}>About us</li></Link>
-            <Link to="/Group"><li onClick={toggleNav}>Group Companies </li></Link>
-            <Link to="Gallery"><li onClick={toggleNav}>Gallery</li></Link>
-            <Link to="ContactUs"><li onClick={toggleNav}>Contact us</li></Link>
+          <li onClick={toggleNav}><Link to="/">Home</Link></li>
+            <li onClick={toggleNav}><Link to="/AboutUs">About us</Link></li>
+            <li onClick={toggleNav}><Link to="/Group">Group Companies </Link></li>
+           <li onClick={toggleNav}> <Link to="Gallery">Gallery</Link></li>
+           <li onClick={toggleNav}> <Link to="ContactUs">Contact us</Link></li>
           </ul>
         </div>
         <button className="nav-toggler" onClick={toggleNav} style={{ borderRadius: "8px" }}>

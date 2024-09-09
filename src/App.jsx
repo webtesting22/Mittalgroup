@@ -6,7 +6,7 @@ import Group from './Component/GroupCompanies/Group'
 import ContactUs from './Component/ContactUs/ContactUs'
 import Gallery from './Component/Gallery/Gallery'
 import Home from './Component/Home/Home'
-
+import Footer from "./Component/Footer/Footer"
 
 const App = () => {
     return (
@@ -20,8 +20,9 @@ const App = () => {
                     <Route path='/Group' element={<Group />} />
                     <Route path='/Gallery' element={<Gallery />} />
                     <Route path='/ContactUs' element={<ContactUs />} />
+
                 </Routes>
-                {/* <Footer/> */}
+                <Footer/>
 
             
             {/* <div>

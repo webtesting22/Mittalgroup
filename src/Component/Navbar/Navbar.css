@@ -1,12 +1,10 @@
 .navbar {
-  /* padding: 20px; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 
   background: transparent;
 }
-.logo {
+.MittalLogo {
   width: 100px;
   cursor: pointer;
   /* margin-left: 100px; */
@@ -28,7 +26,7 @@
 .nav-toggler {
   background: transparent;
   /* color: rgb(53, 62, 71); */
-color: rgb(227, 184, 10);
+  color: rgb(227, 184, 10);
   border: none;
   padding: 5px 10px;
   cursor: pointer;
@@ -46,7 +44,7 @@ color: rgb(227, 184, 10);
   justify-content: flex-start;
   position: absolute;
   top: 0;
-  background-color:#0e1111;
+  background-color: #0e1111;
   height: 100%;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -63,12 +61,48 @@ color: rgb(227, 184, 10);
 .nav-menu.open {
   transform: none;
 }
-@media (max-width:576px){
-    .navbar-menu{
-        font-size: 3.4rem;
-        padding: 10px 20px;
-    }
-    .navbar-menu li{
-        padding: 20px 0;
-    }
+.nav-menu.open .navbar-menu  li{
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-in-out forwards;
+}
+@media (max-width: 576px) {
+  .navbar-menu {
+    font-size: 3.4rem;
+    padding: 10px 0;
+  }
+  .navbar-menu  li {
+    padding: 15px 30px;
+    text-align: center;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    /* transform: translateX(0px, 100px); */
+    transform: translateY(-100px); /* Move the element 100px up */
+
+    opacity: 0;
+  }
+  100% {
+    /* transform: translateX(0px, 0); */
+    transform: translateY(0); /* Move back to the original position */
+
+    opacity: 1;
+  }
+}
+
+/* Delay each li by a specific amount */
+.nav-menu.open .navbar-menu li:nth-of-type(1) {
+  animation-delay: 0s; /* No delay for the first item */
+}
+.nav-menu.open .navbar-menu li:nth-of-type(2) {
+  animation-delay: 0.2s; /* Second item appears after 0.2s */
+}
+.nav-menu.open .navbar-menu li:nth-of-type(3) {
+  animation-delay: 0.4s; /* Third item appears after 0.4s */
+}
+.nav-menu.open .navbar-menu li:nth-of-type(4) {
+  animation-delay: 0.6s; /* Fourth item appears after 0.6s */
+}
+.nav-menu.open .navbar-menu li:nth-of-type(5) {
+  animation-delay: 0.8s; /* Fifth item appears after 0.8s */
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import './Gallery.css'
-/*import gallery1 from '../../assets/images/gallery1.jpg'*/
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 import gallery1 from "/images/gallery1.jpg";
 import gallery2 from "/images/gallery2.jpg"
 import gallery3 from "/images/gallery3.jpg"
@@ -24,10 +24,19 @@ import gallery20 from "/images/gallery20.jpg"
 import gallery21 from "/images/gallery21.jpg"
 import gallery22 from "/images/gallery22.jpg"
 import gallery23 from "/images/gallery23.jpg"
-import { Col,Row } from "antd"
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
+import './Gallery.css';
 
-const Gallery = () => {
+// import required modules
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
+export default function Gallery1() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const imageMap = [
     {
       img: gallery1,
@@ -123,20 +132,43 @@ const Gallery = () => {
     },
   ]
   return (
-    <div className='img-gallery'>
-    <h1>Image Gallery</h1>
-      <Row>
-        {imageMap.map((item, index) => (
-          <Col lg={6} key={index}>
-            <div className="imageContainer" >
-              <img src={item.img} alt="image" />
-            </div>
-          </Col>
+    
+    <>
+    {/* <h1>IMAGE GALLERY</h1> */}
+    <p>IMAGE GALLERY</p>
+      <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+         {imageMap.map((item, index) => (
+          <SwiperSlide key={index}>
+            <img src={item.img} alt={item.alt} />
+          </SwiperSlide>
         ))}
-      </Row>
-    </div>
-
-  )
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={10}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        {imageMap.map((item, index) => (
+          <SwiperSlide key={index}>
+            <img src={item.img} alt={item.alt} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
+  );
 }
-
-export default Gallery
