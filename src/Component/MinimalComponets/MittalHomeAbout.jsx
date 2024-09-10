@@ -57,10 +57,10 @@ const MittalHomeAbout = () => {
                                     pagination={{
                                         clickable: true,
                                     }}
-                                    // autoplay={{
-                                    //     delay: 2000,
-                                    //     disableOnInteraction: false,
-                                    // }}
+                                    autoplay={{
+                                        delay: 1500,
+                                        disableOnInteraction: false,
+                                    }}
                                     loop={true}
                                     modules={[Pagination, Autoplay]}
                                     className="mySwiper"
