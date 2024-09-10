@@ -118,6 +118,11 @@ h6 {
   padding: 3rem 2rem;
 }
 
+@media (max-width:769px){
+  .sectionPadding {
+    padding: 3rem 0.5rem;
+  }
+}
 p {
   margin-bottom: 0px;
   font-size: 15px;

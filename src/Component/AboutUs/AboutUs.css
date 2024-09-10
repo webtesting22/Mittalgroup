@@ -56,6 +56,11 @@
 }
 
 @media (max-width:576px) {
+    
+.AboutUsimagesStyle {
+    padding: 3rem 0.5rem !important;
+}
+
     .cardComponent p {
         opacity: 1;
         overflow: visible;
