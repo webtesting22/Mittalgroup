@@ -13,6 +13,8 @@ import gallery2 from "../../../public/images/gallery2.jpg"
 import picasaImg14 from "../../../public/images/picasa-img14.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import Home from '../Home/Home'
+import BackImage from "./BackImage.jpeg"
 
 
 const AboutUs = () => {
@@ -64,6 +66,7 @@ const AboutUs = () => {
   // ]
   return (
     <>
+    <Home backgroundImage={BackImage}/>
       <section >
         <div className='AboutUsContentContainer'>
           <Row>
