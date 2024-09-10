@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "antd";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
 
 const Navbar = () => {
@@ -9,9 +10,12 @@ const Navbar = () => {
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
+  const hideNav = () => {
+    setIsNavVisible(false);
+  };
 
   const NavigationLinks = [
-    { link: "About Us" },
+    { link: "About Us", path: "/AboutUs" },
     { link: "Group Companies" },
     { link: "Gallery" },
     { link: "Contact Us" }
@@ -37,7 +41,7 @@ const Navbar = () => {
           <ul>
             {NavigationLinks.map((item, index) => (
               <div key={index} style={{ margin: "20px 0px" }}>
-                <li >{item.link}</li>
+                <Link to={item.path} onClick={hideNav}>{item.link}</Link>
                 <hr />
               </div>
             ))}

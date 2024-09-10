@@ -41,15 +41,14 @@
   z-index: 5555555;
 }
 
-ul li {
+.navigationPanel a{
   list-style: none;
   font-size: 40px;
   margin: 0px 0px;
   cursor: pointer;
   color: #ffcc00;
 }
-
-ul li+hr {
+.navigationPanel a +hr {
   width: 0px;
   opacity: 0;
   margin: 0px;
@@ -58,7 +57,7 @@ ul li+hr {
   border: 1px solid transparent;
 }
 
-ul li:hover+hr {
+.navigationPanel a:hover+hr {
   width: 200px;
   opacity: 1;
   background-color: #ffcc00;
