@@ -4,6 +4,7 @@ import "./MittalCommon.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from 'swiper/modules';
 import SliderImage1 from "./Images/AboutSliderImages/SliderImage1.avif"
 import SliderImage2 from "./Images/AboutSliderImages/SliderImage2.avif"
@@ -47,7 +48,7 @@ const MittalHomeAbout = () => {
                                     edge manufacturing and trading of structural steel products, Chemicals,
                                     Textiles and Entertainment. Our commitment towards our customers is our pride,
                                     and our integrity designs the quality of our products.</p>
-                                    <button className="MittalCommonBtn">Read More</button>
+                               <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link>
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
