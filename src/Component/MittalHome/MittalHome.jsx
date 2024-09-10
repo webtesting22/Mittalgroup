@@ -3,12 +3,12 @@ import Home from "../Home/Home";
 import MittalHomeAbout from "../MinimalComponets/MittalHomeAbout";
 import MittalOffice from "../MinimalComponets/MittalOffices";
 
-const MittalHome=()=>{
-    return(
+const MittalHome = () => {
+    return (
         <>
-        {/* <Home/> */}
-        <MittalHomeAbout/>
-        <MittalOffice/>
+            <Home/>
+            <MittalHomeAbout />
+            <MittalOffice />
         </>
     )
 }
