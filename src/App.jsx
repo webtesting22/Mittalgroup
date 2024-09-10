@@ -7,24 +7,24 @@ import ContactUs from './Component/ContactUs/ContactUs'
 import Gallery from './Component/Gallery/Gallery'
 import Home from './Component/Home/Home'
 import Footer from "./Component/Footer/Footer"
-
+import MittalHome from './Component/MittalHome/MittalHome'
 const App = () => {
     return (
         <>
-           
-                <Navbar />
 
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/AboutUs' element={<AboutUs />} />
-                    <Route path='/Group' element={<Group />} />
+            <Navbar />
+            <Home />
+            <Routes>
+                <Route path='/' element={<MittalHome />} />
+                <Route path='/AboutUs' element={<AboutUs />} />
+                {/* <Route path='/Group' element={<Group />} />
                     <Route path='/Gallery' element={<Gallery />} />
-                    <Route path='/ContactUs' element={<ContactUs />} />
+                    <Route path='/ContactUs' element={<ContactUs />} /> */}
 
-                </Routes>
-                <Footer/>
+            </Routes>
+            <Footer />
 
-            
+
             {/* <div>
                 <Gallery />
                 <ContactForm />

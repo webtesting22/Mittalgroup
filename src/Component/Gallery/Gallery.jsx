@@ -132,10 +132,10 @@ export default function Gallery1() {
     },
   ]
   return (
-    
+
     <>
-    {/* <h1>IMAGE GALLERY</h1> */}
-    <p>IMAGE GALLERY</p>
+      {/* <h1>IMAGE GALLERY</h1> */}
+      <p>IMAGE GALLERY</p>
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -148,7 +148,7 @@ export default function Gallery1() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-         {imageMap.map((item, index) => (
+        {imageMap.map((item, index) => (
           <SwiperSlide key={index}>
             <img src={item.img} alt={item.alt} />
           </SwiperSlide>
