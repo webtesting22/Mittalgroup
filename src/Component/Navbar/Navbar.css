@@ -47,6 +47,7 @@
   margin: 0px 0px;
   cursor: pointer;
   color: #ffcc00;
+  margin-left: 100px;
 }
 .navigationPanel a +hr {
   width: 0px;
@@ -55,6 +56,7 @@
   transition: 0.5s;
   background-color: transparent;
   border: 1px solid transparent;
+  margin-left: 100px;
 }
 
 .navigationPanel a:hover+hr {
@@ -64,4 +66,25 @@
   border: 1px solid #ffcc00;
   transition: 0.5s;
   margin: 0px;
+  margin-left: 100px;
+}
+.MittalShape{
+  background-color: #ffcc00;
+  border: 2px solid black;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  rotate: -45deg;
+  left: 0px;
+}
+
+@media (max-width:798px){
+  .navigationPanel a{
+    list-style: none;
+    font-size: 25px;
+    margin: 0px 0px;
+    cursor: pointer;
+    color: #ffcc00;
+    margin-left: 60px;
+  }
 }

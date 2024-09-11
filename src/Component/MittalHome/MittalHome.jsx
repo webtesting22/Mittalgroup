@@ -6,7 +6,7 @@ import MittalOffice from "../MinimalComponets/MittalOffices";
 const MittalHome = () => {
     return (
         <>
-            <Home/>
+            <Home />
             <MittalHomeAbout />
             <MittalOffice />
         </>

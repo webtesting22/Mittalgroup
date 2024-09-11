@@ -126,20 +126,34 @@ const MittalOffice = () => {
                 </p> */}
                 <div className="sectionPadding">
                     <Row>
-                        {AddressContainer.map((item, index) => (
-                            <Col lg={12} md={24} key={index}>
-                                <div className="MittalAdressContainer">
-                                    <div style={{ width: "200px",}}>
-                                    <img src={item.Logo} alt="" style={{ width:"150px",aspectRatio: "3/2", objectFit: "contain" }} />
+                        <div className="AddressAdjustContainer">
+                            <div style={{ width: "100%" }}>
+                                {AddressContainer.map((item, index) => (
+
+                                    <Col lg={24} md={24} key={index}>
+                                        <div className="MittalAdressContainer">
+                                            <div style={{ width: "200px", display: "flex", justifyContent: "center" }}>
+                                                <img src={item.Logo} alt="" className="LogosImages" />
+                                            </div>
+                                            <div style={{ width: "100%" }}>
+                                                <h4>{item.AddressTitle}</h4>
+                                                <p>{item.AddressDescription}</p>
+                                                <hr />
+                                            </div>
+                                        </div>
+                                    </Col>
+
+                                ))}
+                            </div>
+                            <div style={{ width: "100%" }}>
+                                <Col lg={24} md={24} id="StickyColumn">
+                                    <div className="MapContainer">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7343.655603514784!2d72.558401!3d23.030094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f1af6a551b%3A0x2a03c409d4b4748a!2sLal%20Bunglow%2C%20Chimanlal%20Girdharlal%20Rd%2C%20New%20Commercial%20Mills%20Staff%20Society%2C%20Ellisbridge%2C%20Ahmedabad%2C%20Gujarat%20380009%2C%20India!5e0!3m2!1sen!2sus!4v1726032400402!5m2!1sen!2sus" height={450} style={{ border: 0, width: "100%" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
-                                    <div style={{width:"100%"}}> 
-                                        <h4>{item.AddressTitle}</h4>
-                                        <p>{item.AddressDescription}</p>
-                                        <hr />
-                                    </div>
-                                </div>
-                            </Col>
-                        ))}
+                                </Col>
+                            </div>
+                        </div>
+
                     </Row>
 
                 </div>
