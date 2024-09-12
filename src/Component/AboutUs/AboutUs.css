@@ -1,12 +1,12 @@
 .cardImageContainer {
     width: 100%;
-}  
+}
 
 .cardImageContainer img {
     aspect-ratio: 3/2;
     object-fit: contain;
     width: 100%;
-    
+
 }
 
 .cardComponent {
@@ -46,7 +46,7 @@
 }
 
 .AboutUsimagesStyle img {
-    width: 600px ;
+    width: 600px;
     border-radius: 5px;
     border: 3px solid #ffcc00;
 }
@@ -55,37 +55,141 @@
     padding: 3rem 3rem !important;
 }
 
-.AboutUsParagraph p{
-   
+.AboutUsParagraph p {
+
     padding: 4px 0;
 }
-.AboutUsParagraph h4{
+
+.AboutUsParagraph h4 {
     padding: 10px 0;
 }
-.valueCard{
+
+.valueCard {
     display: flex;
     padding: 10px;
     margin: 10px;
     background-color: #ffcc00;
     overflow: hidden;
 }
-.valueCard h1{
+
+.valueCard h1 {
     width: 20%;
 }
-.valueCard p{
+
+.valueCard p {
     opacity: 0;
     visibility: hidden;
 }
-.valueCard:hover p{
-    visibility:visible;
+
+.valueCard:hover p {
+    visibility: visible;
     opacity: 1;
-    transition:all 0.3s;
+    transition: all 0.3s;
 }
+
+#CollapseEdit {
+    padding: 0rem 7rem;
+}
+
+#CollapseEdit .ant-collapse-item img {
+    opacity: 0;
+    width: 100px;
+    transition: 1s;
+}
+
+#CollapseEdit .ant-collapse-item:hover img {
+    opacity: 1;
+    width: 100px;
+    transition: 1s;
+}
+
+#CollapseEdit .ant-collapse-item-active img {
+    opacity: 1 !important;
+}
+
+#CollapseEdit .ant-collapse-item {
+    border: none;
+    background-color: transparent;
+    padding: 1.5rem 0rem;
+    /* border-bottom: 1px solid gray; */
+    border-top: 1px solid gray;
+    transition: .5s;
+}
+
+
+#CollapseEdit .ant-collapse-item:hover {
+    border: none;
+    background-color: transparent;
+    padding: 2rem 0rem;
+    /* border-bottom: 1px solid gray; */
+    border-top: 1px solid rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.ant-collapse-content {
+    border: none !important;
+}
+
+#CollapseEdit .ant-collapse {
+    border: none;
+    background-color: transparent;
+}
+
+#CollapseEdit .ant-collapse-expand-icon {
+    display: none;
+}
+
+.MittalShape {
+    height: 10px;
+    width: 30px;
+    background-color: #ffcc00;
+    border: 1px solid rgb(184, 184, 184);
+    margin-right: 30px;
+}
+
+#CollapseEdit .ant-collapse-header-text {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Override the collapse animation */
+.ant-collapse-content {
+    transition: max-height 2s ease-in-out, padding 2s ease-in-out !important;
+}
+
+.ant-collapse-content-box {
+    transition: opacity 2s ease-in-out !important;
+    opacity: 1;
+}
+
 @media (max-width:576px) {
-    
-.AboutUsimagesStyle {
-    padding: 3rem 0.5rem !important;
-}
+    #CollapseEdit .ant-collapse-item {
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 0rem;
+        /* border-bottom: 1px solid gray; */
+        border-top: 1px solid gray;
+        transition: .5s;
+    }
+    #CollapseEdit .ant-collapse-item:hover {
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 0rem;
+        /* border-bottom: 1px solid gray; */
+        border-top: 1px solid rgb(0, 0, 0);
+        transition: .5s;
+    }
+
+    #CollapseEdit {
+        padding: 0rem 1rem;
+    }
+
+    .AboutUsimagesStyle {
+        padding: 3rem 0.5rem !important;
+    }
 
     .cardComponent p {
         opacity: 1;
