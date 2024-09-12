@@ -2,15 +2,15 @@ import React, {
     useState, useEffect, useRef
 } from "react";
 import { Row, Col } from "antd";
-import AbMittalLogo from "../../../public/images/MittalGroupLogo.png"
-import MITTALSECTIONSUNIT2 from "../../../public/images/big-mittal-logo-section.png"
-import MITTALSTEEL from "../../../public/images/big-mittal-steel-logo.png"
-import AMSTEEL from "../../../public/images/am-steel-logo.png"
-import AROOINDUSTRIES from "../../../public/images/big-aroo-industries-logo.png"
-import BRLOBAL from "../../../public/images/br-global-logo.png"
-import ARSTEEL from "../../../public/images/big-ar-steel-logo.png"
-import ARMAANIMPEX from "../../../public/images/big-arman-impex-logo.png"
-import ARMAANYATEXTILES from "../../../public/images/big-armaanya-textiles-logo.png"
+import AbMittalLogo from "/images/MittalGroupLogo.png"
+import MITTALSECTIONSUNIT2 from "/images/big-mittal-logo-section.png"
+import MITTALSTEEL from "/images/big-mittal-steel-logo.png"
+import AMSTEEL from "/images/am-steel-logo.png"
+import AROOINDUSTRIES from "/images/big-aroo-industries-logo.png"
+import BRGLOBAL from "/images/br-global-logo.png"
+import ARSTEEL from "/images/big-ar-steel-logo.png"
+import ARMAANIMPEX from "/images/big-arman-impex-logo.png"
+import ARMAANYATEXTILES from "/images/big-armaanya-textiles-logo.png"
 const MittalOffice = () => {
     // const [scrollPosition, setScrollPosition] = useState(0);
     // const [isVisible, setIsVisible] = useState(false);
@@ -70,52 +70,52 @@ const MittalOffice = () => {
         {
             AddressTitle: "AB Mittal House (Corporate Office)",
             AddressDescription: "1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: AbMittalLogo
+            Logo: AbMittalLogo,
         },
         {
             AddressTitle: "MITTAL SECTIONS LIMITED (UNIT- II )",
-            AddressDescription: "23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA"
-            , Logo: MITTALSECTIONSUNIT2
+            AddressDescription: "23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA",
+            Logo: MITTALSECTIONSUNIT2,
         },
         {
             AddressTitle: "MITTAL SECTIONS LIMITED (UNIT- I )",
             AddressDescription: "14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA"
-            , Logo: MITTALSECTIONSUNIT2
+            , Logo: MITTALSECTIONSUNIT2,
         },
         {
             AddressTitle: "MITTAL STEEL",
-            AddressDescription: "Plot NO.1, Block No. 382 Changodar Industrial Estate,Trivedi Marble Lane, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA"
-            , Logo: MITTALSTEEL
+            AddressDescription: "Plot NO.1, Block No. 382 Changodar Industrial Estate,Trivedi Marble Lane, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA",
+            Logo: MITTALSTEEL,
         },
         {
             AddressTitle: "AM STEEL",
             AddressDescription: "Plot NO.4, Block No. 382 Changodar Industrial Estate,Trivedi Marble Lane, Sarkhej- Bavla Highway , Changodar , Dist. AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: AMSTEEL
+            Logo: AMSTEEL,
         },
         {
             AddressTitle: "AROO INDUSTRIES",
             AddressDescription: "138/3 ,143/1 , 143/2 , Village Lodariyal, Bavla - Sanand Road, Taluka Sanand Ahmedabad -382230",
-            Logo: AROOINDUSTRIES
+            Logo: AROOINDUSTRIES,
         },
         {
             AddressTitle: "BR GLOBAL",
             AddressDescription: "Plot NO.1/A Block No. 382 Changodar Industrial Estate,Trivedi Marble Lane, Sarkhej- Bavla Highway,Changodar, AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: BRLOBAL
+            Logo: BRGLOBAL,
         },
         {
             AddressTitle: "AR STEEL",
             AddressDescription: "1, Sona Roopa Apt., Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009, Gujarat – India",
-            Logo: ARSTEEL
+            Logo: ARSTEEL,
         },
         {
             AddressTitle: "ARMAAN IMPEX",
             AddressDescription: "1, Sona Roopa Apt., Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009, Gujarat – India",
-            Logo: ARMAANIMPEX
+            Logo: ARMAANIMPEX,
         },
         {
             AddressTitle: "ARMAANYA TEXTILES",
             AddressDescription: "138/3 ,143/1 , 143/2 , Village Lodariyal, Bavla - Sanand Road, Taluka Sanand Ahmedabad -382230",
-            Logo: ARMAANYATEXTILES
+            Logo: ARMAANYATEXTILES,
         },
     ]
     return (

@@ -147,4 +147,11 @@ button {
 .MittalCommonBtn:hover {
   border-radius: 10px;
   transition: .5s;
+} 
+.sectionHeading h2 span {
+  font-size: 30px;
+  color: #ffcc00;
+}
+.sectionHeading h2{
+  padding: 10px 20px;
 }

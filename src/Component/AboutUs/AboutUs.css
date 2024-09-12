@@ -1,12 +1,12 @@
 .cardImageContainer {
     width: 100%;
-}
+}  
 
 .cardImageContainer img {
     aspect-ratio: 3/2;
     object-fit: contain;
     width: 100%;
-
+    
 }
 
 .cardComponent {
@@ -46,7 +46,7 @@
 }
 
 .AboutUsimagesStyle img {
-    width: 400px;
+    width: 600px ;
     border-radius: 5px;
     border: 3px solid #ffcc00;
 }
@@ -55,6 +55,32 @@
     padding: 3rem 3rem !important;
 }
 
+.AboutUsParagraph p{
+   
+    padding: 4px 0;
+}
+.AboutUsParagraph h4{
+    padding: 10px 0;
+}
+.valueCard{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffcc00;
+    overflow: hidden;
+}
+.valueCard h1{
+    width: 20%;
+}
+.valueCard p{
+    opacity: 0;
+    visibility: hidden;
+}
+.valueCard:hover p{
+    visibility:visible;
+    opacity: 1;
+    transition:all 0.3s;
+}
 @media (max-width:576px) {
     
 .AboutUsimagesStyle {

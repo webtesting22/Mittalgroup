@@ -29,13 +29,11 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-
 import './Gallery.css';
+import Home from '../Home/Home';
+import {Row,Col} from "antd";
 
-// import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-
-export default function Gallery1() {
+export default function Gallery() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const imageMap = [
     {
@@ -134,41 +132,17 @@ export default function Gallery1() {
   return (
 
     <>
-      {/* <h1>IMAGE GALLERY</h1> */}
-      <p>IMAGE GALLERY</p>
-      <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
-        }}
-        loop={true}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
-      >
-        {imageMap.map((item, index) => (
-          <SwiperSlide key={index}>
-            <img src={item.img} alt={item.alt} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={10}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
-        {imageMap.map((item, index) => (
-          <SwiperSlide key={index}>
-            <img src={item.img} alt={item.alt} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <Home/>
+      <h1>IMAGE GALLERY</h1>
+      <Row>
+      {/* {imageMap.map((item,index)=>(
+        <Col lg={6}>
+        <div className='galleryImg'>
+        <img src={item.img} />
+        </div>
+        </Col>
+      ))} */}
+      </Row>
     </>
   );
 }

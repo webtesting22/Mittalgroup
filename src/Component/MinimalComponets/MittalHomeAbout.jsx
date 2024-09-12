@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from 'swiper/modules';
 import SliderImage1 from "./Images/AboutSliderImages/SliderImage1.avif"
 import SliderImage2 from "./Images/AboutSliderImages/SliderImage2.avif"
+import SliderImage3 from "./Images/AboutSliderImages/SliderImage3.jpg";
+import SliderImage4 from "./Images/AboutSliderImages/SliderImage4.jpg"
 const MittalHomeAbout = () => {
     const SliderImages = [
         {
-            image: SliderImage1,
+            image: SliderImage4,
             SwiperTitle: "Steel Melting"
         },
         {
@@ -19,7 +21,7 @@ const MittalHomeAbout = () => {
             SwiperTitle: "Steel Rolling"
         },
         {
-            image: SliderImage2,
+            image: SliderImage3,
             SwiperTitle: "Weaving"
         },
         {

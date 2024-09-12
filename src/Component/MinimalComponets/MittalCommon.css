@@ -8,7 +8,12 @@
     font-size: 30px;
     color: #ffcc00;
 }
-
+.LeftContentContainer h2{
+    padding: 10px 20px;
+}
+.LeftContentContainer p{
+    padding: 10px 20px;
+}
 .SwiperImageContainer {
     height: 100%;
     width: 100%;
@@ -25,6 +30,7 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+    
 }
 
 .mySwiper .swiper-slide {
@@ -55,7 +61,7 @@
 }
 
 .infoBtn:hover {
-    position: absolute;
+    /* position: absolute; */
     bottom: 5px;
     background-color: #ffcc00 !important;
     border: black !important;
@@ -64,6 +70,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: .5s;
+    transform: scale(1.2);
 }
 
 .ContentContainer {
@@ -73,7 +80,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     background-color: transparent;
     height: 100px;
     align-items: center;
@@ -82,6 +89,7 @@
 
 .OfficeAdressContainer {
     background-color: #ffcc00;
+    /* background-color: #DD9936; */
     color: rgb(0, 0, 0);
 
 }

@@ -15,10 +15,11 @@ const Navbar = () => {
   };
 
   const NavigationLinks = [
+    {link:"Home",path:"/"},
     { link: "About Us", path: "/AboutUs" },
     { link: "Group Companies" },
-    { link: "Gallery" },
-    { link: "Contact Us" }
+    { link: "Gallery"},
+    { link: "Contact Us" },
   ];
 
   return (
