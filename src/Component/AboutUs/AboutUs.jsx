@@ -161,15 +161,15 @@ const AboutUs = () => {
             <Col lg={12} md={24}>
 
               <div className="sectionPadding AboutUsParagraph">
-                <h4>“Realizing dreams, Achieving goals”</h4>
+                <h2>“Realizing dreams, Achieving goals”</h2>
                 <p>AB Mittal group of companies is one of the fastest growing enterprises in the world. Leading with a global approach AB Mittal group is as diverse as it is dynamic. Ever since its inception in the year 2006, the group has diversifies operations and expanded into various sectors that include Structured Steel Products, Textiles, Entertainment, and Chemicals.</p>
                 <p>Under the leadership of Mr. Atul B. Mittal the C.E.O. & Director of the group and Mr. Ajay B. Mittal, the Chairman, the group has explored new horizons and redefined the pinnacle of success with every milestone they achieved. Over the years, the group has come a long way and added value to the current market setup.</p>
                 <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p>
-                <h4>Our Mission:</h4>
+                <br /><br />
+                <h2>Our Mission:</h2>
                 <p>We at AB Mittal Group strive towards delivering world class product and services to our clients. Working towards creating tangible solutions by understanding the needs of our clients, delivering success at every step of the way is at our core.</p>
                 <p>We are not just about creating fantastic products; we are more and work towards being more every day. Our perseverance defines us and translates into everything we do. Our mission is to be better every day, delivering the best to everyone associated with and be at the pinnacle of success with our clients.</p>
-                <h4>Our Values</h4>
-                <p> We at AB Mittal group believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
+               
               </div>
             </Col>
           </Row>
@@ -177,6 +177,9 @@ const AboutUs = () => {
 
         </div>
         <div id='CollapseEdit'>
+        <h2>Our Values</h2>
+        <p> We at AB Mittal group believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p> 
+        <br /><br />
           <Collapse accordion defaultActiveKey={['1']} items={items} />
         </div>
       </section>

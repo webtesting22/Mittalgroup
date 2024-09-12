@@ -164,6 +164,9 @@
     transition: opacity 2s ease-in-out !important;
     opacity: 1;
 }
+#CollapseEdit h2::first-letter{
+    color: #ffcc00;
+}
 
 @media (max-width:576px) {
     #CollapseEdit .ant-collapse-item {
@@ -174,6 +177,7 @@
         border-top: 1px solid gray;
         transition: .5s;
     }
+
     #CollapseEdit .ant-collapse-item:hover {
         border: none;
         background-color: transparent;
@@ -188,7 +192,11 @@
     }
 
     .AboutUsimagesStyle {
-        padding: 3rem 0.5rem !important;
+        padding: 2rem 0.5rem !important;
+    }
+
+    .AboutUsimagesStyle>div {
+        margin-left: 0px !important;
     }
 
     .cardComponent p {

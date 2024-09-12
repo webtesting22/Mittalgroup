@@ -4,8 +4,7 @@
     padding: 8rem 0rem !important;
 }
 
-.LeftContentContainer h2 span {
-    font-size: 30px;
+.LeftContentContainer h2::first-letter  {
     color: #ffcc00;
 }
 .LeftContentContainer h2{
