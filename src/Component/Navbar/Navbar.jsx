@@ -17,7 +17,7 @@ const Navbar = () => {
   const NavigationLinks = [
     {link:"Home",path:"/"},
     { link: "About Us", path: "/AboutUs" },
-    { link: "Group Companies" },
+    { link: "Group Companies",path:"/Group" },
     { link: "Gallery"},
     { link: "Contact Us" },
   ];

@@ -90,9 +90,11 @@ a {
   color: inherit;
   font-family: "Poppins", sans-serif;
 }
-li{
+
+li {
   font-family: "Poppins", sans-serif;
 }
+
 p,
 h1,
 h2,
@@ -118,11 +120,12 @@ h6 {
   padding: 3rem 2rem;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
   .sectionPadding {
     padding: 3rem 0.5rem;
   }
 }
+
 p {
   margin-bottom: 0px;
   font-size: 15px;
@@ -147,11 +150,17 @@ button {
 .MittalCommonBtn:hover {
   border-radius: 10px;
   transition: .5s;
-} 
+}
+
 .sectionHeading h2 span {
   font-size: 30px;
   color: #ffcc00;
 }
-.sectionHeading h2{
+
+.sectionHeading h2 {
   padding: 10px 20px;
+}
+
+.sectionHeading h2::first-letter {
+  color: #ffcc00;
 }
