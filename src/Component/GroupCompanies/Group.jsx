@@ -10,6 +10,7 @@ import ArmaanImpexLogo from "/images/big-arman-impex-logo.png";
 import entertainment from "/images/entertainment-logo.png";
 import { Row, Col, Table } from "antd";
 import Home from '../Home/Home';
+import GroupImagesBack from "../../../public/images/GroupImagesBack.avif"
 import './Group.css'
 
 const Group = () => {
@@ -51,7 +52,7 @@ const Group = () => {
 
   return (
     <>
-      <Home />
+      <Home backgroundImage={GroupImagesBack} />
       <section className='sectionPadding'>
         <div id='CardContainer'>
           <Row>
