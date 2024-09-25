@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import MittalSectionsLogo from "/images/big-mittal-logo-section.png";
 import MittalSteelLogo from "/images/big-mittal-steel-logo.png";
 import AMSteelLogo from "/images/big-am-steel-logo.png";
@@ -14,7 +14,9 @@ import GroupImagesBack from "../../../public/images/GroupImagesBack.avif"
 import './Group.css'
 
 const Group = () => {
- 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
 
   return (
     <>

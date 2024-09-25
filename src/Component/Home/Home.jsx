@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import DefaultImage from '/images/AbmittalBack.jpeg'; // Default image
 import MittalGroupLogo from "/images/MittalGroupLogo.png"
 import MittalHomeAbout from '../MinimalComponets/MittalHomeAbout'
 const Home = ({ backgroundImage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
       <section className='MittalHomeContainer'>

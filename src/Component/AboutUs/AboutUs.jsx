@@ -15,6 +15,9 @@ import BackImage from "./BackImage.jpeg"
 import { Collapse } from 'antd';
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   const items = [
     {
       key: '1',
