@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   const NavigationLinks = [
-    {link:"Home",path:"/"},
+    { link: "Home", path: "/" },
     { link: "About Us", path: "/AboutUs" },
-    { link: "Group Companies",path:"/Group" },
+    { link: "Group Companies", path: "/Group" },
     // { link: "Gallery"},
     // { link: "Contact Us" },
   ];
@@ -41,13 +41,13 @@ const Navbar = () => {
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           <ul>
             {NavigationLinks.map((item, index) => (
-              <div key={index} style={{ margin: "20px 0px",position:"relative",display:"flex",alignItems:"center" }}>
+              <div key={index} style={{ margin: "20px 0px", position: "relative", display: "flex", alignItems: "center" }}>
                 <div className="MittalShape">
 
                 </div>
                 <div>
-                <Link to={item.path} onClick={hideNav}>{item.link}</Link>
-                <hr />
+                  <Link to={item.path} onClick={hideNav}>{item.link}</Link>
+                  <hr />
                 </div>
               </div>
             ))}

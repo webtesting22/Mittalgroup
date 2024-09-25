@@ -14,41 +14,7 @@ import GroupImagesBack from "../../../public/images/GroupImagesBack.avif"
 import './Group.css'
 
 const Group = () => {
-  const columns = [
-    {
-      title: 'PRODUCT',
-      dataIndex: 'product',
-      key: 'product',
-    },
-    {
-      title: 'RANGE (IN MM)',
-      dataIndex: 'range',
-      key: 'range',
-    },
-  ];
-
-  const dataSource = [
-    {
-      key: '1',
-      product: 'Angles',
-      range: 'Dimensions in mm: 35*35*5 to 75*75*10',
-    },
-    {
-      key: '2',
-      product: 'Channels',
-      range: 'Dimensions in mm: 75*40 to 100*50',
-    },
-    {
-      key: '3',
-      product: 'Round bars',
-      range: 'Dimensions in mm: 16 to 32',
-    },
-    {
-      key: '4',
-      product: 'Flat bars',
-      range: 'Dimensions in mm: 50*6 to 150*25',
-    },
-  ];
+ 
 
   return (
     <>
@@ -68,7 +34,33 @@ const Group = () => {
                 <br />
                 <h3>The major products of MSL are:</h3>
                 <br />
-                <Table dataSource={dataSource} columns={columns} pagination={false} />
+                <table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>PRODUCT</th>
+      <th>RANGE (IN MM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Angles</td>
+      <td>Dimensions in mm: 35*35*5 to 75*75*10</td>
+    </tr>
+    <tr>
+      <td>Channels</td>
+      <td>Dimensions in mm: 75*40 to 100*50</td>
+    </tr>
+    <tr>
+      <td>Round bars</td>
+      <td>Dimensions in mm: 16 to 32</td>
+    </tr>
+    <tr>
+      <td>Flat bars</td>
+      <td>Dimensions in mm: 50*6 to 150*25</td>
+    </tr>
+  </tbody>
+</table>
+
                 <br />
                 <p>MSL is one of the largest manufacturers of rolled structural steel products. The specialty of MSL is that it rolls the entire range of MS products. The project is equipped with sufficient raw material and manpower for crafting quality products and deliver them to a wide customer base. MSL believes in building such a modern industrial base which is strong and self reliant. It’s an ISO 9001 organization with having other corporate certificates from GETCO.</p>
                 <br />

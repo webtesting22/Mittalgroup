@@ -1,0 +1,8 @@
+.FooterContainer p{
+    color: white;
+}
+.FooterContainer{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
