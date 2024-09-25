@@ -10,10 +10,9 @@
 }
 
 .navigationPanel.show {
-  /* bottom: 100vh; */
   height: 100vh;
   transition: 0.5s;
-  z-index: 555555;
+  z-index: 4;
   position: fixed;
   /* Slides in */
 }
@@ -22,14 +21,13 @@
   height: 0vh;
   bottom: 0vh;
   transition: 0.5s;
-  z-index: 555555;
+  z-index: 4;
   position: fixed;
   /* Slides out */
 }
 
 .MittalNavigationContainer button {
   position: fixed;
-  z-index: 555;
   cursor: pointer;
   background-color: black;
   border: none;
@@ -39,7 +37,7 @@
   color: #ffcc00;
   border-radius: 20px;
   text-transform: uppercase;
-  z-index: 5555555;
+  z-index: 5;
 }
 
 .navigationPanel a {
