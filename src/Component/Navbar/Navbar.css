@@ -1,6 +1,6 @@
 .navigationPanel {
   width: 100%;
-  background-color: rgb(29, 29, 29);
+  background-color: white;
   position: absolute;
   /* Hidden by default */
   transition: 0.5s;
@@ -47,7 +47,7 @@
   font-size: 40px;
   margin: 0px 0px;
   cursor: pointer;
-  color: #ffcc00;
+  color: #000000;
   margin-left: 100px;
 }
 
