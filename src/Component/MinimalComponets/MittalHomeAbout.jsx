@@ -36,7 +36,7 @@ const MittalHomeAbout = () => {
     return (
         <>
             <section>
-                <div className="AboutUsSection">
+                <div >
                     <Row>
                         <Col lg={12} md={24}>
                             <div className="LeftContentContainer sectionPadding">
@@ -62,6 +62,7 @@ const MittalHomeAbout = () => {
                                         delay: 2000,
                                         disableOnInteraction: false,
                                     }}
+                                    speed={1000} 
                                     loop={true}
                                     modules={[ Autoplay]}
                                     className="mySwiper"
