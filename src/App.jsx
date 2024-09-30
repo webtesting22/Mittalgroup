@@ -8,6 +8,8 @@ import Gallery from './Component/Gallery/Gallery'
 import Home from './Component/Home/Home'
 import Footer from "./Component/Footer/Footer"
 import MittalHome from './Component/MittalHome/MittalHome'
+import Clients from "./Component/Clients/Clients"
+import Products from "./Component/Products/Products"
 const App = () => {
     return (
         <>
@@ -20,7 +22,8 @@ const App = () => {
                 <Route path='/Group' element={<Group />} />
                 <Route path='/Gallery' element={<Gallery />} />
                 <Route path='/ContactUs' element={<ContactUs />} />
-
+                <Route path="/Clients" element={<Clients/>}/>
+                <Route path="/Products" element={<Products/>}/>
             </Routes>
             <Footer />
 

@@ -243,53 +243,6 @@
     transition: 0.7s;
 }
 
-table {
-    width: 95%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th,
-td {
-    border: 1px solid #333;
-    padding: 5px;
-    text-align: center;
-    font-size: 12px;
-}
-
-th {
-    background-color: #9aa966;
-
-}
-
-h2 {
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-}
-
-.table-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.table-section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-#TableContainers {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#TableContainers>div {
-    width: 50%;
-}
-
-#TableContainers>div h4 {
-    margin-bottom: 10px;
-}
 
 .AboutusContainer {
     margin: 20px 0px;

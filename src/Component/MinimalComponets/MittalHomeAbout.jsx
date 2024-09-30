@@ -56,16 +56,14 @@ const MittalHomeAbout = () => {
                         <Col lg={12} md={24}>
                             <div>
                                 <Swiper
-                                    direction={'vertical'}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
+                                    direction={'horizontal'}
+                                   
                                     autoplay={{
-                                        delay: 1500,
+                                        delay: 2000,
                                         disableOnInteraction: false,
                                     }}
                                     loop={true}
-                                    modules={[Pagination, Autoplay]}
+                                    modules={[ Autoplay]}
                                     className="mySwiper"
                                 >
                                     {SliderImages.map((item, index) => (

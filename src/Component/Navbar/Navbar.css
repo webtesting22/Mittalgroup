@@ -12,7 +12,7 @@
 .navigationPanel.show {
   height: 100vh;
   transition: 0.5s;
-  z-index: 4;
+  z-index: 9;
   position: fixed;
   /* Slides in */
 }
@@ -21,7 +21,7 @@
   height: 0vh;
   bottom: 0vh;
   transition: 0.5s;
-  z-index: 4;
+  z-index: 9;
   position: fixed;
   /* Slides out */
 }
@@ -37,7 +37,7 @@
   color: #ffcc00;
   border-radius: 20px;
   text-transform: uppercase;
-  z-index: 5;
+  z-index: 10;
 }
 
 .navigationPanel a {
