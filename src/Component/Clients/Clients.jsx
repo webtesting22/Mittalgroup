@@ -9,11 +9,14 @@ const Clients = () => {
     return (
         <>
             <Home />
-            <div className="sectionHeading">
+            <br /><br />
+           <div className="ClientContainerSet">
+           <div className="sectionHeading">
                 <h2>
                     Our Clients
                 </h2>
             </div>
+            <br /><br />
             <div className="ClientsContainer">
                 {Client.map((item, index) => (
                     <div
@@ -25,6 +28,7 @@ const Clients = () => {
                     </div>
                 ))}
             </div>
+           </div>
         </>
     )
 }

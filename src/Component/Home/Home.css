@@ -5,6 +5,8 @@
     width: 100%;
     object-fit: cover;
     height: 100vh;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+    opacity: 1;
 }
 
 .MittalBackImg .ImageOverlay {
@@ -35,6 +37,13 @@
     width: 200px;
     animation: zoomInOut 2s infinite;
 }
+.fade-out {
+    opacity: 0; /* Fade out effect */
+  }
+  
+  .fade-in {
+    opacity: 1; /* Fade in effect */
+  }
 @keyframes zoomInOut {
     0%, 100% {
         transform: scale(1); /* Original size */

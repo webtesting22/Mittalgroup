@@ -12,12 +12,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Home from '../Home/Home'
 import BackImage from "./BackImage.jpeg"
+import DiffrentTestImage from "../Navbar/NavigationBackground.jpg"
 import { Collapse } from 'antd';
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const images = [DiffrentTestImage, BackImage]; 
   const items = [
     {
       key: '1',
@@ -127,7 +129,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <Home backgroundImage={BackImage} />
+      <Home images={images} />
       <section className='AboutUsSection'>
         <div className='AboutUsContentContainer'>
           <br /><br />

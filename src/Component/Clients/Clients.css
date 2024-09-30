@@ -37,6 +37,9 @@
   transition: 0.5s;
   border-radius: 10px;
 }
+.ClientContainerSet{
+  padding: 0rem 3rem;
+}
 @media (max-width: 769px) {
   #ImageContainerLogo:hover {
     border: 1px solid #e3b80a;

@@ -1,12 +1,19 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Products.css"
 import Home from "../Home/Home";
 import {Row,Col} from "antd";
+import Productback from "./Productback.jpeg"
+import Productback2 from "./Productback2.jpg"
 const Products = () => {
+    const Images=[Productback,Productback2]
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>
-            <Home />
-            <div className='processServices' data-aos="fade-up">
+            <Home images={Images}/>
+            <br /><br />
+            <div className='processServices AboutUsSection' data-aos="fade-up">
                 <h1>Products And Services</h1>
                 <p>Mittal Sections Limited specialises in the manufacturing and hot re-rolling of a complete
                     range of Mild Steel Sections, including:
