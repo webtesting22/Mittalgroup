@@ -3,7 +3,7 @@ import { Button } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
-import NavigationBackImage from "./NavigationBackground.jpg"
+import NavigationBackImage from "./navigation.jpg"
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
 

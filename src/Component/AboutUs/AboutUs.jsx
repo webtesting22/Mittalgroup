@@ -12,7 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Home from '../Home/Home'
 import BackImage from "./BackImage.jpeg"
-import DiffrentTestImage from "../Navbar/NavigationBackground.jpg"
+import DiffrentTestImage from "../Navbar/navigation.jpg"
 import { Collapse } from 'antd';
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 const AboutUs = () => {
