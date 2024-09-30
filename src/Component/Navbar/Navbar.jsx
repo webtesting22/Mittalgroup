@@ -3,7 +3,7 @@ import { Button } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
-
+import NavigationBackImage from "./NavigationBackground.jpg"
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -41,11 +41,14 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
+          <div className="overlayBackImage">
+              <img src={NavigationBackImage} alt="" />
+          </div>
           <ul>
             {NavigationLinks.map((item, index) => (
               <div key={index} style={{ margin: "20px 0px", position: "relative", display: "flex", alignItems: "center" }}>
                 <div className="MittalShape">
-
+                
                 </div>
                 <div>
                   <Link to={item.path} onClick={hideNav}>{item.link}</Link>
