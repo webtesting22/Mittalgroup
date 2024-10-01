@@ -64,7 +64,7 @@
 .infoBtn:hover {
     /* position: absolute; */
     bottom: 5px;
-    background-color: #ffcc00 !important;
+    background-color: #9aa924 !important;
     border: black !important;
     padding: 10px 20px;
     color: black !important;
@@ -302,7 +302,7 @@
   }
 
   .StackContainer h2::first-letter{
-        color: #ffcc00;
+        color: #9aa924;
   }
   .ContentContainerCard{
     padding: 20px;

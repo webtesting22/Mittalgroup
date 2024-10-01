@@ -3,18 +3,18 @@
 }
 
 #CardContainer h2::first-letter {
-    color: #ffcc00;
+    color: #9aa966;
 }
 
 #CardContainer img {
     width: 70%;
     margin-top: 3rem;
     border-radius: 10px;
-    background-color: #ffcc00;
+    /* background-color: #9aa966; */
 }
 #CardContainer{
     margin: 3rem 0rem;
-    border-bottom: 1px solid #ffcc00;
+    border-bottom: 1px solid #144b24;
     padding-bottom: 2rem;
 }
 

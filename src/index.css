@@ -138,7 +138,7 @@ button {
 
 .MittalCommonBtn {
   /* background-color: #ffcc00; */
-  background-color: #9aa966;
+  background-color: #9aa924;
   color: black;
   padding: 10px 40px;
   border: none;
@@ -156,7 +156,7 @@ button {
 .sectionHeading h2 span {
   font-size: 30px;
   /* color: #ffcc00; */
-  color: #9aa966;
+  color: #9aa924;
 }
 
 .sectionHeading h2 {
@@ -165,5 +165,5 @@ button {
 
 .sectionHeading h2::first-letter {
   /* color: #ffcc00; */
-  color: #9aa966;
+  color: #9aa924;
 }

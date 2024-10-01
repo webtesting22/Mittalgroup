@@ -41,7 +41,7 @@
 .AboutUsimagesStyle img {
     width: 600px;
     border-radius: 5px;
-    border: 3px solid #ffcc00;
+    border: 3px solid #9aa966;
 }
 
 .AboutUsimagesStyle {
@@ -166,7 +166,7 @@
 }
 
 #CollapseEdit h2::first-letter {
-    color: #ffcc00;
+    color: #9aa924;
 }
 
 .MittalValuesCards {
@@ -251,7 +251,7 @@
 
 .AboutusContainer h2::first-letter {
     /* color: #ffcc00; */
-    color: #144b24;
+    color: #9aa924;
 }
 
 
