@@ -37,7 +37,8 @@
   top: 20px;
   right: 20px;
   padding: 13px 20px;
-  color: #ffcc00;
+  /* color: #ffcc00; */
+  color: #9aa966;
   border-radius: 20px;
   text-transform: uppercase;
   z-index: 10;
@@ -74,7 +75,8 @@
 }
 
 .MittalShape {
-  background-color: #ffcc00;
+  /* background-color: #ffcc00; */
+  background-color: #9aa966;
   border: 2px solid black;
   width: 50px;
   height: 20px;
