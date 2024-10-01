@@ -37,7 +37,8 @@ const AnimatedStackCards = () => {
                 <Row>
                     <Col lg={12} md={12}>
                         <div className="StackContainer">
-                            <div>
+                            <div data-aos="fade-up"
+                                data-aos-duration="1000">
                                 <h2>Our Products</h2>
                                 <br />
                                 <p>Mittal Sections Limited specialises in the manufacturing and hot re-rolling of a complete
@@ -69,6 +70,8 @@ const AnimatedStackCards = () => {
                                             // Decrease width by 10% for each subsequent card
                                             margin: isLastCard ? '20px auto' : '10px auto', // Add margin for the last card
                                         }}
+                                        data-aos="fade-up"
+     data-aos-duration="300"
                                         key={index}
                                     >
                                         <img src={item.image} alt={item.Title} />

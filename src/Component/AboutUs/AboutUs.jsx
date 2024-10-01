@@ -186,14 +186,15 @@ const AboutUs = () => {
         </div>
         <br /><br />
         <div id='CollapseEdit' >
-          <div data-aos="fade-up">
+          <div >
             <h2>Our Values</h2>
             <p> We at AB Mittal group believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
             <br />
             {/* <Collapse accordion defaultActiveKey={['1']} items={items} /> */}
             <div className='MittalValuesCards'>
               {data.map((item, index) => (
-                <div className='ValueCard'>
+                <div className='ValueCard' data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}>
                   <div className='AnimatedCards'>
                     <div className='BlackOverlay'>
                     </div>
