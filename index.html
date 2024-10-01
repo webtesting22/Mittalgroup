@@ -3,29 +3,56 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title and Favicon -->
+  <title>Mittal Group provides high-quality steel products</title>
   <link rel="icon" type="image/png" href="/images/logo1.png" />
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description"
+    content="Mittal Group provides high-quality steel products including round bars, flat bars, angles, and channels for construction and industrial purposes." />
+  <meta name="keywords"
+    content="Mittal Group, steel rods, round bar, flat bar, angles, channels, construction materials, industrial steel, steel products" />
+  <meta name="author" content="Mittal Group" />
+
+  <!-- Boxicons for Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- AOS CSS for Animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>AB Mittal Group</title>
+
+  <!-- External CSS (Optional - If you have any custom styles) -->
+  <!-- <link rel="stylesheet" href="/path/to/your/styles.css" /> -->
+
 </head>
 
 <body>
+
+  <!-- Root Element for React App -->
   <div id="root"></div>
+
+  <!-- Import React (Main.jsx) -->
   <script type="module" src="/src/main.jsx"></script>
-  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="bower_components/aos/dist/aos.js"></script>
+
+  <!-- AOS (Animate on Scroll) JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1200, // Animation duration (optional)
+      once: true,     // Whether animation should happen only once
+    });
   </script>
+
 </body>
 
 </html>
