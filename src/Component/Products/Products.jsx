@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import {Row,Col} from "antd";
 import Productback from "./Productback.jpeg"
 import Productback2 from "./Productback2.jpg"
+import AnimatedStackCards from "../MinimalComponets/AnimatedStackCards";
 const Products = () => {
     const Images=[Productback,Productback2]
     useEffect(() => {
@@ -12,6 +13,8 @@ const Products = () => {
     return (
         <>
             <Home images={Images}/>
+            <br /><br />
+            <AnimatedStackCards/>
             <br /><br />
             <div className='processServices AboutUsSection' data-aos="fade-up">
                 <h1>Products And Services</h1>
@@ -28,7 +31,7 @@ const Products = () => {
                 <p>
                     <b>These products are manufactured according to IS 2062 standards.</b>
                 </p>
-                <div className="productsContainer">
+                {/* <div className="productsContainer">
                     <h1>Our Products</h1>
                     <Row>
                         <Col lg={12}>
@@ -44,7 +47,7 @@ const Products = () => {
                             <div className="productCard">Angles</div>
                         </Col>
                     </Row>
-                </div>
+                </div> */}
                 {/* <div > */}
                 <br />
 
