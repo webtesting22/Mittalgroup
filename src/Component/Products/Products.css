@@ -42,10 +42,21 @@ h2 {
 #TableContainers>div {
     width: 50%;
 }
-
 #TableContainers>div h4 {
     margin-bottom: 10px;
 }
+@media (max-width:769px){
+    #TableContainers>div {
+        width: 100%;
+    }
+    #TableContainers>div h4 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+}
+
+
 
 .productCard {
     width: 400px;

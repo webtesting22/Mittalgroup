@@ -37,12 +37,22 @@ const AnimatedStackCards = () => {
                 <Row>
                     <Col lg={12} md={12}>
                         <div className="StackContainer">
-                           <div>
-                           <h2>Our Products</h2>
-                           <br />
-                            <p>Mittal Sections Limited specialises in the manufacturing and hot re-rolling of a complete
-                                range of Mild Steel Sections, including:</p>
-                           </div>
+                            <div>
+                                <h2>Our Products</h2>
+                                <br />
+                                <p>Mittal Sections Limited specialises in the manufacturing and hot re-rolling of a complete
+                                    range of Mild Steel Sections, including:</p>
+                                <ul>
+                                    <li>Flat Bars: Ideal for construction, fabrication, and manufacturing, our flat bars offer strength and versatility for a variety of applications.</li>
+                                    <br />
+                                    <li> Round Bars: Precision-engineered for durability, our round bars are perfect for machining, forging, and structural use.</li>
+
+                                    <br />
+                                    <li>  Channels: Our steel channels provide excellent support and stability, commonly used in building frameworks and heavy-duty construction projects.</li>
+                                    <br />
+                                    <li>  Angles: Sturdy and reliable, our steel angles are designed for structural support, reinforcement, and a wide range of other industrial applications.</li>
+                                </ul>
+                            </div>
                         </div>
                     </Col>
                     <Col lg={12} md={12}>
@@ -62,10 +72,10 @@ const AnimatedStackCards = () => {
                                         key={index}
                                     >
                                         <img src={item.image} alt={item.Title} />
-                                       <div className="ContentContainerCard">
-                                       <h3>{item.Title}</h3>
-                                       <p>{item.Description}</p>
-                                       </div>
+                                        <div className="ContentContainerCard">
+                                            <h1>{item.Title}</h1>
+                                            {/* <p>{item.Description}</p> */}
+                                        </div>
                                     </div>
                                 );
                             })}

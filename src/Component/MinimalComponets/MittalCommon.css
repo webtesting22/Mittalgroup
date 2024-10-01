@@ -305,6 +305,11 @@
   .ContentContainerCard{
     padding: 20px;
   }
+  .ContentContainerCard h1{
+    font-weight: 400;
+    text-align: center
+    ;font-size: 30px;
+  }
 
   @media (max-width:769px){
     .StackContainer{
