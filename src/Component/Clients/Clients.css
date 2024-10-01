@@ -9,13 +9,13 @@
 }
 
 .ClientsContainer img {
-  width: 150px;
-  aspect-ratio: 3/2;
-  margin: 10px;
-  object-fit: contain;
-  /* background-color: white; */
-  border-radius: 4px;
-  transition: 0.5s;
+  width: 80%;
+    aspect-ratio: 3/2;
+    margin: 0px;
+    object-fit: contain;
+    /* background-color: white; */
+    border-radius: 4px;
+    transition: 0.5s;
 }
 
 .ClientsContainer img:hover {
@@ -29,6 +29,9 @@
   margin: 5px;
   transition: 0.5s;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
 }
 
 #ImageContainerLogo:hover {
@@ -41,19 +44,28 @@
   padding: 0rem 3rem;
 }
 @media (max-width: 769px) {
+  .ClientContainerSet{
+    padding: 0rem 0.5rem;
+  }
   #ImageContainerLogo:hover {
     border: 1px solid #e3b80a;
     margin: 0px;
     transition: 0.5s;
   }
   #ImageContainerLogo {
-    width: 49%;
+    width: 100%;
     border: 1px solid rgb(231, 231, 231);
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
   }
 
+  .ClientsContainer .ant-row .ant-col{
+    width: 50%;
+  }
   .ClientsContainer img {
-    width: 100%;
+    width: 70%;
     aspect-ratio: 3/2;
     margin: 0px;
     object-fit: contain;
