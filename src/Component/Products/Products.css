@@ -57,7 +57,9 @@ h2 {
 }
 
 
-
+.productTitle::first-letter{
+    color: #ffcc00;
+}
 .productCard {
     width: 400px;
     background-color: red;

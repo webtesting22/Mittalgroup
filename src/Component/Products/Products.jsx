@@ -1,36 +1,23 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Products.css"
 import Home from "../Home/Home";
-import {Row,Col} from "antd";
+import { Row, Col } from "antd";
 import Productback from "./Productback.jpeg"
 import Productback2 from "./Productback2.jpg"
 import AnimatedStackCards from "../MinimalComponets/AnimatedStackCards";
 const Products = () => {
-    const Images=[Productback,Productback2]
+    const Images = [Productback, Productback2]
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     return (
         <>
-            <Home images={Images}/>
+            <Home images={Images} />
             <br /><br />
-            <AnimatedStackCards/>
+            <AnimatedStackCards />
             <br /><br />
             <div className='processServices AboutUsSection' data-aos="fade-up">
-                <h1>Products And Services</h1>
-                <p>Mittal Sections Limited specialises in the manufacturing and hot re-rolling of a complete
-                    range of Mild Steel Sections, including:
-                </p>
-                <ul>
-                    <li>Flat Bars</li>
-                    <li>Round Bars</li>
-                    <li>Channels</li>
-                    <li>Angles</li>
-                </ul>
-                <br />
-                <p>
-                    <b>These products are manufactured according to IS 2062 standards.</b>
-                </p>
+
                 {/* <div className="productsContainer">
                     <h1>Our Products</h1>
                     <Row>
@@ -51,6 +38,10 @@ const Products = () => {
                 {/* <div > */}
                 <br />
 
+                <div className="productTitle">
+                    <h2>Product Range and Specification</h2>
+                </div>
+                <br />
                 <div id='TableContainers' data-aos="fade-up">
 
                     <div>
