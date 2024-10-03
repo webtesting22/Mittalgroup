@@ -41,7 +41,7 @@ const MittalHomeAbout = () => {
                         <Col lg={12} md={24}>
                             <div className="LeftContentContainer sectionPadding">
                                 <h2><span>B</span>ehind the Brand</h2>
-                                <p>We engineer commitments into high quality products.
+                                {/* <p>We engineer commitments into high quality products.
                                     we do dream, set our own Goals and transmute them
                                     into real engineering projects. Today, AB Mittal Group
                                     of Companies is a benchmark name in the business world as
@@ -49,22 +49,30 @@ const MittalHomeAbout = () => {
                                     a diverse range of business interest starting from cutting
                                     edge manufacturing and trading of structural steel products, Chemicals,
                                     Textiles and Entertainment. Our commitment towards our customers is our pride,
-                                    and our integrity designs the quality of our products.</p>
-                               <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link>
+                                    and our integrity designs the quality of our products.</p> */}
+                                <p>Mittal Sections Limited (MSL) is one of the largest steel rolling mill located at €hangodar,
+                                    Ahmedabad. MSL is into the rolling of complete ranige of MS sections like Angles, Channels, Squares,
+                                    Rounds & Flat bars etc. MSL's quest for excellence through various technologies & quality initiatives
+                                    has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
+                                    organisation we have grown in reserves, profits and customer base, MSL's large talent pool of skilled technicians,
+                                    engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
+                                    self reliant and modern industrial base.</p>
+                                <br />
+                                <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link>
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
                             <div>
                                 <Swiper
                                     direction={'horizontal'}
-                                   
+
                                     autoplay={{
                                         delay: 2000,
                                         disableOnInteraction: false,
                                     }}
-                                    speed={1000} 
+                                    speed={1000}
                                     loop={true}
-                                    modules={[ Autoplay]}
+                                    modules={[Autoplay]}
                                     className="mySwiper"
                                 >
                                     {SliderImages.map((item, index) => (

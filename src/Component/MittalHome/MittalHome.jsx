@@ -8,7 +8,7 @@ const MittalHome = () => {
         <>
             <Home />
             <MittalHomeAbout />
-            <MittalOffice />
+            {/* <MittalOffice /> */}
         </>
     )
 }

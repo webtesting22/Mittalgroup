@@ -139,8 +139,7 @@ const AboutUs = () => {
             <br />
             <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p>
             <br />
-            <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at €hangodar, Ahmedabad. <b>MSL</b> is into the rolling of complete ranige of MS sections like <b>Angles, Channels, Squares, Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives has helped to establish us as one of the largest manufactureres of entire range. Since inception of the organisation we have grown in reserves, profits and customer base, <b>MSL's</b> large talent pool of skilled technicians, engineers & managers enable the delivery of superior quality product helping the organisation to build a strong, self reliant and modern industrial base.</p>
-            <br />
+            
             <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate ofindustrialisation</p>
           </div>
           <br /><br />
@@ -193,7 +192,7 @@ const AboutUs = () => {
             {/* <Collapse accordion defaultActiveKey={['1']} items={items} /> */}
             <div className='MittalValuesCards'>
               {data.map((item, index) => (
-                <div className='ValueCard' data-aos="fade-up"
+                <div className='Card' data-aos="fade-up"
                 data-aos-delay={`${index * 100}`}>
                   <div className='AnimatedCards'>
                     <div className='BlackOverlay'>
