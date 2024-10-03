@@ -46,7 +46,7 @@ const MittalHomeAbout = () => {
                                     edge manufacturing and trading of structural steel products, Chemicals,
                                     Textiles and Entertainment. Our commitment towards our customers is our pride,
                                     and our integrity designs the quality of our products.</p> */}
-                                <p>Mittal Sections Limited (MSL) is one of the largest steel rolling mill located at €hangodar,
+                                <p>Mittal Sections Limited (MSL) is one of the largest steel rolling mill located at Changodar,
                                     Ahmedabad. MSL is into the rolling of complete ranige of MS sections like Angles, Channels, Squares,
                                     Rounds & Flat bars etc. MSL's quest for excellence through various technologies & quality initiatives
                                     has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
