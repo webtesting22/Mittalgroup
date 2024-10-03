@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import DefaultImage from '/images/AbmittalBack.jpeg'; // Default image
 import MittalGroupLogo from "/images/MittalGroupLogo.png";
+import MittalLogo from "/images/MittalLogo.png";
 
 const Home = ({ images = [] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -39,7 +40,7 @@ const Home = ({ images = [] }) => {
           <div className='ImageOverlay'></div>
         </div>
         <div className='MittalGroupLogoContainer'>
-          <Link to="/"><img src={MittalGroupLogo} alt="Mittal Group Logo" /></Link>
+          <Link to="/"><img src={MittalLogo} alt="Mittal Group Logo" /></Link>
         </div>
       </section>
     </>

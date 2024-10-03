@@ -18,7 +18,7 @@ const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const images = [DiffrentTestImage, BackImage]; 
+  const images = [DiffrentTestImage, BackImage];
   const items = [
     {
       key: '1',
@@ -98,9 +98,7 @@ const AboutUs = () => {
     {
       image: cofounder
     },
-    {
-      image: gallery2
-    },
+   
   ]
   const data = [
     {
@@ -139,8 +137,14 @@ const AboutUs = () => {
             <br />
             <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p>
             <br />
-            
-            <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate ofindustrialisation</p>
+            <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
+              Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
+              Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
+              has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
+              organisation we have grown in reserves, profits and customer base, <b>MSL's</b> large talent pool of skilled technicians,
+              engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
+              self reliant and modern industrial base.</p>
+            <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p>
           </div>
           <br /><br />
           <div >
@@ -162,10 +166,10 @@ const AboutUs = () => {
               <Col lg={12} md={24} data-aos="fade-up">
 
                 <div className=" AboutUsParagraph">
-                  <h2>“Realizing dreams, Achieving goals”</h2>
+                  {/* <h2>“Realizing dreams, Achieving goals”</h2>
                   <p>AB Mittal group of companies is one of the fastest growing enterprises in the world. Leading with a global approach AB Mittal group is as diverse as it is dynamic. Ever since its inception in the year 2006, the group has diversifies operations and expanded into various sectors that include Structured Steel Products, Textiles, Entertainment, and Chemicals.</p>
                   <p>Under the leadership of Mr. Atul B. Mittal the C.E.O. & Director of the group and Mr. Ajay B. Mittal, the Chairman, the group has explored new horizons and redefined the pinnacle of success with every milestone they achieved. Over the years, the group has come a long way and added value to the current market setup.</p>
-                  <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p>
+                  <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p> */}
                   <br /><br />
                   <h2>Our Mission:</h2>
                   <p>At Mittal Sections Limited, we strive towards delivering world-class products and services to
@@ -193,7 +197,7 @@ const AboutUs = () => {
             <div className='MittalValuesCards'>
               {data.map((item, index) => (
                 <div className='Card' data-aos="fade-up"
-                data-aos-delay={`${index * 100}`}>
+                  data-aos-delay={`${index * 100}`}>
                   <div className='AnimatedCards'>
                     <div className='BlackOverlay'>
                     </div>
