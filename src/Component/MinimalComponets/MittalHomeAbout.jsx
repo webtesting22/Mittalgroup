@@ -6,31 +6,27 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from 'swiper/modules';
-import SliderImage1 from "./Images/AboutSliderImages/SliderImage1.avif"
-import SliderImage2 from "./Images/AboutSliderImages/SliderImage2.avif"
-import SliderImage3 from "./Images/AboutSliderImages/SliderImage3.jpg";
-import SliderImage4 from "./Images/AboutSliderImages/SliderImage4.jpg"
+import SliderImage1 from "./Images/AboutSliderImages/mittal/angles.jpg"
+import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
+import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
+import SliderImage4 from "./Images/AboutSliderImages/mittal/flatbar.webp"
 const MittalHomeAbout = () => {
     const SliderImages = [
         {
             image: SliderImage4,
-            SwiperTitle: "Steel Melting"
+            SwiperTitle: "Flat Bars"
         },
         {
             image: SliderImage2,
-            SwiperTitle: "Steel Rolling"
+            SwiperTitle: "Round Bars"
         },
         {
             image: SliderImage3,
-            SwiperTitle: "Weaving"
+            SwiperTitle: "Channels"
         },
         {
-            image: SliderImage2,
-            SwiperTitle: "Trading"
-        },
-        {
-            image: SliderImage2,
-            SwiperTitle: "Entertainment"
+            image: SliderImage1,
+            SwiperTitle: "Angles"
         }
     ]
     return (
@@ -81,7 +77,7 @@ const MittalHomeAbout = () => {
                                                 <img src={item.image} alt="" />
                                                 <div className="ContentContainer">
                                                     <h4 className="TitleForSlider">{item.SwiperTitle}</h4>
-                                                    <button className="infoBtn">More Info</button>
+                                                    <Link to="/Products">   <button className="infoBtn">More Info</button></Link>
                                                 </div>
                                             </SwiperSlide>
                                         </div>
