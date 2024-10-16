@@ -98,7 +98,7 @@ const AboutUs = () => {
     {
       image: cofounder
     },
-   
+
   ]
   const data = [
     {
@@ -126,27 +126,33 @@ const AboutUs = () => {
 
   return (
     <>
-      <Home images={images} />
+      {/* <Home images={images} /> */}
       <section className='AboutUsSection'>
         <div className='AboutUsContentContainer'>
           <br /><br />
           <div className='AboutusContainer' data-aos="fade-up">
             <h2>About Us</h2>
-            <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b>
+            {/* <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b> */}
+            <b><i>Our Legacy of Excellence</i></b>
+            {/* <br /> */}
+            {/* <br /> */}
+            {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
             <br />
-            <br />
-            <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p>
-            <br />
-            <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
+            <p>Mittal Sections Limited, founded by Ajay Mittal and Atul Mittal, has grown to become a leader
+              in steel solutions, specializing in the production of high-quality Mild Steel products.
+              Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
+              precision-engineered steel products to key industries such as construction, automotive, and
+              power transmission</p>
+            {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
               Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
-              Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
+                Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
               has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
               organisation we have grown in reserves, profits and customer base, <b>MSL's</b> large talent pool of skilled technicians,
               engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
               self reliant and modern industrial base.</p>
-            <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p>
+            <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
           </div>
-          <br /><br />
+          {/* <br /><br /> */}
           <div >
             <Row>
               <Col lg={12} md={24} data-aos="fade-up">
@@ -170,16 +176,19 @@ const AboutUs = () => {
                   <p>AB Mittal group of companies is one of the fastest growing enterprises in the world. Leading with a global approach AB Mittal group is as diverse as it is dynamic. Ever since its inception in the year 2006, the group has diversifies operations and expanded into various sectors that include Structured Steel Products, Textiles, Entertainment, and Chemicals.</p>
                   <p>Under the leadership of Mr. Atul B. Mittal the C.E.O. & Director of the group and Mr. Ajay B. Mittal, the Chairman, the group has explored new horizons and redefined the pinnacle of success with every milestone they achieved. Over the years, the group has come a long way and added value to the current market setup.</p>
                   <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p> */}
+                  {/* <br /><br /> */}
+                  <h2>Our Vision:</h2>
+                  <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
                   <br /><br />
                   <h2>Our Mission:</h2>
-                  <p>At Mittal Sections Limited, we strive towards delivering world-class products and services to
-                    our clients. Working towards creating tangible solutions by understanding the needs of our
-                    clients and delivering success at every step of the way is at our core.</p>
+                  <p>We strive to deliver world-class products by understanding the needs of our clients and delivering success at every step of the way.
+                  </p>
                   <br /><br />
-                  <h2>Our Vision:</h2>
-                  <p>Empowering our partners with innovative and quality steel solutions as an industry leader,
-                    achieving sustainable growth, and a brighter future for all.</p>
-
+                  {/* <h2>Expertise you can Trust:</h2>
+                  <p>At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can
+                    never return, our word is our bond. We stand by our promises and deliver products that
+                    exceed industry standards. Our commitment to quality, innovation, and sustainability makes
+                    us a trusted partner for industries across Gujarat.</p> */}
                 </div>
               </Col>
             </Row>

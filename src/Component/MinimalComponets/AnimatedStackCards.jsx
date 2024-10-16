@@ -71,7 +71,7 @@ const AnimatedStackCards = () => {
                                             margin: isLastCard ? '20px auto' : '10px auto', // Add margin for the last card
                                         }}
                                         data-aos="fade-up"
-     data-aos-duration="300"
+                                        data-aos-duration="300"
                                         key={index}
                                     >
                                         <img src={item.image} alt={item.Title} />

@@ -12,10 +12,24 @@ const Products = () => {
     }, []);
     return (
         <>
-            <Home images={Images} />
+            {/* <Home images={Images} /> */}
             <br /><br />
             <AnimatedStackCards />
             <br /><br />
+            <div className="productsApplications AboutUsSection">
+                <div>
+                    <h2 className="productTitle">Innovative Steel Solutions</h2>
+                    <p>Our product range includes Flat Bars, Round Bars, Channels, and Angles, all manufactured
+                    in strict compliance with IS 2062 standards. Our products are used in:</p>
+                    <ul>
+                        <li>Building Construction:Reinforcing structures and architectural frameworks.</li>
+                        <li>Automobile and Machinery Building:Vehicle frames and essential structural components.</li>
+                        <li>Pipeline Construction:Oil,gas and water pipelines</li>
+                        <li>Power Transmission:Transmission towers and electrical infrastructure.</li>
+                        <li>Gating and Fencing:Residential and industrial gates and fencing solutions.</li>
+                    </ul>
+                </div>
+            </div>
             <div className='processServices AboutUsSection' data-aos="fade-up">
 
                 {/* <div className="productsContainer">

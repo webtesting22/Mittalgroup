@@ -20,7 +20,7 @@ const Group = () => {
 
   return (
     <>
-      <Home backgroundImage={GroupImagesBack} />
+      {/* <Home backgroundImage={GroupImagesBack} /> */}
       <section className='sectionPadding'>
         <div id='CardContainer'>
           <Row>

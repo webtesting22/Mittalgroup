@@ -9,7 +9,7 @@ const Clients = () => {
     }, []);
     return (
         <>
-            <Home />
+            {/* <Home /> */}
             <br /><br />
             <div className="ClientContainerSet">
                 <div className="sectionHeading">
