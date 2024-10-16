@@ -152,7 +152,6 @@ const AboutUs = () => {
               self reliant and modern industrial base.</p>
             <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
           </div>
-          {/* <br /><br /> */}
           <div >
             <Row>
               <Col lg={12} md={24} data-aos="fade-up">
@@ -202,9 +201,9 @@ const AboutUs = () => {
           <br></br>
           <h3>Expertise You Can Trust</h3>
           <p>
-          At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond. 
-          We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
-           makes us a trusted partner for industries across Gujarat.
+            At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
+            We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
+            makes us a trusted partner for industries across Gujarat.
           </p>
           <br></br>
         </div>
@@ -213,24 +212,27 @@ const AboutUs = () => {
             <h2>Our Values</h2>
             <p> We at Mittal Sections Limited believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
             <br />
-            {/* <Collapse accordion defaultActiveKey={['1']} items={items} /> */}
             <div className='MittalValuesCards'>
-              {data.map((item, index) => (
-                <div className='Card' data-aos="fade-up"
-                  data-aos-delay={`${index * 100}`}>
-                  <div className='AnimatedCards'>
-                    <div className='BlackOverlay'>
+              <Row>
+                {data.map((item, index) => (
+                  <Col lg={6} md={12}>
+                    <div className='Card' data-aos="fade-up"
+                      data-aos-delay={`${index * 100}`}>
+                      <div className='AnimatedCards'>
+                        <div className='BlackOverlay'>
+                        </div>
+                        <img src={item.img} alt="" />
+                        <h4>{item.title}</h4>
+                      </div>
                     </div>
-                    <img src={item.img} alt="" />
-                    <h4>{item.title}</h4>
-                  </div>
-                </div>
-              ))}
+                  </Col>
+                ))}
+              </Row>
             </div>
           </div>
           <br /><br />
         </div>
-        
+
       </section>
 
     </>
