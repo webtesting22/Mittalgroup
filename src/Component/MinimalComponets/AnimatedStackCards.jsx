@@ -14,8 +14,7 @@ const AnimatedStackCards = () => {
             Description: "Description for card 1",
         },
         {
-            image: Roundbars
-            ,
+            image: Roundbars,
             Title: "Round Bars",
             Description: "Description for card 2",
         },
@@ -59,7 +58,7 @@ const AnimatedStackCards = () => {
                     <Col lg={12} md={12}>
                         <div className="StackedCardsContainer">
                             {StackCardContent.map((item, index) => {
-                                const isLastCard = index === StackCardContent.length - 1; // Check if it's the last card
+                                const isLastCard = index === StackCardContent.length -1; // Check if it's the last card
 
                                 return (
                                     <div
@@ -68,7 +67,7 @@ const AnimatedStackCards = () => {
                                             position: isLastCard ? 'relative' : 'sticky', // Use relative for the last card
                                             top: isLastCard ? 'auto' : `${20 + index * 5}%`, // No top positioning for the last card
                                             // Decrease width by 10% for each subsequent card
-                                            margin: isLastCard ? '20px auto' : '10px auto', // Add margin for the last card
+                                            margin: isLastCard ? '20px auto' : '60px auto', // Add margin for the last card
                                         }}
                                         data-aos="fade-up"
                                         data-aos-duration="300"

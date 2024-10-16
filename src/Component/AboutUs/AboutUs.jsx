@@ -197,6 +197,17 @@ const AboutUs = () => {
 
         </div>
         <br /><br />
+        <div>
+          <h2>Why Choose Mittal Sections Limited?</h2>
+          <br></br>
+          <h3>Expertise You Can Trust</h3>
+          <p>
+          At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond. 
+          We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
+           makes us a trusted partner for industries across Gujarat.
+          </p>
+          <br></br>
+        </div>
         <div id='CollapseEdit' >
           <div >
             <h2>Our Values</h2>
@@ -219,7 +230,8 @@ const AboutUs = () => {
           </div>
           <br /><br />
         </div>
-      </section >
+        
+      </section>
 
     </>
   )
