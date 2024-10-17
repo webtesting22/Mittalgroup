@@ -3,7 +3,7 @@ import './ContactUs.css';
 import { Row, Col } from "antd"
 import { Button, Checkbox, Form, Input } from 'antd';
 import Home from '../Home/Home';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 const { TextArea } = Input;
 
