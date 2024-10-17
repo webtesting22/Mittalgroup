@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './ContactUs.css';
 import { Row, Col } from "antd"
 import { Button, Checkbox, Form, Input } from 'antd';
@@ -8,6 +8,9 @@ import Home from '../Home/Home';
 const { TextArea } = Input;
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -31,9 +34,9 @@ const ContactUs = () => {
             <div className="contact-details">
               <h1>Contact Details</h1>
               <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009, Gujarat – India</a></p>
-              <p className="address"><b>Unit I: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
+              <p className="address"><b>Unit I: </b><a href="" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
                 AHMEDABAD -380009, GUJARAT – INDIA</a></p>
-              <p className="address"><b>Unit II: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
+              <p className="address"><b>Unit II: </b><a href="" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
                 AHMEDABAD -380009, GUJARAT – INDIA</a></p>
               <p><b>Phone:</b><a href="tel:+917926405484">+917926405484</a>,
                 <a href="tel:+917926406484">+917926406484</a>
