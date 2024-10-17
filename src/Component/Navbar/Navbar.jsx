@@ -21,7 +21,7 @@ const Navbar = () => {
     { link: "Products", path: "/Products" },
     { link: "Clients", path: "/Clients" },
     // { link: "Gallery"},
-    // { link: "Contact Us" },
+    { link: "Contact Us", path: "/ContactUs" },
   ];
 
   return (
@@ -42,13 +42,13 @@ const Navbar = () => {
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           <div className="overlayBackImage">
-              <img src={NavigationBackImage} alt="" />
+            <img src={NavigationBackImage} alt="" />
           </div>
           <ul>
             {NavigationLinks.map((item, index) => (
               <div key={index} style={{ margin: "20px 0px", position: "relative", display: "flex", alignItems: "center" }}>
                 <div className="MittalShape">
-                
+
                 </div>
                 <div>
                   <Link to={item.path} onClick={hideNav}>{item.link}</Link>
