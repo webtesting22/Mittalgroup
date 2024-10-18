@@ -74,6 +74,10 @@ const MittalHomeAbout = () => {
                                             className="accordionListItem"
                                             key={index}
                                             onClick={() => handleSectionClick(section)}
+                                            style={{
+                                                backgroundColor: selectedSection.title === section.title ? "rgb(240,240,240,0.8)" : "white",
+
+                                            }}
                                         >
                                             <div className="titleContainer">
                                                 {/* Title of the section */}
@@ -85,6 +89,7 @@ const MittalHomeAbout = () => {
                                                 <p
                                                     className={`description ${isDescriptionVisible ? "fadeIn" : ""}`}>
                                                     {section.description}
+                                                    
                                                 </p>
                                             )}
                                         </li>
