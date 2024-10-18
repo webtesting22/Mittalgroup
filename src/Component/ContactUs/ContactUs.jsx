@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './ContactUs.css';
 import { Row, Col } from "antd"
 import { Button, Checkbox, Form, Input } from 'antd';
@@ -10,7 +10,7 @@ const { TextArea } = Input;
 const ContactUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -33,13 +33,13 @@ const ContactUs = () => {
           <Col lg={12} xs={24} >
             <div className="contact-details">
               <h1>Contact Details</h1>
-              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009, Gujarat – India</a></p>
-              <p className="address"><b>Unit I: </b><a href="" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
-                AHMEDABAD -380009, GUJARAT – INDIA</a></p>
-              <p className="address"><b>Unit II: </b><a href="" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar ,
-                AHMEDABAD -380009, GUJARAT – INDIA</a></p>
-              <p><b>Phone:</b><a href="tel:+917926405484">+917926405484</a>,
-                <a href="tel:+917926406484">+917926406484</a>
+              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
+              <p className="address"><b>Unit I: </b><a href="" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
+              <p className="address"><b>Unit II: </b><a href="" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
+              <p>
+              <b>Phone:</b><a href='tel:9909905484'>9909905484</a>
+              {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
+                {/* <a href="tel:+917926406484">+917926406484</a> */}
               </p>
               <p><b>Mail:</b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
             </div>
@@ -72,7 +72,7 @@ const ContactUs = () => {
                   rules={[
                     {
                       required: true,
-                      message: 'Please input your username!',
+                      message: 'Please write your username!',
                     },
                   ]}
                 >
@@ -85,7 +85,7 @@ const ContactUs = () => {
                   rules={[
                     {
                       required: true,
-                      message: 'Please input your email!',
+                      message: 'Please write your email!',
                     },
                   ]}
                 >
@@ -96,7 +96,7 @@ const ContactUs = () => {
                   name="Subject"
                   rules={[{
                     required: true,
-                    message: "Please input some subject!"
+                    message: "Please write subject!"
                   }]}
                 >
                   <Input />
@@ -112,7 +112,7 @@ const ContactUs = () => {
 
                 <Form.Item
                   wrapperCol={{
-                    offset:0,
+                    offset: 0,
                     span: 16,
                   }}
                 >

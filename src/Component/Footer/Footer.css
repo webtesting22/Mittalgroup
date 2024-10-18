@@ -9,5 +9,17 @@
     text-align: center;
 }
 .FooterContainer>div{
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
+.MittalFooterLogoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.MittalFooterLogoContainer img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+

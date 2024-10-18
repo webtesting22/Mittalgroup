@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Button } from "antd";
 import "./MittalCommon.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,31 +11,37 @@ import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
 import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
 import SliderImage4 from "./Images/AboutSliderImages/mittal/flatbar.webp"
 const MittalHomeAbout = () => {
-    const SliderImages = [
-        {
-            image: SliderImage4,
-            SwiperTitle: "Flat Bars"
-        },
-        {
-            image: SliderImage2,
-            SwiperTitle: "Round Bars"
-        },
-        {
-            image: SliderImage3,
-            SwiperTitle: "Channels"
-        },
-        {
-            image: SliderImage1,
-            SwiperTitle: "Angles"
-        }
-    ]
+    const sections = [
+        { title: "Flat Bars", image: SliderImage4, description: "Ideal for construction, fabrication, and manufacturing, our flat bars offer strength and versatility for a variety of applications." },
+        { title: "Round Bars", image: SliderImage2, description: "Precision-engineered for durability, our round bars are perfect for machining, forging, and structural use." },
+        { title: "Channels", image: SliderImage3, description: "Our steel channels provide excellent support and stability, commonly used in building frameworks and heavy-duty construction projects." },
+        { title: "Angles", image: SliderImage1, description: "Sturdy and reliable, our steel angles are designed for structural support, reinforcement, and a wide range of other industrial applications." }
+    ];
+
+    // Set the default section to "Flat Bars"
+    const [selectedSection, setSelectedSection] = useState(sections[0]);
+    const [isDescriptionVisible, setIsDescriptionVisible] = useState(true);
+    const [isImageVisible, setIsImageVisible] = useState(true);
+    // Handler for selecting a section
+    const handleSectionClick = (section) => {
+        setIsDescriptionVisible(false); // Hide description immediately
+        setIsImageVisible(false); // Hide image immediately
+
+        setTimeout(() => {
+            setSelectedSection(section); // Change selected section
+            setIsDescriptionVisible(true); // Show description after delay
+            setIsImageVisible(true); // Show image after delay
+        }, 10); // Delay in milliseconds (adjust as needed)
+    };
     return (
         <>
             <section>
                 <div >
                     <Row>
                         <Col lg={12} md={24}>
-                            <div className="LeftContentContainer sectionPadding">
+                            <div className="LeftContentContainer"
+                            //  data-aos="fade-up" data-aos-duration="1000"
+                            >
                                 <h2><span>B</span>ehind the Brand</h2>
                                 {/* <p>We engineer commitments into high quality products.
                                     we do dream, set our own Goals and transmute them
@@ -60,10 +66,48 @@ const MittalHomeAbout = () => {
                                     contribute to the growth of our partners.
                                 </p>
                                 <br />
-                                <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link>
+                                {/* <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link> */}
+                                {/* <h2><span>O</span>ur Products</h2> */}
+                                <ul style={{ listStyleType: "none", padding: 0 }}>
+                                    {sections.map((section, index) => (
+                                        <li
+                                            className="accordionListItem"
+                                            key={index}
+                                            onClick={() => handleSectionClick(section)}
+                                        >
+                                            <div className="titleContainer">
+                                                {/* Title of the section */}
+                                                <span>{section.title}</span>
+                                                <i class='bx bx-chevron-down'></i>
+                                            </div>
+                                            {/* Show description only for the selected section */}
+                                            {selectedSection.title === section.title && (
+                                                <p
+                                                    className={`description ${isDescriptionVisible ? "fadeIn" : ""}`}>
+                                                    {section.description}
+                                                </p>
+                                            )}
+                                        </li>
+
+                                    ))}
+
+                                </ul>
                             </div>
+
+
                         </Col>
                         <Col lg={12} md={24}>
+                            <div className={`AccordionImageContainer ${isImageVisible ? "fadeIn" : ""}`}>
+                                <img
+                                    src={selectedSection.image}
+                                    alt={selectedSection.title}
+
+                                />
+                                <Link to="/Products"> <button className="MittalCommonBtn">Read More</button></Link>
+
+                            </div>
+                        </Col>
+                        {/* <Col lg={12} md={24}>
                             <div>
                                 <Swiper
                                     direction={'horizontal'}
@@ -92,7 +136,7 @@ const MittalHomeAbout = () => {
                                     ))}
                                 </Swiper>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </div>
             </section>
