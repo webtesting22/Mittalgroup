@@ -47,13 +47,15 @@
 .AboutUsimagesStyle {
     padding-right: 2rem;
 }
-.AboutUsParagraph{
+
+.AboutUsParagraph {
     display: flex;
     justify-content: center;
     height: 100%;
     flex-direction: column;
 }
-.AboutUsParagraph div{
+
+.AboutUsParagraph div {
     margin: 20px 0px;
 }
 
@@ -81,12 +83,12 @@
 }
 
 .AboutUsSection {
-    padding: 0rem 3rem;
+    padding: 2rem 3rem;
 }
 
 @media (min-width:1300px) and (max-width:3000px) {
     .AboutUsSection {
-        padding: 0rem 9rem;
+        padding: 2rem 9rem;
     }
 }
 
@@ -253,20 +255,24 @@
     /* color: #ffcc00; */
     color: #9aa924;
 }
-.AboutusContainer h2{
+
+.AboutusContainer h2 {
     font-size: 40px;
 }
 
-#CollapseEdit{
+#CollapseEdit {
     padding: 2rem 0rem;
 }
-.AboutUsContentContainer{
+
+.AboutUsContentContainer {
     padding: 2rem 0rem;
 }
+
 @media (max-width:576px) {
-.AboutUsimagesStyle{
-    padding: 0px;
-}
+    .AboutUsimagesStyle {
+        padding: 0px;
+    }
+
     .AnimatedCards:last-child,
     .AnimatedCards:first-child {
         margin-right: 10px;
@@ -305,7 +311,7 @@
     }
 
     .AboutUsSection {
-        padding: 0rem 1rem;
+        padding: 2rem 1rem;
     }
 
     #TableContainers {

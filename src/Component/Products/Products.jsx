@@ -12,11 +12,12 @@ const Products = () => {
     }, []);
     return (
         <>
-            {/* <Home images={Images} /> */}
+            <section id="ProductPage">
+      
             <br /><br />
             <AnimatedStackCards />
-            <br /><br />
-            <div className="productsApplications AboutUsSection">
+            <hr />
+            <div className="productsApplications ">
                 <div>
                     <h2 className="productTitle">Innovative Steel Solutions</h2>
                     <p>Our product range includes Flat Bars, Round Bars, Channels, and Angles, all manufactured
@@ -30,7 +31,8 @@ const Products = () => {
                     </ul>
                 </div>
             </div>
-            <div className='processServices AboutUsSection' data-aos="fade-up">
+            <hr />
+            <div className='processServices ' data-aos="fade-up">
 
                 {/* <div className="productsContainer">
                     <h1>Our Products</h1>
@@ -50,7 +52,6 @@ const Products = () => {
                     </Row>
                 </div> */}
                 {/* <div > */}
-                <br />
 
                 <div className="productTitle">
                     <h2>Product Range and Specification</h2>
@@ -325,41 +326,39 @@ const Products = () => {
                 </div>
                 <div>
                     <h2>Manufacturing and Operations</h2>
-                    <br></br>
                     <h4>Precision Manufacturing for Excellence</h4>
                     <p>At Mittal Sections Limited, we operate two fully equipped manufacturing units in Changodar,
-                     Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
-                     allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in 
-                     our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.</p>
+                        Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
+                        allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
+                        our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.</p>
 
-                    <p>We follow the <b>5S manufacturing methodology</b>—Sort, Straighten, Shine, Standardize, and Sustain—to 
-                    optimize efficiency and maintain an organized, high-performance production environment.</p>
+                    <p>We follow the <b>5S manufacturing methodology</b>—Sort, Straighten, Shine, Standardize, and Sustain—to
+                        optimize efficiency and maintain an organized, high-performance production environment.</p>
                     <br></br>
                     <h4>Energy Efficiency and Sustainable Operations</h4>
-                    <p>Our setup utilizes coal-fueled furnaces, and to enhance our energy efficiency, we have integrated  
-                    <b> coal gas recuperators.</b> These recuperators capture and reuse waste heat from the furnace, significantly 
-                    reducing coal consumption and overall energy use. By recuperating heat that would otherwise be lost, we 
-                    contribute to both energy conservation and cost efficiency, aligning with our eco-friendly practices. 
-                    This system allows us to reduce our environmental impact while maintaining efficient production processes.</p>
+                    <p>Our setup utilizes coal-fueled furnaces, and to enhance our energy efficiency, we have integrated
+                        <b> coal gas recuperators.</b> These recuperators capture and reuse waste heat from the furnace, significantly
+                        reducing coal consumption and overall energy use. By recuperating heat that would otherwise be lost, we
+                        contribute to both energy conservation and cost efficiency, aligning with our eco-friendly practices.
+                        This system allows us to reduce our environmental impact while maintaining efficient production processes.</p>
                     <br></br>
                     <h4>Testing and Quality Assurance</h4>
-                    <p>Our commitment to quality is uncompromising. Every batch of finished goods is tested for its mechanical and 
-                    chemical properties to ensure consistent quality. We are an ISI-certified and BIS-approved manufacturer, committed 
-                    to meeting the highest industry standards.</p>
+                    <p>Our commitment to quality is uncompromising. Every batch of finished goods is tested for its mechanical and
+                        chemical properties to ensure consistent quality. We are an ISI-certified and BIS-approved manufacturer, committed
+                        to meeting the highest industry standards.</p>
                     <br></br>
                 </div>
                 <div>
                     <h2>Sustainability and Recycling Practices</h2>
-                    <br></br>
                     <h4>Commitment and Sustainability</h4>
-                    <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings, 
-                    repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil 
-                    combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental 
-                    impact while promoting the efficient use of resources.</p>
+                    <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings,
+                        repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil
+                        combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental
+                        impact while promoting the efficient use of resources.</p>
                     <br></br>
                 </div>
             </div>
-
+            </section>
         </>
     )
 }

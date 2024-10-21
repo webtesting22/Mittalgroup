@@ -186,15 +186,12 @@
   position: sticky;
   top: 10%;
 }
-
-.AnimatedStackCards {
-  padding: 0rem 9rem;
+.AnimatedStackCards{
+  padding: 2rem 0rem;
 }
 
+
 @media (max-width: 769px) {
-  .AnimatedStackCards {
-    padding: 0rem 1rem;
-  }
 
   #StickyColumn {
     position: static;
@@ -254,7 +251,7 @@
 .AnimatedStackCard {
   /* height: 30vh; */
   background-color: red;
-  width: 70%;
+  width: 100%;
   margin: 10px;
 }
 
@@ -303,18 +300,29 @@
 .StackContainer h2::first-letter {
   color: #9aa924;
 }
-
+.StackContainer h2{
+  font-size: 40px ;
+}
 .ContentContainerCard {
   padding: 20px;
 }
 
-.ContentContainerCard h1 {
+.ContentContainerCard h2 {
   font-weight: 400;
   text-align: center;
-  font-size: 30px;
 }
 
 @media (max-width: 769px) {
+  .AnimatedStackCard {
+    width: 100%;
+    /* padding: 20px; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    /* Adjust card styling */
+  }
   .StackContainer {
     position: sticky;
     top: 30%;

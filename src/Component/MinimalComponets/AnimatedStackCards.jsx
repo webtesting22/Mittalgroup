@@ -75,7 +75,7 @@ const AnimatedStackCards = () => {
                                     >
                                         <img src={item.image} alt={item.Title} />
                                         <div className="ContentContainerCard">
-                                            <h1>{item.Title}</h1>
+                                            <h2>{item.Title}</h2>
                                             {/* <p>{item.Description}</p> */}
                                         </div>
                                     </div>

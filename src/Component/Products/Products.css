@@ -46,7 +46,22 @@ h2 {
 #TableContainers>div h4 {
     margin-bottom: 10px;
 }
-@media (max-width:769px){
+.productsApplications {
+    padding: 2rem 0rem;
+}
+#ProductPage{
+    padding: 0rem 9rem;
+}
+.processServices{
+    padding: 2rem 0rem;
+}
+@media  (max-width:769px){
+    table{
+        width: 100% !important;
+    }
+    #ProductPage{
+        padding: 0rem 1rem;
+    }
     #TableContainers>div {
         width: 100%;
     }
@@ -54,6 +69,10 @@ h2 {
         margin-bottom: 10px;
         text-align: center;
     }
+    #processServices{
+        padding: 2rem 0rem;
+    }
+    
     
 }
 
@@ -67,4 +86,5 @@ h2 {
     margin: 10px;
     padding: 10px;
 }
+
 
