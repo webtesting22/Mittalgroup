@@ -33,7 +33,7 @@ const ContactUs = () => {
           <Col lg={12} xs={24} >
             <div className="contact-details">
               <h1>Contact Details</h1>
-              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
+              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
               <p className="address"><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
               <p className="address"><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
               <p>
