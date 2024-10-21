@@ -25,7 +25,7 @@ const Products = () => {
                         <ul>
                             <li>Building Construction: Reinforcing structures and architectural frameworks.</li>
                             <li>Automobile and Machinery Building: Vehicle frames and essential structural components.</li>
-                            <li>Pipeline Construction: Oil,gas and water pipelines</li>
+                            <li>Pipeline Construction: Oil, gas and water pipelines.</li>
                             <li>Power Transmission: Transmission towers and electrical infrastructure.</li>
                             <li>Gating and Fencing: Residential and industrial gates and fencing solutions.</li>
                         </ul>
