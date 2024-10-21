@@ -23,11 +23,11 @@ const Products = () => {
                         <p>Our product range includes Flat Bars, Round Bars, Channels, and Angles, all manufactured
                             in strict compliance with IS 2062 standards. Our products are used in:</p>
                         <ul>
-                            <li>Building Construction:Reinforcing structures and architectural frameworks.</li>
-                            <li>Automobile and Machinery Building:Vehicle frames and essential structural components.</li>
-                            <li>Pipeline Construction:Oil,gas and water pipelines</li>
-                            <li>Power Transmission:Transmission towers and electrical infrastructure.</li>
-                            <li>Gating and Fencing:Residential and industrial gates and fencing solutions.</li>
+                            <li>Building Construction: Reinforcing structures and architectural frameworks.</li>
+                            <li>Automobile and Machinery Building: Vehicle frames and essential structural components.</li>
+                            <li>Pipeline Construction: Oil,gas and water pipelines</li>
+                            <li>Power Transmission: Transmission towers and electrical infrastructure.</li>
+                            <li>Gating and Fencing: Residential and industrial gates and fencing solutions.</li>
                         </ul>
                     </div>
                 </div>
