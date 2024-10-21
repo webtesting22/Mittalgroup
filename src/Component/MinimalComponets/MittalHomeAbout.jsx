@@ -9,7 +9,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import SliderImage1 from "./Images/AboutSliderImages/mittal/angles.jpg"
 import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
 import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
-import SliderImage4 from "./Images/AboutSliderImages/mittal/flatbar.webp"
+import SliderImage4 from "./Flatbar.webp"
 const MittalHomeAbout = () => {
     const sections = [
         { title: "Flat Bars", image: SliderImage4, description: "Ideal for construction, fabrication, and manufacturing, our flat bars offer strength and versatility for a variety of applications." },

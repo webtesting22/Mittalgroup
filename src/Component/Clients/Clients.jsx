@@ -13,7 +13,7 @@ const Clients = () => {
             <br /><br />
             <div className="ClientContainerSet">
                 <div className="sectionHeading">
-                    <h2 style={{fontSize:"40px"}}>
+                    <h2 style={{ fontSize: "40px" }}>
                         Our Clients
                     </h2>
                 </div>
