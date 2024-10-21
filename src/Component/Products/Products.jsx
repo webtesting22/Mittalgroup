@@ -329,7 +329,7 @@ const Products = () => {
                             <h2>Manufacturing and Operations</h2>
                         </div>
 
-                        <h4>Precision Manufacturing for Excellence</h4>
+                        <h4 style={{marginTop:"1rem"}}>Precision Manufacturing for Excellence</h4>
                         <p>At Mittal Sections Limited, we operate two fully equipped manufacturing units in Changodar,
                             Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
                             allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
@@ -355,7 +355,7 @@ const Products = () => {
                         <div className="productTitle">
                             <h2>Sustainability and Recycling Practices</h2>
                         </div>
-                        <h4>Commitment and Sustainability</h4>
+                        <h4 style={{marginTop:"1rem"}}>Commitment and Sustainability</h4>
                         <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings,
                             repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil
                             combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental
