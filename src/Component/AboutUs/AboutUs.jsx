@@ -143,7 +143,7 @@ const AboutUs = () => {
               in steel solutions, specializing in the production of high-quality Mild Steel products.
               Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
               precision-engineered steel products to key industries such as construction, automotive, and
-              power transmission</p>
+              power transmission.</p>
             {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
               Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
                 Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
