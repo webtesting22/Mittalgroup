@@ -47,14 +47,14 @@
 .AboutUsimagesStyle {
     padding-right: 2rem;
 }
-
-.AboutUsParagraph p {
-
-    padding: 4px 0;
+.AboutUsParagraph{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
 }
-
-.AboutUsParagraph h4 {
-    padding: 10px 0;
+.AboutUsParagraph div{
+    margin: 20px 0px;
 }
 
 .valueCard {
@@ -253,10 +253,20 @@
     /* color: #ffcc00; */
     color: #9aa924;
 }
+.AboutusContainer h2{
+    font-size: 40px;
+}
 
-
+#CollapseEdit{
+    padding: 2rem 0rem;
+}
+.AboutUsContentContainer{
+    padding: 2rem 0rem;
+}
 @media (max-width:576px) {
-
+.AboutUsimagesStyle{
+    padding: 0px;
+}
     .AnimatedCards:last-child,
     .AnimatedCards:first-child {
         margin-right: 10px;
@@ -314,7 +324,7 @@
     }
 
     .AboutUsimagesStyle {
-        padding: 2rem 0.5rem !important;
+        padding: 0px;
     }
 
     .AboutUsimagesStyle>div {

@@ -58,7 +58,7 @@ const AnimatedStackCards = () => {
                     <Col lg={12} md={12}>
                         <div className="StackedCardsContainer">
                             {StackCardContent.map((item, index) => {
-                                const isLastCard = index === StackCardContent.length -1; // Check if it's the last card
+                                const isLastCard = index === StackCardContent.length - 1; // Check if it's the last card
 
                                 return (
                                     <div

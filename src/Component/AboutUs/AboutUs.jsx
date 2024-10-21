@@ -152,7 +152,7 @@ const AboutUs = () => {
               self reliant and modern industrial base.</p>
             <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
           </div>
-          <div >
+          <div style={{ marginBottom: "20px" }}>
             <Row>
               <Col lg={12} md={24} data-aos="fade-up">
                 <div className=" AboutUsimagesStyle">
@@ -176,13 +176,17 @@ const AboutUs = () => {
                   <p>Under the leadership of Mr. Atul B. Mittal the C.E.O. & Director of the group and Mr. Ajay B. Mittal, the Chairman, the group has explored new horizons and redefined the pinnacle of success with every milestone they achieved. Over the years, the group has come a long way and added value to the current market setup.</p>
                   <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p> */}
                   {/* <br /><br /> */}
-                  <h2>Our Vision:</h2>
-                  <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
-                  <br /><br />
-                  <h2>Our Mission:</h2>
-                  <p>We strive to deliver world-class products by understanding the needs of our clients and delivering success at every step of the way.
-                  </p>
-                  <br /><br />
+                  <div>
+                    <h2>Our Vision:</h2>
+                    <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
+
+                  </div>
+                  <div>
+                    <h2>Our Mission:</h2>
+                    <p>We strive to deliver world-class products by understanding the needs of our clients and delivering success at every step of the way.
+                    </p>
+                  </div>
+
                   {/* <h2>Expertise you can Trust:</h2>
                   <p>At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can
                     never return, our word is our bond. We stand by our promises and deliver products that
@@ -193,20 +197,22 @@ const AboutUs = () => {
             </Row>
           </div>
 
+          <div>
 
+            <h2>Why Choose Mittal Sections Limited?</h2>
+            <h3>Expertise You Can Trust</h3>
+            <p>
+              At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
+              We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
+              makes us a trusted partner for industries across Gujarat.
+            </p>
+
+          </div>
         </div>
-        <br /><br />
-        <div>
-          <h2>Why Choose Mittal Sections Limited?</h2>
-          <br></br>
-          <h3>Expertise You Can Trust</h3>
-          <p>
-            At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
-            We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
-            makes us a trusted partner for industries across Gujarat.
-          </p>
-          <br></br>
-        </div>
+
+
+
+        <hr />
         <div id='CollapseEdit' >
           <div >
             <h2>Our Values</h2>

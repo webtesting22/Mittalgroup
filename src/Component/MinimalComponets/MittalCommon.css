@@ -1,19 +1,19 @@
 .LeftContentContainer {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  padding: 1rem 0rem !important;
+  /* padding: 1rem 0rem !important; */
 }
 
 .LeftContentContainer h2::first-letter {
   /* color: #ffcc00; */
   color: #9aa966;
+
 }
-.LeftContentContainer h2 {
-  padding: 10px 20px;
+.LeftContentContainer h2{
+  font-size: 40px;
 }
-.LeftContentContainer p {
-  padding: 10px 20px;
-}
+
+
 .SwiperImageContainer {
   height: 100%;
   width: 100%;
@@ -181,21 +181,26 @@
 .AddressAdjustContainer {
   display: flex;
 }
+
 #StickyColumn {
   position: sticky;
   top: 10%;
 }
+
 .AnimatedStackCards {
   padding: 0rem 9rem;
 }
+
 @media (max-width: 769px) {
   .AnimatedStackCards {
     padding: 0rem 1rem;
   }
+
   #StickyColumn {
     position: static;
     top: 10%;
   }
+
   .MapContainer {
     margin-top: 50px;
   }
@@ -240,7 +245,7 @@
     /* flex-direction: column; */
   }
 
-  .MittalAdressContainer > div {
+  .MittalAdressContainer>div {
     width: 100%;
     margin: auto;
   }
@@ -252,6 +257,7 @@
   width: 70%;
   margin: 10px;
 }
+
 .AnimatedstackCards {
   display: flex;
   align-items: center;
@@ -297,9 +303,11 @@
 .StackContainer h2::first-letter {
   color: #9aa924;
 }
+
 .ContentContainerCard {
   padding: 20px;
 }
+
 .ContentContainerCard h1 {
   font-weight: 400;
   text-align: center;
@@ -317,43 +325,49 @@
     /* height: 100% ; */
   }
 }
+
 .AccordionImageContainer {
   width: 100%;
   /* height: 100%; */
 }
+
 .AccordionImageContainer img {
   aspect-ratio: 3/2;
   width: 100%;
   object-fit: contain;
 }
-.accordionListItem {
-  margin-bottom: 10px;
-  transition: all 0.4s;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
-  font-weight: 700;
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
+
 .fadeIn {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
-.accordionListItem .description{
+
+.accordionListItem {
+  padding: 15px 0px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.156);
+}
+
+.accordionListItem .description {
   padding: 5px 0;
   font-weight: 400;
+  transition: opacity 2s ease, max-height 2s ease;
 }
-.accordionListItem i{
+
+.accordionListItem i {
   font-size: 1.4rem;
 }
-.accordionListItem:hover{
-  padding: 15px 20px;
-}
-.titleContainer{
+
+.titleContainer {
   display: flex;
   justify-content: space-between;
 }
+
+.titleContainer span {
+  color: black;
+  font-weight: 600;
+}
+
 .AccordionImageContainer {
   opacity: 0;
   text-align: center;
@@ -362,4 +376,12 @@
 .AccordionImageContainer.fadeIn {
   opacity: 1;
   transition: opacity 0.1s ease-in-out;
+}
+
+.AboutUsContainer {
+  padding: 2rem 2rem;
+}
+
+.LeftContentContainer {
+  padding-right: 2rem;
 }

@@ -35,7 +35,7 @@ const MittalHomeAbout = () => {
     };
     return (
         <>
-            <section>
+            <section className="AboutUsContainer">
                 <div >
                     <Row>
                         <Col lg={12} md={24}>
@@ -66,8 +66,7 @@ const MittalHomeAbout = () => {
                                     contribute to the growth of our partners.
                                 </p>
                                 <br />
-                                {/* <Link to="/AboutUs"> <button className="MittalCommonBtn">Read More</button></Link> */}
-                                {/* <h2><span>O</span>ur Products</h2> */}
+
                                 <ul style={{ listStyleType: "none", padding: 0 }}>
                                     {sections.map((section, index) => (
                                         <li
@@ -75,27 +74,20 @@ const MittalHomeAbout = () => {
                                             key={index}
                                             onClick={() => handleSectionClick(section)}
                                             style={{
-                                                backgroundColor: selectedSection.title === section.title ? "rgb(240,240,240,0.8)" : "white",
-
+                                                backgroundColor: selectedSection.title === section.title ? "" : "white",
                                             }}
                                         >
                                             <div className="titleContainer">
-                                                {/* Title of the section */}
-                                                <span>{section.title}</span>
-                                                <i class='bx bx-chevron-down'></i>
+                                                <h3>{section.title}</h3>
+                                                <i className='bx bx-chevron-down'></i>
                                             </div>
-                                            {/* Show description only for the selected section */}
                                             {selectedSection.title === section.title && (
-                                                <p
-                                                    className={`description ${isDescriptionVisible ? "fadeIn" : ""}`}>
+                                                <p className={`description ${isDescriptionVisible ? "fadeIn" : ""}`}>
                                                     {section.description}
-                                                    
                                                 </p>
                                             )}
                                         </li>
-
                                     ))}
-
                                 </ul>
                             </div>
 

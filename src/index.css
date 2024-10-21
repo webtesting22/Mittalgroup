@@ -85,7 +85,7 @@ body {
   /* scroll-behavior: smooth; */
 }
 
-a {
+p,a {
   text-decoration: none;
   color: inherit;
   font-family: "Poppins", sans-serif;
@@ -95,7 +95,7 @@ li {
   font-family: "Poppins", sans-serif;
 }
 
-p,
+
 h1,
 h2,
 h3,
@@ -104,6 +104,8 @@ h5,
 h6 {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: black;
 }
 
 @keyframes fadeIn {
