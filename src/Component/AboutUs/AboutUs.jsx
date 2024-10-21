@@ -14,6 +14,7 @@ import Home from '../Home/Home'
 import BackImage from "./BackImage.jpeg"
 import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
+import MittalGallllery from '../Mittalgallery/MittalGallery';
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -236,7 +237,10 @@ const AboutUs = () => {
               </Row>
             </div>
           </div>
-          <br /><br />
+        </div>
+        <hr />
+        <div>
+          <MittalGallllery />
         </div>
 
       </section>
