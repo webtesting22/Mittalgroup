@@ -1,35 +1,56 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
-import NavigationBackImage from "./navigation.jpg"
+import NavigationBackImage from "./navigation.jpg";
 import MittalLogo from "/images/MittalLogo.png";
+
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
+
   const hideNav = () => {
     setIsNavVisible(false);
   };
 
+  // Track scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const NavigationLinks = [
     { link: "Home", path: "/" },
     { link: "About Us", path: "/AboutUs" },
-    {link:"Gallery",path:"/Gallery"},
-    // { link: "Group Companies", path: "/Group" },
+    { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
     { link: "Clients", path: "/Clients" },
-    // { link: "Gallery"},
     { link: "Contact Us", path: "/ContactUs" },
   ];
 
   return (
     <>
-      <section className="MittalNavigationContainer">
-        <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+      <section className={`MittalNavigationContainer ${isScrolled ? "redBackground" : "transparent"}`}>
+        <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div className="logoContainer">
+            <img src={MittalLogo} alt="Mittal Logo" />
+          </div>
           <button onClick={toggleNav}>
             {isNavVisible ? (
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -44,16 +65,24 @@ const Navbar = () => {
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           <div className="overlayBackImage">
-            <img src={NavigationBackImage} alt="" />
+            <img src={NavigationBackImage} alt="Navigation Background" />
           </div>
           <ul>
             {NavigationLinks.map((item, index) => (
-              <div key={index} style={{ margin: "20px 0px", position: "relative", display: "flex", alignItems: "center" }}>
-                <div className="MittalShape">
-
-                </div>
+              <div
+                key={index}
+                style={{
+                  margin: "20px 0px",
+                  position: "relative",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <div className="MittalShape"></div>
                 <div>
-                  <Link to={item.path} onClick={hideNav}>{item.link}</Link>
+                  <Link to={item.path} onClick={hideNav}>
+                    {item.link}
+                  </Link>
                   <hr />
                 </div>
               </div>

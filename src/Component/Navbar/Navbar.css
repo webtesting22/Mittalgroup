@@ -11,15 +11,38 @@
   overflow: hidden;
   backdrop-filter: blur(47px);
 }
-.MittalNavigationContainer{
+
+/* Navbar.css */
+.MittalNavigationContainer {
   position: fixed;
   z-index: 555555;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  transition: background-color 0.3s ease;
 }
+
+.transparent {
+  background-color: transparent;
+  padding: 20px 0px;
+  transition: .5s;
+}
+
+.redBackground {
+  background-color: rgba(0, 0, 0, 0.51);
+  backdrop-filter: blur(20px);
+  padding: 5px 0px;
+ transition: .5s;
+}
+
+
 .navigationPanel.show {
   height: 100vh;
   transition: 0.5s;
   z-index: 9;
   position: fixed;
+  top: 0px;
   /* Slides in */
 }
 
@@ -33,7 +56,7 @@
 }
 
 .MittalNavigationContainer button {
-  position: fixed;
+  /* position: fixed; */
   cursor: pointer;
   background-color: black;
   border: none;
@@ -87,7 +110,8 @@
   rotate: -45deg;
   left: 0px;
 }
-.overlayBackImage img{
+
+.overlayBackImage img {
   width: 100%;
   position: absolute;
   top: 0px;
@@ -96,8 +120,17 @@
   opacity: 0.1;
 }
 
+.logoContainer img {
+  width: 150px;
+}
+
 @media (max-width:798px) {
-  .overlayBackImage img{
+  .transparent {
+    background-color: transparent;
+    padding: 0px 0px;
+    transition: .5s;
+  }
+  .overlayBackImage img {
     width: 100%;
     position: absolute;
     top: 0px;
@@ -105,7 +138,7 @@
     height: 100vh;
     opacity: 0;
   }
-  
+
   .navigationPanel a {
     list-style: none;
     font-size: 25px;

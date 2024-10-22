@@ -64,7 +64,7 @@ const MittalHomePage = () => {
                 <div className="MittalProductsCards">
                     {CardsContent.map((item, index) => (
                         <div className="RowAdjust" key={index} data-aos="fade-up"
-                        data-aos-delay={`${index * 100}`}>
+                            data-aos-delay={`${index * 100}`}>
                             <Row >
                                 <Col lg={12} md={24}>
                                     <div className="ContentContainerHome">
