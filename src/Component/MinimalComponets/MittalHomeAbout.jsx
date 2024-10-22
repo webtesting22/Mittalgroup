@@ -6,10 +6,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from 'swiper/modules';
-import SliderImage1 from "./Images/AboutSliderImages/mittal/angles.jpg"
-import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
-import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
-import SliderImage4 from "./Flatbar.webp"
+// import SliderImage1 from "./Images/AboutSliderImages/mittal/angles.jpg"
+// import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
+// import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
+// import SliderImage4 from "./Flatbar.webp"
+import SliderImage1 from "/images/Product Images/Angle5.jpeg"
+import SliderImage2 from "/images/Product Images/RoundBar1.jpeg"
+import SliderImage3 from "/images/Product Images/Channel5.jpeg"
+import SliderImage4 from "/images/Product Images/FlatBar2.jpeg"
 const MittalHomeAbout = () => {
     const sections = [
         { title: "Flat Bars", image: SliderImage4, description: "Ideal for construction, fabrication, and manufacturing, our flat bars offer strength and versatility for a variety of applications." },
@@ -100,7 +104,7 @@ const MittalHomeAbout = () => {
                                     alt={selectedSection.title}
 
                                 />
-                                <Link to="/Products"> <button className="MittalCommonBtn">Read More</button></Link>
+                                <a href="/Products"> <button className="MittalCommonBtn" style={{margin:"10px 0"}}>Read More</button></a>
 
                             </div>
                         </Col>

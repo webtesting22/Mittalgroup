@@ -302,7 +302,7 @@
 }
 
 .ContentContainerCard {
-  padding: 20px;
+  padding: 5px;
 }
 
 .ContentContainerCard h2 {
@@ -376,7 +376,7 @@
 }
 
 .AccordionImageContainer {
-  opacity: 0;
+  opacity: 1;
   text-align: center;
 }
 

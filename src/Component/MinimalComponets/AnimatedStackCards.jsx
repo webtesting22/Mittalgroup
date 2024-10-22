@@ -1,10 +1,15 @@
 import React from "react";
 import { Row, Col } from "antd";
 import "./MittalCommon.css";
-import FlatbarsImage from "./FlatsBars.jpg"
-import Roundbars from "./Roundbars.jpg"
-import Channelsbars from "./Channelsbars.webp"
-import AnglesBars from "./AnglesBars.jpg"
+// import FlatbarsImage from "./FlatsBars.jpg"
+// import Roundbars from "./Roundbars.jpg"
+// import Channelsbars from "./Channelsbars.webp"
+// import AnglesBars from "./AnglesBars.jpg"
+import FlatbarsImage from "/images/Product Images/FlatBar1.jpeg"
+import Roundbars from "/images/Product Images/RoundBar1.jpeg"
+import Channelsbars from "/images/Product Images/Channel3.jpeg"
+import AnglesBars from "/images/Product Images/Angle10.jpeg"
+
 const AnimatedStackCards = () => {
 
     const StackCardContent = [

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Row, Col, Image } from "antd";
 import mittalImage1 from "./1.jpg";
 import mittalImage2 from "./2.jpg";
@@ -13,6 +13,9 @@ import mittalImage10 from "./10.jpg";
 import mittalImage11 from "./11.jpg";
 import "./Mittalgallery.css"
 const MittalGallllery = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const MittalGalleryImages = [
         { image: mittalImage1 },
         { image: mittalImage2 },
@@ -30,9 +33,12 @@ const MittalGallllery = () => {
     return (
         <>
             <section id="MittalGalleryContainer">
-                <div className="productTitle">
+            <br/><br/>
+                {/* <div className="productTitle">
                     <h2>Our Gallery</h2>
-                </div>
+                </div> */}
+                    <h2>Our Gallery</h2>
+
                 <br />
                 <Row gutter={[16, 16]}>
                     {MittalGalleryImages.map((item, index) => (

@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
 import NavigationBackImage from "./navigation.jpg"
+import MittalLogo from "/images/MittalLogo.png";
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -17,7 +18,8 @@ const Navbar = () => {
   const NavigationLinks = [
     { link: "Home", path: "/" },
     { link: "About Us", path: "/AboutUs" },
-    { link: "Group Companies", path: "/Group" },
+    {link:"Gallery",path:"/Gallery"},
+    // { link: "Group Companies", path: "/Group" },
     { link: "Products", path: "/Products" },
     { link: "Clients", path: "/Clients" },
     // { link: "Gallery"},

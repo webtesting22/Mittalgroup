@@ -25,6 +25,7 @@ const ContactUs = () => {
         <h1 className='contactTitle'>CONTACT US</h1>
         <p className='contactPara'>To learn more about our products, services, or potential partnerships, reach out to us.
           Together, we can build a stronger, more sustainable future for the industries that rely on us.</p>
+          
         <div className='map'>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7343.67102500053!2d72.5537858339964!3d23.02981095646011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f368a87e9b%3A0x2f2116eeb183aab6!2sMittal%20Sections%20Limited!5e0!3m2!1sen!2sin!4v1729144211887!5m2!1sen!2sin"
             style={{ width: "100%", height: "400px", border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -33,15 +34,15 @@ const ContactUs = () => {
           <Col lg={12} xs={24} >
             <div className="contact-details">
               <h1>Contact Details</h1>
-              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/5CcurstP9Z4Wmoi26" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
+              <p className="address"><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
               <p className="address"><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
               <p className="address"><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
               <p>
-              <b>Phone:</b><a href='tel:9909905484'>9909905484</a>
+              <b>Phone: </b><a href='tel:9909905484'>9909905484</a>
               {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
                 {/* <a href="tel:+917926406484">+917926406484</a> */}
               </p>
-              <p><b>Mail:</b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
+              <p><b>Mail: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
             </div>
           </Col>
           <Col lg={12} xs={24}>
