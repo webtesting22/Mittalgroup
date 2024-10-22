@@ -238,10 +238,10 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <hr />
-        <div>
-          <MittalGallllery />
-        </div>
+        {/* <hr /> */}
+          {/* <div>
+            <MittalGallllery />
+          </div> */}
 
       </section>
 
