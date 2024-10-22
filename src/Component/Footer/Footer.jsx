@@ -5,7 +5,7 @@ import MittalLogo from "/images/MittalLogo.png";
 const Footer = () => {
     return (
         <>
-            <section style={{ backgroundColor: "black" }}>
+            <section style={{ backgroundColor: "black" ,position:"sticky"}}>
                 <div className="FooterContainer">
                     <div>
                         <div className='MittalFooterLogoContainer'>

@@ -154,7 +154,7 @@ const AboutUs = () => {
             {/* <br /> */}
             {/* <br /> */}
             {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
-            <br />
+
             <p>Mittal Sections Limited, founded by Ajay Mittal and Atul Mittal, has grown to become a leader
               in steel solutions, specializing in the production of high-quality Mild Steel products.
               Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
@@ -169,8 +169,33 @@ const AboutUs = () => {
               self reliant and modern industrial base.</p>
             <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
           </div>
-          <div style={{ marginBottom: "20px" }}>
-            <Row>
+        </div>
+      </section>
+
+      <div className='OutMV'>
+        <div className='blackOverlay'>
+
+        </div>
+        <div style={{position:"sticky",zIndex:"5555"}}>
+          <div className='HeadingContainer '>
+            <p>Forging a Future of Strength and Innovation</p>
+            <br />
+            <h2>Quality steel products for industries, driven by innovation and reliability.</h2>
+          </div>
+          <div className='MissionVisionParent'>
+            <div>
+              <h2>Our Vision</h2>
+              <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
+            </div>
+            <div>
+              <h2>Our Mission</h2>
+              <p>We strive to deliver world-class products by understanding the needs of our clients and delivering success at every step of the way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section className='AboutUsSection'>
+        {/* <Row>
               <Col lg={12} md={24} data-aos="fade-up">
                 <div className=" AboutUsimagesStyle">
                   {Images.map((item, index) => (
@@ -188,11 +213,7 @@ const AboutUs = () => {
               <Col lg={12} md={24} data-aos="fade-up">
 
                 <div className=" AboutUsParagraph">
-                  {/* <h2>“Realizing dreams, Achieving goals”</h2>
-                  <p>AB Mittal group of companies is one of the fastest growing enterprises in the world. Leading with a global approach AB Mittal group is as diverse as it is dynamic. Ever since its inception in the year 2006, the group has diversifies operations and expanded into various sectors that include Structured Steel Products, Textiles, Entertainment, and Chemicals.</p>
-                  <p>Under the leadership of Mr. Atul B. Mittal the C.E.O. & Director of the group and Mr. Ajay B. Mittal, the Chairman, the group has explored new horizons and redefined the pinnacle of success with every milestone they achieved. Over the years, the group has come a long way and added value to the current market setup.</p>
-                  <p>According to Mr. Ajay B. Mittal, the group has always believed that ‘Necessity is the mother of all inventions’ and understood the market to deliver quality products crafted to perfection.</p> */}
-                  {/* <br /><br /> */}
+                 
                   <div>
                     <h2>Our Vision:</h2>
                     <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
@@ -204,28 +225,23 @@ const AboutUs = () => {
                     </p>
                   </div>
 
-                  {/* <h2>Expertise you can Trust:</h2>
-                  <p>At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can
-                    never return, our word is our bond. We stand by our promises and deliver products that
-                    exceed industry standards. Our commitment to quality, innovation, and sustainability makes
-                    us a trusted partner for industries across Gujarat.</p> */}
+                 
                 </div>
               </Col>
-            </Row>
-          </div>
+            </Row> */}
 
-          <div>
+        <div>
 
-            <h2>Why Choose Mittal Sections Limited?</h2>
-            <h3>Expertise You Can Trust</h3>
-            <p>
-              At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
-              We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
-              makes us a trusted partner for industries across Gujarat.
-            </p>
+          <h2>Why Choose Mittal Sections Limited?</h2>
+          <h3>Expertise You Can Trust</h3>
+          <p>
+            At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
+            We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
+            makes us a trusted partner for industries across Gujarat.
+          </p>
 
-          </div>
         </div>
+
 
 
 
@@ -236,7 +252,7 @@ const AboutUs = () => {
             <p> We at Mittal Sections Limited believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
             <br />
             <div className='MittalValuesCards'>
-              <Row>
+              <Row style={{ width: "100%" }}>
                 {data.map((item, index) => (
                   <Col lg={6} md={12}>
                     <div className='Card' data-aos="fade-up"

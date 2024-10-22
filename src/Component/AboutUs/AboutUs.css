@@ -83,14 +83,50 @@
 }
 
 .AboutUsSection {
-    padding: 2rem 3rem;
     background-color: white;
     position: sticky;
 }
 
+.OutMV {
+    padding: 2rem 4rem;
+    background-color: black;
+    color: white;
+    position: sticky;
+    background-image: url("/src/Component/AboutUs/MVbackl.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.OutMV h1 {
+    color: white;
+}
+
+.OutMV .HeadingContainer {
+    border-left: none;
+    padding: 0rem 0rem;
+}
+
+.OutMV .HeadingContainer h2 {
+    color: white;
+    width: 50%;
+}
+
+.MissionVisionParent {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0rem;
+}
+
+.MissionVisionParent>div {
+    width: 100%;
+    border-left: 2px solid rgb(255, 255, 255);
+    padding-left: 2rem;
+}
+
 @media (min-width:1300px) and (max-width:3000px) {
     .AboutUsSection {
-        padding: 2rem 9rem;
+        padding: 4rem 4rem;
     }
 }
 
@@ -297,7 +333,8 @@
 .ContentContainerAdjust h1 {
     color: white;
 }
-.ContentContainerAdjust p{
+
+.ContentContainerAdjust p {
     color: white;
 }
 
@@ -308,7 +345,40 @@
     justify-content: center;
 }
 
+.MissionVisionParent h2,
+.MissionVisionParent p {
+    color: white;
+}
+
 @media (max-width:576px) {
+    .MissionVisionParent {
+        display: flex;
+        justify-content: space-between;
+     margin-bottom: 0rem;
+        flex-direction: column;
+    }
+    .MissionVisionParent>div {
+        width: 90%;
+        border-left: 2px solid rgb(255, 255, 255);
+        padding-left: 1rem;
+        margin: 20px 0px;
+    }
+    
+    .OutMV {
+        padding: 2rem 1dvb;
+        background-color: black;
+        color: white;
+        position: sticky;
+        background-image: url("/src/Component/AboutUs/MVbackl.JPG");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .OutMV .HeadingContainer h2 {
+        color: white;
+        width: 100%;
+    }
+
     .TopcontainerPart {
         height: 40vh;
         overflow: hidden;
