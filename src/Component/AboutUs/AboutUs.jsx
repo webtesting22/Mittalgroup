@@ -135,7 +135,10 @@ const AboutUs = () => {
 
           </div>
           <div className='ContentContainerAdjust'>
-            <h1>sadfffff</h1>
+            <div>
+              <h1>ABOUT MITTAL</h1>
+              <p>Building Trust Through Quality Service</p>
+            </div>
           </div>
           <div className='backimageContainer'>
             <img src={carousal3} alt="" />
