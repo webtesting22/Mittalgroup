@@ -1,11 +1,13 @@
-.MittalBackImg{
+.MittalBackImg {
     height: 100vh;
 }
+
 .MittalBackImg img {
     width: 100%;
     object-fit: cover;
     height: 100vh;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition for fading */
     opacity: 1;
 }
 
@@ -37,18 +39,96 @@
     width: 200px;
     animation: zoomInOut 2s infinite;
 }
+
 .fade-out {
-    opacity: 0; /* Fade out effect */
-  }
-  
-  .fade-in {
-    opacity: 1; /* Fade in effect */
-  }
+    opacity: 0;
+    /* Fade out effect */
+}
+
+.fade-in {
+    opacity: 1;
+    /* Fade in effect */
+}
+
 @keyframes zoomInOut {
-    0%, 100% {
-        transform: scale(1); /* Original size */
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Original size */
     }
+
     50% {
-        transform: scale(1.2); /* Zoom in */
+        transform: scale(1.2);
+        /* Zoom in */
+    }
+}
+
+#SwiperHome {
+    height: 100vh;
+}
+
+.blackOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #0000009b;
+    z-index: 555;
+}
+
+.AnimatedHomeSlider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MittalHomeContent{
+    position: absolute;
+    z-index: 66666;
+    width: 70%;
+}
+.MittalHomeContent h3{
+    color: white;
+    text-transform: uppercase;
+}
+.MittalHomeContent h1{
+    color: white;
+    margin: 10px 0px;
+    font-size: 4rem;
+}
+.MittalHomeContent p{
+    width: 60%;
+    color: white;
+}
+
+@media (max-width:769px){
+    .MittalHomeContent{
+        position: absolute;
+        z-index: 66666;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: end; */
+        justify-content: end;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .MittalHomeContent p{
+        width: 100%;
+        color: white;
+    }
+    #SwiperHome img{
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .MittalHomeContent h1{
+        color: white;
+        margin: 10px 0px;
+        font-size: 2rem;
     }
 }

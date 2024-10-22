@@ -4,7 +4,17 @@ import { Link } from 'react-router-dom';
 import DefaultImage from '/images/AbmittalBack.jpeg'; // Default image
 import MittalGroupLogo from "/images/MittalGroupLogo.png";
 import MittalLogo from "/images/MittalLogo.png";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import carousal1 from "./carousal1.jpeg"
+import carousal2 from "./carousal2.jpeg"
+import carousal3 from "./carousal3.jpeg"
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import required modules
+import { Autoplay } from 'swiper/modules';
+import MittalHomePage from '../MinimalComponets/HomePageComapanyContent/MittalHomePage';
 const Home = ({ images = [] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true); // State to control fading
@@ -28,21 +38,54 @@ const Home = ({ images = [] }) => {
     }
   }, [images]);
 
+  const carousalImages = [
+    {
+      img: carousal1
+    },
+    {
+      img: carousal2
+    },
+    {
+      img: carousal3
+    }
+  ]
+
   return (
     <>
-      <section className='MittalHomeContainer'>
-        <div className='MittalBackImg'>
-          <img
-            src={images.length > 0 ? images[currentImageIndex] : DefaultImage}
-            alt="Background"
-            className={`fade ${fadeIn ? 'fade-in' : 'fade-out'}`} // Conditional class for fade effect
-          />
-          <div className='ImageOverlay'></div>
+      <div className='AnimatedHomeSlider'>
+        <div className='MittalHomeContent'>
+          <h3>Shaping the future of steel piping.</h3>
+          <h1>Mittal Production</h1>
+          <p>Mittal provides premium steel pipes designed for strength and durability. Our precision engineering ensures reliable solutions for every project. Contact us today for a custom quote tailored to your needs."</p>
         </div>
-        <div className='MittalGroupLogoContainer'>
-          <Link to="/"><img src={MittalLogo} alt="Mittal Group Logo" /></Link>
+        <div className='blackOverlay'>
+
         </div>
-      </section>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          modules={[Autoplay]}
+          className="mySwiper"
+          id='SwiperHome'
+          style={{ position: "static" }}
+        >
+          {carousalImages.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div>
+                <img src={item.img} alt="" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <MittalHomePage/>
+
     </>
   );
 };

@@ -10,7 +10,7 @@ const MittalHome = () => {
     return (
         <>
             <Home />
-            <MittalHomeAbout />
+            {/* <MittalHomeAbout /> */}
         </>
     )
 }

@@ -11,7 +11,10 @@
   overflow: hidden;
   backdrop-filter: blur(47px);
 }
-
+.MittalNavigationContainer{
+  position: fixed;
+  z-index: 555555;
+}
 .navigationPanel.show {
   height: 100vh;
   transition: 0.5s;
