@@ -48,7 +48,7 @@
 
 .navigationPanel.hide {
   height: 0vh;
-  bottom: 0vh;
+  /* bottom: 0vh; */
   transition: 0.5s;
   z-index: 9;
   position: fixed;
