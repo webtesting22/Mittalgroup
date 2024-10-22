@@ -19,20 +19,22 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  
+  top: 0px;
   transition: background-color 0.3s ease;
+  height: 10vh;
 }
 
 .transparent {
   background-color: transparent;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   transition: .5s;
+  height: 10vh;
 }
 
 .redBackground {
   background-color: rgba(0, 0, 0, 0.51);
   backdrop-filter: blur(20px);
-  padding: 5px 0px;
+  /* padding: 5px 0px; */
  transition: .5s;
 }
 

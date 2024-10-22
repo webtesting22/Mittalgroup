@@ -15,6 +15,7 @@ import BackImage from "./BackImage.jpeg"
 import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 import MittalGallllery from '../Mittalgallery/MittalGallery';
+import carousal3 from "../Home/carousal3.jpeg"
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -128,13 +129,25 @@ const AboutUs = () => {
   return (
     <>
       {/* <Home images={images} /> */}
+      <div className='TopcontainerPart'>
+        <div className='InsideTop'>
+          <div className='blackOverlay'>
+
+          </div>
+          <div className='ContentContainerAdjust'>
+            <h1>sadfffff</h1>
+          </div>
+          <div className='backimageContainer'>
+            <img src={carousal3} alt="" />
+          </div>
+        </div>
+      </div>
       <section className='AboutUsSection'>
         <div className='AboutUsContentContainer'>
-          <br /><br />
           <div className='AboutusContainer' data-aos="fade-up">
-            <h2>About Us</h2>
-            {/* <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b> */}
-            <b><i>Our Legacy of Excellence</i></b>
+            {/* <h2>About Us</h2>
+            <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b>
+            <b><i>Our Legacy of Excellence</i></b> */}
             {/* <br /> */}
             {/* <br /> */}
             {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
@@ -239,7 +252,7 @@ const AboutUs = () => {
           </div>
         </div>
         {/* <hr /> */}
-          {/* <div>
+        {/* <div>
             <MittalGallllery />
           </div> */}
 

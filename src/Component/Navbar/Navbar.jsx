@@ -49,7 +49,7 @@ const Navbar = () => {
       <section className={`MittalNavigationContainer ${isScrolled ? "redBackground" : "transparent"}`}>
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
-            <img src={MittalLogo} alt="Mittal Logo" />
+            <Link to="/"><img src={MittalLogo} alt="Mittal Logo" /></Link>
           </div>
           <button onClick={toggleNav}>
             {isNavVisible ? (

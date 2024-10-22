@@ -84,6 +84,8 @@
 
 .AboutUsSection {
     padding: 2rem 3rem;
+    background-color: white;
+    position: sticky;
 }
 
 @media (min-width:1300px) and (max-width:3000px) {
@@ -268,7 +270,40 @@
     padding: 2rem 0rem;
 }
 
+.TopcontainerPart {
+    height: 70vh;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+    position: sticky;
+    top: 10px;
+}
+.backimageContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.ContentContainerAdjust{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+
+}
+.InsideTop{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width:576px) {
+    .TopcontainerPart {
+        height: 40vh;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 20px;
+        position: sticky;
+        top: 10px;
+    }
     .AboutUsimagesStyle {
         padding: 0px;
     }
