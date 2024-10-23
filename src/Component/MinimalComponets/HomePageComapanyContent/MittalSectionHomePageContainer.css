@@ -8,7 +8,7 @@
 }
 
 .HeadingContainer h1 {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -71,19 +71,22 @@
     transition: .5s;
     transform: scale(1.1);
 }
-.RowAdjust:hover .ImageHeightContainer{
+
+.RowAdjust:hover .ImageHeightContainer {
     border-radius: 20px;
     transition: .5s;
 }
-.RowAdjust{
+
+.RowAdjust {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding-left: 30px;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
     .MittalSectionHomePageContainer {
         padding: 4rem 1rem;
     }
+
     .ImageHeightContainer {
         height: 40vh;
         overflow: hidden;

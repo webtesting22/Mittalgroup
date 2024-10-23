@@ -176,7 +176,7 @@ const AboutUs = () => {
         <div className='blackOverlay'>
 
         </div>
-        <div style={{position:"sticky",zIndex:"5555"}}>
+        <div style={{ position: "sticky", zIndex: "5555" }}>
           <div className='HeadingContainer '>
             <p>Forging a Future of Strength and Innovation</p>
             <br />
@@ -230,10 +230,12 @@ const AboutUs = () => {
               </Col>
             </Row> */}
 
-        <div>
+        <div className='WhyChooseSection'>
+          <div className='HeadingContainer'>
+            <p>Expertise You Can Trust</p>
+            <h2>Why Choose Mittal Sections Limited?</h2>
+          </div>
 
-          <h2>Why Choose Mittal Sections Limited?</h2>
-          <h3>Expertise You Can Trust</h3>
           <p>
             At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
             We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
@@ -241,14 +243,12 @@ const AboutUs = () => {
           </p>
 
         </div>
-
-
-
-
-        <hr />
         <div id='CollapseEdit' >
-          <div >
-            <h2>Our Values</h2>
+          <div  >
+            <div className='HeadingContainer'>
+              <h2>Our Values</h2>
+            </div>
+
             <p> We at Mittal Sections Limited believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
             <br />
             <div className='MittalValuesCards'>

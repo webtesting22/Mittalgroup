@@ -1,4 +1,3 @@
-
 table {
     width: 95%;
     border-collapse: collapse;
@@ -43,48 +42,117 @@ h2 {
 #TableContainers>div {
     width: 50%;
 }
+
 #TableContainers>div h4 {
     margin-bottom: 10px;
 }
+
 .productsApplications {
+    padding: 4rem 4rem;
+}
+
+.processServices {
     padding: 2rem 0rem;
 }
-#ProductPage{
-    padding: 0rem 9rem;
-}
-.processServices{
+
+.MittalCardContainer {
     padding: 2rem 0rem;
 }
-@media  (max-width:769px){
-    table{
+
+.HoverImageContainer {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    transition: 0.5s;
+}
+
+
+
+.HoverRow {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+}
+
+.MittalCardContainer .HoverRow:hover .HoverImageContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.MittalCardContainer .HoverContent {
+    width: 100%;
+    transition: 0.5s;
+    padding: 0rem 4rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:769px) {
+
+.HoverImageContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    transition: 0.5s;
+}
+
+    .MittalCardContainer .HoverContent {
+        width: 100%;
+        transition: 0.5s;
+        padding: 0rem 0rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .HoverRow {
+        display: flex;
+        border-bottom: 1px solid black;
+        padding: 2rem 0rem;
+        flex-direction: column;
+    }
+    table {
         width: 100% !important;
     }
-    #ProductPage{
-        padding: 0rem 1rem;
+
+    #ProductPage {
+        padding: 0rem 0rem;
     }
+
     #TableContainers>div {
         width: 100%;
     }
+
     #TableContainers>div h4 {
         margin-bottom: 10px;
         text-align: center;
     }
-    #processServices{
+
+    #processServices {
         padding: 2rem 0rem;
     }
-    
-    
+    .productsApplications {
+        padding: 4rem 1rem;
+    }
+
 }
 
 
-.productTitle::first-letter{
+.productTitle::first-letter {
     color: #9aa924;
 }
+
 .productCard {
     width: 400px;
     background-color: red;
     margin: 10px;
     padding: 10px;
 }
-
-

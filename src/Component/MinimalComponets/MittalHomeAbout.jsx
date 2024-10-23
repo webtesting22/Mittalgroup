@@ -104,7 +104,7 @@ const MittalHomeAbout = () => {
                                     alt={selectedSection.title}
 
                                 />
-                                <a href="/Products"> <button className="MittalCommonBtn" style={{margin:"10px 0"}}>Read More</button></a>
+                                <a href="/Products"> <button className="MittalCommonBtn" style={{ margin: "10px 0" }}>Read More</button></a>
 
                             </div>
                         </Col>

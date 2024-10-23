@@ -85,6 +85,7 @@
 .AboutUsSection {
     background-color: white;
     position: sticky;
+    padding: 2rem 4rem;
 }
 
 .OutMV {
@@ -124,11 +125,9 @@
     padding-left: 2rem;
 }
 
-@media (min-width:1300px) and (max-width:3000px) {
-    .AboutUsSection {
-        padding: 4rem 4rem;
-    }
-}
+/* @media (min-width:1300px) and (max-width:3000px) { */
+
+/* } */
 
 #CollapseEdit .ant-collapse-item img {
     opacity: 0;
@@ -203,10 +202,6 @@
 .ant-collapse-content-box {
     transition: opacity 2s ease-in-out !important;
     opacity: 1;
-}
-
-#CollapseEdit h2::first-letter {
-    color: #9aa924;
 }
 
 .MittalValuesCards {
@@ -302,9 +297,6 @@
     padding: 2rem 0rem;
 }
 
-.AboutUsContentContainer {
-    padding: 2rem 0rem;
-}
 
 .TopcontainerPart {
     height: 70vh;
@@ -350,6 +342,10 @@
     color: white;
 }
 
+.WhyChooseSection p:first-child{
+    margin-top: 0px;
+    text-transform: uppercase;
+}
 @media (max-width:576px) {
     .MissionVisionParent {
         display: flex;

@@ -84,7 +84,7 @@ const Home = ({ images = [] }) => {
           ))}
         </Swiper>
       </div>
-      <MittalHomePage/>
+      <MittalHomePage />
 
     </>
   );
