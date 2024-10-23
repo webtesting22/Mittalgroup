@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image } from "antd";
 import mittalImage1 from "./1.jpg";
 import mittalImage2 from "./2.jpg";
@@ -33,11 +33,13 @@ const MittalGallllery = () => {
     return (
         <>
             <section id="MittalGalleryContainer">
-            <br/><br/>
                 {/* <div className="productTitle">
                     <h2>Our Gallery</h2>
                 </div> */}
+                <div className="HeadingContainer">
                     <h2>Our Gallery</h2>
+                    <p>Crafting Strength Through Steel Excellence</p>
+                </div>
 
                 <br />
                 <Row gutter={[16, 16]}>

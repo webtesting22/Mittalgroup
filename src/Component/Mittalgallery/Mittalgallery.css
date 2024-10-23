@@ -2,8 +2,10 @@
     width: 100%;
 }
 #MittalGalleryContainer{
-    padding: 2rem 3rem ;
+    padding: 0rem 3rem ;
+    padding-top: 9rem !important;
 }
+
 @media (min-width:1300px) and (max-width:3000px){
     #MittalGalleryContainer{
         padding: 2rem 9rem;
@@ -15,9 +17,9 @@
     }
 }
 #MittalGalleryContainer h2{
-    font-size: 40px;
     padding: 10px 0;
 }
-#MittalGalleryContainer h2::first-letter{
-    color: #9aa924;
+
+#MittalGalleryContainer p{
+    margin: 0px;
 }

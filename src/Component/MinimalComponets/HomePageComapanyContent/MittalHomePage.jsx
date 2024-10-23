@@ -74,6 +74,8 @@ const MittalHomePage = () => {
                                             <h2>{item.cardTitle}</h2>
                                             <p>{item.cardDescription}</p>
                                             <Link to="/Products"><button>Read More</button></Link>
+                                            <br />
+                                            <br />
                                         </div>
                                     </div>
                                 </Col>

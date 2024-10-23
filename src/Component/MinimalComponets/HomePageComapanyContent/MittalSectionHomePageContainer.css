@@ -84,16 +84,30 @@
 }
 
 @media (max-width:769px) {
+    .RowAdjust {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding-left: 0px;
+        padding: 15px;
+    }
+    
     .MittalSectionHomePageContainer {
         padding: 4rem 1rem;
     }
 
     .ImageHeightContainer {
-        height: 40vh;
+        height: 100%;
         overflow: hidden;
         display: flex;
         align-items: center;
         transition: .5s;
         /* border-radius: 20px; */
     }
+    .MittalProductsCards {
+        margin: 2rem 0rem;
+        margin-bottom: 0rem !important;
+    }
+    .RowAdjust:last-child{
+        margin-bottom: 0px;
+    }
+    
 }
