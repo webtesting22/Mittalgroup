@@ -1,25 +1,35 @@
-.FooterContainer p{
-    color: white;
+.FooterContainer p {
+  color: white;
 }
-.FooterContainer{
-    padding: 20px 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.FooterContainer {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.FooterContainer>div{
-    margin-bottom: 2rem; 
+.FooterContainer > div {
+  margin-bottom: 2rem;
 }
-.MittalFooterLogoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.footerPara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.MittalFooterLogoContainer img{
-    width: 15%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+.footerPara i{
+    padding:0 5px;
+    font-size: 16px;
+    color: #9aa966;
 }
-
+.MittalFooterLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.MittalFooterLogoContainer img {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}

@@ -45,17 +45,18 @@ const ContactUs = () => {
               <p><b>Mail: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
             </div>
           </Col>
-          <Col lg={12} xs={24}>
+          <Col lg={1} md={0}/>
+          <Col lg={11} xs={24}>
             <div className="contact-form">
               <h1>Reach Out To Us!</h1>
 
               <Form
                 name="basic"
                 labelCol={{
-                  span: 4,
+                  span: 5,
                 }}
                 wrapperCol={{
-                  span: 16,
+                  span: 14,
                 }}
                 style={{
                   maxWidth: 600,
