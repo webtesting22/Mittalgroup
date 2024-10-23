@@ -4,6 +4,7 @@
 #MittalGalleryContainer{
     padding: 0rem 3rem ;
     padding-top: 9rem !important;
+    padding-bottom: 1rem;
 }
 
 @media (min-width:1300px) and (max-width:3000px){
