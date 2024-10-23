@@ -31,6 +31,11 @@
   display: flex;
   padding: 0px;
 }
+.contact-form .ContentContainerHome{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
 @media (min-width: 1300px) and (max-width: 3000px) {
   .contactContainer {
     padding: 0rem 9rem;

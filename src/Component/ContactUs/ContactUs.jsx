@@ -47,8 +47,7 @@ const ContactUs = () => {
               <p><b>Mail: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
             </div>
           </Col>
-          <Col lg={1} md={0} />
-          <Col lg={11} xs={24}>
+          <Col lg={12} xs={24}>
             <div className="contact-form">
               <h2>Reach Out To Us!</h2>
               <br />
@@ -58,7 +57,7 @@ const ContactUs = () => {
                   span: 5,
                 }}
                 wrapperCol={{
-                  span: 14,
+                  span: 19,
                 }}
                 style={{
                   maxWidth: 600,
@@ -120,10 +119,6 @@ const ContactUs = () => {
 
                 <div className='ContentContainerHome'>
                   <Form.Item
-                    wrapperCol={{
-                      offset: 0,
-                      span: 16,
-                    }}
                   >
                     <button type="primary" htmlType="submit">
                       Submit
