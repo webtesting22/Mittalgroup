@@ -59,6 +59,7 @@
     margin-top: 2rem;
     border: none;
     transition: .5s;
+    cursor: pointer;
 }
 
 .ContentContainerHome button:hover {

@@ -5,6 +5,7 @@ import FlatBars1 from "./FlatBars1.jpeg"
 import RoundBars1 from "./RoundBars1.jpeg"
 import ChannelsBar1 from "./ChannelsBar1.jpeg"
 import Angles1 from "./Angles1.jpeg"
+import { Link } from "react-router-dom";
 const MittalHomePage = () => {
 
     const CardsContent = [
@@ -72,7 +73,7 @@ const MittalHomePage = () => {
                                             <h4>{item.topheading}</h4>
                                             <h2>{item.cardTitle}</h2>
                                             <p>{item.cardDescription}</p>
-                                            <button>Read More</button>
+                                            <Link to="/Products"><button>Read More</button></Link>
                                         </div>
                                     </div>
                                 </Col>

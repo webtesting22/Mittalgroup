@@ -16,6 +16,7 @@ import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 import MittalGallllery from '../Mittalgallery/MittalGallery';
 import carousal3 from "../Home/carousal3.jpeg"
+import FoundersImage from "./FoundersImage.jpg"
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -147,7 +148,7 @@ const AboutUs = () => {
       </div>
       <section className='AboutUsSection'>
         <div className='AboutUsContentContainer'>
-          <div className='AboutusContainer' data-aos="fade-up">
+          <div className='FounderContainer' data-aos="fade-up">
             {/* <h2>About Us</h2>
             <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b>
             <b><i>Our Legacy of Excellence</i></b> */}
@@ -155,11 +156,25 @@ const AboutUs = () => {
             {/* <br /> */}
             {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
 
-            <p>Mittal Sections Limited, founded by Ajay Mittal and Atul Mittal, has grown to become a leader
+            <p>Mittal Sections Limited, <b style={{fontWeight:"500"}}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
               in steel solutions, specializing in the production of high-quality Mild Steel products.
               Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
               precision-engineered steel products to key industries such as construction, automotive, and
               power transmission.</p>
+
+            <Row>
+              <Col lg={12} md={12}>
+                <div>
+                  <img src={FoundersImage} alt="" />
+                </div>
+              </Col>
+              <Col lg={12} md={12}>
+                <div>
+                <img src={cofounder} alt="" />
+                </div>
+              </Col>
+            </Row>
+
             {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
               Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
                 Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
