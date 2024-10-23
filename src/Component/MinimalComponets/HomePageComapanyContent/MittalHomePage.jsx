@@ -6,6 +6,7 @@ import RoundBars1 from "./RoundBars1.jpeg"
 import ChannelsBar1 from "./ChannelsBar1.jpeg"
 import Angles1 from "./Angles1.jpeg"
 import { Link } from "react-router-dom";
+import ClientHome from "../ClientHome/ClientHome";
 const MittalHomePage = () => {
 
     const CardsContent = [
@@ -96,6 +97,7 @@ const MittalHomePage = () => {
 
                 </div>
             </section>
+            <ClientHome/>
         </>
     )
 }
