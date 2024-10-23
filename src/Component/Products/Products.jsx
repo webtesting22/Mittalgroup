@@ -87,7 +87,7 @@ const Products = () => {
                         </ul> */}
                     </div>
                 </div>
-                <div className='processServices ' data-aos="fade-up">
+                <div className='processServices' data-aos="fade-up">
 
                     {/* <div className="productsContainer">
                     <h1>Our Products</h1>

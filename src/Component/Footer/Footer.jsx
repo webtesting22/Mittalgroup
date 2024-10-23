@@ -16,7 +16,7 @@ const Footer = () => {
                         <p><b>Phone:</b> <a href="tel:9909905484">9909905484</a> </p>
                         <p><b>Email: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
                     </div>
-                    <p>Copyright © 2024 <span style={{ color: "#9aa966" }}>Mittal Sections Limited</span>, All Rights Reserved. <br />Designed & Developed by : <Link to="https://www.outleadsolutions.com/" target="_blank" style={{color:"#ffa401"}}>OutLead Solution</Link></p>
+                    <p>Copyright © 2024 <span style={{ color: "#9aa966" }}>Mittal Sections Limited</span>, All Rights Reserved. <br />Designed & Developed by : <Link to="https://www.outleadsolutions.com/" target="_blank" style={{color:"#ffa401"}}>OutLead Solutions</Link></p>
                 </div>
             </section>
         </>
