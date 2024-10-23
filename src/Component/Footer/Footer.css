@@ -22,6 +22,9 @@
     font-size: 16px;
     color: #9aa966;
 }
+.footerPara b{
+    padding: 0 3px;
+}
 .MittalFooterLogoContainer {
   display: flex;
   justify-content: center;
@@ -32,4 +35,12 @@
   width: 15%;
   aspect-ratio: 3/2;
   object-fit: contain;
+}
+@media (max-width:576px) {
+   .footerPara{
+    align-items: normal;
+   }
+    .footerPara i{
+        padding:4px 2px;
+    }
 }

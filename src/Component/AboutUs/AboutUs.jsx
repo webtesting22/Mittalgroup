@@ -198,7 +198,7 @@ const AboutUs = () => {
             <h2>Quality steel products for industries, driven by innovation and reliability.</h2>
           </div>
           <div className='MissionVisionParent'>
-            <div>
+            <div style={{marginRight:"4rem"}}>
               <h2>Our Vision</h2>
               <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
             </div>
