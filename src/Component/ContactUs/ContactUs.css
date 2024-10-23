@@ -9,12 +9,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.contact-details p{
-    padding: 10px 0;
-}
-.contactPara{
-    padding: 10px 0;
-}
+
 .contactTitle::first-letter {
   color: #9aa924;
 }
@@ -28,6 +23,12 @@
 }
 .contactContainer {
   padding: 0rem 3rem;
+}
+.contactContainer{
+  padding-top: 9rem !important;
+}
+.contact-form .ant-col{
+  display: flex;
 }
 @media (min-width: 1300px) and (max-width: 3000px) {
   .contactContainer {
