@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { Row, Col, Image } from "antd";
-import mittalImage1 from "./1.jpg";
-import mittalImage2 from "./2.jpg";
-import mittalImage3 from "./3.jpg";
-import mittalImage4 from "./4.jpg";
-import mittalImage5 from "./5.jpg";
-import mittalImage6 from "./6.jpg";
-import mittalImage7 from "./7.jpg";
-import mittalImage8 from "./8.jpg";
-import mittalImage9 from "./9.jpg";
-import mittalImage10 from "./10.jpg";
-import mittalImage11 from "./11.jpg";
+import mittalImage1 from "./1-min.jpg";
+import mittalImage2 from "./2-min.jpg";
+import mittalImage3 from "./3-min.jpg";
+import mittalImage4 from "./4-min.jpg";
+import mittalImage5 from "./5-min.jpg";
+import mittalImage6 from "./6-min.jpg";
+import mittalImage7 from "./7-min.jpg";
+import mittalImage8 from "./8-min.jpg";
+import mittalImage9 from "./9-min.jpg";
+import mittalImage10 from "./10-min.jpg";
+import mittalImage11 from "./11-min.jpg";
 import "./Mittalgallery.css"
 const MittalGallllery = () => {
     useEffect(() => {
