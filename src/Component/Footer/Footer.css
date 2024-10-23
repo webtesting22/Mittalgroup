@@ -13,34 +13,58 @@
 }
 .footerPara {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: row;
+  color: white;
 }
-.footerPara i{
-    padding:0 5px;
-    font-size: 16px;
-    color: #9aa966;
+.footerPara i {
+  padding: 0 5px;
+  font-size: 30px;
+  color: #9aa966;
 }
-.footerPara b{
-    padding: 0 3px;
+.footerPara b {
+  padding: 0 3px;
 }
 .MittalFooterLogoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
   width: 100%;
+  text-align: center;
 }
 .MittalFooterLogoContainer img {
-  width: 15%;
+  width: 40%;
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-@media (max-width:576px) {
-   .footerPara{
-    align-items: normal;
-   }
-    .footerPara i{
-        padding:4px 2px;
-    }
+.copyrightText {
+  border-top: 1px solid #e0e0e0;
+  border-top-width: 1px;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0px 20px;
+}
+.footerLinksContainer{
+  padding: 1rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+@media (max-width: 769px) {
+  .footerLinksContainer {
+    padding: 0.5rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .footerPara {
+    align-items: center;
+  }
+  .footerPara i {
+    font-size: 30px;
+    padding: 4px 2px;
+  }
 }
