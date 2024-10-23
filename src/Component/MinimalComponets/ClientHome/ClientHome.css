@@ -1,0 +1,83 @@
+.ClientLogoimage img {
+    width: 60%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.ClientLogosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.ClientLogosContainer .ClientLogoimage {
+    width: 19%;
+    height: 150px;
+    border: 1px solid rgba(57, 57, 57, 0.12);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transition: .5s;
+
+    }
+
+    to {
+        opacity: 1;
+        transition: .5s;
+    }
+}
+
+.ClientLogoimage.show {
+    opacity: 1;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ClientLogoimage.hide {
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.HomePageClientSection {
+    padding: 4rem 4rem;
+}
+@media (max-width:769px){
+    
+    .HomePageClientSection {
+        padding: 4rem 1rem;
+    }
+    .ClientLogosContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ClientLogosContainer .ClientLogoimage {
+        width: 32%;
+        height: 150px;
+        border: 1px solid rgba(57, 57, 57, 0.12);
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .ClientLogoimage.show {
+        opacity: 1;
+        z-index: 1;
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    .ClientLogoimage.hide {
+        opacity: 0;
+        z-index: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+}

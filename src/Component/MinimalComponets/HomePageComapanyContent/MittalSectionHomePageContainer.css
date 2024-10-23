@@ -1,5 +1,6 @@
 .MittalSectionHomePageContainer {
     padding: 4rem 4rem;
+    padding-bottom: 0rem;
 }
 
 .HeadingContainer {
@@ -13,7 +14,7 @@
 }
 
 .MittalProductsCards {
-    margin: 4rem 0rem;
+    margin: 2rem 0rem;
 }
 
 .ImageContainer img {
@@ -87,15 +88,17 @@
 }
 
 @media (max-width:769px) {
+    .MittalSectionHomePageContainer {
+        padding: 4rem 1rem;
+        padding-bottom: 0rem;
+    }
     .RowAdjust {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding-left: 0px;
         padding: 15px;
     }
     
-    .MittalSectionHomePageContainer {
-        padding: 4rem 1rem;
-    }
+    
 
     .ImageHeightContainer {
         height: 100%;
@@ -106,7 +109,7 @@
         /* border-radius: 20px; */
     }
     .MittalProductsCards {
-        margin: 2rem 0rem;
+        /* margin: 2rem 0rem; */
         margin-bottom: 0rem !important;
     }
     .RowAdjust:last-child{

@@ -12,10 +12,11 @@ const Clients = () => {
             {/* <Home /> */}
             <br /><br />
             <div className="ClientContainerSet">
-                <div className="sectionHeading">
-                    <h2 style={{ fontSize: "40px" }}>
+                <div className="HeadingContainer">
+                    <h2 >
                         Our Clients
                     </h2>
+                    <p>Trusted Partners in Steel Solutions</p>
                 </div>
                 <br /><br />
                 <div className="ClientsContainer">
