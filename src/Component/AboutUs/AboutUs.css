@@ -422,7 +422,7 @@
 
     .AnimatedCards {
         /* background-color: red; */
-        height: 100%;
+        height: 30vh;
         margin: 10px;
         position: relative;
         overflow: hidden;

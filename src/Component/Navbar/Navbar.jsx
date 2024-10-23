@@ -21,7 +21,7 @@ const Navbar = () => {
   // Track scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -37,11 +37,11 @@ const Navbar = () => {
 
   const NavigationLinks = [
     { link: "Home", path: "/" },
-    { link: "About Us", path: "/AboutUs" },
+    { link: "About ", path: "/AboutUs" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
     { link: "Clients", path: "/Clients" },
-    { link: "Contact Us", path: "/ContactUs" },
+    { link: "Contact", path: "/ContactUs" },
   ];
 
   return (
@@ -51,6 +51,9 @@ const Navbar = () => {
           <div className="logoContainer">
             <Link to="/"><img src={MittalLogo} alt="Mittal Logo" /></Link>
           </div>
+          {/* <div className="navMenuPC">
+
+          </div> */}
           <button onClick={toggleNav}>
             {isNavVisible ? (
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -79,6 +82,7 @@ const Navbar = () => {
                 }}
               >
                 <div className="MittalShape"></div>
+                {/* <i class='bx bxs-circle' style={{color:"#9aa966",fontSize:"30px"}}></i> */}
                 <div>
                   <Link to={item.path} onClick={hideNav}>
                     {item.link}

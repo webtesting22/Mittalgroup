@@ -29,7 +29,7 @@ const ClientHome = () => {
       <section className="HomePageClientSection">
         <Row>
           <Col lg={10} md={8}>
-            <div>
+            <div className="clientHeadingContainer">
               <div className="HeadingContainer">
                 <h1>Our Partners</h1>
                 <p>Together with our partners, we forge strong connections that help us deliver durable, sustainable steel products to meet evolving industry demands.</p>

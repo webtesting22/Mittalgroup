@@ -28,7 +28,7 @@
   background-color: transparent;
   /* padding: 20px 0px; */
   transition: .5s;
-  height: 10vh;
+  height: 15vh;
 }
 
 .redBackground {
@@ -124,9 +124,13 @@
 
 .logoContainer img {
   width: 150px;
+  
 }
 
 @media (max-width:798px) {
+  .logoContainer img{
+    width: 100px;
+  }
   .transparent {
     background-color: transparent;
     padding: 0px 0px;

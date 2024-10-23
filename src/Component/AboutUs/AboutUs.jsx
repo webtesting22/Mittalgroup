@@ -16,7 +16,7 @@ import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 import MittalGallllery from '../Mittalgallery/MittalGallery';
 import carousal3 from "../Home/carousal3.jpeg"
-import FoundersImage from "./FoundersImage.jpg"
+import FoundersImage from "./FoundersImagecopy.jpg"
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -269,7 +269,7 @@ const AboutUs = () => {
             <div className='MittalValuesCards'>
               <Row style={{ width: "100%" }}>
                 {data.map((item, index) => (
-                  <Col lg={6} md={12}>
+                  <Col lg={6} md={12} xs={12} sm={12}>
                     <div className='Card' data-aos="fade-up"
                       data-aos-delay={`${index * 100}`}>
                       <div className='AnimatedCards'>
