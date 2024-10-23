@@ -28,7 +28,7 @@ const AnimatedStackCards = () => {
 
                 </div>
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} md={24}>
                         <div className="LeftSideContainer">
                             <div className="HeadingContainer">
                                 <h1>
@@ -40,7 +40,7 @@ const AnimatedStackCards = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={12}>
+                    <Col lg={12} md={24} className="AdjustColumn">
                         <div className="AnimatedHoverImageChanges">
                             <div className="RightSideHoverLinks">
                                 <ul>

@@ -261,14 +261,35 @@
 }
 
 @media (max-width: 769px) {
+  .RightSideHoverLinks ul li {
+    padding: 10px 0px;
+    /* font-size: 30px; */
+    border-bottom: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .LeftSideContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 5rem; */
+  }
+
+  .AdjustColumn {
+    width: 100%;
+  }
+
   .AnimatedStackCards {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: end;
     padding: 0rem 1rem;
     position: relative;
   }
-  
+
   .LeftSideContainer .HeadingContainer h1 {
     width: 100%;
   }
