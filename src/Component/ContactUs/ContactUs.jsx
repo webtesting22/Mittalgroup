@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './ContactUs.css';
 import { Row, Col } from "antd"
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Checkbox, Form, Input } from 'antd';
 import Home from '../Home/Home';
 // import emailjs from '@emailjs/browser';
 
@@ -51,7 +51,7 @@ const ContactUs = () => {
           <Col lg={11} xs={24}>
             <div className="contact-form">
               <h2>Reach Out To Us!</h2>
-<br />
+              <br />
               <Form
                 name="basic"
                 labelCol={{
@@ -118,16 +118,18 @@ const ContactUs = () => {
                 </Form.Item>
 
 
-                <Form.Item
-                  wrapperCol={{
-                    offset: 0,
-                    span: 16,
-                  }}
-                >
-                  <Button type="primary" htmlType="submit">
-                    Submit
-                  </Button>
-                </Form.Item>
+                <div className='ContentContainerHome'>
+                  <Form.Item
+                    wrapperCol={{
+                      offset: 0,
+                      span: 16,
+                    }}
+                  >
+                    <button type="primary" htmlType="submit">
+                      Submit
+                    </button>
+                  </Form.Item>
+                </div>
               </Form>
             </div>
           </Col>
