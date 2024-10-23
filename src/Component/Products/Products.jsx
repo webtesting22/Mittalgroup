@@ -108,7 +108,7 @@ const Products = () => {
                 </div> */}
                     {/* <div > */}
 
-                    <div className="productTitle">
+                    <div className="HeadingContainer">
                         <h2>Product Range and Specification</h2>
                     </div>
                     <br />
@@ -379,8 +379,8 @@ const Products = () => {
                             </table>
                         </div>
                     </div>
-                    <div>
-                        <div className="productTitle">
+                    <div style={{padding:"2rem 0rem"}}>
+                        <div className="HeadingContainer">
                             <h2>Manufacturing and Operations</h2>
                         </div>
 
@@ -406,8 +406,8 @@ const Products = () => {
                             to meeting the highest industry standards.</p>
                         <br></br>
                     </div>
-                    <div>
-                        <div className="productTitle">
+                    <div style={{paddingBottom:"2rem"}}>
+                        <div className="HeadingContainer">
                             <h2>Sustainability and Recycling Practices</h2>
                         </div>
                         <h4 style={{ marginTop: "1rem" }}>Commitment and Sustainability</h4>

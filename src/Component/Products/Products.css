@@ -39,11 +39,11 @@ h2 {
   flex-wrap: wrap;
 }
 
-#TableContainers > div {
+#TableContainers>div {
   width: 50%;
 }
 
-#TableContainers > div h4 {
+#TableContainers>div h4 {
   margin-bottom: 10px;
 }
 
@@ -52,7 +52,7 @@ h2 {
 }
 
 .processServices {
-  padding: 2rem 0rem;
+  padding: 0rem 4rem;
 }
 
 .MittalCardContainer {
@@ -116,6 +116,7 @@ h2 {
     padding: 2rem 0rem;
     flex-direction: column;
   }
+
   table {
     width: 100% !important;
   }
@@ -124,20 +125,22 @@ h2 {
     padding: 0rem 0rem;
   }
 
-  #TableContainers > div {
+  #TableContainers>div {
     width: 100%;
   }
 
-  #TableContainers > div h4 {
+  #TableContainers>div h4 {
     margin-bottom: 10px;
     text-align: center;
   }
 
   .processServices {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
   }
+
   .productsApplications {
     padding: 4rem 1rem;
+    padding-bottom: 0rem;
   }
 }
 
@@ -150,7 +153,4 @@ h2 {
   background-color: red;
   margin: 10px;
   padding: 10px;
-}
-.processServices {
-  padding: 0rem 4rem;
 }
