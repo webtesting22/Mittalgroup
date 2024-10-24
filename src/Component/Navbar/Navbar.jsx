@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
 import NavigationBackImage from "./navigation.jpg";
+import MittalLogocopy from "/images/MittalLogocopy.png";
 import MittalLogo from "/images/MittalLogo.png";
 
 const Navbar = () => {
@@ -49,7 +50,9 @@ const Navbar = () => {
       <section className={`MittalNavigationContainer ${isScrolled ? "redBackground" : "transparent"}`}>
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
-            <Link to="/"><img src={MittalLogo} alt="Mittal Logo" /></Link>
+            <Link to="/">
+            <img src={MittalLogo} alt="Mittal Logo" />
+            </Link>
           </div>
           {/* <div className="navMenuPC">
 
