@@ -51,7 +51,7 @@ const Navbar = () => {
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
             <Link to="/">
-            <img src={MittalLogo} alt="Mittal Logo" />
+            <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
           {/* <div className="navMenuPC">
