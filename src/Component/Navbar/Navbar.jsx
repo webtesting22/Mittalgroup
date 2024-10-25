@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   const NavigationLinks = [
-    { link: "Home", path: "/" },
+    // { link: "Home", path: "/" },
     { link: "About ", path: "/AboutUs" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },

@@ -41,19 +41,25 @@
 
 .navigationPanel.show {
   height: 100vh;
+  width: 100vw;
   transition: 0.5s;
   z-index: 9;
   position: fixed;
-  top: 0px;
+  right: 0;
+  /* top: 0px; */
+  /* left: 0; */
   /* Slides in */
 }
 
 .navigationPanel.hide {
-  height: 0vh;
+  height: 100vh;
+  width: 0vw;
   /* bottom: 0vh; */
   transition: 0.5s;
   z-index: 9;
   position: fixed;
+  left: 0%;
+  /* right: 100%; */
   /* Slides out */
 }
 
@@ -122,6 +128,9 @@
   opacity: 0.1;
 }
 
+.logoContainer{
+  z-index: 1000000000;
+}
 .logoContainer img {
   width: 150px;
   
