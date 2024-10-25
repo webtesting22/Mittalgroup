@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { Row, Col } from "antd";
 import "./MittalCommon.css";
-import FlatbarsImage from "/images/Product Images/FlatBar1.jpeg";
-import Roundbars from "/images/Product Images/RoundBar1.jpeg";
-import Channelsbars from "/images/Product Images/Channel3.jpeg";
-import AnglesBars from "/images/Product Images/Angle10.jpeg";
 import { FaArrowRightLong } from "react-icons/fa6";
 const AnimatedStackCards = () => {
-    const [backgroundImage, setBackgroundImage] = useState(FlatbarsImage); // No default image
+    const [backgroundImage, setBackgroundImage] = useState("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg"); // No default image
 
     const handleMouseEnter = (image) => {
         setBackgroundImage(image);
@@ -45,25 +41,25 @@ const AnimatedStackCards = () => {
                             <div className="RightSideHoverLinks">
                                 <ul>
                                     <li
-                                        onMouseEnter={() => handleMouseEnter(FlatbarsImage)}
+                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg")}
                                     >
                                         <h2>Flat Bars</h2>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
-                                        onMouseEnter={() => handleMouseEnter(Roundbars)}
+                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg")}
                                     >
                                         <h2>Round Bars</h2>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
-                                        onMouseEnter={() => handleMouseEnter(Channelsbars)}
+                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Channels1-CZ3B0n8e.jpeg")}
                                     >
                                         <h2>Channels</h2>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
-                                        onMouseEnter={() => handleMouseEnter(AnglesBars)}
+                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Angles1-B8UcZCAq.jpeg")}
                                     >
                                         <h2>Angles</h2>
                                         <FaArrowRightLong />
