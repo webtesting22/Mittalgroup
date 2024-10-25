@@ -55,7 +55,7 @@ const MittalGallery = () => {
                 </div>
 
                 <br />
-                <Row>
+                <Row gutter={[16, 16]}>
                     {MittalGalleryImages.map((item, index) => (
                         <Col key={index} xs={24} sm={24} md={12} lg={8}>
                             <div className="gallery-image-container">
