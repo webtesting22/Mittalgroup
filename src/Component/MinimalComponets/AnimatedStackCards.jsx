@@ -63,7 +63,7 @@ const AnimatedStackCards = () => {
                                     <li
                                         onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Angles1-B8UcZCAq.jpeg")}
                                     >
-                                        <h2>Angles</h2>
+                                        <Link to="/MittalProduct/Angles"><h2 >Angles</h2></Link>
                                         <FaArrowRightLong />
                                     </li>
                                 </ul>

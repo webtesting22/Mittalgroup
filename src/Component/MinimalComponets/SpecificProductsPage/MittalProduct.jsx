@@ -65,9 +65,9 @@ const serviceData = {
             </>
         )
     },
-    "Round-Bars": {
+    "Channels": {
         title: 'Precision-Made Channels for Every Industry',
-        backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
         keywords: [
             "Steel Channels",
             "Aluminum Channels",
@@ -87,30 +87,29 @@ const serviceData = {
                     <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
-                        <h2>Mild Steel Round Bars</h2>
+                        <h2>Mild Steel Channels</h2>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
                             <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
                                  />
                         </div>
                         <br />
-                        <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Corrosion-Resistant Excellence for Long-Lasting Use</p>
-                        <h2>Stainless Steel Round Bars
-                        </h2>
-                        <br />
-                        <p>Stainless steel round bars are highly resistant to corrosion and oxidation, making them ideal for applications in harsh environments, such as marine and chemical industries. Their ability to maintain structural integrity over time enhances their durability.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Enhanced Strength and Toughness for Demanding Conditions</p>
-                        <h2>Alloy Steel Round Bars
-                        </h2>
-                        <br />
-                        <p>Alloy steel round bars are manufactured by adding specific alloying elements such as chromium, nickel, and molybdenum to carbon steel, resulting in improved mechanical properties like strength, toughness, and wear resistance.
-                        </p>
+                        <ul>
+                            <li>
+                                <b>Construction: </b>MS Channels Building frames, bridges, and industrial sheds
+                                .
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>Truck chassis and vehicle frames .
+                            </li>
+                            <li>
+                                <b>Electrical Infrastructure: </b>MS Round Bars Axles and connecting rods.
+                                
+                            </li>
+                            <li>
+                                <b>Power Transmission: </b>Tower bracings and beams.
+                                
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -122,9 +121,9 @@ const serviceData = {
             </>
         )
     },
-    "Channels": {
+    "Round-Bars": {
         title: 'Precision-Made Round Bars for Every Industry',
-        backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
         keywords: [
             "Steel Round Bars",
             "Aluminum Round Bars",
@@ -153,23 +152,77 @@ const serviceData = {
                         <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
                         </p>
                     </div>
-                    <div>
-                        <p>Corrosion-Resistant Excellence for Long-Lasting Use</p>
-                        <h2>Stainless Steel Round Bars
-                        </h2>
-                        <br />
-                        <p>Stainless steel round bars are highly resistant to corrosion and oxidation, making them ideal for applications in harsh environments, such as marine and chemical industries. Their ability to maintain structural integrity over time enhances their durability.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Enhanced Strength and Toughness for Demanding Conditions</p>
-                        <h2>Alloy Steel Round Bars
-                        </h2>
-                        <br />
-                        <p>Alloy steel round bars are manufactured by adding specific alloying elements such as chromium, nickel, and molybdenum to carbon steel, resulting in improved mechanical properties like strength, toughness, and wear resistance.
-                        </p>
-                    </div>
+                    <ul>
+                            <li>
+                                <b>Construction: </b>MS Round Bars Reinforcement bars for concrete structures.
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>This steel is used for body reinforcements and various vehicle components, ensuring safety and structural integrity in automobiles.
+                            </li>
+                            <li>
+                                <b>Machinery Manufacturing: </b>MS Round Bars Axles and connecting rods.
+                                
+                            </li>
+                            <li>
+                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment.
+                                
+                            </li>
+                        </ul>
+                </div>
+            </>
+        ),
+        description: (
+            <>
+                {/* Add description content if needed */}
+            </>
+        )
+    },
+    "Angles": {
+        title: 'Precision-Made Angles for Every Industry',
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        keywords: [
+            "Steel Angles",
+            "Aluminum Angles",
+            "Carbon Steel Angles",
+            "Metal Angles",
+            "Solid Angles",
+            "Cold Angles",
+            "Hot Rolled Angles",
 
+        ],
+        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        rightSideStackColumn: (
+            <>
+                <div className='ColumnContainer'>
+
+                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <div>
+                        <p>Strength and Versatility for Every Application</p>
+                        <h2>Mild Steel Angles</h2>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
+                                style={{ width: '150px', height: '150px' }} />
+                                
+                        </div>
+                        <br />
+                    </div>
+                    <ul>
+                            <li>
+                                <b>Construction: </b>Structural frameworks, bridges, and towers.
+                                
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>Chassis and vehicle frames.
+                            </li>
+                            <li>
+                                <b>Power Transmission: </b>Tower construction and electric poles.
+                                
+                            </li>
+                            <li>
+                                <b>Gating and Fencing: </b>Support for gates, railings and fencing.
+                                
+                            </li>
+                        </ul>
                 </div>
             </>
         ),
