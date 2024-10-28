@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import "./MittalProduct.css";
 import Frame from "./Frame.svg"
 import test from "./test.jpeg"
+import RoundBar from "./RoundBar.jpeg"
 const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
@@ -78,7 +79,7 @@ const serviceData = {
             "Cold-Formed Channels",
 
         ],
-        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        stackImage: RoundBar,
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
