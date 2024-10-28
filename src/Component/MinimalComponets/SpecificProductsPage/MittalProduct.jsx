@@ -27,6 +27,10 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>Mild Steel Flat Bars</h2>
+                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
+                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
+                        style={{ width:'150px', height:'150px'}}/>
+                        </div>
                         <br />
                         <p>Mild steel flat bars are known for their excellent weldability and machinability, making them perfect for a wide range of structural applications. Their ductile nature allows for easy shaping, ensuring they meet the specific needs of your projects, from construction to general fabrication.
                         </p>
@@ -45,6 +49,120 @@ const serviceData = {
                         </h2>
                         <br />
                         <p>Alloy steel flat bars are engineered for high performance under extreme conditions, providing enhanced strength and toughness. These bars are suitable for applications in the automotive, aerospace, and construction industries, where high tensile strength and durability are essential for reliability and safety.
+                        </p>
+                    </div>
+
+                </div>
+            </>
+        ),
+        description: (
+            <>
+                {/* Add description content if needed */}
+            </>
+        )
+    },
+    "Round-Bars": {
+        title: 'Precision-Made Channels for Every Industry',
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        keywords: [
+            "Steel Channels",
+            "Aluminum Channels",
+            "C-Channels",
+            "U-Channels",
+            "Channels Beam",
+            "Channels Section",
+            "Channels Framing",
+            "Cold-Formed Channels",
+            
+        ],
+        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        rightSideStackColumn: (
+            <>
+                <div className='ColumnContainer'>
+
+                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <div>
+                        <p>Strength and Versatility for Every Application</p>
+                        <h2>Mild Steel Round Bars</h2>
+                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
+                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
+                        style={{ width:'150px', height:'150px'}}/>
+                        </div>
+                        <br />
+                        <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Corrosion-Resistant Excellence for Long-Lasting Use</p>
+                        <h2>Stainless Steel Round Bars
+                        </h2>
+                        <br />
+                        <p>Stainless steel round bars are highly resistant to corrosion and oxidation, making them ideal for applications in harsh environments, such as marine and chemical industries. Their ability to maintain structural integrity over time enhances their durability.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Enhanced Strength and Toughness for Demanding Conditions</p>
+                        <h2>Alloy Steel Round Bars
+                        </h2>
+                        <br />
+                        <p>Alloy steel round bars are manufactured by adding specific alloying elements such as chromium, nickel, and molybdenum to carbon steel, resulting in improved mechanical properties like strength, toughness, and wear resistance.
+                        </p>
+                    </div>
+
+                </div>
+            </>
+        ),
+        description: (
+            <>
+                {/* Add description content if needed */}
+            </>
+        )
+    },
+    "Channels": {
+        title: 'Precision-Made Round Bars for Every Industry',
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
+        keywords: [
+            "Steel Round Bars",
+            "Aluminum Round Bars",
+            "Carbon Steel Flat Bars",
+            "Metal Fabrication",
+            "Bar stock",
+            "Solid Round Bars",
+            "Cold Round Bars",
+            "Hot Rolled Round Bars",
+            
+        ],
+        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        rightSideStackColumn: (
+            <>
+                <div className='ColumnContainer'>
+
+                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <div>
+                        <p>Strength and Versatility for Every Application</p>
+                        <h2>Mild Steel Round Bars</h2>
+                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
+                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
+                        style={{ width:'150px', height:'150px'}}/>
+                        </div>
+                        <br />
+                        <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Corrosion-Resistant Excellence for Long-Lasting Use</p>
+                        <h2>Stainless Steel Round Bars
+                        </h2>
+                        <br />
+                        <p>Stainless steel round bars are highly resistant to corrosion and oxidation, making them ideal for applications in harsh environments, such as marine and chemical industries. Their ability to maintain structural integrity over time enhances their durability.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Enhanced Strength and Toughness for Demanding Conditions</p>
+                        <h2>Alloy Steel Round Bars
+                        </h2>
+                        <br />
+                        <p>Alloy steel round bars are manufactured by adding specific alloying elements such as chromium, nickel, and molybdenum to carbon steel, resulting in improved mechanical properties like strength, toughness, and wear resistance.
                         </p>
                     </div>
 

@@ -51,13 +51,13 @@ const AnimatedStackCards = () => {
                                     <li
                                         onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg")}
                                     >
-                                        <h2>Round Bars</h2>
+                                        <Link to="/MittalProduct/Round-Bars"><h2 >Round Bars</h2></Link>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
                                         onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg")}
                                     >
-                                        <h2>Channels</h2>
+                                        <Link to="/MittalProduct/Channels"><h2 >Channels</h2></Link>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
