@@ -20,7 +20,7 @@ const serviceData = {
             "Cold Rolled Flat Bars",
             "Durable Flat Bars"
         ],
-        stackImage: test,
+        stackImage: "https://webtesting-upload.vercel.app/assets/gflatbar-A8y9OrP5.jpeg",
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
@@ -29,7 +29,7 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Flats</h2>
-                       
+
                         <br />
                         <ul>
                             <li>
@@ -46,8 +46,8 @@ const serviceData = {
                             </li>
                         </ul>
                         <div className='GalleryImagesProducts'>
-                            <img  src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
-                                <img src="https://webtesting-upload.vercel.app/assets/flatbar3-CxWalcwQ.jpg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar3-CxWalcwQ.jpg" alt="" />
                         </div>
                         <p>MS flats steel is a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
                         <p>MS Flats are rectangular cross-section steel products used in fabrication and construction. Manufactured with precision, these sections ensure consistency in mechanical properties and easy processing.
@@ -79,37 +79,43 @@ const serviceData = {
             "Cold-Formed Channels",
 
         ],
-        stackImage: RoundBar,
+        stackImage: "https://webtesting-upload.vercel.app/assets/gchannels-Bl-utN2m.jpeg",
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
 
-                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
-                        <h2>Mild Steel Channels</h2>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
-                                 />
-                        </div>
-                        <br />
+                        <h2>MS Channel</h2>
                         <ul>
                             <li>
-                                <b>Construction: </b>MS Channels Building frames, bridges, and industrial sheds
+                                <b>Construction: </b>Building frames, bridges, and industrial sheds
+
                                 .
                             </li>
                             <li>
-                                <b>Automobile Industry: </b>Truck chassis and vehicle frames .
+                                <b>Automobile Industry: </b>Truck chassis and vehicle frames
+
                             </li>
                             <li>
-                                <b>Electrical Infrastructure: </b>MS Round Bars Axles and connecting rods.
-                                
+                                <b>Electrical Infrastructure: </b>Cable trays and supports
+
                             </li>
                             <li>
                                 <b>Power Transmission: </b>Tower bracings and beams.
-                                
+
                             </li>
                         </ul>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
+                            <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt=""
+                            />
+                        </div>
+                        <br />
+                        <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
+                        </p>
+                        <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
+
                     </div>
 
                 </div>
@@ -135,39 +141,46 @@ const serviceData = {
             "Hot Rolled Round Bars",
 
         ],
-        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        stackImage: "https://webtesting-upload.vercel.app/assets/groundbar-CO_KTVMO.jpeg",
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
 
-                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
-                        <h2>Mild Steel Round Bars</h2>
+                        <h2>MS Round Bars
+                        </h2>
+                        <br />
+                        <ul>
+                            <li>
+                                <b>Construction: </b>Reinforcement bars for concrete structures
+
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>Shafts, gears, and fasteners
+
+                            </li>
+                            <li>
+                                <b>Machinery Manufacturing: </b>Axles and connecting rods
+
+
+                            </li>
+                            <li>
+                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment
+
+
+                            </li>
+                        </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt=""
                                 style={{ width: '150px', height: '150px' }} />
                         </div>
                         <br />
-                        <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
-                        </p>
+                        <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
+                    <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
                     </div>
-                    <ul>
-                            <li>
-                                <b>Construction: </b>MS Round Bars Reinforcement bars for concrete structures.
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>This steel is used for body reinforcements and various vehicle components, ensuring safety and structural integrity in automobiles.
-                            </li>
-                            <li>
-                                <b>Machinery Manufacturing: </b>MS Round Bars Axles and connecting rods.
-                                
-                            </li>
-                            <li>
-                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment.
-                                
-                            </li>
-                        </ul>
+
                 </div>
             </>
         ),
@@ -190,47 +203,56 @@ const serviceData = {
             "Hot Rolled Angles",
 
         ],
-        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        stackImage: "https://webtesting-upload.vercel.app/assets/gangles-C43DN7Bi.jpeg",
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
 
-                    <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
-                        <h2>Mild Steel Angles</h2>
+                        <h2>MS Angles
+                        </h2>
+                        <br />
+                        <ul>
+                            <li>
+                                <b>Construction: </b>Structural frameworks, bridges, and towers
+
+
+
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>Chassis and vehicle frames
+
+
+                            </li>
+                            <li>
+                                <b>Power Transmission: </b>Tower construction and electrical poles
+
+
+                            </li>
+                            <li>
+                                <b>Gating and Fencing: </b>Supports for gates, railings, and fencing
+
+                            </li>
+                        </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt=""
                                 style={{ width: '150px', height: '150px' }} />
-                                
+
                         </div>
                         <br />
                     </div>
-                    <ul>
-                            <li>
-                                <b>Construction: </b>Structural frameworks, bridges, and towers.
-                                
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>Chassis and vehicle frames.
-                            </li>
-                            <li>
-                                <b>Power Transmission: </b>Tower construction and electric poles.
-                                
-                            </li>
-                            <li>
-                                <b>Gating and Fencing: </b>Support for gates, railings and fencing.
-                                
-                            </li>
-                        </ul>
+
+                    <p>MS Angles are L-shaped structural components made of mild steel, offering strength and stability for various load-bearing applications. These versatile products are corrosion-resistant and conform to IS 2062 standards, ensuring durability and structural integrity.
+                    </p>
+                    <p>MS Angles are known for their easy weldability and machinability, ideal for demanding structural applications.
+
+                    </p>
                 </div>
             </>
         ),
-        description: (
-            <>
-                {/* Add description content if needed */}
-            </>
-        )
+       
     }
 };
 
