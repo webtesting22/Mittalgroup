@@ -83,53 +83,93 @@
     top: 20%;
     /* margin-bottom: 30px; */
 }
-.ColumnContainer ul li{
+
+.ColumnContainer ul li {
     margin: 20px 0px;
 }
-.GalleryImagesProducts img:first-child{
+
+.GalleryImagesProducts img:first-child {
     width: 50%;
     border-radius: 0px;
     margin: 2rem 1rem;
 }
-.GalleryImagesProducts img:last-child{
+
+.GalleryImagesProducts img:last-child {
     width: 70%;
     margin: 3rem 0rem;
     border-radius: 0px;
 }
+
 .GalleryImagesProducts {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: end;
     align-items: end;
 }
 
-.StackContainersEdit{
+.StackContainersEdit {
     display: flex;
 }
-.PaddingAjust{
+
+.PaddingAjust {
     padding: 0px 20px;
 }
-@media (max-width:769px){
-    .GalleryImagesProducts img:first-child{
+
+.LeftSideContentajust {
+    height: 100%;
+    display: flex;
+    position: sticky;
+    z-index: 5555;
+    align-items: end;
+}
+
+.LeftSideContentajust h1 {
+    color: white;
+    padding-bottom: 6rem;
+
+}
+
+.Dynamicbtn {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+}
+.Dynamicbtn>div:first-child{
+    padding: 5px 10px;
+
+}
+.Dynamicbtn>div:last-child{
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+@media (max-width:769px) {
+    .GalleryImagesProducts img:first-child {
         width: 100%;
         border-radius: 0px;
         margin: 2rem 0rem;
     }
-    .GalleryImagesProducts img:last-child{
+
+    .GalleryImagesProducts img:last-child {
         width: 100%;
         margin: 1rem 0rem;
         border-radius: 0px;
     }
-    .PaddingAjust{
+
+    .PaddingAjust {
         padding: 0px 0px;
     }
+
     .ColumnContainer div {
         padding: 1rem 0rem;
     }
-    .StackContainersEdit{
+
+    .StackContainersEdit {
         display: flex;
         flex-direction: column;
     }
+
     .marquee-container {
         width: 100%;
         overflow: hidden;
@@ -139,13 +179,16 @@
         box-sizing: border-box;
         margin: auto;
     }
+
     .ProductContentContainer {
         padding: 2rem 1rem;
     }
+
     .ProductContentContainer .HeadingContainer {
         position: static;
         /* margin-bottom: 30px; */
     }
+
     .StackContainersEdit>div:first-child img {
         max-width: 100%;
         height: auto;

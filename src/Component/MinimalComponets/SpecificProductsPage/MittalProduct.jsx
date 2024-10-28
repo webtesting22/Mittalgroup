@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import "./MittalProduct.css";
-import Frame from "./Frame.svg"
-import test from "./test.jpeg"
-import RoundBar from "./RoundBar.jpeg"
+
+
 const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
@@ -178,7 +177,7 @@ const serviceData = {
                         </div>
                         <br />
                         <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
-                    <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
+                        <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
                     </div>
 
                 </div>
@@ -252,7 +251,7 @@ const serviceData = {
                 </div>
             </>
         ),
-       
+
     }
 };
 
@@ -279,6 +278,21 @@ const MittalProduct = () => {
                     transition: "background-image 0.5s ease",
                 }}
             >
+                <div className='LeftSideContentajust'>
+                    <div>
+                    <button className="Dynamicbtn">
+                        <div>
+                            CurrentProduct
+                        </div>
+                        <div>
+                            <Link>
+                                See more
+                            </Link>
+                        </div>
+                    </button>
+                    <h1>sdfdsfafdf</h1>
+                    </div>
+                </div>
                 <div className="Overlayback"></div>
             </section>
             <div className='ProductContentContainer' style={{ paddingBottom: "0px" }}>
