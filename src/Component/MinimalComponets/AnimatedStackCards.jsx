@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import "./MittalCommon.css";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+
 const AnimatedStackCards = () => {
     const [backgroundImage, setBackgroundImage] = useState("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg"); // No default image
 
@@ -54,7 +55,7 @@ const AnimatedStackCards = () => {
                                         <FaArrowRightLong />
                                     </li>
                                     <li
-                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Channels1-CZ3B0n8e.jpeg")}
+                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg")}
                                     >
                                         <h2>Channels</h2>
                                         <FaArrowRightLong />
