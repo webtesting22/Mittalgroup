@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import "./MittalProduct.css";
 import Frame from "./Frame.svg"
+import test from "./test.jpeg"
 const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
@@ -18,7 +19,7 @@ const serviceData = {
             "Cold Rolled Flat Bars",
             "Durable Flat Bars"
         ],
-        stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        stackImage: test,
         rightSideStackColumn: (
             <>
                 <div className='ColumnContainer'>
@@ -26,31 +27,33 @@ const serviceData = {
                     <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
-                        <h2>Mild Steel Flat Bars</h2>
-                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
-                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
-                        style={{ width:'150px', height:'150px'}}/>
+                        <h2>MS Flats</h2>
+                       
+                        <br />
+                        <ul>
+                            <li>
+                                <b>Construction: </b>MS flats steel is crucial for fabricating frames, doors, windows, and railings, offering strength and durability in building projects.
+                            </li>
+                            <li>
+                                <b>Automobile Industry: </b>This steel is used for body reinforcements and various vehicle components, ensuring safety and structural integrity in automobiles.
+                            </li>
+                            <li>
+                                <b>Machinery Manufacturing: </b>MS flats serve as base plates and parts, enhancing the stability and performance of various machinery.
+                            </li>
+                            <li>
+                                <b>General Engineering: </b>It is widely utilized in the creation of tools and equipment, supporting diverse engineering applications across industries.
+                            </li>
+                        </ul>
+                        <div className='GalleryImagesProducts'>
+                            <img  src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
+                                <img src="https://webtesting-upload.vercel.app/assets/flatbar3-CxWalcwQ.jpg" alt="" />
                         </div>
-                        <br />
-                        <p>Mild steel flat bars are known for their excellent weldability and machinability, making them perfect for a wide range of structural applications. Their ductile nature allows for easy shaping, ensuring they meet the specific needs of your projects, from construction to general fabrication.
+                        <p>MS flats steel is a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
+                        <p>MS Flats are rectangular cross-section steel products used in fabrication and construction. Manufactured with precision, these sections ensure consistency in mechanical properties and easy processing.
                         </p>
+                        <p>Their versatility, weldability, and machinability make MS Flats popular across a variety of industrial uses.</p>
                     </div>
-                    <div>
-                        <p>Corrosion-Resistant Excellence for Long-Lasting Use</p>
-                        <h2>Stainless Steel Flat Bars
-                        </h2>
-                        <br />
-                        <p>Stainless steel flat bars offer superior resistance to corrosion and oxidation, making them ideal for use in harsh environments. Perfect for architectural and industrial applications, these flat bars combine aesthetic appeal with unmatched durability, ensuring your projects stand the test of time.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Enhanced Strength and Toughness for Demanding Conditions</p>
-                        <h2>Alloy Steel Flat Bars
-                        </h2>
-                        <br />
-                        <p>Alloy steel flat bars are engineered for high performance under extreme conditions, providing enhanced strength and toughness. These bars are suitable for applications in the automotive, aerospace, and construction industries, where high tensile strength and durability are essential for reliability and safety.
-                        </p>
-                    </div>
+
 
                 </div>
             </>
@@ -73,7 +76,7 @@ const serviceData = {
             "Channels Section",
             "Channels Framing",
             "Cold-Formed Channels",
-            
+
         ],
         stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
         rightSideStackColumn: (
@@ -84,9 +87,9 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>Mild Steel Round Bars</h2>
-                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
-                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
-                        style={{ width:'150px', height:'150px'}}/>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
+                                 />
                         </div>
                         <br />
                         <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
@@ -130,7 +133,7 @@ const serviceData = {
             "Solid Round Bars",
             "Cold Round Bars",
             "Hot Rolled Round Bars",
-            
+
         ],
         stackImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
         rightSideStackColumn: (
@@ -141,9 +144,9 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>Mild Steel Round Bars</h2>
-                        <div style={{display:'flex', justifyContent:'flex-end', alignItems:'end'}}>
-                        <img  className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" 
-                        style={{ width:'150px', height:'150px'}}/>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt=""
+                                style={{ width: '150px', height: '150px' }} />
                         </div>
                         <br />
                         <p>Round bars are available in various materials, including steel, aluminum, and titanium, making them suitable for diverse applications such as construction, manufacturing, and automotive industries.
@@ -224,11 +227,12 @@ const MittalProduct = () => {
                     <p>Trusted Partners in Steel Solutions</p>
                 </div>
                 <p>{currentService.description}</p>
-                <div className='StackContainersEdit' style={{ display: 'flex' }}>
+                <div className='StackContainersEdit'>
                     <div style={{ flex: '1' }}>
+
                         <img src={currentService.stackImage} alt="Stack" style={{ maxWidth: '100%', height: 'auto' }} />
                     </div>
-                    <div style={{ flex: '1', padding: '0px 20px' }}>
+                    <div style={{ flex: '1' }} className='PaddingAjust'>
                         {currentService.rightSideStackColumn}
                     </div>
                 </div>
