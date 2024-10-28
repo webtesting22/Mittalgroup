@@ -10,6 +10,7 @@ import Footer from "./Component/Footer/Footer"
 import MittalHome from './Component/MittalHome/MittalHome'
 import Clients from "./Component/Clients/Clients"
 import Products from "./Component/Products/Products"
+import MittalProduct from './Component/MinimalComponets/SpecificProductsPage/MittalProduct'
 const App = () => {
     return (
         <>
@@ -18,12 +19,13 @@ const App = () => {
             {/* <Home /> */}
             <Routes>
                 <Route path='/' element={<MittalHome />} />
-                <Route path='/AboutUs' element={<AboutUs />}/>
+                <Route path='/AboutUs' element={<AboutUs />} />
                 {/* <Route path='/Group' element={<Group />} /> */}
                 <Route path='/Gallery' element={<MittalGallery />} />
                 <Route path='/ContactUs' element={<ContactUs />} />
-                <Route path="/Clients" element={<Clients/>}/>
-                <Route path="/Products" element={<Products/>}/>
+                <Route path="/Clients" element={<Clients />} />
+                <Route path="/Products" element={<Products />} />
+                <Route path="/MittalProduct/:service" element={<MittalProduct />} />
             </Routes>
             <Footer />
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   /* line-height: 1.5; */
   /* font-weight: 400; */
 }
@@ -78,7 +78,7 @@ body {
   box-sizing: border-box;
   /* font-family: 'Albert Sans', sans-serif; */
   background-color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   /* color:#e3b80a; */
   /* color: #ffcc00; */
   /* background-color: #e3b80a; */
@@ -88,11 +88,12 @@ body {
 p,a {
   text-decoration: none;
   color: inherit;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
+
 }
 
 li {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 
@@ -103,7 +104,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-weight: 500;
   color: black;
 }
@@ -133,11 +134,11 @@ b{
 p {
   margin-bottom: 0px;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .MittalCommonBtn {

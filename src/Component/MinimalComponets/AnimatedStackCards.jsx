@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col } from "antd";
 import "./MittalCommon.css";
+import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const AnimatedStackCards = () => {
     const [backgroundImage, setBackgroundImage] = useState("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg"); // No default image
@@ -43,7 +44,7 @@ const AnimatedStackCards = () => {
                                     <li
                                         onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg")}
                                     >
-                                        <h2>Flat Bars</h2>
+                                        <Link to="/MittalProduct/Flat-Bars"><h2 >Flat Bars</h2></Link>
                                         <FaArrowRightLong />
                                     </li>
                                     <li
