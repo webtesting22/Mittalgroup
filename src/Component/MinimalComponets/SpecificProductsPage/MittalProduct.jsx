@@ -108,9 +108,9 @@ const serviceData = {
 
                             </li>
                         </ul>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img src="https://webtesting-upload.vercel.app/assets/channels4-D_jBq7ZE.jpg" alt=""
-                               style={{ width: '400px', height: '250px' }} />
+                        <div className='GalleryImagesProducts'>
+                            <img src="https://webtesting-upload.vercel.app/assets/gchannels2-Bere5Un7.jpeg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
                         </div>
                         <br />
                         <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
@@ -175,9 +175,9 @@ const serviceData = {
 
                             </li>
                         </ul>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt=""
-                                style={{ width: '400px', height: '250px' }} />
+                        <div className='GalleryImagesProducts'>
+                            <img src="https://webtesting-upload.vercel.app/assets/groundbar3-h5DyZF8G.jpeg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
                         </div>
                         <br />
                         <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
