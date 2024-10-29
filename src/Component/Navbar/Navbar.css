@@ -28,37 +28,48 @@
   background-color: transparent;
   /* padding: 20px 0px; */
   transition: .5s;
-  height: 15vh;
+  height: 10vh;
 }
 
 .redBackground {
   background-color: rgba(0, 0, 0, 0.51);
   backdrop-filter: blur(20px);
   /* padding: 5px 0px; */
- transition: .5s;
+  transition: .5s;
 }
 
 
 .navigationPanel.show {
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
   transition: 0.5s;
   z-index: 9;
   position: fixed;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 12rem;
   /* top: 0px; */
   /* left: 0; */
   /* Slides in */
 }
 
+.navigationPanel ul {
+  display: flex;
+}
+
 .navigationPanel.hide {
-  height: 100vh;
+  height: 10vh;
   width: 0vw;
   /* bottom: 0vh; */
   transition: 0.5s;
   z-index: 9;
   position: fixed;
   left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   /* right: 100%; */
   /* Slides out */
 }
@@ -80,11 +91,11 @@
 
 .navigationPanel a {
   list-style: none;
-  font-size: 40px;
-  margin: 0px 0px;
+  font-size: 20px;
+  margin: 0px 20px;
   cursor: pointer;
   color: #000000;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .navigationPanel a+hr {
@@ -95,18 +106,9 @@
   background-color: transparent;
   border: 1px solid transparent;
   margin-left: 100px;
+  display: none;
 }
 
-.navigationPanel a:hover+hr {
-  width: 200px;
-  opacity: 1;
-  background-color: #000000;
-  border: 1px solid #000000;
-
-  transition: 0.5s;
-  margin: 0px;
-  margin-left: 100px;
-}
 
 .MittalShape {
   /* background-color: #ffcc00; */
@@ -117,34 +119,39 @@
   position: absolute;
   rotate: -45deg;
   left: 0px;
+  display: none;
 }
 
 .overlayBackImage img {
   width: 100%;
   position: absolute;
+  left: 0px;
   top: 0px;
   bottom: 0px;
   height: 100vh;
   opacity: 0.1;
 }
 
-.logoContainer{
+.logoContainer {
   z-index: 1000000000;
 }
+
 .logoContainer img {
   width: 150px;
-  
+
 }
 
 @media (max-width:798px) {
-  .logoContainer img{
+  .logoContainer img {
     width: 100px;
   }
+
   .transparent {
     background-color: transparent;
     padding: 0px 0px;
     transition: .5s;
   }
+
   .overlayBackImage img {
     width: 100%;
     position: absolute;
@@ -161,4 +168,53 @@
 
     margin-left: 60px;
   }
+
+  .navigationPanel.show {
+    height: 100vh;
+    width: 100vw;
+    transition: 0.5s;
+    z-index: 9;
+    position: fixed;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 12rem;
+    /* top: 0px; */
+    /* left: 0; */
+    /* Slides in */
+  }
+
+  .navigationPanel ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigationPanel.hide {
+    height: 100vh;
+    width: 0vw;
+    /* bottom: 0vh; */
+    transition: 0.5s;
+    z-index: 9;
+    position: fixed;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* right: 100%; */
+    /* Slides out */
+  }
+
+  .MittalShape {
+    /* background-color: #ffcc00; */
+    background-color: #9aa966;
+    border: 2px solid black;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    rotate: -45deg;
+    left: 0px;
+    display: block;
+  }
+
 }

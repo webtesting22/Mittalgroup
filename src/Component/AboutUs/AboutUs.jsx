@@ -247,7 +247,7 @@ const AboutUs = () => {
 
         <div className='WhyChooseSection'>
           <div className='HeadingContainer'>
-            <p>Expertise You Can Trust</p>
+            {/* <p>Expertise You Can Trust</p> */}
             <h2>Why Choose Mittal Sections Limited?</h2>
           </div>
 
