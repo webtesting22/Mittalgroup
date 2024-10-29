@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import "./MittalProduct.css";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
+        mainTitle: "Flat Bars Metal",
+        tagline: "Strength and durability in every bar.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
         keywords: [
             "Steel Flat Bars",
@@ -66,6 +68,8 @@ const serviceData = {
     },
     "Channels": {
         title: 'Precision-Made Channels for Every Industry',
+        mainTitle: "Channels",
+        tagline: "Support and stability in every channel.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
         keywords: [
             "Steel Channels",
@@ -128,6 +132,8 @@ const serviceData = {
     },
     "Round-Bars": {
         title: 'Precision-Made Round Bars for Every Industry',
+        mainTitle: "Round Bars",
+        tagline: "Precision crafted for enduring strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
         keywords: [
             "Steel Round Bars",
@@ -191,7 +197,9 @@ const serviceData = {
     },
     "Angles": {
         title: 'Precision-Made Angles for Every Industry',
-        backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        mainTitle: "Angles",
+        tagline: "Angle your build toward strength.",
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
         keywords: [
             "Steel Angles",
             "Aluminum Angles",
@@ -207,7 +215,7 @@ const serviceData = {
             <>
                 <div className='ColumnContainer'>
 
-                    <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="" />
+                    <img src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt="" />
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Angles
@@ -236,7 +244,7 @@ const serviceData = {
                             </li>
                         </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt=""
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt=""
                                 style={{ width: '150px', height: '150px' }} />
 
                         </div>
@@ -279,18 +287,23 @@ const MittalProduct = () => {
                 }}
             >
                 <div className='LeftSideContentajust'>
+
                     <div>
-                    <button className="Dynamicbtn">
-                        <div>
-                            CurrentProduct
-                        </div>
-                        <div>
-                            <Link>
-                                See more
-                            </Link>
-                        </div>
-                    </button>
-                    <h1>sdfdsfafdf</h1>
+                        <button className="Dynamicbtn" data-aos="fade-up"
+                            data-aos-delay={`${ 100}`}>
+                            <div>
+                                {currentService.mainTitle}
+                            </div>
+                            <div>
+                                <Link to="/Products" style={{ display: "flex", alignItems: "center" }}>
+                                    See more&nbsp;&nbsp;<FaArrowRightLong />
+                                </Link>
+                            </div>
+                        </button>
+                        <br />
+                        <h1 data-aos="fade-up"
+                            data-aos-delay={`${300}`}>{currentService.tagline}</h1>
+
                     </div>
                 </div>
                 <div className="Overlayback"></div>

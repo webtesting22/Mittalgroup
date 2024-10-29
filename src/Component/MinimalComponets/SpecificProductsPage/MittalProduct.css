@@ -126,25 +126,52 @@
 .LeftSideContentajust h1 {
     color: white;
     padding-bottom: 6rem;
+    font-size: 3rem;
+    width: 70%;
 
 }
 
 .Dynamicbtn {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #9aa966;
     border-radius: 50px;
     border: none;
-}
-.Dynamicbtn>div:first-child{
-    padding: 5px 10px;
+    padding: 10px 5px;
 
 }
-.Dynamicbtn>div:last-child{
-    border-left: 1px solid rgb(0, 0, 0);
+
+.Dynamicbtn>div:first-child {
     padding: 5px 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.Dynamicbtn>div:last-child {
+    transition: .5s;
+    border-left: 1px solid rgb(247, 247, 247);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.Dynamicbtn>div:last-child a {
+    color: white;
+}
+.Dynamicbtn>div:last-child a svg{
+    transition: .5s;
+    color: white;
+}
+.Dynamicbtn>div:last-child a:hover svg{
+    transform: translateX(5px);
+    transition: .5s;
 }
 @media (max-width:769px) {
+    .LeftSideContentajust h1 {
+        color: white;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+        width: 100%;
+    
+    }
     .GalleryImagesProducts img:first-child {
         width: 100%;
         border-radius: 0px;
