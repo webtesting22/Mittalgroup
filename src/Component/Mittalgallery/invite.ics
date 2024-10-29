@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:GMT+5:30
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20241026T150000
+DTEND;TZID=Asia/Kolkata:20241026T160000
+DTSTAMP:20241024T051121Z
+ORGANIZER;CN=Jyoti Parmar:mailto:jyoti@ivgroup.in
+UID:62g082qlcne7g9r8o1h8rq3frv@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Mitesh Sharma;X-NUM-GUESTS=0:mailto:mitesh@ivgroup.in
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vrpandey2003@gmail.com;X-NUM-GUESTS=0:mailto:vrpandey2003@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Jyoti Parmar;X-NUM-GUESTS=0:mailto:jyoti@ivgroup.in
+X-GOOGLE-CONFERENCE:https://meet.google.com/kiz-ukwy-bow
+X-MICROSOFT-CDO-OWNERAPPTID:-1139805826
+CREATED:20241024T051119Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ki
+ z-ukwy-bow\nOr dial: (US) +1 208-856-8137 PIN: 523407893#\nMore phone numbe
+ rs: https://tel.meet/kiz-ukwy-bow?pin=6666136726335&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20241024T051119Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Interview Round 1 Mobile App (Vinayak)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

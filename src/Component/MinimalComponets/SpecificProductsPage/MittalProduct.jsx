@@ -8,7 +8,7 @@ const serviceData = {
         title: 'Precision-Made Flat Bars for Every Industry',
         mainTitle: "Flat Bars Metal",
         tagline: "Strength and durability in every bar.",
-        backgroundImage: "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        backgroundImage: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
         keywords: [
             "Steel Flat Bars",
             "Mild Steel Flat Bars",
@@ -27,6 +27,7 @@ const serviceData = {
                 <div className='ColumnContainer'>
 
                     <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
+                    
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Flats</h2>
@@ -48,7 +49,7 @@ const serviceData = {
                         </ul>
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
-                            <img src="https://webtesting-upload.vercel.app/assets/flatbar3-CxWalcwQ.jpg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="" />
                         </div>
                         <p>MS flats steel is a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
                         <p>MS Flats are rectangular cross-section steel products used in fabrication and construction. Manufactured with precision, these sections ensure consistency in mechanical properties and easy processing.
@@ -93,16 +94,13 @@ const serviceData = {
                         <h2>MS Channel</h2>
                         <ul>
                             <li>
-                                <b>Construction: </b>Building frames, bridges, and industrial sheds
-
-                                .
+                                <b>Construction: </b>Building frames, bridges, and industrial sheds.                              
                             </li>
                             <li>
-                                <b>Automobile Industry: </b>Truck chassis and vehicle frames
-
+                                <b>Automobile Industry: </b>Truck chassis and vehicle frames.
                             </li>
                             <li>
-                                <b>Electrical Infrastructure: </b>Cable trays and supports
+                                <b>Electrical Infrastructure: </b>Cable trays and supports.
 
                             </li>
                             <li>
@@ -111,8 +109,8 @@ const serviceData = {
                             </li>
                         </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt=""
-                            />
+                            <img src="https://webtesting-upload.vercel.app/assets/channels4-D_jBq7ZE.jpg" alt=""
+                               style={{ width: '400px', height: '250px' }} />
                         </div>
                         <br />
                         <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
@@ -179,7 +177,7 @@ const serviceData = {
                         </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
                             <img className='min-img' src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt=""
-                                style={{ width: '150px', height: '150px' }} />
+                                style={{ width: '400px', height: '250px' }} />
                         </div>
                         <br />
                         <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
@@ -224,19 +222,12 @@ const serviceData = {
                         <ul>
                             <li>
                                 <b>Construction: </b>Structural frameworks, bridges, and towers
-
-
-
                             </li>
                             <li>
                                 <b>Automobile Industry: </b>Chassis and vehicle frames
-
-
                             </li>
                             <li>
                                 <b>Power Transmission: </b>Tower construction and electrical poles
-
-
                             </li>
                             <li>
                                 <b>Gating and Fencing: </b>Supports for gates, railings, and fencing
@@ -244,8 +235,8 @@ const serviceData = {
                             </li>
                         </ul>
                         <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt=""
-                                style={{ width: '150px', height: '150px' }} />
+                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg" alt=""
+                                style={{ width: '400px', height: '250px' }} />
 
                         </div>
                         <br />
