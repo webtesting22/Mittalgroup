@@ -43,6 +43,7 @@ const Navbar = () => {
     { link: "Products", path: "/Products" },
     { link: "Clients", path: "/Clients" },
     { link: "Contact", path: "/ContactUs" },
+    {link:"Manufacturing", path:"/mittalManufacturing"}
   ];
 
   return (
