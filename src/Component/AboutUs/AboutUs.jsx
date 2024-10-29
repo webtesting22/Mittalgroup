@@ -146,36 +146,46 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <section className='AboutUsSection'>
-        <div className='AboutUsContentContainer'>
-          <div className='FounderContainer' data-aos="fade-up">
-            {/* <h2>About Us</h2>
+
+      <div className='AboutUsContentContainer '>
+        <div className='FounderContainer' data-aos="fade-up">
+          {/* <h2>About Us</h2>
             <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b>
             <b><i>Our Legacy of Excellence</i></b> */}
-            {/* <br /> */}
-            {/* <br /> */}
-            {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
+          {/* <br /> */}
+          {/* <br /> */}
+          {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
 
-            <p>Mittal Sections Limited, <b style={{fontWeight:"500"}}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
+
+
+
+          <Row>
+
+            <Col lg={24} md={24}>
+              <div>
+                <div>
+                  <div className='OverlayBack'>
+
+                  </div>
+
+                  <img src={FoundersImage} alt="" />
+                </div>
+              </div>
+            </Col>
+            {/* <Col lg={12} md={12}>
+                <div>
+                <img src={cofounder} alt="" />
+                </div>
+              </Col> */}
+          </Row>
+          <div className='AboutUsSection'>
+            <p>Mittal Sections Limited, <b style={{ fontWeight: "500" }}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
               in steel solutions, specializing in the production of high-quality Mild Steel products.
               Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
               precision-engineered steel products to key industries such as construction, automotive, and
               power transmission.</p>
-
-            <Row>
-              <Col lg={12} md={12}>
-                <div>
-                  <img src={FoundersImage} alt="" />
-                </div>
-              </Col>
-              <Col lg={12} md={12}>
-                <div>
-                <img src={cofounder} alt="" />
-                </div>
-              </Col>
-            </Row>
-
-            {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
+          </div>
+          {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
               Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
                 Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
               has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
@@ -183,9 +193,9 @@ const AboutUs = () => {
               engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
               self reliant and modern industrial base.</p>
             <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
-          </div>
         </div>
-      </section>
+      </div>
+
 
       <div className='OutMV'>
         <div className='blackOverlay'>
@@ -198,7 +208,7 @@ const AboutUs = () => {
             <h2>Quality steel products for industries, driven by innovation and reliability.</h2>
           </div>
           <div className='MissionVisionParent'>
-            <div style={{marginRight:"4rem"}}>
+            <div style={{ marginRight: "4rem" }}>
               <h2>Our Vision</h2>
               <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
             </div>

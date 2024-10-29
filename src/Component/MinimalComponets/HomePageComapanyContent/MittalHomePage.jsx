@@ -3,6 +3,7 @@ import { Row, Col, Image, Button } from "antd";
 import "./MittalSectionHomePageContainer.css"
 import { Link } from "react-router-dom";
 import ClientHome from "../ClientHome/ClientHome";
+import BackOverlay from "./BackOverlay.png"
 const MittalHomePage = () => {
 
     const CardsContent = [
@@ -59,7 +60,7 @@ const MittalHomePage = () => {
     return (
         <>
             <section className="MittalSectionHomePageContainer">
-
+            <img src={BackOverlay} alt="" className="BackOverlay"/>
                 <div className="HeadingContainer">
                     <h1>We Build Innovative Strength</h1>
                 </div>
