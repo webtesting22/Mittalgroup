@@ -112,7 +112,7 @@ const serviceData = {
                             <img src="https://webtesting-upload.vercel.app/assets/gchannels2-Bere5Un7.jpeg" alt="" />
                             <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
                         </div>
-                        <br />
+                        
                         <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
                         </p>
                         <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
@@ -177,9 +177,8 @@ const serviceData = {
                         </ul>
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/groundbar3-h5DyZF8G.jpeg" alt="" />
-                            <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/groundbar2-BSwERkZb.jpeg" alt="" />
                         </div>
-                        <br />
                         <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
                         <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
                     </div>
@@ -234,12 +233,10 @@ const serviceData = {
 
                             </li>
                         </ul>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'end' }}>
-                            <img className='min-img' src="https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg" alt=""
-                                style={{ width: '400px', height: '250px' }} />
-
+                        <div className='GalleryImagesProducts'>
+                            <img src="https://webtesting-upload.vercel.app/assets/gangles2-C70vGWoX.jpeg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg" alt="" />
                         </div>
-                        <br />
                     </div>
 
                     <p>MS Angles are L-shaped structural components made of mild steel, offering strength and stability for various load-bearing applications. These versatile products are corrosion-resistant and conform to IS 2062 standards, ensuring durability and structural integrity.
