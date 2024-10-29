@@ -3,3 +3,11 @@
     padding-left: 4rem;
     padding-right: 4rem;
 }
+
+@media (max-width:769px){
+    #ManufacturingProcess {
+        padding-top: 9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
