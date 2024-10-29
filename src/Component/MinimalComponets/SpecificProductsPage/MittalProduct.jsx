@@ -235,7 +235,7 @@ const serviceData = {
                         </ul>
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/gangles2-C70vGWoX.jpeg" alt="" />
-                            <img src="https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/gangles3-B0OBK59y.webp" alt="" />
                         </div>
                     </div>
 
