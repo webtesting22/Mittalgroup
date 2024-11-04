@@ -37,7 +37,7 @@ const MittalManufacturing = () => {
 
                     </p>
                     <Row gutter={[16, 16]}>
-                        <Col lg={18}>
+                        <Col lg={14}>
                             <p><b>Sort</b></p>
                             <ul>
                                 <li> Action: Remove unnecessary items from the workspace.</li>
@@ -66,8 +66,8 @@ const MittalManufacturing = () => {
                             </ul>
                             <p>By implementing 5S, steel manufacturers can boost productivity, reduce waste, and contribute to sustainable practices in their industry.</p>
                         </Col>
-                        <Col lg={6}>
-                            <div><img style={{width:"100%"}}  src="/images/5s.png" /></div>
+                        <Col lg={10}>
+                            <div className="manufacturingImage"><img src="/images/5s.png" /></div>
                         </Col>
                     </Row>
                     <br /> <br />

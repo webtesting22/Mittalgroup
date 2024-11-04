@@ -3,7 +3,20 @@
     padding-left: 4rem;
     padding-right: 4rem;
 }
-
+.manufacturingImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding-top: 2rem; */
+    width: 100%;
+}
+.manufacturingImage img{
+    
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
 @media (max-width:769px){
     #ManufacturingProcess {
         padding-top: 9rem;
