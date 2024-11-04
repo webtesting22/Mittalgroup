@@ -67,7 +67,7 @@ const Products = () => {
                                     </div>
                                     <div className="HoverContent">
                                         <div>
-                                        <p>{item.tagline}</p>
+                                        {/* <p>{item.tagline}</p> */}
                                         <h2>{item.title}</h2>
                                         <p>{item.description}</p>
                                         </div>

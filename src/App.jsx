@@ -26,8 +26,8 @@ const App = () => {
                 <Route path='/ContactUs' element={<ContactUs />} />
                 <Route path="/Clients" element={<Clients />} />
                 <Route path="/Products" element={<Products />} />
-                <Route path="/mittalProduct/:service" element={<MittalProduct />} />
-                <Route path="/mittalManufacturing" element={<MittalManufacturing />} />
+                <Route path="/Products/:service" element={<MittalProduct />} />
+                <Route path="/Manufacturing" element={<MittalManufacturing />} />
             </Routes>
             <Footer />
 

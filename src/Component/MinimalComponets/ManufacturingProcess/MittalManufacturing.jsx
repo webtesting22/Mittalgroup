@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./ManufacturingProcess.css"
 
 const MittalManufacturing = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <section id="ManufacturingProcess">
@@ -46,8 +49,7 @@ const MittalManufacturing = () => {
                     <p><b>Shine </b></p>
                     <ul>
                         <li>Action: Clean equipment and workspaces regularly.</li>
-                        <li>Action: Clean equipment and workspaces regularly.</li>
-                        <li></li>
+                        <li>Impact: Improves equipment lifespan, reduces the risk of breakdowns, and enhances product quality.</li>
                     </ul>
                     <p><b>Standardize</b></p>
                     <ul>

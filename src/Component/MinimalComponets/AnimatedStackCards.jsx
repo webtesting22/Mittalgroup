@@ -42,30 +42,38 @@ const AnimatedStackCards = () => {
                         <div className="AnimatedHoverImageChanges">
                             <div className="RightSideHoverLinks">
                                 <ul>
-                                    <li
-                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg")}
-                                    >
-                                        <Link to="/MittalProduct/Flat-Bars"><h2 >Flat Bars</h2></Link>
-                                        <FaArrowRightLong />
-                                    </li>
-                                    <li
-                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg")}
-                                    >
-                                        <Link to="/MittalProduct/Round-Bars"><h2 >Round Bars</h2></Link>
-                                        <FaArrowRightLong />
-                                    </li>
-                                    <li
-                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg")}
-                                    >
-                                        <Link to="/MittalProduct/Channels"><h2 >Channels</h2></Link>
-                                        <FaArrowRightLong />
-                                    </li>
-                                    <li
-                                        onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Angles1-B8UcZCAq.jpeg")}
-                                    >
-                                        <Link to="/MittalProduct/Angles"><h2 >Angles</h2></Link>
-                                        <FaArrowRightLong />
-                                    </li>
+                                    <Link to="/Products/Flat-Bars">
+                                        <li
+                                            onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg")}
+                                        >
+                                            <h2 >Flat Bars</h2>
+                                            <FaArrowRightLong />
+                                        </li>
+                                    </Link>
+                                    <Link to="/Products/Round-Bars">
+                                        <li
+                                            onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg")}
+                                        >
+                                            <h2 >Round Bars</h2>
+                                            <FaArrowRightLong />
+                                        </li>
+                                    </Link>
+                                    <Link to="/Products/Channels">
+                                        <li
+                                            onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg")}
+                                        >
+                                            <h2 >Channels</h2>
+                                            <FaArrowRightLong />
+                                        </li>
+                                    </Link>
+                                    <Link to="/Products/Angles">
+                                        <li
+                                            onMouseEnter={() => handleMouseEnter("https://webtesting-upload.vercel.app/assets/Angles1-B8UcZCAq.jpeg")}
+                                        >
+                                            <h2 >Angles</h2>
+                                            <FaArrowRightLong />
+                                        </li>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>

@@ -103,8 +103,8 @@
 .GalleryImagesProducts {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 }
 
 .StackContainersEdit {

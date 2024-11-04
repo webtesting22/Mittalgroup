@@ -66,6 +66,7 @@ h2 {
   justify-content: center;
   height: 50vh;
   transition: 0.5s;
+  
 }
 
 .HoverRow {
@@ -76,14 +77,16 @@ h2 {
 
 .MittalCardContainer .HoverRow:hover .HoverImageContainer {
   width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  height: 50vh;
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* height: 50vh; */
   transition: 0.5s;
   border-radius: 20px;
 }
-
+.MittalCardContainer .HoverRow:hover .HoverImageContainer img{
+  border-radius: 20px;
+}
 .MittalCardContainer .HoverContent {
   width: 100%;
   transition: 0.5s;

@@ -40,9 +40,10 @@ const Navbar = () => {
     { link: "About ", path: "/AboutUs" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
+    {link:"Manufacturing", path:"/Manufacturing"},
     { link: "Clients", path: "/Clients" },
     { link: "Contact", path: "/ContactUs" },
-    {link:"Manufacturing", path:"/mittalManufacturing"}
+    
   ];
 
   return (
