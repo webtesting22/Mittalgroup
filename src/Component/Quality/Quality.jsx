@@ -133,7 +133,7 @@ const Quality = () => {
 
                                                 <img src={subpoint.imgpath} alt={`${subpoint.title} Icon`} />
                                             </div>
-                                            <b>{subpoint.title}</b>
+                                            <h3><b>{subpoint.title}</b></h3>
                                             <p>{subpoint.description}</p>
                                         </div>
                                     </Col>
