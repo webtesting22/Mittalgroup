@@ -9,7 +9,7 @@ const MittalHomePage = () => {
     const CardsContent = [
         {
             cardTitle: "Flat Bars",
-            link: "/MittalProduct/Flat-Bars",
+            link: "/Products/Flat-Bars",
             topheading: "Strength and Versatility in Steel",
             cardDescription: "Steel flat bars are durable, rectangular-shaped metal bars used in construction and fabrication. They offer strength and versatility for structural supports and custom projects.",
             CardImages: [
@@ -21,7 +21,7 @@ const MittalHomePage = () => {
         },
         {
             cardTitle: "Round Bars",
-            link: "/MittalProduct/Round-Bars",
+            link: "/Products/Round-Bars",
             topheading: "Precision and Strength in Every Rod",
             cardDescription: "Steel round bars are strong, cylindrical rods commonly used in construction, machining, and industrial applications. They provide excellent durability and precision for shafts, supports, and custom metalwork.",
             CardImages: [
@@ -33,7 +33,7 @@ const MittalHomePage = () => {
         },
         {
             cardTitle: "Channels",
-            link: "/MittalProduct/Channels",
+            link: "/Products/Channels",
             topheading: "Stability and Support in Steel",
             cardDescription: "Steel channels are U-shaped metal profiles widely used in construction, framing, and structural support. They offer strength and stability for load-bearing applications and custom fabrication projects.",
             CardImages: [
@@ -45,7 +45,7 @@ const MittalHomePage = () => {
         },
         {
             cardTitle: "Angles",
-            link: "/MittalProduct/Angles",
+            link: "/Products/Angles",
             topheading: "Strength and Stability from Every Angle",
             cardDescription: "Steel angles are L-shaped metal bars used for structural reinforcement and framing in construction and engineering projects. They provide strength, stability, and versatility for various applications.",
             CardImages: [
