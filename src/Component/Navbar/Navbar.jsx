@@ -40,10 +40,11 @@ const Navbar = () => {
     { link: "About ", path: "/AboutUs" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
-    {link:"Manufacturing", path:"/Manufacturing"},
+    { link: "Manufacturing", path: "/Manufacturing" },
+    { link: "Quality", path: "/Quality" },
     { link: "Clients", path: "/Clients" },
     { link: "Contact", path: "/ContactUs" },
-    
+
   ];
 
   return (
@@ -52,7 +53,7 @@ const Navbar = () => {
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
             <Link to="/">
-            <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
+              <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
           {/* <div className="navMenuPC">

@@ -1,0 +1,51 @@
+#QualitySection {
+  padding-top: 9rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.QualityContent {
+  padding: 0rem 4rem;
+}
+.qualityCard {
+  /* background-color: #bbbbbb; */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:40px 50px;
+  margin: 1rem 0;
+  min-height: 20vh;
+}
+.qualityCard:hover{
+    /* background-color: #d2d1d1; */
+    /* transform: scale(1.07); */
+    transition: 0.4s ease-in-out;
+    border-radius: 0;
+}
+.qualityIconContainer {
+  width: 50%;
+}
+.qualityIconContainer img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.HeadingContainerQuality h2{
+    color: #9aa066;
+    font-weight: 400;
+}
+@media (max-width: 769px) {
+    .qualityCard{
+        padding: 40px 20px;
+    }
+  #QualitySection {
+    padding-top: 9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .QualityContent {
+    padding: 0;
+  }
+}

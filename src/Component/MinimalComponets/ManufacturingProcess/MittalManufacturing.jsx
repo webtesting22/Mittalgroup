@@ -1,4 +1,5 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
+import { Row, Col } from 'antd';
 import "./ManufacturingProcess.css"
 
 const MittalManufacturing = () => {
@@ -35,33 +36,40 @@ const MittalManufacturing = () => {
                         The 5S methodology is a lean manufacturing practice that aims to improve efficiency, safety, and sustainability in industrial environments, including steel manufacturing. By implementing 5S—Sort, Set in Order, Shine, Standardize, and Sustain—steel manufacturers can reduce waste, improve quality, and enhance workplace conditions, all of which contribute to sustainable practices. Here’s how each step can be applied to a steel manufacturing context:
 
                     </p>
-                    <p><b>Sort</b></p>
-                    <ul>
-                        <li> Action: Remove unnecessary items from the workspace.</li>
-                        <li>Impact: Reduces clutter, minimizes waste, and frees up space, promoting efficient resource use.
-                        </li>
-                    </ul>
-                    <p><b>Set in Order</b></p>
-                    <ul>
-                        <li>Action: Arrange essential tools and materials for easy access.</li>
-                        <li>Impact: Streamlines operations, reduces downtime, and optimizes material flow, saving time and energy.</li>
-                    </ul>
-                    <p><b>Shine </b></p>
-                    <ul>
-                        <li>Action: Clean equipment and workspaces regularly.</li>
-                        <li>Impact: Improves equipment lifespan, reduces the risk of breakdowns, and enhances product quality.</li>
-                    </ul>
-                    <p><b>Standardize</b></p>
-                    <ul>
-                        <li>Action: Create consistent procedures and guidelines.</li>
-                        <li>Impact: Ensures efficiency, reduces errors, and maintains a high standard of safety and cleanliness.</li>
-                    </ul>
-                    <p><b>Sustain</b></p>
-                    <ul>
-                        <li>Action: Cultivate a culture of continuous improvement and accountability.</li>
-                        <li>Impact: Drives long-term commitment to sustainability and efficiency through regular training and engagement.</li>
-                    </ul>
-                    <p>By implementing 5S, steel manufacturers can boost productivity, reduce waste, and contribute to sustainable practices in their industry.</p>
+                    <Row gutter={[16, 16]}>
+                        <Col lg={18}>
+                            <p><b>Sort</b></p>
+                            <ul>
+                                <li> Action: Remove unnecessary items from the workspace.</li>
+                                <li>Impact: Reduces clutter, minimizes waste, and frees up space, promoting efficient resource use.
+                                </li>
+                            </ul>
+                            <p><b>Set in Order</b></p>
+                            <ul>
+                                <li>Action: Arrange essential tools and materials for easy access.</li>
+                                <li>Impact: Streamlines operations, reduces downtime, and optimizes material flow, saving time and energy.</li>
+                            </ul>
+                            <p><b>Shine </b></p>
+                            <ul>
+                                <li>Action: Clean equipment and workspaces regularly.</li>
+                                <li>Impact: Improves equipment lifespan, reduces the risk of breakdowns, and enhances product quality.</li>
+                            </ul>
+                            <p><b>Standardize</b></p>
+                            <ul>
+                                <li>Action: Create consistent procedures and guidelines.</li>
+                                <li>Impact: Ensures efficiency, reduces errors, and maintains a high standard of safety and cleanliness.</li>
+                            </ul>
+                            <p><b>Sustain</b></p>
+                            <ul>
+                                <li>Action: Cultivate a culture of continuous improvement and accountability.</li>
+                                <li>Impact: Drives long-term commitment to sustainability and efficiency through regular training and engagement.</li>
+                            </ul>
+                            <p>By implementing 5S, steel manufacturers can boost productivity, reduce waste, and contribute to sustainable practices in their industry.</p>
+                        </Col>
+                        <Col lg={6}>
+                            <div><img style={{width:"100%"}}  src="/images/5s.png" /></div>
+                        </Col>
+                    </Row>
                     <br /> <br />
                     <div className="HeadingContainer">
                         <h2>Product Range and Specification</h2>

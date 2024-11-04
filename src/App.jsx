@@ -12,6 +12,7 @@ import Clients from "./Component/Clients/Clients"
 import Products from "./Component/Products/Products"
 import MittalProduct from './Component/MinimalComponets/SpecificProductsPage/MittalProduct'
 import MittalManufacturing from './Component/MinimalComponets/ManufacturingProcess/MittalManufacturing'
+import Quality from './Component/Quality/Quality'
 const App = () => {
     return (
         <>
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Products/:service" element={<MittalProduct />} />
                 <Route path="/Manufacturing" element={<MittalManufacturing />} />
+                <Route path='/Quality' element={<Quality/>}/>
             </Routes>
             <Footer />
 
