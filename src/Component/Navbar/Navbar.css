@@ -8,7 +8,7 @@
   transition: 0.5s;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   backdrop-filter: blur(47px);
 }
 
@@ -57,6 +57,7 @@
 
 .navigationPanel ul {
   display: flex;
+  position: relative;
 }
 
 .navigationPanel.hide {
@@ -93,9 +94,14 @@
   list-style: none;
   font-size: 20px;
   margin: 0px 20px;
+  padding: 40px 0px;
   cursor: pointer;
   color: #000000;
   /* margin-left: 100px; */
+}
+
+.navigationPanel a:hover {
+  color: #9aa966;
 }
 
 .navigationPanel a+hr {
@@ -130,6 +136,7 @@
   bottom: 0px;
   height: 100vh;
   opacity: 0.1;
+  display: none;
 }
 
 .logoContainer {
@@ -166,7 +173,7 @@
     font-size: 25px;
     margin: 0px 0px;
 
-    margin-left: 60px;
+    margin-left: 0px;
   }
 
   .navigationPanel.show {
@@ -178,8 +185,8 @@
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding-right: 12rem;
+    justify-content: center;
+    padding-right: 0rem;
     /* top: 0px; */
     /* left: 0; */
     /* Slides in */
@@ -217,4 +224,69 @@
     display: block;
   }
 
+}
+
+
+/* Initially hide the dropdown */
+/* Dropdown initially hidden and positioned off-screen */
+.DropdownComponent {
+
+  visibility: hidden;
+  transform: translateY(20px);
+  /* Start slightly below */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  min-height: 10vh;
+  min-width: 200px;
+  background-color: white;
+  position: absolute;
+  top: 54px;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 10;
+  left: 0px;
+  right: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* On hover, show the dropdown with a smooth transition */
+.aboutLinkWrapper:hover .DropdownComponent {
+  visibility: visible;
+  /* display: block; */
+  transform: translateY(27px);
+  /* Move to original position */
+}
+
+.aboutLink:hover {
+  color: #9aa966;
+  text-decoration: underline;
+}
+
+.DropdownComponent img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ImageContainer {
+  width: 100%;
+}
+
+.subLinkContainer {
+  width: 100%;
+}
+
+.subLinkContainer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.subLinkContainer ul li {
+  padding: 10px 0px !important;
+  cursor: pointer;
+}
+
+.subLinkContainer ul li a {
+  padding: 0px !important;
 }

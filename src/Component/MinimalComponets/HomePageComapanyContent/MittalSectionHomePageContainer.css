@@ -52,6 +52,11 @@
 
 .RowAdjust {
     margin: 2rem 0rem;
+    transition: .5s;
+}
+.RowAdjust:hover{
+    border-bottom: 2px solid black;
+    transition: .5s;
 }
 
 .ContentContainerHome button {

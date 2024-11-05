@@ -309,11 +309,12 @@
 
 .backimageContainer {
     height: 100%;
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
-.backimageContainer img{
+
+.backimageContainer img {
     width: 100%;
 }
 
@@ -352,8 +353,9 @@
 }
 
 .FounderContainer .ant-row {
-    padding: 0rem 0rem;
+    padding: 2rem 0rem;
 }
+
 
 .FounderContainer .ant-row img {
     width: 100%;
@@ -361,30 +363,29 @@
     border-radius: 10px;
 }
 
-.FounderContainer .ant-row .ant-col div {
+/* .FounderContainer .ant-row .ant-col div {
     display: flex;
     justify-content: center;
     height: 100%;
     align-items: center;
-}
-.OverlayBack{
-    -webkit-backdrop-filter: grayscale();
-    backdrop-filter: grayscale();
-    background-image: radial-gradient(circle farthest-side at 65%, #00000024, #000);
-    width: 100%;
+} */
+.FounderInfo {
+    padding: 20px 20px;
+    display: flex;
     height: 100%;
-    font-family: Poppins;
+    align-items: center;
+}
+
+
+.BackImageOverlay img {
     position: absolute;
-    inset: 0%;
+    width: 60% !important;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
 }
 
 @media (max-width:576px) {
-    .FounderContainer .ant-row img {
-        width: 100%;
-        /* padding: 20px; */
-        border-radius: 10px;
-        margin: 5px 0px;
-    }
 
     .MissionVisionParent {
         display: flex;

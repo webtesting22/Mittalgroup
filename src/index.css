@@ -88,6 +88,7 @@ body {
 p,a {
   text-decoration: none;
   color: inherit;
+  line-height: 25px;
   font-family: 'Satoshi', sans-serif;
 
 }
@@ -132,9 +133,9 @@ b{
 }
 
 p {
-  margin-bottom: 0px;
-  font-size: 15px;
+  margin-bottom: 0;
   font-family: 'Satoshi', sans-serif;
+  font-size: 18px;
 }
 
 button {
@@ -171,4 +172,8 @@ button {
 .sectionHeading h2::first-letter {
   /* color: #ffcc00; */
   color: #9aa924;
+}
+
+.MainTitle{
+  font-size: 30px;
 }

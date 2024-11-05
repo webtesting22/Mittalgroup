@@ -6,11 +6,13 @@ import { MdOutlineCancel, MdMenu } from "react-icons/md";
 import NavigationBackImage from "./navigation.jpg";
 import MittalLogocopy from "/images/MittalLogocopy.png";
 import MittalLogo from "/images/MittalLogo.png";
+import Navigation2 from "./Navigation2.jpeg"
 
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [hoveredSublink, setHoveredSublink] = useState("Our Legacy"); // Default to "Our Legacy"
+  
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
@@ -37,14 +39,13 @@ const Navbar = () => {
   }, []);
 
   const NavigationLinks = [
-    { link: "About ", path: "/AboutUs" },
+    { link: "About", path: "/AboutUs" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
     { link: "Manufacturing", path: "/Manufacturing" },
     { link: "Quality", path: "/Quality" },
     { link: "Clients", path: "/Clients" },
     { link: "Contact", path: "/ContactUs" },
-
   ];
 
   return (
@@ -56,9 +57,6 @@ const Navbar = () => {
               <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
-          {/* <div className="navMenuPC">
-
-          </div> */}
           <button onClick={toggleNav}>
             {isNavVisible ? (
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -79,20 +77,53 @@ const Navbar = () => {
             {NavigationLinks.map((item, index) => (
               <div
                 key={index}
+                className={item.link.trim() === "About" ? "aboutLinkWrapper" : ""}
                 style={{
                   margin: "20px 0px",
-                  position: "relative",
                   display: "flex",
                   alignItems: "center",
                 }}
               >
                 <div className="MittalShape"></div>
-                {/* <i class='bx bxs-circle' style={{color:"#9aa966",fontSize:"30px"}}></i> */}
                 <div>
-                  <Link to={item.path} onClick={hideNav}>
+                  <Link
+                    to={item.path}
+                    onClick={() => {
+                      if (item.link.trim() !== "About") hideNav();
+                    }}
+                    className={item.link.trim() === "About" ? "aboutLink" : ""}
+                  >
                     {item.link}
                   </Link>
                   <hr />
+                  {item.link.trim() === "About" && (
+                    <div className="DropdownComponent">
+                      <div className="subLinkContainer">
+                        <ul>
+                          <li
+                            onMouseEnter={() => setHoveredSublink("Our Legacy")}
+                          >
+                            <Link to="/" onClick={hideNav}>Our Legacy</Link>
+                          </li>
+                          <li
+                            onMouseEnter={() => setHoveredSublink("Group Companies")}
+                          >
+                            <Link to="" onClick={hideNav}>Group Companies</Link>
+                          </li>
+                          <li
+                            onMouseEnter={() => setHoveredSublink("Our Clients")}
+                          >
+                            <Link to="/Clients" onClick={hideNav}>Our Clients</Link>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="ImageContainer">
+                        {hoveredSublink === "Our Legacy" && <img src={Navigation2} alt="Our Legacy" />}
+                        {hoveredSublink === "Group Companies" && <img src={Navigation2} alt="Group Companies" />}
+                        {hoveredSublink === "Our Clients" && <img src={Navigation2} alt="Our Clients" />}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

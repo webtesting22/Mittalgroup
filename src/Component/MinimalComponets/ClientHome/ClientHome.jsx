@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./ClientHome.css";
 import Client from "../../Clients/ClientsData";
 import { Row, Col } from "antd";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 const ClientHome = () => {
   const [currentSetIndex, setCurrentSetIndex] = useState(0);
   const logosPerSet = 10; // Number of logos to display at a time
@@ -28,15 +33,15 @@ const ClientHome = () => {
     <>
       <section className="HomePageClientSection">
         <Row>
-          <Col lg={10} md={8}>
+          <Col lg={12} md={8}>
             <div className="clientHeadingContainer">
               <div className="HeadingContainer">
-                <h1>Our Partners</h1>
+                <h1>Our Trusted Clients</h1>
                 <p>Together with our partners, we forge strong connections that help us deliver durable, sustainable steel products to meet evolving industry demands.</p>
               </div>
             </div>
           </Col>
-          <Col lg={14} md={18}>
+          <Col lg={12} md={18}>
             <div className="ClientLogosContainer">
               {currentLogos.map((item, index) => (
                 <div key={index} className="ClientLogoimage show">
@@ -44,6 +49,23 @@ const ClientHome = () => {
                 </div>
               ))}
             </div>
+            {/* <div>
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {currentLogos.map((item, index) => (
+                  <SwiperSlide key={index}><img src={item.img} alt="" className="SwiperLogoImage"/></SwiperSlide>
+                ))}
+              </Swiper>
+
+            </div> */}
+
           </Col>
         </Row>
       </section>
