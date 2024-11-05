@@ -62,24 +62,27 @@ const ClientHome = () => {
         </div>
         <div>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={3}
             spaceBetween={30}
             freeMode={true}
             centeredSlides={true}
             loop={true}
             autoplay={{
               delay: 2000,
-
               disableOnInteraction: false,
-
             }}
             breakpoints={{
               // when window width is <= 768px
               768: {
-                slidesPerView: 4, // Show 2 slides per view on mobile
-                spaceBetween: 30,
+                slidesPerView: 2, // Show 2 slides per view on mobile
+                spaceBetween: 20,
                 centeredSlides: true
               },
+              576:{
+                slidesPerView:2,
+                spaceBetween:10,
+                centeredSlides:true,
+              }
               // you can add more breakpoints for different screen sizes if needed
             }}
             pagination={{
