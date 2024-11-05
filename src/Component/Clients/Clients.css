@@ -5,23 +5,21 @@
   justify-content: center;
   /* background-color: white; */
   padding-bottom: 2rem;
-  
 }
 
 .ClientsContainer img {
-  width: 80%;
-    aspect-ratio: 3/2;
-    margin: 0px;
-    object-fit: contain;
-    /* background-color: white; */
-    border-radius: 4px;
-    transition: 0.5s;
+  width: 70%;
+  aspect-ratio: 3/2;
+  margin: 0px;
+  object-fit: contain;
+  /* background-color: white; */
+  border-radius: 4px;
+  transition: 0.5s;
 }
 
 .ClientsContainer img:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  
 }
 
 #ImageContainerLogo {
@@ -40,12 +38,12 @@
   transition: 0.5s;
   border-radius: 10px;
 }
-.ClientContainerSet{
+.ClientContainerSet {
   padding: 0rem 3rem;
   padding-top: 9rem !important;
 }
 @media (max-width: 769px) {
-  .ClientContainerSet{
+  .ClientContainerSet {
     padding: 0rem 0.5rem;
   }
   #ImageContainerLogo:hover {
@@ -62,7 +60,7 @@
     height: 200px;
   }
 
-  .ClientsContainer .ant-row .ant-col{
+  .ClientsContainer .ant-row .ant-col {
     width: 50%;
   }
   .ClientsContainer img {

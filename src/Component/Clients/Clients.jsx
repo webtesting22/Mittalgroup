@@ -23,7 +23,7 @@ const Clients = () => {
                     <Row>
                         {Client.map((item, index) => (
 
-                            <Col lg={4} md={6} sm={24}>
+                            <Col lg={6} md={6} sm={24}>
                                 <div
                                     id="ImageContainerLogo"
                                     key={index}

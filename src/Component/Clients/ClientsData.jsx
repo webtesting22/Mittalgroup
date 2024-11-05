@@ -42,7 +42,7 @@ const Client = [
         img: "/images/Client Logos/meghmaniLogo.png",
     },
     {
-        img: "/images/Client Logos/mgvcl.png",
+        img: "/images/Client Logos/mgvcl2.png",
     },
     {
         img: "/images/Client Logos/onix.png",
