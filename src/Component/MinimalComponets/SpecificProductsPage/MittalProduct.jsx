@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Row, Col } from 'antd'
 import "./MittalProduct.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
+        link:"/Products/Flat-Bars",
         mainTitle: "Flat Bars Metal",
         tagline: "Strength and durability in every bar.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
@@ -69,6 +71,7 @@ const serviceData = {
     },
     "Channels": {
         title: 'Precision-Made Channels for Every Industry',
+        link:'/Products/Channels',
         mainTitle: "Channels",
         tagline: "Support and stability in every channel.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
@@ -130,6 +133,7 @@ const serviceData = {
     },
     "Round-Bars": {
         title: 'Precision-Made Round Bars for Every Industry',
+        link:'/Products/Round-Bars',
         mainTitle: "Round Bars",
         tagline: "Precision crafted for enduring strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
@@ -194,6 +198,7 @@ const serviceData = {
     },
     "Angles": {
         title: 'Precision-Made Angles for Every Industry',
+        link:'/Products/Angles',
         mainTitle: "Angles",
         tagline: "Angle your build toward strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
@@ -262,6 +267,10 @@ const MittalProduct = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [service]);
+    const currentMainTitle = currentService.mainTitle;
+    const filteredProducts = Object.values(serviceData).filter(item => item.mainTitle !== currentMainTitle).slice(0, 3);
+
+    // const filteredProducts = QualityData.filter(item => item.title !== currentService.mainTitle).slice(0, 3);
 
     return (
         <>
@@ -327,6 +336,30 @@ const MittalProduct = () => {
                         {currentService.rightSideStackColumn}
                     </div>
                 </div>
+                <br />
+
+            </div>
+            <div className='moreProductsSection'>
+                <div className='HeadingContainer'>
+                    <h3>View More Products</h3>
+                </div>
+                <Row gutter={[16, 16]} style={{ margin: "0px" }}>
+                    {filteredProducts.map((subpoint, subIndex) => (
+                        <Col key={subIndex} lg={8} md={8} sm={12} style={{ padding: "2px" }}>
+                        <Link to={subpoint.link}>
+                            <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
+                                <div className="CardContent">
+                                    <h3><b>{subpoint.mainTitle}</b></h3>
+                                    
+                                </div>
+                                <div className="qualityIconContainer">
+                                    <img src={subpoint.backgroundImage} alt={`${subpoint.mainTitle} Icon`} />
+                                </div>
+                            </div>
+                            </Link>
+                        </Col>
+                    ))}
+                </Row>
             </div>
         </>
     );

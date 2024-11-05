@@ -57,6 +57,7 @@
   aspect-ratio: 3/2;
   object-fit: contain;
   transition: .5s;
+  overflow: hidden;
 }
 
 .CardContent {
@@ -187,11 +188,21 @@
   padding: 0 50px;
   /* Adjust spacing between points */
   font-size: 18px;
+  display: inline-flex;
+  
+  /* display: flex; */
   /* Adjust font size */
   color: #ffffff;
   /* Adjust text color */
 }
-
+.quality-point img{
+  width: 100%;
+}
+.quality-point p{
+  display: flex;
+  padding: 0 10px;
+  margin: 0;
+}
 @keyframes marquee {
   0% {
     transform: translateX(0);

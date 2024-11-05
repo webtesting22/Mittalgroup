@@ -164,6 +164,9 @@
     transform: translateX(5px);
     transition: .5s;
 }
+.moreProductsSection{
+    padding: 2rem 4rem;
+}
 @media (max-width:769px) {
     .LeftSideContentajust h1 {
         color: white;
@@ -222,5 +225,8 @@
         position: static;
         border-radius: 10px;
         top: 30%;
+    }
+    .moreProductsSection{
+        padding: 2rem 1rem;
     }
 }
