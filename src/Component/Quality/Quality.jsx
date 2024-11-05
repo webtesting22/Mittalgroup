@@ -120,45 +120,71 @@ const Quality = () => {
                     </div>
                     <p>Our manufacturing facilities prioritize quality at every stage, with advanced in-house testing laboratories, certified management systems, and rigorous adherence to national standards. This ensures that every product we deliver meets the highest benchmarks for safety, performance, and reliability.</p>
                     <br />
-                    <hr />
-                    <div className="RowAdjustQuality">
-                        {QualityData.map((qualitySection, index) => (
-                            <div key={index} className="RowClass">
-                                <div className="HeadingContainerQuality">
-                                    <Row>
-                                        <Col lg={8} md={24}>
-                                            <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
-
-                                        </Col>
-                                        <Col lg={16} md={24}>
-                                            <p style={{ margin: "0px" }}>{qualitySection.para}</p>
-                                        </Col>
-                                    </Row>
-                                </div>
-<br />
-                                <Row gutter={[16, 16]}>
-                                    {qualitySection.subpoints.map((subpoint, subIndex) => (
-                                        <Col key={subIndex} lg={8} md={8} sm={12} style={{ padding: "2px" }}>
-                                            <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
-
-                                                <div className="CardContent">
-                                                    <h3><b>{subpoint.title}</b></h3>
-                                                    <p>{subpoint.description}</p>
-                                                </div>
-                                                <div className="qualityIconContainer">
-
-                                                    <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
-                                                </div>
-                                            </div>
-                                        </Col>
-                                    ))}
-                                </Row>
-                                <br />
-                            </div>
-                        ))}
-                    </div>
+                    {/* <hr /> */}
                 </div>
             </section>
+            {/* -------------  ShowCaseImageContainer ------------------- */}
+            <div className="ShowCaseBannerContainer">
+                <div className="FitContentImage">
+                    <img src="https://images.unsplash.com/photo-1506855868560-4ae177c39018?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <div className="OverlayBanner">
+
+                    </div>
+                    <div className="OverlayContent">
+                        <div>
+                            <p>Strength in Every Strand
+                            </p>
+                            <h1 style={{ color: "white", fontWeight: "600" }}>Quality Steel Manufacturing
+                            </h1>
+                            <p>At our steel manufacturing facility, quality is our top priority. We employ advanced technology and rigorous testing standards to ensure every product meets the highest industry benchmarks. Our commitment to excellence guarantees that our steel is not only strong and reliable but also tailored to meet the specific needs of our clients. With a focus on sustainability and innovation, we strive to set new standards in the steel industry.</p>
+                        </div>
+                    </div>
+                    <div className="BottomContainer">
+
+                    </div>
+                </div>
+            </div>
+            <section id="QualitySection" style={{ paddingTop: "0px" }}>
+                <div className="RowAdjustQuality">
+                    {QualityData.map((qualitySection, index) => (
+                        <div key={index} className="RowClass">
+                            <div className="HeadingContainerQuality">
+                                <Row>
+                                    <Col lg={8} md={24}>
+                                        <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
+
+                                    </Col>
+                                    <Col lg={16} md={24}>
+                                        <p style={{ margin: "0px" }}>{qualitySection.para}</p>
+                                    </Col>
+                                </Row>
+                            </div>
+                            <br />
+                            <Row gutter={[16, 16]} style={{ margin: "0px" }}>
+                                {qualitySection.subpoints.map((subpoint, subIndex) => (
+                                    <Col key={subIndex} lg={8} md={8} sm={12} style={{ padding: "2px" }}>
+                                        <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
+
+                                            <div className="CardContent">
+                                                <h3><b>{subpoint.title}</b></h3>
+                                                <p>{subpoint.description}</p>
+                                            </div>
+                                            <div className="qualityIconContainer">
+
+                                                <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
+                                            </div>
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
+                            <hr />
+                            <br />
+                        </div>
+                    ))}
+                </div>
+            </section>
+            {/* </div> */}
+
         </>
     );
 };
