@@ -196,7 +196,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
+{/* 
       <div className='OutMV'>
         <div className='blackOverlay'>
 
@@ -218,7 +218,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <section className='AboutUsSection'>
         {/* <Row>
               <Col lg={12} md={24} data-aos="fade-up">
@@ -254,7 +254,7 @@ const AboutUs = () => {
                 </div>
               </Col>
             </Row> */}
-
+{/* 
         <div className='WhyChooseSection'>
           <div className='HeadingContainer'>
             <p>Expertise You Can Trust</p>
@@ -267,7 +267,7 @@ const AboutUs = () => {
             makes us a trusted partner for industries across Gujarat.
           </p>
 
-        </div>
+        </div> */}
         <div id='CollapseEdit' >
           <div  >
             <div className='HeadingContainer'>
