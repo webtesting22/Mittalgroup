@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./Quality.css";
 import { Row, Col } from 'antd';
-
+import DemoPicture from "./DemoPicture.jpg"
 const QualityData = [
     {
         title: "In-House Fully Equipped Testing Laboratory",
         subpoints: [
             {
-                imgpath: "/images/Quality Icons/location.png",
+                imgpath: DemoPicture,
                 title: "Location",
                 description: "Each of our manufacturing units features a dedicated laboratory outfitted with the latest testing technology."
             },
@@ -124,21 +124,24 @@ const Quality = () => {
                             <div className="HeadingContainerQuality">
                                 <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
                             </div>
-                            
+
                             <Row gutter={[16, 16]}>
                                 {qualitySection.subpoints.map((subpoint, subIndex) => (
                                     <Col key={subIndex} lg={8} md={8} sm={12}>
                                         <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
                                             <div className="qualityIconContainer">
 
-                                                <img src={subpoint.imgpath} alt={`${subpoint.title} Icon`} />
+                                                <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
                                             </div>
-                                            <h3><b>{subpoint.title}</b></h3>
-                                            <p>{subpoint.description}</p>
+                                            <div className="CardContent">
+                                                <h3><b>{subpoint.title}</b></h3>
+                                                <p>{subpoint.description}</p>
+                                            </div>
                                         </div>
                                     </Col>
                                 ))}
                             </Row>
+                            <br />
                         </div>
                     ))}
                 </div>
