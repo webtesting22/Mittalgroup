@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import MittalSectionsLogo from "/images/big-mittal-logo-section.png";
 import MittalSteelLogo from "/images/big-mittal-steel-logo.png";
 import AMSteelLogo from "/images/big-am-steel-logo.png";
@@ -16,12 +16,12 @@ import './Group.css'
 const Group = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
 
   return (
     <>
       {/* <Home backgroundImage={GroupImagesBack} /> */}
-      <section className='sectionPadding'>
+      <section id='GroupCompanies'>
         <div id='CardContainer'>
           <Row>
             <Col lg={6} md={24} data-aos="fade-up">
@@ -37,31 +37,31 @@ const Group = () => {
                 <h3>The major products of MSL are:</h3>
                 <br />
                 <table border="1" cellpadding="10" cellspacing="0">
-  <thead>
-    <tr>
-      <th>PRODUCT</th>
-      <th>RANGE (IN MM)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Angles</td>
-      <td>Dimensions in mm: 35*35*5 to 75*75*10</td>
-    </tr>
-    <tr>
-      <td>Channels</td>
-      <td>Dimensions in mm: 75*40 to 100*50</td>
-    </tr>
-    <tr>
-      <td>Round bars</td>
-      <td>Dimensions in mm: 16 to 32</td>
-    </tr>
-    <tr>
-      <td>Flat bars</td>
-      <td>Dimensions in mm: 50*6 to 150*25</td>
-    </tr>
-  </tbody>
-</table>
+                  <thead>
+                    <tr>
+                      <th>PRODUCT</th>
+                      <th>RANGE (IN MM)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Angles</td>
+                      <td>Dimensions in mm: 35*35*5 to 75*75*10</td>
+                    </tr>
+                    <tr>
+                      <td>Channels</td>
+                      <td>Dimensions in mm: 75*40 to 100*50</td>
+                    </tr>
+                    <tr>
+                      <td>Round bars</td>
+                      <td>Dimensions in mm: 16 to 32</td>
+                    </tr>
+                    <tr>
+                      <td>Flat bars</td>
+                      <td>Dimensions in mm: 50*6 to 150*25</td>
+                    </tr>
+                  </tbody>
+                </table>
 
                 <br />
                 <p>MSL is one of the largest manufacturers of rolled structural steel products. The specialty of MSL is that it rolls the entire range of MS products. The project is equipped with sufficient raw material and manpower for crafting quality products and deliver them to a wide customer base. MSL believes in building such a modern industrial base which is strong and self reliant. It’s an ISO 9001 organization with having other corporate certificates from GETCO.</p>

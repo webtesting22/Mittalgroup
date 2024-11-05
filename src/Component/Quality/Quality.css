@@ -97,7 +97,10 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.582);
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .OverlayContent {
@@ -119,9 +122,11 @@
   position: absolute;
   bottom: 0px;
   height: 20%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.311);
   border-top: 1px solid white;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .FitContentImage {
@@ -132,15 +137,16 @@
 
 @media (max-width: 769px) {
 
-.OverlayContent {
-  width: 98%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0px;
-}
+  .OverlayContent {
+    width: 98%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+  }
+
   .FitContentImage {
     display: flex;
     justify-content: center;
@@ -155,5 +161,43 @@
 
   .QualityContent {
     padding: 0;
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  /* Set to the desired width */
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 50s linear infinite;
+  /* Adjust speed */
+}
+
+.marquee span {
+
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 100%;
+}
+
+.quality-point {
+  padding: 0 50px;
+  /* Adjust spacing between points */
+  font-size: 18px;
+  /* Adjust font size */
+  color: #ffffff;
+  /* Adjust text color */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

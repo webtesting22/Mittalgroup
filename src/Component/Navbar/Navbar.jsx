@@ -15,7 +15,7 @@ import Navigation5 from "./Navigation5.avif";
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hoveredAboutSublink, setHoveredAboutSublink] = useState("Our Legacy");
+  const [hoveredAboutSublink, setHoveredAboutSublink] = useState(null);
   const [hoveredProductsSublink, setHoveredProductsSublink] = useState(null);
   const [hoveredInfrastructureSublink, setHoveredInfrastructureLink] = useState(null);
   const toggleNav = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   const NavigationLinks = [
-    { link: "About", path: "/AboutUs" },
+    { link: "About" },
     { link: "Gallery", path: "/Gallery" },
     { link: "Products", path: "/Products" },
     { link: "Infrastructure" },
@@ -84,24 +84,28 @@ const Navbar = () => {
               >
                 <div className="MittalShape"></div>
                 <div>
-                  <Link
-                    to={item.path}
-                    onClick={() => {
-                      // if (item.link.trim() !== "About" && item.link.trim() !== "Products") hideNav();
-                      hideNav();
-                    }}
+                  {item.path ? (
+                    <Link
+                      to={item.path}
+                      onClick={() => {
+                        // if (item.link.trim() !== "About" && item.link.trim() !== "Products") hideNav();
+                        hideNav();
+                      }}
 
-                    className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Infrastructure" ? "aboutLink" : ""}
-                  >
-                    {item.link}
-                  </Link>
+                      className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Infrastructure" ? "aboutLink" : ""}
+                    >
+                      {item.link}
+                    </Link>
+                  ) : (
+                    <Link className="nonClickable">{item.link}</Link>
+                  )}
                   <hr />
                   {item.link.trim() === "About" && (
                     <div className="DropdownComponent">
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredAboutSublink("Our Legacy")} onMouseLeave={() => setHoveredAboutSublink(null)}>
-                            <Link to="/" onClick={hideNav}>Our Legacy</Link>
+                            <Link to="/AboutUs" onClick={hideNav}>Our Legacy</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredAboutSublink("Group Companies")} onMouseLeave={() => setHoveredAboutSublink(null)}>
                             <Link to="/Group" onClick={hideNav}>Group Companies</Link>
@@ -115,7 +119,7 @@ const Navbar = () => {
                         {hoveredAboutSublink === "Our Legacy" && <img src={Navigation1} alt="Our Legacy" />}
                         {hoveredAboutSublink === "Group Companies" && <img src={Navigation4} alt="Group Companies" />}
                         {hoveredAboutSublink === "Our Clients" && <img src={Navigation5} alt="Our Clients" />}
-                        {!hoveredAboutSublink && <img src={Navigation2} alt="Default" />}
+                        {!hoveredAboutSublink && <img src={Navigation1} alt="Default" />}
                       </div>
                     </div>
                   )}

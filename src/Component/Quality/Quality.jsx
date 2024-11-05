@@ -107,6 +107,24 @@ const QualityData = [
 ];
 
 const Quality = () => {
+    const qualityPoints = [
+        "High Durability",
+        "Corrosion Resistant",
+        "Precision Engineering",
+        "Sustainable Manufacturing",
+        "Cost-Effective Solutions",
+        "Custom Steel Solutions",
+        "Timely Delivery",
+        "ISO Certified Quality",
+        "Innovative Technologies",
+        "Expert Team",
+        "Stringent Quality Control",
+        "Comprehensive Testing",
+        "Customer-Centric Approach",
+        "Wide Range of Products",
+        "Advanced Production Techniques",
+    ];
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -140,7 +158,22 @@ const Quality = () => {
                         </div>
                     </div>
                     <div className="BottomContainer">
-
+                        <div className="marquee-container">
+                            <div className="marquee">
+                                {qualityPoints.map((point, index) => (
+                                    <span key={index} className="quality-point">
+                                        {point}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="marquee">
+                                {qualityPoints.map((point, index) => (
+                                    <span key={index} className="quality-point">
+                                        {point}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
