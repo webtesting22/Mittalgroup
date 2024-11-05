@@ -7,10 +7,12 @@ import NavigationBackImage from "./navigation.jpg";
 import MittalLogocopy from "/images/MittalLogocopy.png";
 import MittalLogo from "/images/MittalLogo.png";
 import Navigation2 from "./Navigation2.jpeg";
+
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hoveredSublink, setHoveredSublink] = useState("Our Legacy");
+  const [hoveredAboutSublink, setHoveredAboutSublink] = useState("Our Legacy");
+  const [hoveredProductsSublink, setHoveredProductsSublink] = useState(null);
 
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
@@ -20,21 +22,13 @@ const Navbar = () => {
     setIsNavVisible(false);
   };
 
-  // Track scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const NavigationLinks = [
@@ -90,51 +84,59 @@ const Navbar = () => {
                     onClick={() => {
                       if (item.link.trim() !== "About" && item.link.trim() !== "Products") hideNav();
                     }}
+                    
                     className={item.link.trim() === "About" || item.link.trim() === "Products" ? "aboutLink" : ""}
                   >
                     {item.link}
                   </Link>
                   <hr />
-                  {(item.link.trim() === "About" || item.link.trim() === "Products") && (
+                  {item.link.trim() === "About" && (
                     <div className="DropdownComponent">
                       <div className="subLinkContainer">
                         <ul>
-                          {item.link.trim() === "About" && (
-                            <>
-                              <li onMouseEnter={() => setHoveredSublink("Our Legacy")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="/" onClick={hideNav}>Our Legacy</Link>
-                              </li>
-                              <li onMouseEnter={() => setHoveredSublink("Group Companies")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="" onClick={hideNav}>Group Companies</Link>
-                              </li>
-                              <li onMouseEnter={() => setHoveredSublink("Our Clients")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="/Clients" onClick={hideNav}>Our Clients</Link>
-                              </li>
-                            </>
-                          )}
-                          {item.link.trim() === "Products" && (
-                            <>
-                              <li onMouseEnter={() => setHoveredSublink("Product A")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="/Products/A" onClick={hideNav}>Product A</Link>
-                              </li>
-                              <li onMouseEnter={() => setHoveredSublink("Product B")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="/Products/B" onClick={hideNav}>Product B</Link>
-                              </li>
-                              <li onMouseEnter={() => setHoveredSublink("Product C")} onMouseLeave={() => setHoveredSublink(null)}>
-                                <Link to="/Products/C" onClick={hideNav}>Product C</Link>
-                              </li>
-                            </>
-                          )}
+                          <li onMouseEnter={() => setHoveredAboutSublink("Our Legacy")} onMouseLeave={() => setHoveredAboutSublink(null)}>
+                            <Link to="/" onClick={hideNav}>Our Legacy</Link>
+                          </li>
+                          <li onMouseEnter={() => setHoveredAboutSublink("Group Companies")} onMouseLeave={() => setHoveredAboutSublink(null)}>
+                            <Link to="" onClick={hideNav}>Group Companies</Link>
+                          </li>
+                          <li onMouseEnter={() => setHoveredAboutSublink("Our Clients")} onMouseLeave={() => setHoveredAboutSublink(null)}>
+                            <Link to="/Clients" onClick={hideNav}>Our Clients</Link>
+                          </li>
                         </ul>
                       </div>
                       <div className="ImageContainer">
-                        {hoveredSublink === "Our Legacy" && <img src={Navigation2} alt="Our Legacy" />}
-                        {hoveredSublink === "Group Companies" && <img src={Navigation2} alt="Group Companies" />}
-                        {hoveredSublink === "Our Clients" && <img src={Navigation2} alt="Our Clients" />}
-                        {hoveredSublink === "Product A" && <img src={Navigation2} alt="Product A" />}
-                        {hoveredSublink === "Product B" && <img src={Navigation2} alt="Product B" />}
-                        {hoveredSublink === "Product C" && <img src={Navigation2} alt="Product C" />}
-                        {!hoveredSublink && <img src={Navigation2} alt="Default" />} {/* Default image */}
+                        {hoveredAboutSublink === "Our Legacy" && <img src={Navigation2} alt="Our Legacy" />}
+                        {hoveredAboutSublink === "Group Companies" && <img src={Navigation2} alt="Group Companies" />}
+                        {hoveredAboutSublink === "Our Clients" && <img src={Navigation2} alt="Our Clients" />}
+                        {!hoveredAboutSublink && <img src={Navigation2} alt="Default" />}
+                      </div>
+                    </div>
+                  )}
+                  {item.link.trim() === "Products" && (
+                    <div className="DropdownComponent">
+                      <div className="subLinkContainer">
+                        <ul>
+                          <li onMouseEnter={() => setHoveredProductsSublink("Flat-Bars")} onMouseLeave={() => setHoveredProductsSublink(null)}>
+                            <Link to="/Products/Flat-Bars" onClick={hideNav}>Flat-Bars</Link>
+                          </li>
+                          <li onMouseEnter={() => setHoveredProductsSublink("Round-Bars")} onMouseLeave={() => setHoveredProductsSublink(null)}>
+                            <Link to="/Products/Round-Bars" onClick={hideNav}>Round-Bars</Link>
+                          </li>
+                          <li onMouseEnter={() => setHoveredProductsSublink("Channels")} onMouseLeave={() => setHoveredProductsSublink(null)}>
+                            <Link to="/Products/Channels" onClick={hideNav}>Channels</Link>
+                          </li>
+                          <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
+                            <Link to="/Products/Angles" onClick={hideNav}>Angles</Link>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="ImageContainer">
+                        {hoveredProductsSublink === "Flat-Bars" && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="Flat-Bars" />}
+                        {hoveredProductsSublink === "Round-Bars" && <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="Round-Bars" />}
+                        {hoveredProductsSublink === "Channels" && <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt="Channels" />}
+                        {hoveredProductsSublink === "Angles" && <img src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt="Angles" />}
+                        {!hoveredProductsSublink && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="Default" />}
                       </div>
                     </div>
                   )}

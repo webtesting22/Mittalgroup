@@ -27,7 +27,7 @@ const serviceData = {
                 <div className='ColumnContainer'>
 
                     <img src="https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg" alt="" />
-                    
+
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Flats</h2>
@@ -94,7 +94,7 @@ const serviceData = {
                         <h2>MS Channel</h2>
                         <ul>
                             <li>
-                                <b>Construction: </b>Building frames, bridges, and industrial sheds.                              
+                                <b>Construction: </b>Building frames, bridges, and industrial sheds.
                             </li>
                             <li>
                                 <b>Automobile Industry: </b>Truck chassis and vehicle frames.
@@ -112,7 +112,7 @@ const serviceData = {
                             <img src="https://webtesting-upload.vercel.app/assets/gchannels2-Bere5Un7.jpeg" alt="" />
                             <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
                         </div>
-                        
+
                         <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
                         </p>
                         <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
@@ -278,7 +278,7 @@ const MittalProduct = () => {
 
                     <div>
                         <button className="Dynamicbtn" data-aos="fade-up"
-                            data-aos-delay={`${ 100}`}>
+                            data-aos-delay={`${100}`}>
                             <div>
                                 {currentService.mainTitle}
                             </div>

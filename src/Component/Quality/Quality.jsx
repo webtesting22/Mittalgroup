@@ -5,6 +5,7 @@ import DemoPicture from "./DemoPicture.jpg"
 const QualityData = [
     {
         title: "In-House Fully Equipped Testing Laboratory",
+        para: "Our in-house fully equipped testing laboratory ensures that every steel product undergoes rigorous quality assessments, maintaining the highest standards of strength and durability. This commitment to excellence allows us to deliver reliable solutions tailored to meet our clients' needs.",
         subpoints: [
             {
                 imgpath: DemoPicture,
@@ -119,31 +120,43 @@ const Quality = () => {
                     </div>
                     <p>Our manufacturing facilities prioritize quality at every stage, with advanced in-house testing laboratories, certified management systems, and rigorous adherence to national standards. This ensures that every product we deliver meets the highest benchmarks for safety, performance, and reliability.</p>
                     <br />
-                    {QualityData.map((qualitySection, index) => (
-                        <div key={index}>
-                            <div className="HeadingContainerQuality">
-                                <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
+                    <hr />
+                    <div className="RowAdjustQuality">
+                        {QualityData.map((qualitySection, index) => (
+                            <div key={index} className="RowClass">
+                                <div className="HeadingContainerQuality">
+                                    <Row>
+                                        <Col lg={8} md={24}>
+                                            <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
+
+                                        </Col>
+                                        <Col lg={16} md={24}>
+                                            <p style={{ margin: "0px" }}>{qualitySection.para}</p>
+                                        </Col>
+                                    </Row>
+                                </div>
+<br />
+                                <Row gutter={[16, 16]}>
+                                    {qualitySection.subpoints.map((subpoint, subIndex) => (
+                                        <Col key={subIndex} lg={8} md={8} sm={12} style={{ padding: "2px" }}>
+                                            <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
+
+                                                <div className="CardContent">
+                                                    <h3><b>{subpoint.title}</b></h3>
+                                                    <p>{subpoint.description}</p>
+                                                </div>
+                                                <div className="qualityIconContainer">
+
+                                                    <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <br />
                             </div>
-
-                            <Row gutter={[16, 16]}>
-                                {qualitySection.subpoints.map((subpoint, subIndex) => (
-                                    <Col key={subIndex} lg={8} md={8} sm={12}>
-                                        <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
-                                            <div className="qualityIconContainer">
-
-                                                <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
-                                            </div>
-                                            <div className="CardContent">
-                                                <h3><b>{subpoint.title}</b></h3>
-                                                <p>{subpoint.description}</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                ))}
-                            </Row>
-                            <br />
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </section>
         </>
