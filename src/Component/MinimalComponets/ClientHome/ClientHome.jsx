@@ -76,9 +76,9 @@ const ClientHome = () => {
             breakpoints={{
               // when window width is <= 768px
               768: {
-                slidesPerView: 2, // Show 2 slides per view on mobile
-                spaceBetween:30,
-                centeredSlides:true
+                slidesPerView: 4, // Show 2 slides per view on mobile
+                spaceBetween: 30,
+                centeredSlides: true
               },
               // you can add more breakpoints for different screen sizes if needed
             }}
