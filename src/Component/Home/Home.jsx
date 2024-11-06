@@ -56,7 +56,7 @@ const Home = ({ images = [] }) => {
         <div className='MittalHomeContent'>
           <h3>Shaping the future of steel piping.</h3>
           <h1>Mittal Production</h1>
-          <p>Mittal provides premium steel pipes designed for strength and durability. Our precision engineering ensures reliable solutions for every project. Contact us today for a custom quote tailored to your needs."</p>
+          <p>Mittal provides premium steel pipes designed for strength and durability. Our precision engineering ensures reliable solutions for every project. Contact us today for a custom quote tailored to your needs.</p>
         </div>
         <div className='blackOverlay'>
 

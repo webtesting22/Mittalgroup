@@ -13,6 +13,7 @@ import Products from "./Component/Products/Products"
 import MittalProduct from './Component/MinimalComponets/SpecificProductsPage/MittalProduct'
 import MittalManufacturing from './Component/MinimalComponets/ManufacturingProcess/MittalManufacturing'
 import Quality from './Component/Quality/Quality'
+import Applications from './Component/Applications/Applications'
 const App = () => {
     return (
         <>
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path="/Clients" element={<Clients />} />
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Products/:service" element={<MittalProduct />} />
+                <Route path='/Applications' element={<Applications/>}/>
                 <Route path="/Manufacturing" element={<MittalManufacturing />} />
                 <Route path='/Quality' element={<Quality/>}/>
             </Routes>

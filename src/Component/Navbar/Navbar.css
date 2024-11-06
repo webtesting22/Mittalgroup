@@ -27,7 +27,7 @@
 .transparent {
   background-color: transparent;
   /* padding: 20px 0px; */
-  transition: .5s;
+  transition: 0.5s;
   height: 10vh;
 }
 
@@ -35,9 +35,8 @@
   background-color: rgb(0, 0, 0);
   backdrop-filter: blur(20px);
   /* padding: 5px 0px; */
-  transition: .5s;
+  transition: 0.5s;
 }
-
 
 .navigationPanel.show {
   height: 10vh;
@@ -104,7 +103,7 @@
   color: #9aa966;
 }
 
-.navigationPanel a+hr {
+.navigationPanel a + hr {
   width: 0px;
   opacity: 0;
   margin: 0px;
@@ -114,7 +113,6 @@
   margin-left: 100px;
   display: none;
 }
-
 
 .MittalShape {
   /* background-color: #ffcc00; */
@@ -145,10 +143,9 @@
 
 .logoContainer img {
   width: 150px;
-
 }
 
-@media (max-width:798px) {
+@media (max-width: 798px) {
   .logoContainer img {
     width: 100px;
   }
@@ -156,7 +153,7 @@
   .transparent {
     background-color: transparent;
     padding: 0px 0px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .overlayBackImage img {
@@ -172,7 +169,6 @@
     list-style: none;
     font-size: 25px;
     margin: 0px 0px;
-
     margin-left: 0px;
   }
 
@@ -223,14 +219,11 @@
     left: 0px;
     display: block;
   }
-
 }
-
 
 /* Initially hide the dropdown */
 /* Dropdown initially hidden and positioned off-screen */
 .DropdownComponent {
-
   visibility: hidden;
   transform: translateY(20px);
   /* Start slightly below */
@@ -258,7 +251,9 @@
   transform: translateY(27px);
   /* Move to original position */
 }
-
+.navigationPanel.hide .DropdownComponent {
+  visibility: hidden;
+}
 .aboutLink:hover {
   color: #9aa966;
   text-decoration: underline;
@@ -289,4 +284,34 @@
 
 .subLinkContainer ul li a {
   padding: 0px !important;
+}
+@media (max-width:769px) {
+  .DropdownComponent{
+    /* top: 70px; */
+    top: 70%;
+    width: 300px;
+    left: -50px;
+    flex-direction: column;
+    
+  }
+ 
+  .aboutLinkWrapper:hover .DropdownComponent{
+    /* transform: translateY(200px); */
+    transform: translateY(10px);
+
+    /* transform: translateX(0px); */
+    /* top: 50px; */
+  }
+  .DropdownComponent .ImageContainer{
+    display: none;
+  }
+  .aboutLinkWrapper:hover .about{
+    transform: translateY(-150px);
+  }
+  .aboutLinkWrapper:hover .infra{
+    transform: translateY(40px);
+  }
+  .aboutLinkWrapper:hover .product{
+    transform: translateY(-30px);
+  }
 }

@@ -22,6 +22,7 @@
   min-height: 30vh;
   text-align: center;
   transition: .5s;
+  
 }
 
 .qualityCard:hover .CardContent {
@@ -163,6 +164,19 @@
   .QualityContent {
     padding: 0;
   }
+  .CardContent{
+    padding: 20px 30px;
+  }
+  .qualityCard{
+    margin: 0;
+  }
+  .RowAdjustQuality{
+    padding: 20px 0;
+  }
+  .HeadingContainerQuality{
+    padding: 0 30px;
+  }
+  
 }
 
 .marquee-container {
@@ -189,14 +203,14 @@
   /* Adjust spacing between points */
   font-size: 18px;
   display: inline-flex;
-  
+  align-items: center;
   /* display: flex; */
   /* Adjust font size */
   color: #ffffff;
   /* Adjust text color */
 }
 .quality-point img{
-  width: 100%;
+  width: 28px;
 }
 .quality-point p{
   display: flex;

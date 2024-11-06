@@ -38,7 +38,8 @@ const Navbar = () => {
   const NavigationLinks = [
     { link: "About" },
     { link: "Gallery", path: "/Gallery" },
-    { link: "Products", path: "/Products" },
+    // { link: "Products", path: "/Products" },
+    {link:"Products"},
     { link: "Infrastructure" },
     // { link: "Manufacturing", path: "/Manufacturing" },
     // { link: "Quality", path: "/Quality" },
@@ -51,7 +52,10 @@ const Navbar = () => {
       <section className={`MittalNavigationContainer ${isScrolled ? "redBackground" : "transparent"}`}>
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
-            <Link to="/">
+            <Link to="/" onClick={() => {
+              
+              hideNav();
+            }}>
               <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
@@ -101,7 +105,7 @@ const Navbar = () => {
                   )}
                   <hr />
                   {item.link.trim() === "About" && (
-                    <div className="DropdownComponent">
+                    <div className="DropdownComponent about">
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredAboutSublink("Our Legacy")} onMouseLeave={() => setHoveredAboutSublink(null)}>
@@ -124,7 +128,7 @@ const Navbar = () => {
                     </div>
                   )}
                   {item.link.trim() === "Products" && (
-                    <div className="DropdownComponent">
+                    <div className="DropdownComponent product">
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredProductsSublink("Flat-Bars")} onMouseLeave={() => setHoveredProductsSublink(null)}>
@@ -139,6 +143,9 @@ const Navbar = () => {
                           <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
                             <Link to="/Products/Angles" onClick={hideNav}>Angles</Link>
                           </li>
+                          <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
+                            <Link to="/Applications" onClick={hideNav}>Product Applications</Link>
+                          </li>
                         </ul>
                       </div>
                       <div className="ImageContainer">
@@ -146,12 +153,13 @@ const Navbar = () => {
                         {hoveredProductsSublink === "Round-Bars" && <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="Round-Bars" />}
                         {hoveredProductsSublink === "Channels" && <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt="Channels" />}
                         {hoveredProductsSublink === "Angles" && <img src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt="Angles" />}
+                        {hoveredProductsSublink === "Applications" && <img src="" alt="Applications"/>}
                         {!hoveredProductsSublink && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="Default" />}
                       </div>
                     </div>
                   )}
                   {item.link.trim() === "Infrastructure" && (
-                    <div className="DropdownComponent">
+                    <div className="DropdownComponent infra">
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredInfrastructureLink("Manufacturing")} onMouseLeave={() => setHoveredInfrastructureLink(null)}>
@@ -164,10 +172,9 @@ const Navbar = () => {
                         </ul>
                       </div>
                       <div className="ImageContainer">
-                        {hoveredInfrastructureSublink === "Manufacturing" && <img src={Navigation2} alt="Manufacturing" />}
-                        {hoveredInfrastructureSublink === "Quality" && <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="Quality" />}
-
-                        {!hoveredInfrastructureSublink && <img src={Navigation2} alt="Default" />}
+                        {hoveredInfrastructureSublink === "Manufacturing" && <img src='/images/AbmittalBack.jpeg' alt="Manufacturing" />}
+                        {hoveredInfrastructureSublink === "Quality" && <img src='/images/GroupImagesBack.avif' alt="Quality" />}
+                        {!hoveredInfrastructureSublink && <img src='/images/AbmittalBack.jpeg' alt="Default" />}
                       </div>
                     </div>
                   )}
