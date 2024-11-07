@@ -365,7 +365,8 @@ const MittalProduct = () => {
                         <Col key={index} lg={8} md={8} sm={24} style={{ padding: "2px" }}>
                             <Link to={product.link}>
                                 <div className='productCard' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 200}>
-                                    <img src={product.backgroundImage} alt={`${product.mainTitle} Icon`} /><br />
+                                    <img src={product.backgroundImage} alt={`${product.mainTitle} Icon`} />
+                                    {/* <br /> */}
                                     <h3>{product.mainTitle}</h3>
                                 </div>
                             </Link>

@@ -66,10 +66,10 @@
   transition: 0.5s;
   z-index: 9;
   position: fixed;
-  left: 0%;
+  right: 0;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: unset;
   /* right: 100%; */
   /* Slides out */
 }
@@ -309,7 +309,7 @@
     transform: translateY(-150px);
   }
   .aboutLinkWrapper:hover .infra{
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
   .aboutLinkWrapper:hover .product{
     transform: translateY(-30px);

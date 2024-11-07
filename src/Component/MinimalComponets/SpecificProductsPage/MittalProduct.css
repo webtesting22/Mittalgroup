@@ -174,9 +174,9 @@
 .productCard{
     display: flex;
     flex-direction: column;
-    padding: 30px 40px;
+    padding: 0px 0px;
     overflow: hidden;
-    margin: 1rem 0.5rem;
+    margin:2rem 0.5rem;
     /* border: 1px solid  #e6e6e6; */
     /* border-radius: 10px; */
     box-shadow:0 2px 5px #e6e6e6;
@@ -196,6 +196,7 @@
 }
 .productCard h3{
     text-align: center;
+    padding: 10px 0;
     
 }
 .productCard:hover h3{
