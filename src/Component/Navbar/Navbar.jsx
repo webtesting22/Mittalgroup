@@ -144,7 +144,7 @@ const Navbar = () => {
                             <Link to="/Products/Angles" onClick={hideNav}>Angles</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Applications" onClick={hideNav}>Product Applications</Link>
+                            <Link to="/Applications" onClick={hideNav}>Products & Applications</Link>
                           </li>
                         </ul>
                       </div>
