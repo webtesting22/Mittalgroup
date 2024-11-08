@@ -16,8 +16,20 @@ import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
 import MittalGallllery from '../Mittalgallery/MittalGallery';
 import carousal3 from "../Home/carousal3.jpeg"
-import FoundersImage from "./FoundersImagecopy.jpg"
+import Image1 from "./founder5.jpg"
+import Image2 from "./founder1.jpg"
+import Image3 from "./founder2.jpg"
+import Image4 from "./founder3.jpg"
+import Image5 from "./what.jpg"
+import { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination, Autoplay } from 'swiper/modules';
+
 import backImage from "./backImage.png"
+
+
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -164,9 +176,19 @@ const AboutUs = () => {
                 <img src={backImage} alt="" />
               </div>
               <Col lg={12} md={12}>
-                <div>
-                  <img src={FoundersImage} alt="" />
-                </div>
+                {/* <div className='foundersImage'> */}
+                  <Swiper pagination={true}
+                   modules={[Pagination, Autoplay]}
+                   autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    className="founderSlider">
+                    <SwiperSlide> <img src={Image1} alt="slide1"/> </SwiperSlide>
+                    <SwiperSlide> <img src={Image2} alt="slide2"/> </SwiperSlide>
+                    <SwiperSlide> <img src={Image3} alt="slide3"/> </SwiperSlide>
+                    <SwiperSlide> <img src={Image4} alt="slide4"/> </SwiperSlide>
+                    <SwiperSlide> <img src={Image5} alt="slide5"/> </SwiperSlide>
+                  </Swiper>
+
+                {/* </div> */}
               </Col>
               <Col lg={12} md={12}>
                 <div className='FounderInfo'>
@@ -174,7 +196,7 @@ const AboutUs = () => {
                     <h1 className='MainTitle'>
                       The Vision Behind <span style={{ color: "#9aa966" }}>Our Success
                       </span>
-                    </h1> 
+                    </h1>
                     <p>Mittal Sections Limited, <b style={{ fontWeight: "500" }}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
                       in steel solutions, specializing in the production of high-quality Mild Steel products.
                       Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
@@ -196,7 +218,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-{/* 
+      {/* 
       <div className='OutMV'>
         <div className='blackOverlay'>
 
@@ -254,7 +276,7 @@ const AboutUs = () => {
                 </div>
               </Col>
             </Row> */}
-{/* 
+        {/* 
         <div className='WhyChooseSection'>
           <div className='HeadingContainer'>
             <p>Expertise You Can Trust</p>
