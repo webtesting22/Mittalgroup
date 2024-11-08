@@ -177,16 +177,17 @@ const AboutUs = () => {
               </div>
               <Col lg={12} md={12}>
                 {/* <div className='foundersImage'> */}
-                  <Swiper pagination={true}
-                   modules={[Pagination, Autoplay]}
-                    autoplay={{ delay: 2500, disableOnInteraction: false }}
-                    className="founderSlider">
-                    <SwiperSlide> <img src={Image1} alt="slide1"/> </SwiperSlide>
-                    <SwiperSlide> <img src={Image2} alt="slide2"/> </SwiperSlide>
-                    <SwiperSlide> <img src={Image3} alt="slide3"/> </SwiperSlide>
-                    <SwiperSlide> <img src={Image4} alt="slide4"/> </SwiperSlide>
-                    <SwiperSlide> <img src={Image5} alt="slide5"/> </SwiperSlide>
-                  </Swiper>
+                <Swiper
+                 
+                  modules={[ Autoplay]}
+                  autoplay={{ delay: 2500, disableOnInteraction: false }}
+                  className="founderSlider">
+                  <SwiperSlide> <img src={Image1} alt="slide1" /> </SwiperSlide>
+                  <SwiperSlide> <img src={Image2} alt="slide2" /> </SwiperSlide>
+                  <SwiperSlide> <img src={Image3} alt="slide3" /> </SwiperSlide>
+                  <SwiperSlide> <img src={Image4} alt="slide4" /> </SwiperSlide>
+                  <SwiperSlide> <img src={Image5} alt="slide5" /> </SwiperSlide>
+                </Swiper>
 
                 {/* </div> */}
               </Col>

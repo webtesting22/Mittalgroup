@@ -20,7 +20,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/On-Site%20Testing-DlPc9zAh.jpg",
                 title: "On-Site Testing",
-                description: "Allows real-time quality checks during production, reducing delays and ensuring immediate quality assurance."
+                description: "Enables real-time quality checks during production, reducing delays and ensuring immediate assurance."
             }
         ]
     },
@@ -75,7 +75,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Market%20Credibility-Ck7ZXWM4.jpg",
                 title: "Market Credibility",
-                description: "BIS compliance positions our products as reliable and safe for use in critical applications, especially in the construction industry."
+                description: "BIS compliance ensures our products are reliable and safe for critical applications, particularly in construction."
             },
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Customer%20Trust-C9WOSw7g.jpg",
@@ -100,7 +100,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Brand%20Reputation-DOxEazHy.jpg",
                 title: "Brand Reputation",
-                description: "Being ISI-approved reinforces our reputation as a trusted provider of high-quality, durable, and safe products."
+                description: "ISI approval reinforces our reputation as a trusted provider of high-quality, durable, and safe products."
             }
         ]
     }

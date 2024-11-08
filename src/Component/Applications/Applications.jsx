@@ -1,5 +1,6 @@
 import React,{useEffect} from "react";
 import './Applications.css';
+import AnimatedStackCards from "../MinimalComponets/AnimatedStackCards";
 const Applications = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -42,6 +43,7 @@ const Applications = () => {
     ]
     return (
         <>
+        <AnimatedStackCards/>
             <div className="productsApplications ">
                 <div>
                     <div className="HeadingContainer">
