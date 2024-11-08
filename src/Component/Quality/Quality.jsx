@@ -8,7 +8,7 @@ const QualityData = [
         para: "Our in-house fully equipped testing laboratory ensures that every steel product undergoes rigorous quality assessments, maintaining the highest standards of strength and durability. This commitment to excellence allows us to deliver reliable solutions tailored to meet our clients' needs.",
         subpoints: [
             {
-                imgpath: DemoPicture,
+                imgpath: "",
                 title: "Location",
                 description: "Each of our manufacturing units features a dedicated laboratory outfitted with the latest testing technology."
             },

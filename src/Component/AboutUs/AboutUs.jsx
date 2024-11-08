@@ -179,7 +179,7 @@ const AboutUs = () => {
                 {/* <div className='foundersImage'> */}
                   <Swiper pagination={true}
                    modules={[Pagination, Autoplay]}
-                  //  autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    autoplay={{ delay: 2500, disableOnInteraction: false }}
                     className="founderSlider">
                     <SwiperSlide> <img src={Image1} alt="slide1"/> </SwiperSlide>
                     <SwiperSlide> <img src={Image2} alt="slide2"/> </SwiperSlide>
