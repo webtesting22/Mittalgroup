@@ -33,9 +33,15 @@ const MittalManufacturing = () => {
                         <h2>Manufacturing process</h2>
                     </div>
                     <p>
-                        The 5S methodology is a lean manufacturing practice that aims to improve efficiency, safety, and sustainability in industrial environments, including steel manufacturing. By implementing 5S—Sort, Set in Order, Shine, Standardize, and Sustain—steel manufacturers can reduce waste, improve quality, and enhance workplace conditions, all of which contribute to sustainable practices. Here’s how each step can be applied to a steel manufacturing context:
+                        At Mittal Sections Limited, we operate two fully equipped manufacturing units in Changodar,
+                        Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
+                        allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
+                        our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
 
                     </p>
+                    <p>We follow the <b>5S manufacturing methodology</b>—Sort, Straighten, Shine, Standardize, and Sustain—to
+                        optimize efficiency and maintain an organized, high-performance production environment.</p>
+
                     <Row gutter={[16, 16]}>
                         <Col lg={14}>
                             <p><b>Sort</b></p>
@@ -70,7 +76,23 @@ const MittalManufacturing = () => {
                             <div className="manufacturingImage"><img src="/images/5s.png" /></div>
                         </Col>
                     </Row>
-                    <br /> <br />
+                    <div style={{ paddingTop: "2rem" }}>
+                        <Row>
+                            <Col>
+                                <div className="HeadingContainer">
+                                    <h2>Sustainability and Recycling Practices</h2>
+                                </div>
+                                {/* <h4 style={{ marginTop: "1rem" }}>Commitment and Sustainability</h4> */}
+                                <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings,
+                                    repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil
+                                    combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental
+                                    impact while promoting the efficient use of resources.</p>
+                                <br></br>
+                            </Col>
+                        </Row>
+                    </div>
+
+
                     <div className="HeadingContainer">
                         <h2>Product Range and Specification</h2>
                     </div>
@@ -342,7 +364,7 @@ const MittalManufacturing = () => {
                             </table>
                         </div>
                     </div>
-                    <div style={{ padding: "2rem 0rem" }}>
+                    {/* <div style={{ padding: "2rem 0rem" }}>
                         <div className="HeadingContainer">
                             <h2>Manufacturing and Operations</h2>
                         </div>
@@ -368,20 +390,11 @@ const MittalManufacturing = () => {
                             chemical properties to ensure consistent quality. We are an ISI-certified and BIS-approved manufacturer, committed
                             to meeting the highest industry standards.</p>
                         <br></br>
-                    </div>
-                    <div style={{ paddingBottom: "2rem" }}>
-                        <div className="HeadingContainer">
-                            <h2>Sustainability and Recycling Practices</h2>
-                        </div>
-                        <h4 style={{ marginTop: "1rem" }}>Commitment and Sustainability</h4>
-                        <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings,
-                            repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil
-                            combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental
-                            impact while promoting the efficient use of resources.</p>
-                        <br></br>
-                    </div>
+                    </div> */}
+
+
                 </div>
-            </section>
+            </section >
         </>
     )
 }
