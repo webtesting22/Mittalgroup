@@ -8,17 +8,17 @@ const QualityData = [
         para: "Our in-house fully equipped testing laboratory ensures that every steel product undergoes rigorous quality assessments, maintaining the highest standards of strength and durability. This commitment to excellence allows us to deliver reliable solutions tailored to meet our clients' needs.",
         subpoints: [
             {
-                imgpath: "",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Location-Chm1T9kP.jpg",
                 title: "Location",
                 description: "Each of our manufacturing units features a dedicated laboratory outfitted with the latest testing technology."
             },
             {
-                imgpath: "/images/Quality Icons/capabilities.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Capabilities-DC3myO7u.jpg",
                 title: "Capabilities",
                 description: "Equipped for a range of tests, including tensile strength, impact resistance, and chemical composition analysis."
             },
             {
-                imgpath: "/images/Quality Icons/clipboard.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/On-Site%20Testing-DlPc9zAh.jpg",
                 title: "On-Site Testing",
                 description: "Allows real-time quality checks during production, reducing delays and ensuring immediate quality assurance."
             }
@@ -28,17 +28,17 @@ const QualityData = [
         title: "Mechanical and Chemical Testing",
         subpoints: [
             {
-                imgpath: "/images/Quality Icons/test.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Mechanical%20Testing-COx01wg-.jpg",
                 title: "Mechanical Testing",
                 description: "Includes tensile, compressive, and impact tests to assess material strength and durability under stress."
             },
             {
-                imgpath: "/images/Quality Icons/chemistry.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Chemical%20Testing-CROsws0m.jpg",
                 title: "Chemical Testing",
                 description: "Conducted to verify the precise chemical composition of materials, ensuring compliance with required standards."
             },
             {
-                imgpath: "/images/Quality Icons/quality.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Safety%20Assurance-DkMy5vGa.jpg",
                 title: "Safety Assurance",
                 description: "Ensures products meet safety specifications, making them reliable for demanding applications."
             }
@@ -48,17 +48,17 @@ const QualityData = [
         title: "ISO 9001:2015 Certified",
         subpoints: [
             {
-                imgpath: "/images/Quality Icons/service.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Standardization-mbv125EB.jpg",
                 title: "Standardization",
                 description: "Our quality management systems comply with ISO 9001:2015, a globally recognized standard for quality assurance."
             },
             {
-                imgpath: "/images/Quality Icons/consistency.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Consistency-DQp9slDr.avif",
                 title: "Consistency",
                 description: "ISO certification confirms that our processes are consistent, well-documented, and continuously optimized."
             },
             {
-                imgpath: "/images/Quality Icons/customer-loyalty.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Customer%20Confidence-DCiUEZPW.jpg",
                 title: "Customer Confidence",
                 description: "This certification underscores our commitment to quality, providing customers with assurance that our products meet international standards."
             }
@@ -68,17 +68,17 @@ const QualityData = [
         title: "Compliance with BIS Standards",
         subpoints: [
             {
-                imgpath: "/images/Quality Icons/bis.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Bureau%20of%20Indian%20Standards%20(BIS)-BoQEtpLY.jpeg",
                 title: "Bureau of Indian Standards (BIS)",
                 description: "We adhere to BIS norms, ensuring our products align with Indian quality and safety regulations."
             },
             {
-                imgpath: "/images/Quality Icons/protection.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Market%20Credibility-Ck7ZXWM4.jpg",
                 title: "Market Credibility",
                 description: "BIS compliance positions our products as reliable and safe for use in critical applications, especially in the construction industry."
             },
             {
-                imgpath: "/images/Quality Icons/hand-shake.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Customer%20Trust-C9WOSw7g.jpg",
                 title: "Customer Trust",
                 description: "Customers can rely on our products knowing they comply with stringent national standards."
             }
@@ -88,17 +88,17 @@ const QualityData = [
         title: "ISI Approved Brand",
         subpoints: [
             {
-                imgpath: "/images/Quality Icons/Isi_mark.svg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/ISI%20Mark%20Certification-CnCq62xf.jpg",
                 title: "ISI Mark Certification",
                 description: "Our brand has earned the ISI mark, a symbol of quality recognized across India."
             },
             {
-                imgpath: "/images/Quality Icons/regulatory.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Regulatory%20Assurance-C0APrhVs.jpg",
                 title: "Regulatory Assurance",
                 description: "The ISI mark confirms that our products meet rigorous quality and performance requirements."
             },
             {
-                imgpath: "/images/Quality Icons/reputation.png",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Brand%20Reputation-DOxEazHy.jpg",
                 title: "Brand Reputation",
                 description: "Being ISI-approved reinforces our reputation as a trusted provider of high-quality, durable, and safe products."
             }
@@ -251,7 +251,7 @@ const Quality = () => {
                                             </div>
                                             <div className="qualityIconContainer">
 
-                                                <img src={DemoPicture} alt={`${subpoint.title} Icon`} />
+                                                <img src={subpoint.imgpath} alt={`${subpoint.title} Icon`} />
                                             </div>
                                         </div>
                                     </Col>
