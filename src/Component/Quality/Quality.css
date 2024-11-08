@@ -63,8 +63,9 @@
 }
 
 .CardContent {
-  padding: 40px 30px;
+  padding: 10px 30px;
   transition: .5s;
+  min-height:20vh;
 }
 
 #QualitySection hr {
