@@ -383,7 +383,23 @@
     bottom: 0px;
     height: 100%;
 }
+.founderSlider{
+    height: 600px;
+    overflow: hidden;
+}
+.founderSlider .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.founderSlider .swiper-slide img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+}
 @media (max-width:576px) {
 
     .MissionVisionParent {
