@@ -168,6 +168,7 @@
   }
   .CardContent{
     padding: 20px 30px;
+    min-height: 0;
   }
   .qualityCard{
     margin: 0;
