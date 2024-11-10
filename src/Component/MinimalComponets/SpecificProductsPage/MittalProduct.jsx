@@ -256,7 +256,7 @@ const serviceData = {
     }
 };
 
-const MittalProduct = () => {
+const MSLProduct = () => {
     const { service } = useParams();
     const currentService = serviceData[service];
 
@@ -378,4 +378,4 @@ const MittalProduct = () => {
     );
 };
 
-export default MittalProduct;
+export default MSLProduct;

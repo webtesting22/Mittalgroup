@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Row, Col } from 'antd';
 import "./ManufacturingProcess.css"
 
-const MittalManufacturing = () => {
+const MSLManufacturing = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -33,7 +33,7 @@ const MittalManufacturing = () => {
                         <h2>Manufacturing process</h2>
                     </div>
                     <p>
-                        At Mittal Sections Limited, we operate two fully equipped manufacturing units in Changodar,
+                        At MSL , we operate two fully equipped manufacturing units in Changodar,
                         Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
                         allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
                         our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
@@ -370,7 +370,7 @@ const MittalManufacturing = () => {
                         </div>
 
                         <h4 style={{ marginTop: "1rem" }}>Precision Manufacturing for Excellence</h4>
-                        <p>At Mittal Sections Limited, we operate two fully equipped manufacturing units in Changodar,
+                        <p>At MSL , we operate two fully equipped manufacturing units in Changodar,
                             Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
                             allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
                             our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.</p>
@@ -398,4 +398,4 @@ const MittalManufacturing = () => {
         </>
     )
 }
-export default MittalManufacturing
+export default MSLManufacturing

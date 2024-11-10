@@ -1,17 +1,16 @@
 import React,{useEffect} from "react";
 import Home from "../Home/Home";
-import MittalHomeAbout from "../MinimalComponets/MittalHomeAbout";
-import MittalOffice from "../MinimalComponets/MittalOffices";
+// import MSLOffice from "../MinimalComponets/MSLOffices";
 
-const MittalHome = () => {
+const MSLHome = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
         <>
             <Home />
-            {/* <MittalHomeAbout /> */}
+            {/* <MSLHomeAbout /> */}
         </>
     )
 }
-export default MittalHome
+export default MSLHome

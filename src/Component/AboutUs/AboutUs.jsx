@@ -13,8 +13,8 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import Home from '../Home/Home'
 import BackImage from "./BackImage.jpeg"
 import DiffrentTestImage from "../Navbar/navigation.jpg"
-import MittalGroupLogo from "../../../public/images/MittalGroupLogo.png"
-import MittalGallllery from '../Mittalgallery/MittalGallery';
+import MSLGroupLogo from "../../../public/images/MittalGroupLogo.png"
+import MSLGallery from '../Mittalgallery/Mittalgallery';
 import carousal3 from "../Home/carousal3.jpeg"
 import Image1 from "./founder5.jpg"
 import Image2 from "./founder1.jpg"
@@ -40,9 +40,9 @@ const AboutUs = () => {
       key: '1',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div> <h4>Excellence</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
       children: <><p>Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture.</p></>,
@@ -51,9 +51,9 @@ const AboutUs = () => {
       key: '2',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div> <h4>Integrity</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
       children: <><p>We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along.</p></>,
@@ -62,9 +62,9 @@ const AboutUs = () => {
       key: '3',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div><h4> Trust</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
       children: <><p>Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.</p></>,
@@ -73,9 +73,9 @@ const AboutUs = () => {
       key: '4',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div> <h4>Our USP</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
       children: <><p>We know what it takes to stay ahead of the curve.
@@ -86,25 +86,25 @@ const AboutUs = () => {
       key: '5',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div> <h4>Company Culture</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
-      children: <><p>We believe that culture breeds commitments. From the very starting point of our journey, the entire workforce behind AB Mittal group was focused on building a strong and healthy company culture. We do believe that our vision is our purpose and our strong values help us to outsmart every roadblock we face on the way of achieving our purpose.
+      children: <><p>We believe that culture breeds commitments. From the very starting point of our journey, the entire workforce behind AB MSL group was focused on building a strong and healthy company culture. We do believe that our vision is our purpose and our strong values help us to outsmart every roadblock we face on the way of achieving our purpose.
         We hire bright and healthy minds that help us to maintain the free flow of a deviation less knowledge processing environment at the workplace. The core company values are deeply enshrined in our daily practices, and we forge our quality products with these values, commitments and endeavours.</p></>,
     },
     {
       key: '6',
       label: (
         <>
-          <div className='MittalShape'>
+          <div className='MSLShape'>
           </div>
           <h4>Corporate Social values</h4>
-          <img src={MittalGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="" />
         </>
       ),
-      children: <><p> Every business is a failed purpose without society. We believe in that, and we are aware of our corporate social responsibilities. Our social wing is strong and widely unrolled. We are a proud donor at Pathmeda Godham . It’s an animal welfare trust, and they help domestic and road animals. AB Mittal group is also a proud donor at Akshaya Patra, a big non-profit foundation who serves food to 1.6 million children across 11 states in India. The continuous stewardship of Ab Mittal group for ensuring the quality living standards of its workforce has successfully enacted an accidental and health insurance for its workers.</p></>,
+      children: <><p> Every business is a failed purpose without society. We believe in that, and we are aware of our corporate social responsibilities. Our social wing is strong and widely unrolled. We are a proud donor at Pathmeda Godham . It’s an animal welfare trust, and they help domestic and road animals. AB MSL group is also a proud donor at Akshaya Patra, a big non-profit foundation who serves food to 1.6 million children across 11 states in India. The continuous stewardship of Ab MSL group for ensuring the quality living standards of its workforce has successfully enacted an accidental and health insurance for its workers.</p></>,
     },
   ];
   useEffect(() => {
@@ -150,7 +150,7 @@ const AboutUs = () => {
           </div>
           <div className='ContentContainerAdjust'>
             <div>
-              <h1>ABOUT MITTAL</h1>
+              <h1>ABOUT MSL</h1>
               <p>Building Trust Through Quality Service</p>
             </div>
           </div>
@@ -167,7 +167,7 @@ const AboutUs = () => {
             <b><i>Our Legacy of Excellence</i></b> */}
             {/* <br /> */}
             {/* <br /> */}
-            {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>Mittal Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
+            {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>MSL Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
 
 
 
@@ -198,7 +198,7 @@ const AboutUs = () => {
                       The Vision Behind <span style={{ color: "#9aa966" }}>Our Success
                       </span>
                     </h1>
-                    <p>Mittal Sections Limited, <b style={{ fontWeight: "500" }}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
+                    <p>MSL, <b style={{ fontWeight: "500" }}>Founded by Ajay MSL and Atul MSL</b>, has grown to become a leader
                       in steel solutions, specializing in the production of high-quality Mild Steel products.
                       Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
                       precision-engineered steel products to key industries such as construction, automotive, and
@@ -208,7 +208,7 @@ const AboutUs = () => {
               </Col>
             </Row>
 
-            {/* <p><b>Mittal Sections Limited (MSL)</b> is one of the largest steel rolling mill located at Changodar,
+            {/* <p><b>MSL  (MSL)</b> is one of the largest steel rolling mill located at Changodar,
               Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
                 Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
               has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
@@ -281,11 +281,11 @@ const AboutUs = () => {
         <div className='WhyChooseSection'>
           <div className='HeadingContainer'>
             <p>Expertise You Can Trust</p>
-            <h2>Why Choose Mittal Sections Limited?</h2>
+            <h2>Why Choose MSL ?</h2>
           </div>
 
           <p>
-            At Mittal Sections Limited, we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
+            At MSL , we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
             We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
             makes us a trusted partner for industries across Gujarat.
           </p>
@@ -297,9 +297,9 @@ const AboutUs = () => {
               <h2>Our Values</h2>
             </div>
 
-            <p> We at Mittal Sections Limited believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
+            <p> We at MSL  believe strongly in our core values of Excellence, Integrity and Trust. We strive to make ourselves better and surpass the goals we have, redefining success at every milestone we achieve.</p>
             <br />
-            <div className='MittalValuesCards'>
+            <div className='MSLValuesCards'>
               <Row style={{ width: "100%" }}>
                 {data.map((item, index) => (
                   <Col lg={6} md={12} xs={12} sm={12}>
@@ -320,7 +320,7 @@ const AboutUs = () => {
         </div>
         {/* <hr /> */}
         {/* <div>
-            <MittalGallllery />
+            <MSLGallllery />
           </div> */}
 
       </section>

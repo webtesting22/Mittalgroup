@@ -87,13 +87,13 @@
   color: white;
 }
 
-.MittalAdressContainer .LogosImages {
+.MSLAdressContainer .LogosImages {
   width: 150px;
   aspect-ratio: 3/2;
   object-fit: contain;
 }
 
-.MittalAdressContainer {
+.MSLAdressContainer {
   /* border-top: 1px solid #ffcc00; */
   padding-top: 50px;
   position: relative;
@@ -151,7 +151,7 @@
     z-index: 0;
 } */
 
-.MittalAdressContainer hr {
+.MSLAdressContainer hr {
   margin: 0px;
   width: 0px;
   opacity: 0;
@@ -163,7 +163,7 @@
   background-color: black;
 }
 
-.MittalAdressContainer:hover hr {
+.MSLAdressContainer:hover hr {
   margin: 0px;
   width: 70%;
   opacity: 1;
@@ -314,7 +314,7 @@
     flex-direction: column;
   }
 
-  .MittalAdressContainer:hover hr {
+  .MSLAdressContainer:hover hr {
     margin: 0px;
     width: 100%;
     opacity: 1;
@@ -337,7 +337,7 @@
     padding: 2rem 0rem !important;
   }
 
-  .MittalAdressContainer {
+  .MSLAdressContainer {
     /* border-top: 1px solid #ffcc00; */
     padding-top: 50px;
     position: relative;
@@ -349,7 +349,7 @@
     /* flex-direction: column; */
   }
 
-  .MittalAdressContainer>div {
+  .MSLAdressContainer>div {
     width: 100%;
     margin: auto;
   }

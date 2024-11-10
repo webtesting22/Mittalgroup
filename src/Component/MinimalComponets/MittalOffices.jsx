@@ -2,16 +2,16 @@ import React, {
     useState, useEffect, useRef
 } from "react";
 import { Row, Col } from "antd";
-import AbMittalLogo from "/images/MittalGroupLogo.png"
-import MITTALSECTIONSUNIT2 from "/images/big-mittal-logo-section.png"
-import MITTALSTEEL from "/images/big-mittal-steel-logo.png"
+import AbMSLLogo from "/images/MSLGroupLogo.png"
+import MSLSECTIONSUNIT2 from "/images/big-MSL-logo-section.png"
+import MSLSTEEL from "/images/big-MSL-steel-logo.png"
 import AMSTEEL from "/images/am-steel-logo.png"
 import AROOINDUSTRIES from "/images/big-aroo-industries-logo.png"
 import BRGLOBAL from "/images/br-global-logo.png"
 import ARSTEEL from "/images/big-ar-steel-logo.png"
 import ARMAANIMPEX from "/images/big-arman-impex-logo.png"
 import ARMAANYATEXTILES from "/images/big-armaanya-textiles-logo.png"
-const MittalOffice = () => {
+const MSLOffice = () => {
     // const [scrollPosition, setScrollPosition] = useState(0);
     // const [isVisible, setIsVisible] = useState(false);
     // const paragraphRef = useRef(null);
@@ -68,24 +68,24 @@ const MittalOffice = () => {
 
     const AddressContainer = [
         {
-            AddressTitle: "AB Mittal House (Corporate Office)",
+            AddressTitle: "AB MSL House (Corporate Office)",
             AddressDescription: "1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: AbMittalLogo,
+            Logo: AbMSLLogo,
         },
         {
-            AddressTitle: "MITTAL SECTIONS LIMITED (UNIT- II )",
+            AddressTitle: "MSL  (UNIT- II )",
             AddressDescription: "23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: MITTALSECTIONSUNIT2,
+            Logo: MSLSECTIONSUNIT2,
         },
         {
-            AddressTitle: "MITTAL SECTIONS LIMITED (UNIT- I )",
+            AddressTitle: "MSL  (UNIT- I )",
             AddressDescription: "14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA"
-            , Logo: MITTALSECTIONSUNIT2,
+            , Logo: MSLSECTIONSUNIT2,
         },
         {
-            AddressTitle: "MITTAL STEEL",
+            AddressTitle: "MSL STEEL",
             AddressDescription: "Plot NO.1, Block No. 382 Changodar Industrial Estate,Trivedi Marble Lane, Sarkhej- Bavla Highway , Changodar , AHMEDABAD -380009, GUJARAT – INDIA",
-            Logo: MITTALSTEEL,
+            Logo: MSLSTEEL,
         },
         {
             AddressTitle: "AM STEEL",
@@ -131,7 +131,7 @@ const MittalOffice = () => {
                                 {AddressContainer.map((item, index) => (
 
                                     <Col lg={24} md={24} key={index}>
-                                        <div className="MittalAdressContainer">
+                                        <div className="MSLAdressContainer">
                                             <div style={{ width: "200px", display: "flex", justifyContent: "center" }}>
                                                 <img src={item.Logo} alt="" className="LogosImages" />
                                             </div>
@@ -161,4 +161,4 @@ const MittalOffice = () => {
         </>
     )
 }
-export default MittalOffice
+export default MSLOffice

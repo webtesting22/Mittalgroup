@@ -144,7 +144,7 @@ button {
   font-family: 'Satoshi', sans-serif;
 }
 
-.MittalCommonBtn {
+.MSLCommonBtn {
   /* background-color: #ffcc00; */
   background-color: #9aa924;
   color: black;
@@ -156,7 +156,7 @@ button {
   cursor: pointer;
 }
 
-.MittalCommonBtn:hover {
+.MSLCommonBtn:hover {
   border-radius: 10px;
   transition: .5s;
 }

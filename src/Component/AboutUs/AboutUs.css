@@ -177,7 +177,7 @@
     display: none;
 }
 
-.MittalShape {
+.MSLShape {
     height: 10px;
     width: 30px;
     /* background-color: #ffcc00; */
@@ -204,7 +204,7 @@
     opacity: 1;
 }
 
-.MittalValuesCards {
+.MSLValuesCards {
     display: flex;
     width: 100%;
     flex-wrap: wrap;

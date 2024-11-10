@@ -55,7 +55,7 @@ h2 {
   padding: 0rem 4rem;
 }
 
-.MittalCardContainer {
+.MSLCardContainer {
   padding: 2rem 0rem;
 }
 
@@ -75,7 +75,7 @@ h2 {
   padding: 2rem 0rem;
 }
 
-.MittalCardContainer .HoverRow:hover .HoverImageContainer {
+.MSLCardContainer .HoverRow:hover .HoverImageContainer {
   width: 100%;
   /* overflow: hidden; */
   /* display: flex; */
@@ -84,12 +84,12 @@ h2 {
   transition: 0.5s;
   border-radius: 20px;
 }
-.MittalCardContainer .HoverRow:hover .HoverImageContainer img{
+.MSLCardContainer .HoverRow:hover .HoverImageContainer img{
   border-radius: 20px;
   
   transition: 0.5s;
 }
-.MittalCardContainer .HoverContent {
+.MSLCardContainer .HoverContent {
   width: 100%;
   transition: 0.5s;
   padding: 0rem 4rem;
@@ -107,7 +107,7 @@ h2 {
     transition: 0.5s;
   }
 
-  .MittalCardContainer .HoverContent {
+  .MSLCardContainer .HoverContent {
     width: 100%;
     transition: 0.5s;
     padding: 0rem 0rem;

@@ -1,26 +1,26 @@
-.Mittal-gallery-image{
+.MSL-gallery-image{
     width: 100%;
 }
-#MittalGalleryContainer{
+#MSLGalleryContainer{
     padding: 0rem 3rem ;
     padding-top: 9rem !important;
     padding-bottom: 1rem;
 }
 
 @media (min-width:1300px) and (max-width:3000px){
-    #MittalGalleryContainer{
+    #MSLGalleryContainer{
         padding: 2rem 9rem;
     }
 }
 @media (max-width:576px){
-    #MittalGalleryContainer{
+    #MSLGalleryContainer{
         padding: 2rem 1rem;
     }
 }
-#MittalGalleryContainer h2{
+#MSLGalleryContainer h2{
     padding: 10px 0;
 }
 
-#MittalGalleryContainer p{
+#MSLGalleryContainer p{
     margin: 0px;
 }

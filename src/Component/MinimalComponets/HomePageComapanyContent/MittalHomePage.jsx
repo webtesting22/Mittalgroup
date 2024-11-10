@@ -4,7 +4,7 @@ import "./MittalSectionHomePageContainer.css"
 import { Link } from "react-router-dom";
 import ClientHome from "../ClientHome/ClientHome";
 import BackOverlay from "./BackOverlay.png"
-const MittalHomePage = () => {
+const MSLHomePage = () => {
 
     const CardsContent = [
         {
@@ -59,12 +59,12 @@ const MittalHomePage = () => {
     ]
     return (
         <>
-            <section className="MittalSectionHomePageContainer">
+            <section className="MSLSectionHomePageContainer">
             <img src={BackOverlay} alt="" className="BackOverlay"/>
                 <div className="HeadingContainer">
                     <h1>We Build Innovative Strength</h1>
                 </div>
-                <div className="MittalProductsCards">
+                <div className="MSLProductsCards">
                     {CardsContent.map((item, index) => (
                         <div className="RowAdjust" key={index} data-aos="fade-up"
                             data-aos-delay={`${index * 100}`}>
@@ -102,4 +102,4 @@ const MittalHomePage = () => {
         </>
     )
 }
-export default MittalHomePage
+export default MSLHomePage

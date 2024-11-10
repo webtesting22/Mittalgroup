@@ -13,7 +13,7 @@
 }
 
 /* Navbar.css */
-.MittalNavigationContainer {
+.MSLNavigationContainer {
   position: fixed;
   z-index: 555555;
   width: 100%;
@@ -74,7 +74,7 @@
   /* Slides out */
 }
 
-.MittalNavigationContainer button {
+.MSLNavigationContainer button {
   /* position: fixed; */
   cursor: pointer;
   background-color: black;
@@ -114,7 +114,7 @@
   display: none;
 }
 
-.MittalShape {
+.MSLShape {
   /* background-color: #ffcc00; */
   background-color: #9aa966;
   border: 2px solid black;
@@ -208,7 +208,7 @@
     /* Slides out */
   }
 
-  .MittalShape {
+  .MSLShape {
     /* background-color: #ffcc00; */
     background-color: #9aa966;
     border: 2px solid black;

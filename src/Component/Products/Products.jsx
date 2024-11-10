@@ -17,19 +17,19 @@ const Products = () => {
             images: "https://images.unsplash.com/photo-1541263235992-1863345ef977?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Building Construction",
             tagline: "Reinforcing structures and architectural frameworks.",
-            description: "Mittal's steel products, such as flat bars and round bars, offer exceptional strength and durability, making them ideal for constructing high-rise buildings, bridges, and other architectural structures."
+            description: "MSL's steel products, such as flat bars and round bars, offer exceptional strength and durability, making them ideal for constructing high-rise buildings, bridges, and other architectural structures."
         },
         {
             images: "https://plus.unsplash.com/premium_photo-1664299281764-2560020e8d52?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Automobile and Machinery Building",
             tagline: " Vehicle frames and essential structural components.",
-            description: "Precision-engineered steel bars from Mittal ensure robust performance in automotive frames, machinery parts, and heavy equipment, providing reliability and longevity for demanding applications."
+            description: "Precision-engineered steel bars from MSL ensure robust performance in automotive frames, machinery parts, and heavy equipment, providing reliability and longevity for demanding applications."
         },
         {
             images: "https://plus.unsplash.com/premium_photo-1661921878223-5d6d29ece773?q=80&w=3061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Pipeline Construction",
             tagline: "Oil, gas and water pipelines.",
-            description: " Mittal’s steel pipes are designed for fluid transport and gas distribution, ensuring safe and efficient pipeline systems that meet the highest industry standards."
+            description: " MSL’s steel pipes are designed for fluid transport and gas distribution, ensuring safe and efficient pipeline systems that meet the highest industry standards."
         },
         {
             images: "https://plus.unsplash.com/premium_photo-1664695710295-b524b34386db?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -41,7 +41,7 @@ const Products = () => {
             images: "https://images.unsplash.com/28/see-through.JPG?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Gating and Fencing",
             tagline: "Residential and industrial gates and fencing solutions.",
-            description: "Mittal’s versatile steel flat bars and pipes provide durability and design flexibility, perfect for secure and aesthetically pleasing gates, fences, and boundary enclosures."
+            description: "MSL’s versatile steel flat bars and pipes provide durability and design flexibility, perfect for secure and aesthetically pleasing gates, fences, and boundary enclosures."
         }
 
 
@@ -59,7 +59,7 @@ const Products = () => {
 
                             </p>
                         </div>
-                        <div className="MittalCardContainer">
+                        <div className="MSLCardContainer">
                             {CardsContent.map((item, index) => (
                                 <div className="HoverRow">
                                     <div className="HoverImageContainer">

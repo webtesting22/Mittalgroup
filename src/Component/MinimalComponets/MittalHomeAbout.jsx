@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "antd";
-import "./MittalCommon.css"
+import "./MSLCommon.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from 'swiper/modules';
-// import SliderImage1 from "./Images/AboutSliderImages/mittal/angles.jpg"
-// import SliderImage2 from "./Images/AboutSliderImages/mittal/roundbars.jpg"
-// import SliderImage3 from "./Images/AboutSliderImages/mittal/channels.jpg";
+// import SliderImage1 from "./Images/AboutSliderImages/MSL/angles.jpg"
+// import SliderImage2 from "./Images/AboutSliderImages/MSL/roundbars.jpg"
+// import SliderImage3 from "./Images/AboutSliderImages/MSL/channels.jpg";
 // import SliderImage4 from "./Flatbar.webp"
 import SliderImage1 from "/images/Product Images/Angle5.jpeg"
 import SliderImage2 from "/images/Product Images/RoundBar1.jpeg"
 import SliderImage3 from "/images/Product Images/Channel5.jpeg"
 import SliderImage4 from "/images/Product Images/FlatBar2.jpeg"
-const MittalHomeAbout = () => {
+const MSLHomeAbout = () => {
     const sections = [
         { title: "Flat Bars", image: SliderImage4, description: "Ideal for construction, fabrication, and manufacturing, our flat bars offer strength and versatility for a variety of applications." },
         { title: "Round Bars", image: SliderImage2, description: "Precision-engineered for durability, our round bars are perfect for machining, forging, and structural use." },
@@ -49,21 +49,21 @@ const MittalHomeAbout = () => {
                                 <h2><span>B</span>ehind the Brand</h2>
                                 {/* <p>We engineer commitments into high quality products.
                                     we do dream, set our own Goals and transmute them
-                                    into real engineering projects. Today, AB Mittal Group
+                                    into real engineering projects. Today, AB MSL Group
                                     of Companies is a benchmark name in the business world as
                                     it has evolved itself into a multifaceted conglomerate with
                                     a diverse range of business interest starting from cutting
                                     edge manufacturing and trading of structural steel products, Chemicals,
                                     Textiles and Entertainment. Our commitment towards our customers is our pride,
                                     and our integrity designs the quality of our products.</p> */}
-                                {/* <p>Mittal Sections Limited (MSL) is one of the largest steel rolling mill located at Changodar,
+                                {/* <p>MSL  (MSL) is one of the largest steel rolling mill located at Changodar,
                                     Ahmedabad. MSL is into the rolling of complete ranige of MS sections like Angles, Channels, Squares,
                                     Rounds & Flat bars etc. MSL's quest for excellence through various technologies & quality initiatives
                                     has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
                                     organisation we have grown in reserves, profits and customer base, MSL's large talent pool of skilled technicians,
                                     engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
                                     self reliant and modern industrial base.</p> */}
-                                <p>At Mittal Sections Limited, we are not just steel manufacturers—we are innovators shaping
+                                <p>At MSL , we are not just steel manufacturers—we are innovators shaping
                                     the future of infrastructure. Founded in 2006, we are proud to lead the steel manufacturing
                                     industry in Gujarat with a commitment to quality, sustainability, and innovation. Our mission
                                     is to deliver world-class products and services that meet the diverse needs of our clients and
@@ -104,7 +104,7 @@ const MittalHomeAbout = () => {
                                     alt={selectedSection.title}
 
                                 />
-                                <a href="/Products"> <button className="MittalCommonBtn" style={{ margin: "10px 0" }}>Read More</button></a>
+                                <a href="/Products"> <button className="MSLCommonBtn" style={{ margin: "10px 0" }}>Read More</button></a>
 
                             </div>
                         </Col>
@@ -144,4 +144,4 @@ const MittalHomeAbout = () => {
         </>
     )
 }
-export default MittalHomeAbout
+export default MSLHomeAbout

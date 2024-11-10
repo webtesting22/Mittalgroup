@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col,Image } from "antd";
-import "./Mittalgallery.css"
+import "./MittalGallery.css"
 
 
-const MittalGallery = () => {
+const MSLGallery = () => {
 
-    const MittalGalleryImages = [
+    const MSLGalleryImages = [
         { image: "https://webtesting-upload.vercel.app/assets/1-min-BnI64RRP.jpg" },
         { image: "https://webtesting-upload.vercel.app/assets/2-min-atdJh0He.jpg" },
         { image: "https://webtesting-upload.vercel.app/assets/3-min-W58ErKyY.jpg" },
@@ -21,7 +21,7 @@ const MittalGallery = () => {
     ]
     return (
         <>
-            <section id="MittalGalleryContainer">
+            <section id="MSLGalleryContainer">
 
                 <div className="HeadingContainer">
                     <h2 data-aos="fade-up" data-aos-duration="1000">Our Gallery</h2>
@@ -30,13 +30,13 @@ const MittalGallery = () => {
 
                 <br />
                 <Row gutter={[16, 16]}>
-                    {MittalGalleryImages.map((item, index) => (
+                    {MSLGalleryImages.map((item, index) => (
                         <Col key={index} xs={24} sm={24} md={12} lg={8}>
                             <div>
                                 <Image
                                     src={item.image}
-                                    alt={`Mittal Gallery Image ${index + 1}`}
-                                    className="Mittal-gallery-image"
+                                    alt={`MSL Gallery Image ${index + 1}`}
+                                    className="MSL-gallery-image"
                                 />
                             </div>
                         </Col>
@@ -47,4 +47,4 @@ const MittalGallery = () => {
     );
 };
 
-export default MittalGallery;
+export default MSLGallery;
