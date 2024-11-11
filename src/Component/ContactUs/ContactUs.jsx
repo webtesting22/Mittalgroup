@@ -47,7 +47,8 @@ const ContactUs = () => {
               <p><b>Email: </b><a href="mailto:MSLsection@gmail.com">MSLsection@gmail.com</a></p>
             </div>
           </Col>
-          <Col lg={12} xs={24} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <Col lg={1} md={0} xs={0}/>
+          <Col lg={11} xs={24} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <div className="contact-form">
               <h2>Reach Out To Us!</h2>
               <br />
