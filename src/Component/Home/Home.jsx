@@ -61,28 +61,42 @@ const Home = ({ images = [] }) => {
         <div className='blackOverlay'>
 
         </div>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          speed={1000}
-          modules={[Autoplay]}
-          className="mySwiper"
-          id='SwiperHome'
-          style={{ position: "static" }}
-        >
-          {carousalImages.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div>
-                <img src={item.img} alt="" />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className='pcNone'>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            speed={1000}
+            modules={[Autoplay]}
+            className="mySwiper"
+            id='SwiperHome'
+            style={{ position: "static" }}
+          >
+            {carousalImages.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div>
+                  <img src={item.img} alt="" />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className='mobileNone'>
+          <video
+            src="https://webtesting-upload.vercel.app/assets/AB%20Mittal%20Video-CSf5vDXC.mp4"
+            loop={true} // Set loop to true for continuous playback
+            autoPlay
+            muted
+            playsInline // Prevent fullscreen on mobile
+
+
+            style={{ width: '100%', height: "100%", objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
+          />
+        </div>
       </div>
       <MSLHomePage />
 
