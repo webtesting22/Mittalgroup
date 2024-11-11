@@ -36,7 +36,7 @@ const ContactUs = () => {
           <Col lg={12} xs={24} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"  >
             <div className="contact-details">
               <h2>Contact Details</h2>
-              <p ><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
+              <p ><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad-380009.</a></p>
               <p ><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
               <p ><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
               <p>
@@ -44,7 +44,7 @@ const ContactUs = () => {
                 {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
                 {/* <a href="tel:+917926406484">+917926406484</a> */}
               </p>
-              <p><b>Email: </b><a href="mailto:MSLsection@gmail.com">MSLsection@gmail.com</a></p>
+              <p><b>Email: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
             </div>
           </Col>
           <Col lg={1} md={0} xs={0}/>

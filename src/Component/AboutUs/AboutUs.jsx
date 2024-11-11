@@ -198,7 +198,7 @@ const AboutUs = () => {
                       The Vision Behind <span style={{ color: "#9aa966" }}>Our Success
                       </span>
                     </h1>
-                    <p>MSL, <b style={{ fontWeight: "500" }}>Founded by Ajay MSL and Atul MSL</b>, has grown to become a leader
+                    <p>MSL, <b style={{ fontWeight: "500" }}>Founded by Ajay Mittal and Atul Mittal</b>, has grown to become a leader
                       in steel solutions, specializing in the production of high-quality Mild Steel products.
                       Headquartered in Changodar, Ahmedabad, we have over a decade of experience delivering
                       precision-engineered steel products to key industries such as construction, automotive, and
