@@ -161,20 +161,20 @@ const serviceData = {
                         <br />
                         <ul>
                             <li>
-                                <b>Construction: </b>Reinforcement bars for concrete structures
+                                <b>Construction: </b>Reinforcement bars for concrete structures.
 
                             </li>
                             <li>
-                                <b>Automobile Industry: </b>Shafts, gears, and fasteners
+                                <b>Automobile Industry: </b>Shafts, gears, and fasteners.
 
                             </li>
                             <li>
-                                <b>Machinery Manufacturing: </b>Axles and connecting rods
+                                <b>Machinery Manufacturing: </b>Axles and connecting rods.
 
 
                             </li>
                             <li>
-                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment
+                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment.
 
 
                             </li>
@@ -225,17 +225,16 @@ const serviceData = {
                         <br />
                         <ul>
                             <li>
-                                <b>Construction: </b>Structural frameworks, bridges, and towers
+                                <b>Construction: </b>Structural frameworks, bridges, and towers.
                             </li>
                             <li>
-                                <b>Automobile Industry: </b>Chassis and vehicle frames
+                                <b>Automobile Industry: </b>Chassis and vehicle frames.
                             </li>
                             <li>
-                                <b>Power Transmission: </b>Tower construction and electrical poles
+                                <b>Power Transmission: </b>Tower construction and electrical poles.
                             </li>
                             <li>
-                                <b>Gating and Fencing: </b>Supports for gates, railings, and fencing
-
+                                <b>Gating and Fencing: </b>Supports for gates, railings, and fencing.
                             </li>
                         </ul>
                         <div className='GalleryImagesProducts'>

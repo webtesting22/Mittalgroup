@@ -37,8 +37,8 @@ const ContactUs = () => {
             <div className="contact-details">
               <h2>Contact Details</h2>
               <p ><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad -380009.</a></p>
-              <p ><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
-              <p ><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej- Bavla Highway, Changodar, Ahmedabad -382213.</a></p>
+              <p ><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
+              <p ><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
               <p>
                 <b>Phone: </b><a href='tel:9909905484'>9909905484</a>
                 {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
