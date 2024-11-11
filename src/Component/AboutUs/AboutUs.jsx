@@ -14,7 +14,7 @@ import Home from '../Home/Home'
 import BackImage from "./BackImage.jpeg"
 import DiffrentTestImage from "../Navbar/navigation.jpg"
 import MSLGroupLogo from "../../../public/images/MittalGroupLogo.png"
-import MSLGallery from '../Mittalgallery/Mittalgallery';
+import MSLGallery from '../Mittalgallery/MSLGallery';
 import carousal3 from "../Home/carousal3.jpeg"
 import Image1 from "./founder5.jpg"
 import Image2 from "./founder1.jpg"

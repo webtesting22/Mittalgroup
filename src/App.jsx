@@ -5,7 +5,7 @@ import AboutUs from './Component/AboutUs/AboutUs'
 import Group from './Component/GroupCompanies/Group'
 import ContactUs from './Component/ContactUs/ContactUs'
 // import MSLGallery from './Component/Mittalgallery/Mittalgallery'
-import MSLGallery from './Component/Mittalgallery/Mittalgallery'
+import MSLGallery from './Component/Mittalgallery/MSLGallery'
 
 import Footer from "./Component/Footer/Footer"
 import MSLHome from './Component/MittalHome/MittalHome'

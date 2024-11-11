@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col,Image } from "antd";
-import "./MittalGallery.css"
+import "./Mittalgallery.css"
 
 
 const MSLGallery = () => {
