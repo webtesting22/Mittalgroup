@@ -270,4 +270,10 @@
     .moreProductsSection{
         padding: 2rem 1rem;
     }
+    .Dynamicbtn {
+        padding: 5px;
+    }
+    .productCard{
+        margin:0.5rem;
+    }
 }

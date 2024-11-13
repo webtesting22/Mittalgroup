@@ -285,33 +285,39 @@
 .subLinkContainer ul li a {
   padding: 0px !important;
 }
-@media (max-width:769px) {
-  .DropdownComponent{
+.about {
+  left: -100px;
+}
+.product {
+  right: -100px;
+}
+
+@media (max-width: 769px) {
+  .DropdownComponent {
     /* top: 70px; */
     top: 70%;
     width: 300px;
     left: -50px;
     flex-direction: column;
-    
   }
- 
-  .aboutLinkWrapper:hover .DropdownComponent{
+
+  .aboutLinkWrapper:hover .DropdownComponent {
     /* transform: translateY(200px); */
     transform: translateY(10px);
 
     /* transform: translateX(0px); */
     /* top: 50px; */
   }
-  .DropdownComponent .ImageContainer{
+  .DropdownComponent .ImageContainer {
     display: none;
   }
-  .aboutLinkWrapper:hover .about{
+  .aboutLinkWrapper:hover .about {
     transform: translateY(-150px);
   }
-  .aboutLinkWrapper:hover .infra{
+  .aboutLinkWrapper:hover .infra {
     transform: translateY(30px);
   }
-  .aboutLinkWrapper:hover .product{
+  .aboutLinkWrapper:hover .product {
     transform: translateY(-30px);
   }
 }

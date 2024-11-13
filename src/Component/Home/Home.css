@@ -107,6 +107,7 @@
 }
 .mobileNone{
     display: block;
+    
 }
 @media (max-width:769px){
     .MSLHomeContent{
@@ -136,10 +137,15 @@
         margin: 10px 0px;
         font-size: 2rem;
     }
+    
+}
+@media (max-width:576px){
+    
     .pcNone{
         display: block;
     }
     .mobileNone{
         display: none;
+        
     }
 }

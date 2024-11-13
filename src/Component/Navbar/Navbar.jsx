@@ -92,7 +92,6 @@ const Navbar = () => {
                     <Link
                       to={item.path}
                       onClick={() => {
-                        // if (item.link.trim() !== "About" && item.link.trim() !== "Products") hideNav();
                         hideNav();
                       }}
 
