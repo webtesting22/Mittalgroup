@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Row, Col,Image } from "antd";
 import "./Mittalgallery.css"
 
 
 const MSLGallery = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const MSLGalleryImages = [
         { image: "https://webtesting-upload.vercel.app/assets/1-min-BnI64RRP.jpg" },
@@ -31,7 +34,7 @@ const MSLGallery = () => {
                 <br />
                 <Row gutter={[16, 16]}>
                     {MSLGalleryImages.map((item, index) => (
-                        <Col key={index} xs={24} sm={24} md={12} lg={8}>
+                        <Col key={index} xs={12} sm={24} md={12} lg={8}>
                             <div>
                                 <Image
                                     src={item.image}
