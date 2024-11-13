@@ -448,13 +448,13 @@
 
     .AnimatedCards:last-child,
     .AnimatedCards:first-child {
-        margin-right: 10px;
+        margin: 5px;
     }
 
     .AnimatedCards {
         /* background-color: red; */
         height: 30vh;
-        margin: 10px 0;
+        /* margin: 10px 0; */
         position: relative;
         overflow: hidden;
         transition: .5s;
@@ -463,6 +463,10 @@
     .ValueCard {
         width: 100%;
         overflow: hidden;
+    }
+
+    #CollapseEdit{
+        padding: 1rem 0rem;
     }
 
     #CollapseEdit .ant-collapse-item {
