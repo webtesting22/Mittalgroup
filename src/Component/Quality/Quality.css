@@ -167,17 +167,22 @@
     padding: 0;
   }
   .CardContent{
-    padding: 20px 30px;
+    padding: 0px;
     min-height: 0;
   }
+  .qualityCard p{
+    padding: 0px;
+    margin: 0;
+  }
   .qualityCard{
+    padding: 0px;
     margin: 0;
   }
   .RowAdjustQuality{
-    padding: 20px 0;
+    padding: 0px ;
   }
   .HeadingContainerQuality{
-    padding: 0 30px;
+    /* padding: 0 30px; */
   }
   
 }
