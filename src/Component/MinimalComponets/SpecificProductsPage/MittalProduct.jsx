@@ -33,30 +33,16 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Flats</h2>
-
-                        <br />
-                        <ul>
-                            <li>
-                                <b>Construction: </b>MS flats steel is crucial for fabricating frames, doors, windows, and railings, offering strength and durability in building projects.
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>This steel is used for body reinforcements and various vehicle components, ensuring safety and structural integrity in automobiles.
-                            </li>
-                            <li>
-                                <b>Machinery Manufacturing: </b>MS flats serve as base plates and parts, enhancing the stability and performance of various machinery.
-                            </li>
-                            <li>
-                                <b>General Engineering: </b>It is widely utilized in the creation of tools and equipment, supporting diverse engineering applications across industries.
-                            </li>
-                        </ul>
-                        <div className='GalleryImagesProducts'>
-                            <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
-                            <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="" />
-                        </div>
                         <p>MS flats steel is a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
                         <p>MS Flats are rectangular cross-section steel products used in fabrication and construction. Manufactured with precision, these sections ensure consistency in mechanical properties and easy processing.
                         </p>
                         <p>Their versatility, weldability, and machinability make MS Flats popular across a variety of industrial uses.</p>
+
+                        <div className='GalleryImagesProducts'>
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar6-KXA3lFiV.jpg" alt="" />
+                            <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="" />
+                        </div>
+
                     </div>
 
 
@@ -200,6 +186,35 @@ const serviceData = {
                         <td>29.44</td>
                     </tr>
                 </table>
+
+                <h2>Technical Composition of Mild Steel (IS 2062 Grade A/B)</h2>
+                <table>
+                    <tr>
+                        <th>Element</th>
+                        <th>Composition</th>
+                    </tr>
+                    <tr>
+                        <td>Carbon (C)</td>
+                        <td>0.15% - 0.23%</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese (Mn)</td>
+                        <td>0.30% - 0.60%</td>
+                    </tr>
+                    <tr>
+                        <td>Silicon (Si)</td>
+                        <td>Max 0.40%</td>
+                    </tr>
+                    <tr>
+                        <td>Sulphur (S)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphorus (P)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                </table>
+
             </div>
         )
 
@@ -230,30 +245,16 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Channel</h2>
-                        <ul>
-                            <li>
-                                <b>Construction: </b>Building frames, bridges, and industrial sheds.
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>Truck chassis and vehicle frames.
-                            </li>
-                            <li>
-                                <b>Electrical Infrastructure: </b>Cable trays and supports.
+                        <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
+                        </p>
+                        <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
 
-                            </li>
-                            <li>
-                                <b>Power Transmission: </b>Tower bracings and beams.
-
-                            </li>
-                        </ul>
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/gchannels2-Bere5Un7.jpeg" alt="" />
                             <img src="https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg" alt="" />
                         </div>
 
-                        <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
-                        </p>
-                        <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
+
 
                     </div>
 
@@ -262,7 +263,7 @@ const serviceData = {
         ),
         tableContent: (
             <div className='productTable' >
-                <div className='HeadingContainer'><h2>Product Range & Specification</h2></div>
+                <h2>Product Range & Specification</h2>
 
                 <table>
                     <tr>
@@ -278,6 +279,35 @@ const serviceData = {
                         <td>9.2</td>
                     </tr>
                 </table>
+
+                <h2>Technical Composition of Mild Steel (IS 2062 Grade A/B)</h2>
+                <table>
+                    <tr>
+                        <th>Element</th>
+                        <th>Composition</th>
+                    </tr>
+                    <tr>
+                        <td>Carbon (C)</td>
+                        <td>0.15% - 0.23%</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese (Mn)</td>
+                        <td>0.30% - 0.60%</td>
+                    </tr>
+                    <tr>
+                        <td>Silicon (Si)</td>
+                        <td>Max 0.40%</td>
+                    </tr>
+                    <tr>
+                        <td>Sulphur (S)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphorus (P)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                </table>
+
             </div>
 
         )
@@ -310,33 +340,14 @@ const serviceData = {
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Round Bars
                         </h2>
-                        <br />
-                        <ul>
-                            <li>
-                                <b>Construction: </b>Reinforcement bars for concrete structures.
+                        <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
+                        <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
 
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>Shafts, gears, and fasteners.
-
-                            </li>
-                            <li>
-                                <b>Machinery Manufacturing: </b>Axles and connecting rods.
-
-
-                            </li>
-                            <li>
-                                <b>General Engineering: </b>Tools, fixtures, and agricultural equipment.
-
-
-                            </li>
-                        </ul>
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/groundbar3-h5DyZF8G.jpeg" alt="" />
                             <img src="https://webtesting-upload.vercel.app/assets/groundbar2-BSwERkZb.jpeg" alt="" />
                         </div>
-                        <p>MS Round Bars are long, cylindrical steel products widely used in construction, engineering, and manufacturing. These bars are known for their ductility and strength, conforming to IS 2062 standards.</p>
-                        <p>MS Round Bars are easy to fabricate, weld, and machine, making them an essential product across industries.</p>
+
                     </div>
 
                 </div>
@@ -375,6 +386,35 @@ const serviceData = {
                         <td>6.31</td>
                     </tr>
                 </table>
+
+                <h2>Technical Composition of Mild Steel (IS 2062 Grade A/B)</h2>
+                <table>
+                    <tr>
+                        <th>Element</th>
+                        <th>Composition</th>
+                    </tr>
+                    <tr>
+                        <td>Carbon (C)</td>
+                        <td>0.15% - 0.23%</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese (Mn)</td>
+                        <td>0.30% - 0.60%</td>
+                    </tr>
+                    <tr>
+                        <td>Silicon (Si)</td>
+                        <td>Max 0.40%</td>
+                    </tr>
+                    <tr>
+                        <td>Sulphur (S)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphorus (P)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                </table>
+
             </div>
         ),
     },
@@ -404,32 +444,19 @@ const serviceData = {
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Angles
                         </h2>
-                        <br />
-                        <ul>
-                            <li>
-                                <b>Construction: </b>Structural frameworks, bridges, and towers.
-                            </li>
-                            <li>
-                                <b>Automobile Industry: </b>Chassis and vehicle frames.
-                            </li>
-                            <li>
-                                <b>Power Transmission: </b>Tower construction and electrical poles.
-                            </li>
-                            <li>
-                                <b>Gating and Fencing: </b>Supports for gates, railings, and fencing.
-                            </li>
-                        </ul>
+
+                        <p>MS Angles are L-shaped structural components made of mild steel, offering strength and stability for various load-bearing applications. These versatile products are corrosion-resistant and conform to IS 2062 standards, ensuring durability and structural integrity.
+                        </p>
+                        <p>MS Angles are known for their easy weldability and machinability, ideal for demanding structural applications.
+
+                        </p>
+
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/gangles2-C70vGWoX.jpeg" alt="" />
                             <img src="https://webtesting-upload.vercel.app/assets/gangles3-B0OBK59y.webp" alt="" />
                         </div>
                     </div>
 
-                    <p>MS Angles are L-shaped structural components made of mild steel, offering strength and stability for various load-bearing applications. These versatile products are corrosion-resistant and conform to IS 2062 standards, ensuring durability and structural integrity.
-                    </p>
-                    <p>MS Angles are known for their easy weldability and machinability, ideal for demanding structural applications.
-
-                    </p>
                 </div>
             </>
         ),
@@ -478,7 +505,37 @@ const serviceData = {
                         <td>75*75*10</td>
                         <td>11.0</td>
                     </tr>
-                </table></div>
+                </table>
+
+                <h2>Technical Composition of Mild Steel (IS 2062 Grade A/B)</h2>
+                <table>
+                    <tr>
+                        <th>Element</th>
+                        <th>Composition</th>
+                    </tr>
+                    <tr>
+                        <td>Carbon (C)</td>
+                        <td>0.15% - 0.23%</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese (Mn)</td>
+                        <td>0.30% - 0.60%</td>
+                    </tr>
+                    <tr>
+                        <td>Silicon (Si)</td>
+                        <td>Max 0.40%</td>
+                    </tr>
+                    <tr>
+                        <td>Sulphur (S)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphorus (P)</td>
+                        <td>Max 0.050%</td>
+                    </tr>
+                </table>
+
+            </div>
         ),
 
     }
@@ -533,7 +590,7 @@ const MSLProduct = () => {
                 </div>
                 <div className="Overlayback"></div>
             </section>
-            <div className='ProductContentContainer' style={{ paddingBottom: "0px" }}>
+            {/* <div className='ProductContentContainer' style={{ paddingBottom: "0px" }}>
                 <div className="marquee-container">
                     <div className="marquee-text">
                         {currentService.keywords.map((keyword, index) => (
@@ -548,7 +605,7 @@ const MSLProduct = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='ProductContentContainer'>
                 <div className="HeadingContainer">
                     <h2>{currentService.title}</h2>
