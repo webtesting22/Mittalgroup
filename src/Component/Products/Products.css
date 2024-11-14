@@ -1,7 +1,8 @@
 table {
-  width: 95%;
+  width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 th,
@@ -123,7 +124,7 @@ h2 {
   }
 
   table {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
 
   #ProductPage {

@@ -150,7 +150,7 @@ const AboutUs = () => {
           </div>
           <div className='ContentContainerAdjust'>
             <div>
-              <h1>ABOUT MSL</h1>
+              <h1>ABOUT US</h1>
               <p>Building Trust Through Quality Service</p>
             </div>
           </div>
@@ -178,8 +178,8 @@ const AboutUs = () => {
               <Col lg={12} md={12}>
                 {/* <div className='foundersImage'> */}
                 <Swiper
-                 
-                  modules={[ Autoplay]}
+
+                  modules={[Autoplay]}
                   autoplay={{ delay: 2500, disableOnInteraction: false }}
                   className="founderSlider">
                   <SwiperSlide> <img src={Image1} alt="slide1" /> </SwiperSlide>
@@ -219,7 +219,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      {/* 
+
       <div className='OutMV'>
         <div className='blackOverlay'>
 
@@ -241,7 +241,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <section className='AboutUsSection'>
         {/* <Row>
               <Col lg={12} md={24} data-aos="fade-up">
@@ -309,7 +309,7 @@ const AboutUs = () => {
                         <div className='BlackOverlay'>
                         </div>
                         <img src={item.img} alt="" />
-                        <h4>{item.title}</h4>
+                        <h2>{item.title}</h2>
                       </div>
                     </div>
                   </Col>

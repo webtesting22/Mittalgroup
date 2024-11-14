@@ -54,8 +54,10 @@ const Home = ({ images = [] }) => {
     <>
       <div className='AnimatedHomeSlider'>
         <div className='MSLHomeContent'>
-          <h3>Shaping the future of steel piping.</h3>
-          <h1>MSL Production</h1>
+          {/* <h3>Shaping the future of steel piping.</h3> */}
+          
+          {/* <h1>MSL Production</h1> */}
+          <h2>Shaping the future of Structural Steel</h2>
           <p>MSL provides premium steel pipes designed for strength and durability. Our precision engineering ensures reliable solutions for every project. Contact us today for a custom quote tailored to your needs.</p>
         </div>
         <div className='blackOverlay'>

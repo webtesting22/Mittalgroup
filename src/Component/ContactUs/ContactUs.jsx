@@ -44,7 +44,7 @@ const ContactUs = () => {
                 {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
                 {/* <a href="tel:+917926406484">+917926406484</a> */}
               </p>
-              <p><b>Email: </b><a href="mailto:mittalsection@gmail.com">mittalsection@gmail.com</a></p>
+              <p><b>Email: </b><a href="mailto:mittalsections@gmail.com">mittalsections@gmail.com</a></p>
             </div>
           </Col>
           <Col lg={1} md={0} xs={0}/>

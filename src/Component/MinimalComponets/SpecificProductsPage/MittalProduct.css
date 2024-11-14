@@ -1,76 +1,76 @@
 /* Marquee container styling */
 .marquee-container {
-    width: 400px;
-    overflow: hidden;
-    white-space: nowrap;
-    /* border: 1px solid #ccc; */
-    padding: 10px;
-    box-sizing: border-box;
-    margin: auto;
+  width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 /* Marquee text animation */
 .marquee-text {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 50s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 50s linear infinite;
 }
 
 .marquee-item {
-    display: inline-block;
-    margin-right: 30px;
-    font-weight: bold;
-    color: #333;
-    font-weight: 300;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #333;
+  font-weight: 300;
 }
 
 .marquee-item::before {
-    content: "";
-    /* This creates the pseudo-element */
-    display: inline-block;
-    height: 10px;
-    /* Adjust size of the dot */
-    width: 10px;
-    /* Adjust size of the dot */
-    border-radius: 50%;
-    background-color: #9aa966;
-    margin-left: 10px;
-    /* Space between text and dot */
-    margin-right: 10px;
+  content: "";
+  /* This creates the pseudo-element */
+  display: inline-block;
+  height: 10px;
+  /* Adjust size of the dot */
+  width: 10px;
+  /* Adjust size of the dot */
+  border-radius: 50%;
+  background-color: #9aa966;
+  margin-left: 10px;
+  /* Space between text and dot */
+  margin-right: 10px;
 }
 
 /* Keyframes for scrolling effect */
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .ProductContentContainer {
-    padding: 2rem 4rem;
+  padding: 2rem 4rem;
 }
 
-.StackContainersEdit>div:first-child img {
-    max-width: 100%;
-    height: auto;
-    position: sticky;
-    border-radius: 10px;
-    top: 30%;
+.StackContainersEdit > div:first-child img {
+  max-width: 100%;
+  height: auto;
+  position: sticky;
+  border-radius: 10px;
+  top: 30%;
 }
 
 .ColumnContainer div {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
-.ColumnContainer p{
-    padding: 1rem 2rem;
+.ColumnContainer p {
+  padding: 1rem 2rem;
 }
 .ColumnContainer img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* .min-img{
@@ -81,204 +81,212 @@
 
 } */
 .ProductContentContainer .HeadingContainer {
-    position: sticky;
-    top: 15%;
-    margin-bottom: 30px;
+  position: sticky;
+  top: 15%;
+  margin-bottom: 30px;
 }
 
 .ColumnContainer ul li {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .GalleryImagesProducts img:first-child {
-    width: 50%;
-    border-radius: 5px;
-    margin: 1rem 3rem;
+  width: 50%;
+  border-radius: 5px;
+  margin: 1rem 3rem;
 }
 
 .GalleryImagesProducts img:last-child {
-    width: 50%;
-    margin: 1rem 0rem;
-    border-radius: 5px;
+  width: 50%;
+  margin: 1rem 0rem;
+  border-radius: 5px;
 }
 
 .GalleryImagesProducts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    /* justify-content: end; */
-    /* align-items: end;     */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: end; */
+  /* align-items: end;     */
 }
 
 .StackContainersEdit {
-    display: flex;
+  display: flex;
 }
 
 .PaddingAjust {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .LeftSideContentajust {
-    height: 100%;
-    display: flex;
-    position: sticky;
-    z-index: 5555;
-    align-items: end;
+  height: 100%;
+  display: flex;
+  position: sticky;
+  z-index: 5555;
+  align-items: end;
 }
 
 .LeftSideContentajust h1 {
-    color: white;
-    padding-bottom: 6rem;
-    font-size: 3rem;
-    width: 70%;
-
+  color: white;
+  padding-bottom: 6rem;
+  font-size: 3rem;
+  width: 70%;
 }
 
 .Dynamicbtn {
-    display: flex;
-    align-items: center;
-    background-color: #9aa966;
-    border-radius: 50px;
-    border: none;
-    padding: 10px 5px;
-
+  display: flex;
+  align-items: center;
+  background-color: #9aa966;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 5px;
 }
 
-.Dynamicbtn>div:first-child {
-    padding: 5px 10px;
-    font-weight: 600;
-    color: white;
+.Dynamicbtn > div:first-child {
+  padding: 5px 10px;
+  font-weight: 600;
+  color: white;
 }
 
-.Dynamicbtn>div:last-child {
-    transition: .5s;
-    border-left: 1px solid rgb(247, 247, 247);
-    padding: 5px 10px;
-    cursor: pointer;
+.Dynamicbtn > div:last-child {
+  transition: 0.5s;
+  border-left: 1px solid rgb(247, 247, 247);
+  padding: 5px 10px;
+  cursor: pointer;
 }
-.Dynamicbtn>div:last-child a {
+.Dynamicbtn > div:last-child a {
+  color: white;
+}
+.Dynamicbtn > div:last-child a svg {
+  transition: 0.5s;
+  color: white;
+}
+.Dynamicbtn > div:last-child a:hover svg {
+  transform: translateX(5px);
+  transition: 0.5s;
+}
+.moreProductsSection {
+  padding: 2rem 4rem;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+  overflow: hidden;
+  margin: 2rem 0.5rem;
+  /* border: 1px solid  #e6e6e6; */
+  /* border-radius: 10px; */
+  box-shadow: 0 2px 5px #e6e6e6;
+}
+.productCard img {
+  opacity: 0.8;
+}
+.productCard:hover {
+  background-color: rgba(243, 243, 243, 0.819);
+}
+.productCard:hover img {
+  transform: scale(1.05);
+
+  transition: 0.5s;
+  overflow: hidden;
+  opacity: 1;
+}
+.productCard h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+.productCard:hover h3 {
+  text-decoration: underline;
+}
+.TableContainer{
+    /* width: 100%; */
+    padding: 1rem 4rem;
+}
+.productTable h4{
+    padding: 10px ;
+}
+.productTable table{
+    padding: 1rem 2rem !important;
+}
+@media (max-width: 769px) {
+    .TableContainer{
+        padding:  1rem;
+    }
+  .LeftSideContentajust h1 {
     color: white;
-}
-.Dynamicbtn>div:last-child a svg{
-    transition: .5s;
-    color: white;
-}
-.Dynamicbtn>div:last-child a:hover svg{
-    transform: translateX(5px);
-    transition: .5s;
-}
-.moreProductsSection{
-    padding: 2rem 4rem;
-}
-.productCard{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .GalleryImagesProducts {
+    justify-content: center;
+  }
+  .GalleryImagesProducts img:first-child {
+    width: 50%;
+    border-radius: 0px;
+    margin: 0 5px;
+    /* margin: 2rem 0rem; */
+  }
+
+  .GalleryImagesProducts img:last-child {
+    width: 50%;
+    margin: 0;
+    /* margin: 1rem 0rem; */
+    border-radius: 0px;
+  }
+
+  .PaddingAjust {
+    padding: 0px 0px;
+  }
+
+  .ColumnContainer div {
+    padding: 0rem 0rem;
+  }
+  .ColumnContainer p {
+    padding: 0rem 0rem;
+  }
+  .StackContainersEdit {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px;
+  }
+
+  .marquee-container {
+    width: 100%;
     overflow: hidden;
-    margin:2rem 0.5rem;
-    /* border: 1px solid  #e6e6e6; */
-    /* border-radius: 10px; */
-    box-shadow:0 2px 5px #e6e6e6;
-}
-.productCard img{
-    opacity: 0.8;
-}
-.productCard:hover{
-    background-color: rgba(243, 243, 243, 0.819);
-}
-.productCard:hover img{
-    transform: scale(1.05);
-    
-    transition: 0.5s;
-    overflow: hidden;
-    opacity: 1;
-}
-.productCard h3{
-    text-align: center;
-    padding: 10px 0;
-    
-}
-.productCard:hover h3{
-    
-    text-decoration: underline;
-}
-@media (max-width:769px) {
-    .LeftSideContentajust h1 {
-        color: white;
-        padding-bottom: 2rem;
-        font-size: 2rem;
-        width: 100%;
-    
-    }
-    .GalleryImagesProducts {
-        justify-content: center;
-    }
-    .GalleryImagesProducts img:first-child {
-        width: 50%;
-        border-radius: 0px;
-        margin:0 5px;
-        /* margin: 2rem 0rem; */
-    }
+    white-space: nowrap;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+  }
 
-    .GalleryImagesProducts img:last-child {
-        width: 50%;
-        margin: 0;
-        /* margin: 1rem 0rem; */
-        border-radius: 0px;
-    }
+  .ProductContentContainer {
+    padding: 2rem 1rem;
+  }
 
-    .PaddingAjust {
-        padding: 0px 0px;
-    }
+  .ProductContentContainer .HeadingContainer {
+    position: static;
+    /* margin-bottom: 30px; */
+  }
 
-    .ColumnContainer div {
-        padding: 0rem 0rem;
-    }
-    .ColumnContainer p{
-        padding: 0rem 0rem;
-    }
-    .StackContainersEdit {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .marquee-container {
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        /* border: 1px solid #ccc; */
-        padding: 10px;
-        box-sizing: border-box;
-        margin: auto;
-    }
-
-    .ProductContentContainer {
-        padding: 2rem 1rem;
-    }
-
-    .ProductContentContainer .HeadingContainer {
-        position: static;
-        /* margin-bottom: 30px; */
-    }
-
-    .StackContainersEdit>div:first-child img {
-        max-width: 100%;
-        height: auto;
-        position: static;
-        border-radius: 10px;
-        top: 30%;
-    }
-    .moreProductsSection{
-        padding: 2rem 1rem;
-    }
-    .Dynamicbtn {
-        padding: 5px;
-    }
-    .productCard{
-        margin:0.3rem;
-    }
-    .moreProductsSection .HeadingContainer{
-        margin-bottom: 1rem;
-    }
+  .StackContainersEdit > div:first-child img {
+    max-width: 100%;
+    height: auto;
+    position: static;
+    border-radius: 10px;
+    top: 30%;
+  }
+  .moreProductsSection {
+    padding: 2rem 1rem;
+  }
+  .Dynamicbtn {
+    padding: 5px;
+  }
+  .productCard {
+    margin: 0.3rem;
+  }
+  .moreProductsSection .HeadingContainer {
+    margin-bottom: 1rem;
+  }
 }

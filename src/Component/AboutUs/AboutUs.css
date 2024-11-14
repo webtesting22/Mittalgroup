@@ -235,7 +235,7 @@
     transition: .5s;
 }
 
-.AnimatedCards h4 {
+.AnimatedCards h4,.AnimatedCards h2 {
     position: absolute;
     z-index: 4;
     bottom: 20px;

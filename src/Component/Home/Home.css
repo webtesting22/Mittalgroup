@@ -93,10 +93,10 @@
     color: white;
     text-transform: uppercase;
 }
-.MSLHomeContent h1{
+.MSLHomeContent h1,.MSLHomeContent h2{
     color: white;
     margin: 10px 0px;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .MSLHomeContent p{
     width: 60%;
