@@ -36,15 +36,15 @@ const ContactUs = () => {
           <Col lg={12} xs={24} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"  >
             <div className="contact-details">
               <h2>Contact Details</h2>
-              <p ><b>Head Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad-380009.</a></p>
-              <p ><b>Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
-              <p ><b>Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
+              <p ><b>Registered Office: </b><a href="https://maps.app.goo.gl/rfcWFEJZN66dkx7YA" target="_blank">1, Sona Roopa, Opp. Lal Bungalow, C.G. Road, Ahmedabad-380009.</a></p>
+              <p ><b>Factory Unit I: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">14, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
+              <p ><b>Factory Unit II: </b><a href="https://maps.app.goo.gl/jLJzi4Veib8yfsAA7" target="_blank">23, Changodar Industrial Estate, B/H Trivedi Marble, Sarkhej-Bavla Highway, Changodar, Ahmedabad-382213.</a></p>
               <p>
-                <b>Phone: </b><a href='tel:9909905484'>9909905484</a>
+                <b>Phone: </b><a href='tel:07926465484'>079-26465484</a>
                 {/* <b>Phone:</b><a href="tel:+917926405484">+917926405484</a>, */}
                 {/* <a href="tel:+917926406484">+917926406484</a> */}
               </p>
-              <p><b>Email: </b><a href="mailto:mittalsections@gmail.com">mittalsections@gmail.com</a></p>
+              <p><b>Email: </b><a href="mailto:info@mittalsections.com">info@mittalsections.com</a></p>
             </div>
           </Col>
           <Col lg={1} md={0} xs={0}/>
