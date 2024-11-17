@@ -93,21 +93,21 @@ const MSLManufacturing = () => {
                     </div>
 
 
-                    <div className="HeadingContainer">
+                    {/* <div className="HeadingContainer">
                         <h2>Product Range and Specification</h2>
                     </div>
                     <br />
                     <div id='TableContainers' data-aos="fade-up">
 
                         <div>
-                            
+
                             <div style={{ width: "100%" }}>
-                                
-                                
+
+
                             </div>
                         </div>
 
-                       
+
                         <div>
                             <h4>Technical Composition of Mild Steel (IS 2062 Grade A/B)</h4>
                             <table>
@@ -137,7 +137,7 @@ const MSLManufacturing = () => {
                                 </tr>
                             </table>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div style={{ padding: "2rem 0rem" }}>
                         <div className="HeadingContainer">
                             <h2>Manufacturing and Operations</h2>
