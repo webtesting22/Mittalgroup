@@ -83,6 +83,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .MSLHomeContent{
     position: absolute;
@@ -136,6 +137,9 @@
         color: white;
         margin: 10px 0px;
         font-size: 2rem;
+    }
+    .MSLHomeContent h2{
+        font-size: 2.5rem;
     }
     
 }

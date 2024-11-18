@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import DefaultImage from '/images/AbmittalBack.jpeg'; // Default image
@@ -18,7 +18,14 @@ import MSLHomePage from '../MinimalComponets/HomePageComapanyContent/MittalHomeP
 const Home = ({ images = [] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true); // State to control fading
-
+  const [isMuted, setIsMuted] = useState(true); // State to track mute status
+  const videoRef = useRef(null); // Reference to the video element
+  const toggleMute = () => {
+    setIsMuted((prevMuted) => !prevMuted); // Toggle the mute state
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted; // Update the video's mute property
+    }
+  };
   // Update image every 2 seconds
   useEffect(() => {
     if (images.length > 0) {
@@ -55,7 +62,7 @@ const Home = ({ images = [] }) => {
       <div className='AnimatedHomeSlider'>
         <div className='MSLHomeContent'>
           {/* <h3>Shaping the future of steel piping.</h3> */}
-          
+
           {/* <h1>MSL Production</h1> */}
           <h2>Shaping the future of Structural Steel</h2>
           <p>MSL provides premium steel pipes designed for strength and durability. Our precision engineering ensures reliable solutions for every project. Contact us today for a custom quote tailored to your needs.</p>
@@ -92,13 +99,34 @@ const Home = ({ images = [] }) => {
             src="https://webtesting-upload.vercel.app/assets/AB%20Mittal%20Video-CSf5vDXC.mp4"
             loop={true} // Set loop to true for continuous playback
             autoPlay
-            muted
+            muted={isMuted}
             playsInline // Prevent fullscreen on mobile
+            ref={videoRef}
 
 
             style={{ width: '100%', height: "100%", objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
           />
-        </div>
+          <button
+            onClick={toggleMute}
+            style={{
+              
+              position: "absolute",
+              // top: "10px",
+              bottom: "10%",
+              right: "10px",
+              // left: "10px",
+              padding: "10px 15px",
+              backgroundColor: isMuted ? "#ff4d4d" : "#4caf50",
+              color: "white",
+              border: "none",
+              borderRadius: "50%",
+              cursor: "pointer",
+              zIndex: 100000, // Ensure button appears above the video
+            }}
+          >
+            {isMuted ? <i class='bx bx-volume-mute' ></i> : <i class='bx bx-volume-full'></i>}
+          </button>        </div>
+
       </div>
       <MSLHomePage />
 
