@@ -8,7 +8,7 @@ const serviceData = {
     "Flat-Bars": {
         title: 'Precision-Made Flat Bars for Every Industry',
         link: "/Products/Flat-Bars",
-        mainTitle: "Flat Bars Metal",
+        mainTitle: "Flat Bars",
         tagline: "Strength and durability in every bar.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
         keywords: [
