@@ -144,7 +144,9 @@
     
 }
 @media (max-width:576px){
-    
+    .MSLHomeContent h2{
+        font-size: 2rem;
+    }
     .pcNone{
         display: block;
     }

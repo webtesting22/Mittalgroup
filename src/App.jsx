@@ -6,7 +6,7 @@ import AboutUs from './Component/AboutUs/AboutUs'
 import ContactUs from './Component/ContactUs/ContactUs'
 // import MSLGallery from './Component/Mittalgallery/Mittalgallery'
 import MSLGallery from './Component/Mittalgallery/MSLGallery'
-
+import Investors from './Component/Investors/Investors'
 import Footer from "./Component/Footer/Footer"
 import MSLHome from './Component/MittalHome/MittalHome'
 import Clients from "./Component/Clients/Clients"
@@ -33,6 +33,7 @@ const App = () => {
                 <Route path='/Applications' element={<Applications/>}/>
                 <Route path="/Manufacturing" element={<MSLManufacturing />} />
                 <Route path='/Quality' element={<Quality/>}/>
+                <Route path="/Investors" element={<Investors/>}/>
             </Routes>
             <Footer />
 

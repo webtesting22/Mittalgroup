@@ -50,6 +50,9 @@
   align-items: center;
   justify-content: end;
   padding-right: 12rem;
+  background-image: url('/images/4916671.jpg');
+  background-size: cover;
+  background-position: left right;
   /* top: 0px; */
   /* left: 0; */
   /* Slides in */
@@ -185,6 +188,7 @@
     align-items: center;
     justify-content: center;
     padding-right: 0rem;
+    background-image: none;
     /* top: 0px; */
     /* left: 0; */
     /* Slides in */

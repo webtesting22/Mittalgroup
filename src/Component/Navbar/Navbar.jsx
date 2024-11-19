@@ -41,6 +41,7 @@ const Navbar = () => {
     // { link: "Products", path: "/Products" },
     { link: "Products" },
     { link: "Infrastructure" },
+    {link:"Investors",path:"/Investors"},
     // { link: "Manufacturing", path: "/Manufacturing" },
     // { link: "Quality", path: "/Quality" },
     // { link: "Clients", path: "/Clients" },
@@ -56,7 +57,8 @@ const Navbar = () => {
 
               hideNav();
             }}>
-              <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
+            <img src="/images/MittalLogo.png"/>
+              {/* <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" /> */}
             </Link>
           </div>
           <button onClick={toggleNav}>
