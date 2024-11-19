@@ -20,6 +20,12 @@ const MSLGallery = () => {
         { image: "https://webtesting-upload.vercel.app/assets/9-min-fS8fdPON.jpg" },
         { image: "https://webtesting-upload.vercel.app/assets/10-min-CIvOlPVC.jpg" },
         { image: "https://webtesting-upload.vercel.app/assets/11-min-BcsCWEI0.jpg" },
+        { image: "https://webtesting-upload.vercel.app/assets/G1-CjhU0Zn4.png" },
+        { image: "https://webtesting-upload.vercel.app/assets/G2-C6JSAg8A.png" },
+        { image: "https://webtesting-upload.vercel.app/assets/G4-COAkdo_n.png" },
+        { image: "https://webtesting-upload.vercel.app/assets/G5-CVQi2jhQ.png" },
+        { image: "https://webtesting-upload.vercel.app/assets/G6-Bodf-Txg.png" },
+        { image: "https://webtesting-upload.vercel.app/assets/G7-BqVS2rfA.png" },
 
     ]
     return (
