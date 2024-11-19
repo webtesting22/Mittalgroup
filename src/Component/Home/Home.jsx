@@ -105,7 +105,7 @@ const Home = ({ images = [] }) => {
             ref={videoRef}
 
 
-            style={{ width: '100%', height: "100%", objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
+            style={{ width: '100%', height: "100%", pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
           />
           <button
             onClick={toggleMute}

@@ -1,157 +1,159 @@
 .MSLBackImg {
-    height: 100vh;
+  height: 100vh;
 }
 
 .MSLBackImg img {
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-    transition: opacity 0.5s ease-in-out;
-    /* Smooth transition for fading */
-    opacity: 1;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+  /* Smooth transition for fading */
+  opacity: 1;
 }
 
 .MSLBackImg .ImageOverlay {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    position: absolute;
-    top: 0px;
-    opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  opacity: 0.7;
 }
 
 .MSLHomeContainer {
-    position: relative;
+  position: relative;
 }
 
 .MSLHomeContainer .MSLGroupLogoContainer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .MSLHomeContainer .MSLGroupLogoContainer img {
-    width: 200px;
-    animation: zoomInOut 2s infinite;
+  width: 200px;
+  animation: zoomInOut 2s infinite;
 }
 
 .fade-out {
-    opacity: 0;
-    /* Fade out effect */
+  opacity: 0;
+  /* Fade out effect */
 }
 
 .fade-in {
-    opacity: 1;
-    /* Fade in effect */
+  opacity: 1;
+  /* Fade in effect */
 }
 
 @keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+    /* Original size */
+  }
 
-    0%,
-    100% {
-        transform: scale(1);
-        /* Original size */
-    }
-
-    50% {
-        transform: scale(1.2);
-        /* Zoom in */
-    }
+  50% {
+    transform: scale(1.2);
+    /* Zoom in */
+  }
 }
 
 #SwiperHome {
-    height: 100vh;
+  height: 100vh;
 }
 
 .blackOverlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background-color: #0000009b;
-    z-index: 555;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #0000009b;
+  z-index: 555;
 }
 
 .AnimatedHomeSlider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.MSLHomeContent{
+.MSLHomeContent {
+  position: absolute;
+  z-index: 66666;
+  width: 80%;
+}
+.MSLHomeContent h3 {
+  color: white;
+  text-transform: uppercase;
+}
+.MSLHomeContent h1,
+.MSLHomeContent h2 {
+  color: white;
+  margin: 10px 0px;
+  font-size: 3.5rem;
+}
+.MSLHomeContent p {
+  width: 60%;
+  color: white;
+}
+.pcNone {
+  display: none;
+}
+.mobileNone {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+.mobileNone video {
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 769px) {
+  .MSLHomeContent {
     position: absolute;
     z-index: 66666;
-    width: 80%;
-}
-.MSLHomeContent h3{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+    justify-content: end;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .MSLHomeContent p {
+    width: 100%;
     color: white;
-    text-transform: uppercase;
-}
-.MSLHomeContent h1,.MSLHomeContent h2{
+  }
+  #SwiperHome img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .MSLHomeContent h1 {
     color: white;
     margin: 10px 0px;
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+  .MSLHomeContent h2 {
+    font-size: 2.5rem;
+  }
 }
-.MSLHomeContent p{
-    width: 60%;
-    color: white;
-}
-.pcNone{
-    display: none;
-}
-.mobileNone{
+@media (max-width: 576px) {
+  .MSLHomeContent h2 {
+    font-size: 2rem;
+  }
+  .pcNone {
     display: block;
-    
-}
-@media (max-width:769px){
-    .MSLHomeContent{
-        position: absolute;
-        z-index: 66666;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        /* align-items: end; */
-        justify-content: end;
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .MSLHomeContent p{
-        width: 100%;
-        color: white;
-    }
-    #SwiperHome img{
-        height: 50vh;
-        width: 100%;
-        object-fit: cover;
-    }
-    .MSLHomeContent h1{
-        color: white;
-        margin: 10px 0px;
-        font-size: 2rem;
-    }
-    .MSLHomeContent h2{
-        font-size: 2.5rem;
-    }
-    
-}
-@media (max-width:576px){
-    .MSLHomeContent h2{
-        font-size: 2rem;
-    }
-    .pcNone{
-        display: block;
-    }
-    .mobileNone{
-        display: none;
-        
-    }
+  }
+  .mobileNone {
+    display: none;
+  }
 }
