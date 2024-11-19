@@ -24,10 +24,12 @@ const DocumentData = {
         }
     },
     AbhyAaryan: {
-        FS2122: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2020-21.pdf",
-        FS2122: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22.pdf",
-        FS2223: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23.pdf",
-        FS2324: "/Documents/AbhyAryan/Annual Return/FS-Abhyaryan 23-24.pdf",
+        AnnualReturn: {
+            FS2122: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2020-21.pdf",
+            FS2122: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22.pdf",
+            FS2223: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23.pdf",
+            FS2324: "/Documents/AbhyAryan/Annual Return/FS-Abhyaryan 23-24.pdf",
+        }
 
     },
     Armaanya: {

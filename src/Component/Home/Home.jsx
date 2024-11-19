@@ -112,7 +112,7 @@ const Home = ({ images = [] }) => {
               
               position: "absolute",
               // top: "10px",
-              bottom: "10%",
+              bottom: "2%",
               right: "10px",
               // left: "10px",
               padding: "10px 15px",
