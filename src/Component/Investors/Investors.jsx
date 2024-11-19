@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './Investors.css';
 import carousal3 from "../Home/carousal3.jpeg"
 import "../AboutUs/AboutUs.css";
@@ -6,6 +6,9 @@ import { Row, Col } from 'antd';
 import { Radio, Tabs } from 'antd';
 import DocumentData from "./DocumentData.jsx"
 const Investors = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [selectedCompany, setSelectedCompany] = useState("MSL");
 
     const handleCompanyClick = (company) => {
@@ -15,22 +18,30 @@ const Investors = () => {
     const renderDocuments = (data) => {
         const entries = Object.entries(data);
         return entries.map(([key, value]) => {
-            if (typeof value === "object") {
+            if (typeof value === "object" && !value.title) {
                 return (
                     <div key={key} className="documentListContainer">
                         <h1 className="HeadingContainer">{key}</h1>
                         <ul>{renderDocuments(value)}</ul>
                     </div>
                 );
+            } else if (typeof value === "object" && value.title) {
+                // If the object contains a title and filePath
+                const { title, filePath } = value;
+                return (
+                    <a href={filePath} download={title} target="_blank" rel="noopener noreferrer" key={key}>
+                        <li style={{ listStyle: "none" }}>
+                            <i className="bx bx-file"></i> {title}
+                        </li>
+                    </a>
+                );
             } else {
+                // Handle cases where value is a string (fallback)
                 const fileName = value.split("/").pop(); // Extract the file name
                 return (
-                    <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
-                        <li key={key} style={{ listStyle: "none" }}>
-                            <i class='bx bx-file'></i>
-
-                            {fileName}
-
+                    <a href={value} download={fileName} target="_blank" rel="noopener noreferrer" className="linkContainer" key={key}>
+                        <li style={{ listStyle: "none" }}>
+                            <i className="bx bx-file"></i> {fileName}
                         </li>
                     </a>
                 );
@@ -39,7 +50,7 @@ const Investors = () => {
     };
     return (
         <>
-            <section className="investorsSection">
+            <div className="investorsSection">
                 <div className='TopcontainerPart'>
                     <div className='InsideTop'>
                         <div className='blackOverlay'>
@@ -58,7 +69,7 @@ const Investors = () => {
                 </div>
                 <div className="documentsSection">
                     <Row gutter={[16, 16]}>
-                        <Col lg={6}>
+                        <Col lg={6} sm={24} xs={24}>
                             <div className="companyList"
                             >
                                 <ul>
@@ -67,11 +78,7 @@ const Investors = () => {
                                             key={company}
                                             onClick={() => handleCompanyClick(company)}
                                             style={{
-                                                cursor: "pointer",
                                                 fontWeight: company === selectedCompany ? "bold" : "normal",
-                                                listStyle: "none",
-                                                border: "2px solid black",
-                                                padding: "10px",
                                             }}
                                         >
                                             {company}
@@ -80,7 +87,8 @@ const Investors = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={18}>
+                        <Col lg={1} sm={0} xs={0}/>
+                        <Col lg={17} sm={24} xs={24}>
 
                             <div>
                                 {/* <h3>{selectedCompany}</h3> */}
@@ -94,7 +102,7 @@ const Investors = () => {
 
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

@@ -3,13 +3,25 @@
   position: relative;
   z-index: 5555;
   padding: 2rem 4rem;
+  background-image: url("/images/4872987.jpg");
+  background-attachment: fixed;
 }
 .companyList ul {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
 }
 .companyList ul li {
   margin: 10px 0;
+  cursor: pointer;
+  list-style: none;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding: 10px;
+}
+.companyList ul li:hover {
+  background-color: black;
+  color: #9aa966;
 }
 .documentListContainer ul {
   display: flex;
@@ -17,13 +29,40 @@
   padding-left: 0;
 }
 .documentListContainer ul li {
-  border: 2px solid black;
+  width: 40%;
+  border: solid 1px black;
   margin: 10px 0;
   padding: 10px;
+  display: inline-block;
+  text-align: left;
+  transition: 0.5s;
+  background-color: whitesmoke;
+}
+.documentListContainer ul li:hover {
+  background-color: black;
+  color: #9aa966 !important;
+  padding: 20px 10px;
+  transition: 0.5s;
+}
+
+.documentsSection ul {
+  padding-left: 0;
+}
+.documentListContainer .HeadingContainer {
+  margin: 1rem 0;
+}
+@media (max-width: 999px) {
+  .documentListContainer {
+    width: 100%;
+  }
+  .documentListContainer ul li {
+    width: 100%;
+  }
 }
 @media (max-width: 769px) {
   .companyList ul {
     flex-direction: row;
+    justify-content: center;
     padding-left: 0;
   }
   .companyList ul li {
@@ -36,5 +75,13 @@
 @media (max-width: 576px) {
   .documentsSection {
     padding: 2rem 1rem;
+  }
+  .documentListContainer ul li {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .documentListContainer ul li {
+    width: 95%;
   }
 }

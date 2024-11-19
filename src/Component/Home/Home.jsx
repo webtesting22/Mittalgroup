@@ -15,6 +15,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay } from 'swiper/modules';
 import MSLHomePage from '../MinimalComponets/HomePageComapanyContent/MittalHomePage';
+import NumbersComponent from '../MinimalComponets/NumbersComponent/NumbersComponent';
 const Home = ({ images = [] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true); // State to control fading
@@ -116,7 +117,7 @@ const Home = ({ images = [] }) => {
               right: "10px",
               // left: "10px",
               padding: "10px 15px",
-              backgroundColor: isMuted ? "#ff4d4d" : "#4caf50",
+              backgroundColor: isMuted ? "red" : "green",
               color: "white",
               border: "none",
               borderRadius: "50%",
@@ -128,6 +129,7 @@ const Home = ({ images = [] }) => {
           </button>        </div>
 
       </div>
+      <NumbersComponent/>
       <MSLHomePage />
 
     </>
