@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./NumbersComponent.css";
-
+import { Row, Col } from 'antd';
 // Data Array
 const NumberData = [
     {
@@ -49,14 +49,18 @@ const NumbersComponent = () => {
 
     return (
         <div className="numbers-container">
-            {NumberData.map((item, index) => (
-                <div key={index} className="number-card">
-                    <h3 className="number">{count[item.data] || 0}+</h3>
-                    <p className="data">{item.data}</p>
+            <Row>
+                {NumberData.map((item, index) => (
+                    <Col lg={8} md={24}>
+                        <div key={index} className="number-card">
+                            <h3 className="number">{count[item.data] || 0}+</h3>
+                            <p className="data">{item.data}</p>
 
-                    {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "#9aa966" }}  ></i>{item.comparison}</p>}
-                </div>
-            ))}
+                            {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "#9aa966" }}  ></i>{item.comparison}</p>}
+                        </div>
+                    </Col>
+                ))}
+            </Row>
         </div>
     );
 };
