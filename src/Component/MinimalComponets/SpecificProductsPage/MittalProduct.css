@@ -54,7 +54,7 @@
   padding: 2rem 4rem;
 }
 
-.StackContainersEdit > div:first-child img {
+.StackContainersEdit>div:first-child img {
   max-width: 100%;
   height: auto;
   position: sticky;
@@ -65,9 +65,11 @@
 .ColumnContainer div {
   padding: 1rem 2rem;
 }
+
 .ColumnContainer p {
   padding: 0rem 0rem;
 }
+
 .ColumnContainer img {
   width: 100%;
   border-radius: 10px;
@@ -143,32 +145,37 @@
   padding: 10px 5px;
 }
 
-.Dynamicbtn > div:first-child {
+.Dynamicbtn>div:first-child {
   padding: 5px 10px;
   font-weight: 600;
   color: white;
 }
 
-.Dynamicbtn > div:last-child {
+.Dynamicbtn>div:last-child {
   transition: 0.5s;
   border-left: 1px solid rgb(247, 247, 247);
   padding: 5px 10px;
   cursor: pointer;
 }
-.Dynamicbtn > div:last-child a {
+
+.Dynamicbtn>div:last-child a {
   color: white;
 }
-.Dynamicbtn > div:last-child a svg {
+
+.Dynamicbtn>div:last-child a svg {
   transition: 0.5s;
   color: white;
 }
-.Dynamicbtn > div:last-child a:hover svg {
+
+.Dynamicbtn>div:last-child a:hover svg {
   transform: translateX(5px);
   transition: 0.5s;
 }
+
 .moreProductsSection {
   padding: 2rem 4rem;
 }
+
 .productCard {
   display: flex;
   flex-direction: column;
@@ -179,12 +186,15 @@
   /* border-radius: 10px; */
   box-shadow: 0 2px 5px #e6e6e6;
 }
+
 .productCard img {
   opacity: 0.8;
 }
+
 .productCard:hover {
   background-color: rgba(243, 243, 243, 0.819);
 }
+
 .productCard:hover img {
   transform: scale(1.05);
 
@@ -192,50 +202,63 @@
   overflow: hidden;
   opacity: 1;
 }
+
 .productCard h3 {
   text-align: center;
   padding: 10px 0;
 }
+
 .productCard:hover h3 {
   text-decoration: underline;
 }
-.TableContainer{
-    /* width: 100%; */
-    padding: 1rem 4rem;
+
+.TableContainer {
+  /* width: 100%; */
+  padding: 1rem 4rem;
 }
-.productTable h4{
-    padding: 10px ;
+
+.productTable h4 {
+  padding: 10px;
 }
+
 /* .productTable{
   display: flex;
   gap: 10px;
 } */
-.productTable table{
-    width: 100%;
-    padding: 1rem 2rem !important;
+.productTable table {
+  width: 100%;
+  padding: 1rem 2rem !important;
 }
+
 @media (max-width: 769px) {
-    .TableContainer{
-        padding:  1rem;
-    }
+  .TableContainer {
+    padding: 1rem;
+  }
+
   .LeftSideContentajust h1 {
     color: white;
     padding-bottom: 2rem;
     font-size: 2rem;
     width: 100%;
   }
+
   .GalleryImagesProducts {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 20px 0px;
+    padding-bottom: 0px;
   }
+
   .GalleryImagesProducts img:first-child {
-    width: 50%;
+    width: 100%;
     border-radius: 0px;
-    margin: 0 5px;
+    margin: 10px 0px;
     /* margin: 2rem 0rem; */
   }
 
   .GalleryImagesProducts img:last-child {
-    width: 50%;
+    width: 100%;
     margin: 0;
     /* margin: 1rem 0rem; */
     border-radius: 0px;
@@ -248,9 +271,11 @@
   .ColumnContainer div {
     padding: 0rem 0rem;
   }
+
   .ColumnContainer p {
     padding: 0rem 0rem;
   }
+
   .StackContainersEdit {
     display: flex;
     flex-direction: column;
@@ -275,22 +300,26 @@
     /* margin-bottom: 30px; */
   }
 
-  .StackContainersEdit > div:first-child img {
+  .StackContainersEdit>div:first-child img {
     max-width: 100%;
     height: auto;
     position: static;
     border-radius: 10px;
     top: 30%;
   }
+
   .moreProductsSection {
     padding: 2rem 1rem;
   }
+
   .Dynamicbtn {
     padding: 5px;
   }
+
   .productCard {
     margin: 0.3rem;
   }
+
   .moreProductsSection .HeadingContainer {
     margin-bottom: 1rem;
   }

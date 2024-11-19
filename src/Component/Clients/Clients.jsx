@@ -9,8 +9,6 @@ const Clients = () => {
     }, []);
     return (
         <>
-            {/* <Home /> */}
-            <br /><br />
             <div className="ClientContainerSet">
                 <div className="HeadingContainer">
                     <h2 >

@@ -99,7 +99,7 @@
 @media (max-width: 769px) {
   #clientSwiper {
     height:100% !important;
-    width: 80% !important;
+    width: 100% !important;
   }
   #swiperLogoImageContainer img {
     width: 100%;

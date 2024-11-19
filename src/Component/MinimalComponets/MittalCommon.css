@@ -265,6 +265,14 @@
 }
 
 @media (max-width: 769px) {
+
+.RightSideHoverLinks ul li h2 {
+  color: #c6c6c6;
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
   .RightSideHoverLinks ul li {
     padding: 10px 0px;
     /* font-size: 30px; */

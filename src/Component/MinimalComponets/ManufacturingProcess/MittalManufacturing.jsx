@@ -9,7 +9,7 @@ const MSLManufacturing = () => {
     return (
         <>
             <section id="ManufacturingProcess">
-                <div className='processServices' data-aos="fade-up">
+                <div data-aos="fade-up">
 
                     {/* <div className="productsContainer">
 <h1>Our Products</h1>
