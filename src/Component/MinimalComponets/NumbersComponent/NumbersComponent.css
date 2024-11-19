@@ -1,32 +1,29 @@
 .numbers-container {
-    /* display: flex; */
-    /* justify-content: space-around; */
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
 }
 
 .number-card {
-    background-color: #f3f3f3;
-    /* padding: 20px; */
-    border-radius: 10px;
-    /* width: 250px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f3f3f3;
+  padding: 20px 0;
+  margin: 20px ;
+  border-radius: 10px;
 }
 
 .number {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    transition: all 0.5s ease;
+    font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.5s ease;
 }
 
 .data {
-    font-size: 1.2rem;
-    color: #555;
+  font-size: 1.2rem;
+  color: #555;
 }
 
 .comparison {
-    font-size: 1rem;
-    color: #888;
-    margin-top: 10px;
+  font-size: 1rem;
+  color: #888;
 }

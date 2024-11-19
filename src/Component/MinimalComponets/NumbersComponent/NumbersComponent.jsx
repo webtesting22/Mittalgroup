@@ -11,10 +11,12 @@ const NumberData = [
     {
         number: 1400,
         data: "Clients",
+        comparison: "In 20+ Industries",
     },
     {
         number: 60,
         data: "Projects",
+        comparison: "Average Project : 10,000 Metric Tonnes"
     },
 ];
 
@@ -38,7 +40,7 @@ const NumbersComponent = () => {
                         return prevCount;  // Return the current state
                     }
                 });
-            }, 100); // Speed of counting animation
+            }, 50); // Speed of counting animation
 
             return intervalId;
         });
@@ -51,8 +53,8 @@ const NumbersComponent = () => {
         <div className="numbers-container">
             <Row>
                 {NumberData.map((item, index) => (
-                    <Col lg={8} md={24}>
-                        <div key={index} className="number-card">
+                    <Col lg={8} md={24} xs={24} key={index} >
+                        <div className="number-card">
                             <h3 className="number">{count[item.data] || 0}+</h3>
                             <p className="data">{item.data}</p>
 
