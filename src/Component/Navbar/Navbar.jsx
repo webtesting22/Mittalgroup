@@ -57,7 +57,7 @@ const Navbar = () => {
 
               hideNav();
             }}>
-            <img src="/images/MittalLogo.png"/>
+            <img src="/images/MittalLogo.png" alt="logo of mild steel company"/>
               {/* <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" /> */}
             </Link>
           </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           <div className="overlayBackImage">
-            <img src={NavigationBackImage} alt="Navigation Background" />
+            <img src={NavigationBackImage} alt="Navigation Background for look attractive" />
           </div>
           <ul>
             {NavigationLinks.map((item, index) => (
@@ -92,6 +92,7 @@ const Navbar = () => {
                 <div>
                   {item.path ? (
                     <Link
+                      aria-label="link to navbar item"
                       to={item.path}
                       onClick={() => {
                         hideNav();
@@ -110,17 +111,17 @@ const Navbar = () => {
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredAboutSublink("Our Legacy")} onMouseLeave={() => setHoveredAboutSublink(null)}>
-                            <Link to="/AboutUs" onClick={hideNav}>Our Legacy</Link>
+                            <Link aria-label="go to about us page" to="/AboutUs" onClick={hideNav}>Our Legacy</Link>
                           </li>
 
                           <li onMouseEnter={() => setHoveredAboutSublink("Our Clients")} onMouseLeave={() => setHoveredAboutSublink(null)}>
-                            <Link to="/Clients" onClick={hideNav}>Our Clients</Link>
+                            <Link aria-label="redirect to client page" to="/Clients" onClick={hideNav}>Our Clients</Link>
                           </li>
                         </ul>
                       </div>
                       <div className="ImageContainer">
-                        {hoveredAboutSublink === "Our Legacy" && <img src={Navigation1} alt="Our Legacy" />}
-                        {hoveredAboutSublink === "Group Companies" && <img src={Navigation4} alt="Group Companies" />}
+                        {hoveredAboutSublink === "Our Legacy" && <img src={Navigation1} alt="Our Legacy of mild steel company" />}
+                        {hoveredAboutSublink === "Group Companies" && <img src={Navigation4} alt="Group Companies " />}
                         {hoveredAboutSublink === "Our Clients" && <img src={Navigation5} alt="Our Clients" />}
                         {!hoveredAboutSublink && <img src={Navigation1} alt="Default" />}
                       </div>
@@ -131,28 +132,28 @@ const Navbar = () => {
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Applications" onClick={hideNav}>Products</Link>
+                            <Link aria-label="redirect to product applications" to="/Applications" onClick={hideNav}>Products</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredProductsSublink("Flat-Bars")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Products/Flat-Bars" onClick={hideNav}>Flat-Bars</Link>
+                            <Link aria-label="redirect to product name flat bars" to="/Products/Flat-Bars" onClick={hideNav}>Flat-Bars</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredProductsSublink("Round-Bars")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Products/Round-Bars" onClick={hideNav}>Round-Bars</Link>
+                            <Link aria-label="redirect to round bar products" to="/Products/Round-Bars" onClick={hideNav}>Round-Bars</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredProductsSublink("Channels")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Products/Channels" onClick={hideNav}>Channels</Link>
+                            <Link aria-label="redirect to channels products made by mild steel" to="/Products/Channels" onClick={hideNav}>Channels</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredProductsSublink("Angles")} onMouseLeave={() => setHoveredProductsSublink(null)}>
-                            <Link to="/Products/Angles" onClick={hideNav}>Angles</Link>
+                            <Link aria-label="redirect to angles page" to="/Products/Angles" onClick={hideNav}>Angles</Link>
                           </li>
 
                         </ul>
                       </div>
                       <div className="ImageContainer">
-                        {hoveredProductsSublink === "Flat-Bars" && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="Flat-Bars" />}
-                        {hoveredProductsSublink === "Round-Bars" && <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="Round-Bars" />}
-                        {hoveredProductsSublink === "Channels" && <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt="Channels" />}
-                        {hoveredProductsSublink === "Angles" && <img src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt="Angles" />}
+                        {hoveredProductsSublink === "Flat-Bars" && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="image of product name Flat-Bars" />}
+                        {hoveredProductsSublink === "Round-Bars" && <img src="https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg" alt="Round-Bars made up of mild steel" />}
+                        {hoveredProductsSublink === "Channels" && <img src="https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg" alt=" mild steel Channels used in industry" />}
+                        {hoveredProductsSublink === "Angles" && <img src="https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg" alt=" image of Angles made up of mild steel" />}
                         {hoveredProductsSublink === "Applications" && <img src="" alt="Applications" />}
                         {!hoveredProductsSublink && <img src="https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg" alt="Default" />}
                       </div>
@@ -163,10 +164,10 @@ const Navbar = () => {
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredInfrastructureLink("Manufacturing")} onMouseLeave={() => setHoveredInfrastructureLink(null)}>
-                            <Link to="/Manufacturing" onClick={hideNav}>Manufacturing</Link>
+                            <Link aria-label="redirect to manufacturing page" to="/Manufacturing" onClick={hideNav}>Manufacturing</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredInfrastructureLink("Quality")} onMouseLeave={() => setHoveredInfrastructureLink(null)}>
-                            <Link to="/Quality" onClick={hideNav}>Quality</Link>
+                            <Link aria-label="redirect to quality page" to="/Quality" onClick={hideNav}>Quality</Link>
                           </li>
 
                         </ul>

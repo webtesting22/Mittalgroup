@@ -42,7 +42,7 @@ const AboutUs = () => {
         <>
           <div className='MSLShape'>
           </div> <h4>Excellence</h4>
-          <img src={MSLGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="company of mild steel" />
         </>
       ),
       children: <><p>Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture.</p></>,
@@ -53,7 +53,7 @@ const AboutUs = () => {
         <>
           <div className='MSLShape'>
           </div> <h4>Integrity</h4>
-          <img src={MSLGroupLogo} alt="" />
+          <img src={MSLGroupLogo} alt="logo of mild steel company" />
         </>
       ),
       children: <><p>We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along.</p></>,
@@ -182,7 +182,7 @@ const AboutUs = () => {
                   modules={[Autoplay]}
                   autoplay={{ delay: 2500, disableOnInteraction: false }}
                   className="founderSlider">
-                  <SwiperSlide> <img src={Image1} alt="slide1" /> </SwiperSlide>
+                  <SwiperSlide> <img src={Image1} alt="founders" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image2} alt="slide2" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image3} alt="slide3" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image4} alt="slide4" /> </SwiperSlide>
