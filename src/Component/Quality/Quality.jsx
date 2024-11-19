@@ -182,7 +182,7 @@ const Quality = () => {
                         <h2>Quality Assurance at Our Manufacturing Units</h2>
                     </div>
                     <p>Our manufacturing facilities prioritize quality at every stage, with advanced in-house testing laboratories, certified management systems, and rigorous adherence to national standards. This ensures that every product we deliver meets the highest benchmarks for safety, performance, and reliability.</p>
-                    <br />
+                    
                     {/* <hr /> */}
                 </div>
             </section>
