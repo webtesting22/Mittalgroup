@@ -1,12 +1,64 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NumbersComponent.css";
+
+// Data Array
+const NumberData = [
+    {
+        number: 600000,  // Store numbers as integers for counting effect
+        data: "Metric Tonnes Manufactured",
+        comparison: " Equivalent to 59+ Eiffel Towers",
+    },
+    {
+        number: 1400,
+        data: "Clients",
+    },
+    {
+        number: 60,
+        data: "Projects",
+    },
+];
+
 const NumbersComponent = () => {
+    const [count, setCount] = useState({});
+
+    useEffect(() => {
+        const intervalIds = NumberData.map(item => {
+            const intervalId = setInterval(() => {
+                setCount(prevCount => {
+                    const currentCount = prevCount[item.data] || 0;
+                    // If the current count is less than the target, increase it
+                    if (currentCount < item.number) {
+                        const increment = Math.ceil(item.number / 100);  // Adjust speed
+                        return {
+                            ...prevCount,
+                            [item.data]: currentCount + increment <= item.number ? currentCount + increment : item.number, // Ensure we don't exceed target
+                        };
+                    } else {
+                        clearInterval(intervalId);  // Clear the interval when target is reached
+                        return prevCount;  // Return the current state
+                    }
+                });
+            }, 100); // Speed of counting animation
+
+            return intervalId;
+        });
+
+        // Cleanup all intervals when the component unmounts
+        return () => intervalIds.forEach(clearInterval);
+    }, []);
+
     return (
-        <>
-            <div>
-                
-            </div>
-        </>
-    )
-}
+        <div className="numbers-container">
+            {NumberData.map((item, index) => (
+                <div key={index} className="number-card">
+                    <h3 className="number">{count[item.data] || 0}+</h3>
+                    <p className="data">{item.data}</p>
+
+                    {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "#9aa966" }}  ></i>{item.comparison}</p>}
+                </div>
+            ))}
+        </div>
+    );
+};
+
 export default NumbersComponent;

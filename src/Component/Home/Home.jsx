@@ -110,11 +110,11 @@ const Home = ({ images = [] }) => {
           <button
             onClick={toggleMute}
             style={{
-              
+
               position: "absolute",
               // top: "10px",
-              bottom: "2%",
-              right: "10px",
+              bottom: "1%",
+              right: "1%",
               // left: "10px",
               padding: "10px 15px",
               backgroundColor: isMuted ? "red" : "green",
@@ -129,7 +129,7 @@ const Home = ({ images = [] }) => {
           </button>        </div>
 
       </div>
-      <NumbersComponent/>
+      <NumbersComponent />
       <MSLHomePage />
 
     </>

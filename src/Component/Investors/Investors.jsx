@@ -41,7 +41,7 @@ const Investors = () => {
                 return (
                     <a href={value} download={fileName} target="_blank" rel="noopener noreferrer" className="linkContainer" key={key}>
                         <li style={{ listStyle: "none" }}>
-                            <i className="bx bx-file"></i> {fileName}
+                            <i className="bx bx-file"></i> {fileName}<i class='bx bxs-download'></i>
                         </li>
                     </a>
                 );
@@ -82,6 +82,7 @@ const Investors = () => {
                                             }}
                                         >
                                             {company}
+                                            
                                         </li>
                                     ))}
                                 </ul>

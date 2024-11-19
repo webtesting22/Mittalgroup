@@ -20,7 +20,7 @@
   padding: 10px;
 }
 .companyList ul li:hover {
-  background-color: black;
+  /* background-color: black; */
   color: #9aa966;
 }
 .documentListContainer ul {
@@ -32,17 +32,19 @@
   width: 40%;
   border: solid 1px black;
   margin: 10px 0;
-  padding: 10px;
-  display: inline-block;
-  text-align: left;
+  padding: 10px ;
+  display: inline-flex;
   transition: 0.5s;
+  /* background-color: #9aa966; */
   background-color: whitesmoke;
 }
 .documentListContainer ul li:hover {
-  background-color: black;
+  /* background-color: black; */
   color: #9aa966 !important;
   padding: 20px 10px;
   transition: 0.5s;
+  transform: scale(1.03);
+  background-color: white;
 }
 
 .documentsSection ul {
