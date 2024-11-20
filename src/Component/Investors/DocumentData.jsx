@@ -20,7 +20,7 @@ const DocumentData = {
             CP13: { title: "Dividend Distribution Policy", filePath: "/Documents/MSL/Corporate policies/Signed/13. Dividend-Distribution-Policy.pdf" },
             CP14: { title: "Web Archival Policy", filePath: "/Documents/MSL/Corporate policies/Signed/14. Web-Archival-Policy.pdf" },
         },
-        SHP: {
+        "SHP": {
             SHP1: { title: "SHP 2021-22", filePath: "/Documents/MSL/SHP/SHP-2021-22.pdf" },
             SHP2: { title: "SHP 2022-23", filePath: "/Documents/MSL/SHP/SHP 2022-23.pdf" },
         }

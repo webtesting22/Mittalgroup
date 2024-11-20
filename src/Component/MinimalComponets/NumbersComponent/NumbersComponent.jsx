@@ -53,12 +53,13 @@ const NumbersComponent = () => {
         <div className="numbers-container">
             <Row>
                 {NumberData.map((item, index) => (
-                    <Col lg={8} md={24} xs={24} key={index} >
+                    <Col lg={8} md={24} xs={24} key={index} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index*200}>
                         <div className="number-card">
                             <h3 className="number">{count[item.data] || 0}+</h3>
                             <p className="data">{item.data}</p>
 
-                            {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "#9aa966" }}  ></i>{item.comparison}</p>}
+                            {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "black" }}  ></i>{item.comparison}</p>}
+                            
                         </div>
                     </Col>
                 ))}

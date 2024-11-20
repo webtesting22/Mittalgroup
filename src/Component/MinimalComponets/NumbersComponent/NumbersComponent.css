@@ -1,29 +1,37 @@
 .numbers-container {
   padding: 20px;
   text-align: center;
-  position: sticky;
+  background-color: white;
 }
 
 .number-card {
-  background-color: #f3f3f3;
+  
+  /* background-color: whitesmoke; */
   padding: 20px 0;
-  margin: 20px ;
+  margin: 20px;
   border-radius: 10px;
 }
 
 .number {
-    font-size: 4rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: #333;
+  color: black;
   transition: all 0.5s ease;
 }
 
 .data {
-  font-size: 1.2rem;
-  color: #555;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
 }
 
 .comparison {
   font-size: 1rem;
-  color: #888;
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 }
