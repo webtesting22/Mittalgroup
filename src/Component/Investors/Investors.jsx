@@ -4,7 +4,9 @@ import investor from "../Home/investor.avif"
 import "../AboutUs/AboutUs.css";
 import { Row, Col } from 'antd';
 import { Radio, Tabs } from 'antd';
-import DocumentData from "./DocumentData.jsx"
+import DocumentData from "./DocumentData.jsx";
+import pdfIcon from "/images/pdf.png";
+
 const Investors = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -17,37 +19,49 @@ const Investors = () => {
 
     const renderDocuments = (data) => {
         const entries = Object.entries(data);
-        return entries.map(([key, value]) => {
-            if (typeof value === "object" && !value.title) {
-                return (
-                    <div key={key} className="documentListContainer">
-                        <h1 className="HeadingContainer">{key}</h1>
-                        <ul>{renderDocuments(value)}</ul>
-                    </div>
-                );
-            } else if (typeof value === "object" && value.title) {
-                // If the object contains a title and filePath
-                const { title, filePath } = value;
-                return (
-                    <a href={filePath} download={title} target="_blank" rel="noopener noreferrer" key={key}>
-                        <li style={{ listStyle: "none" }}>
-                            <i className="bx bx-file"></i> {title}
-                        </li>
-                    </a>
-                );
-            } else {
-                // Handle cases where value is a string (fallback)
-                const fileName = value.split("/").pop(); // Extract the file name
-                return (
-                    <a href={value} download={fileName} target="_blank" rel="noopener noreferrer" className="linkContainer" key={key}>
-                        <li style={{ listStyle: "none" }}>
-                            <i className="bx bx-file"></i> {fileName}<i class='bx bxs-download'></i>
-                        </li>
-                    </a>
-                );
-            }
-        });
+
+        return (
+            <Row gutter={[16, 16]}> {/* Adds spacing between cards */}
+                {entries.map(([key, value]) => {
+                    if (typeof value === "object" && !value.title) {
+                        return (
+                            <Col span={24} key={key}> {/* Full width for headings */}
+                                <h1 className="HeadingContainer">{key}</h1>
+                                {renderDocuments(value)}
+                            </Col>
+                        );
+                    } else if (typeof value === "object" && value.title) {
+                        const { title, filePath } = value;
+                        return (
+                            <Col xs={24} sm={24} md={8} key={key}> {/* Adjusts layout for different screen sizes */}
+                                <div className="documentCard">
+                                    <a href={filePath} download={title} target="_blank" rel="noopener noreferrer">
+                                        <img src={pdfIcon} alt="PDF" />
+                                        <p>{title}</p>
+                                    </a>
+                                </div>
+                            </Col>
+                        );
+                    } else {
+                        // Handle cases where value is a string (fallback)
+                        const fileName = value.split("/").pop(); // Extract the file name
+                        return (
+                            <Col xs={24} sm={12} md={8} key={key}> {/* Adjusts layout for different screen sizes */}
+                                <div className="documentCard">
+                                    <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
+                                        <img src={pdfIcon} alt="PDF" />
+                                        <p>{fileName}</p>
+                                    </a>
+                                </div>
+                            </Col>
+                        );
+                    }
+                })}
+            </Row>
+        );
     };
+
+
     return (
         <>
             <div className="investorsSection">
@@ -79,21 +93,22 @@ const Investors = () => {
                                             onClick={() => handleCompanyClick(company)}
                                             style={{
                                                 fontWeight: company === selectedCompany ? "bold" : "normal",
+                                                backgroundColor: company === selectedCompany ? "white" :"whitesmoke"
                                             }}
                                         >
                                             {company}
-                                            
+
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={1} sm={0} xs={0}/>
+                        <Col lg={1} sm={0} xs={0} />
                         <Col lg={17} sm={24} xs={24}>
 
                             <div>
                                 {/* <h3>{selectedCompany}</h3> */}
-                                <ul> {renderDocuments(DocumentData[selectedCompany])}</ul>
+                                {renderDocuments(DocumentData[selectedCompany])}
                             </div>
                         </Col>
                     </Row>

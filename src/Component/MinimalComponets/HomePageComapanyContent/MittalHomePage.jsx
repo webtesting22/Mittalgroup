@@ -98,7 +98,7 @@ const MSLHomePage = () => {
 
                 </div>
             </section>
-            <ClientHome />
+            
         </>
     )
 }

@@ -3,7 +3,7 @@
   position: relative;
   z-index: 5555;
   padding: 2rem 4rem;
-  background-image: url("/images/4872987.jpg");
+  background-image: url("/images/4940019.jpg");
   background-attachment: fixed;
 }
 .companyList ul {
@@ -22,92 +22,94 @@
 .companyList ul li:hover {
   color: #9aa966;
 }
-.documentListContainer{
-  width: 100%;
+
+.companyList {
+  position: sticky;
+  top: 40%;
+}
+
+.documentsSection {
+  background-color: white;
+  position: relative;
+  z-index: 5555;
+  padding: 2rem 4rem;
+}
+
+.documentListContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.documentListContainer ul {
+
+.documentGrid {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding-left: 0;
-}
-.documentListContainer ul li {
+  gap: 20px;
   width: 100%;
-  margin: 10px ;
-  padding: 10px;
-  /* display: inline-flex; */
-  justify-content: center;
-  text-align: justify;
-  align-items: center;
-  transition: 0.5s;
+}
+
+.documentCard {
+  display: flex;
+  min-height: 15vh;
+  flex-direction: column;
+  padding: 20px;
   background-color: whitesmoke;
-  border: 1px solid rgba(0, 0, 0, 0.391);
+  /* background-color: whitesmoke; */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s ease;
 }
-.documentListContainer ul li:hover {
+
+.documentCard:hover {
   border: 1px solid black;
-  color: #9aa966 !important;
-  padding: 20px 10px;
-  transition: 0.5s;
-  transform: scale(1.03);
+  transform: scale(1.05);
   background-color: white;
 }
-
-.documentsSection ul {
-  padding-left: 0;
+.documentCard:hover p {
+  color: #9aa966;
 }
-.documentListContainer .HeadingContainer {
+
+.documentCard img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.HeadingContainer {
   margin: 1rem 0;
-  color: #a7bf51;
-  border-color: #a7bf51;
+  font-size: 1.5rem;
 }
-.categoryHeader {
-  font-size: 1.2rem;
-  color: #a7bf51;
-  border-bottom: 1px solid #ccc;
-  padding: 5px 0;
-}
-
-.documentLink {
-  text-decoration: none;
-  color: #000;
-}
-
 
 @media (max-width: 999px) {
-  .documentListContainer {
-    width: 100%;
+  .documentCard {
+    padding: 15px;
   }
-  .documentListContainer ul li {
-    width: 100%;
+  .documentCard img {
+    width: 35px;
   }
 }
+
 @media (max-width: 769px) {
   .companyList ul {
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
+    gap: 10px;
   }
-  .companyList ul li {
-    margin: 0 10px;
+
+  .documentGrid {
+    gap: 15px;
   }
-  .documentListContainer ul {
-    padding-left: 0;
+  .documentCard {
+    width: 100%;
   }
 }
+
 @media (max-width: 576px) {
   .documentsSection {
     padding: 2rem 1rem;
   }
-  .documentListContainer ul li {
-    width: 95%;
-    margin: 10px 0;
-  }
-}
-@media (max-width: 500px) {
-  .documentListContainer ul li {
-    width: 95%;
+  .documentCard {
+    min-height: 10vh;
+    padding: 10px 0;
   }
 }
