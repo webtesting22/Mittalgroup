@@ -56,29 +56,27 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.5s ;
 }
 
 .documentCard:hover {
   border: 1px solid black;
-  transform: scale(1.05);
   background-color: white;
+  /* padding: 30px; */
+  transition: 0.5s;
 }
 .documentCard:hover p {
   color: #9aa966;
 }
-
 .documentCard img {
   width: 40px;
   height: auto;
   margin-bottom: 10px;
 }
-
 .InvestorHeadingContainer {
   margin: 1rem 0;
   font-size: 1.5rem;
 }
-
 @media (max-width: 999px) {
   .documentCard {
     padding: 15px;
@@ -87,7 +85,6 @@
     width: 35px;
   }
 }
-
 @media (max-width: 769px) {
   .companyList ul {
     flex-direction: row;
