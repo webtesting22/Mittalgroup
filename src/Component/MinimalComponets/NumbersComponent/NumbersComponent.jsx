@@ -17,7 +17,7 @@ const NumberData = [
         comparison: "In 20+ Industries",
     },
     {
-        imgsrc:"/images/idea.png",
+        imgsrc:"/images/project.gif",
         number: 60,
         data: "Projects",
         comparison: "Average Project : 10,000 Metric Tonnes"
@@ -65,7 +65,7 @@ const NumbersComponent = () => {
                             <h3 className="number">{count[item.data] || 0}+</h3>
                             <p className="data">{item.data}</p>
 
-                            {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "black" }}  ></i>{item.comparison}</p>}
+                            {item.comparison && <p className="comparison"><i class='bx bx-line-chart' style={{ color: "white" }}  ></i>{item.comparison}</p>}
 
                         </div>
                     </Col>
