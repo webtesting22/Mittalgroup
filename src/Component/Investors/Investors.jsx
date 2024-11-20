@@ -68,7 +68,7 @@ const Investors = () => {
                     </div>
                 </div>
                 <div className="documentsSection">
-                    <Row gutter={[16, 16]} >
+                    <Row>
                         <Col lg={6} sm={24} xs={24}>
                             <div className="companyList"
                             >

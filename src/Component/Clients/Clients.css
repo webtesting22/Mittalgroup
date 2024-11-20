@@ -1,4 +1,10 @@
-.ClientsContainer {
+.ClientContainerSet{
+  /* background-color: white; */
+  /* background-attachment: fixed; */
+  /* background-image: url('/images/4872987.jpg'); */
+  /* background-size: cover; */
+  /* background-position: top; */
+}.ClientsContainer {
   /* padding: 0rem 2rem; */
   display: flex;
   flex-wrap: wrap;

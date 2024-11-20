@@ -103,6 +103,7 @@
   }
   .documentListContainer ul li {
     width: 95%;
+    margin: 10px 0;
   }
 }
 @media (max-width: 500px) {

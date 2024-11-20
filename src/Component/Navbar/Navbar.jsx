@@ -57,8 +57,8 @@ const Navbar = () => {
 
               hideNav();
             }}>
-            <img src="/images/MittalLogo.png" alt="logo of mild steel company"/>
-              {/* <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" /> */}
+            {/* <img src="/images/MittalLogo.png" alt="logo of mild steel company"/> */}
+              <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
           <button onClick={toggleNav}>
