@@ -119,21 +119,25 @@ const AboutUs = () => {
   const data = [
     {
       img: "https://webtesting-upload.vercel.app/assets/quality2-DePfrNX1.jpg",
+      alt: "showing the quality of mild steel",
       title: "Quality",
       description: " Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture."
     },
     {
       img: "https://webtesting-upload.vercel.app/assets/innovation-CMd4XaG-.jpg",
+      alt: "power transmission tower made up of mild steel",
       title: "Innovation",
       description: "We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along."
     },
     {
       img: "https://webtesting-upload.vercel.app/assets/CS-DOg_2PEC.jpg",
+      alt: "customer satisfaction with product",
       title: "Customer Satisfaction",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
     {
       img: "https://webtesting-upload.vercel.app/assets/integrity-Cjv4dZqh.jpg",
+      alt: "strong bond of bridge",
       title: "Integrity",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
@@ -308,7 +312,7 @@ const AboutUs = () => {
                       <div className='AnimatedCards'>
                         <div className='BlackOverlay'>
                         </div>
-                        <img src={item.img} alt="" />
+                        <img src={item.img} alt={item.alt} />
                         <h2>{item.title}</h2>
                       </div>
                     </div>
