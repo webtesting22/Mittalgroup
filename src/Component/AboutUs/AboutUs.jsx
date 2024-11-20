@@ -118,22 +118,22 @@ const AboutUs = () => {
   ]
   const data = [
     {
-      img: bg1,
+      img: "https://webtesting-upload.vercel.app/assets/quality2-DePfrNX1.jpg",
       title: "Quality",
       description: " Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture."
     },
     {
-      img: bg2,
+      img: "https://webtesting-upload.vercel.app/assets/innovation-CMd4XaG-.jpg",
       title: "Innovation",
       description: "We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along."
     },
     {
-      img: bg3,
+      img: "https://webtesting-upload.vercel.app/assets/CS-DOg_2PEC.jpg",
       title: "Customer Satisfaction",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
     {
-      img: bg4,
+      img: "https://webtesting-upload.vercel.app/assets/integrity-Cjv4dZqh.jpg",
       title: "Integrity",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
