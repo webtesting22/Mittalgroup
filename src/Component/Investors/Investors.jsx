@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Investors.css';
-import carousal3 from "../Home/carousal3.jpeg"
+import investor from "../Home/investor.avif"
 import "../AboutUs/AboutUs.css";
 import { Row, Col } from 'antd';
 import { Radio, Tabs } from 'antd';
@@ -63,7 +63,7 @@ const Investors = () => {
                             </div>
                         </div>
                         <div className='backimageContainer'>
-                            <img src={carousal3} alt="" />
+                            <img src={investor} alt="" />
                         </div>
                     </div>
                 </div>
