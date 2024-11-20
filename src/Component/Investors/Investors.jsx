@@ -26,7 +26,7 @@ const Investors = () => {
                     if (typeof value === "object" && !value.title) {
                         return (
                             <Col span={24} key={key}> {/* Full width for headings */}
-                                <h1 className="HeadingContainer">{key}</h1>
+                                <h1 className="InvestorHeadingContainer">{key}</h1>
                                 {renderDocuments(value)}
                             </Col>
                         );
