@@ -110,13 +110,11 @@ const Home = ({ images = [] }) => {
           <button
             onClick={toggleMute}
             style={{
-
               position: "absolute",
               // top: "10px",
               bottom: "1%",
               right: "1%",
-              // left: "10px",
-              padding: "10px 15px",
+              padding: "15px 20px",
               backgroundColor: isMuted ? "red" : "green",
               color: "white",
               border: "none",
