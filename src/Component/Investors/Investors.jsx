@@ -22,7 +22,7 @@ const Investors = () => {
 
         return (
             <Row gutter={[16, 16]}> {/* Adds spacing between cards */}
-                {entries.map(([key, value]) => {
+                {entries.map(([key, value],index) => {
                     if (typeof value === "object" && !value.title) {
                         return (
                             <Col span={24} key={key}> {/* Full width for headings */}
@@ -33,8 +33,8 @@ const Investors = () => {
                     } else if (typeof value === "object" && value.title) {
                         const { title, filePath } = value;
                         return (
-                            <Col xs={24} sm={24} md={8} key={key}> {/* Adjusts layout for different screen sizes */}
-                                <div className="documentCard">
+                            <Col xs={24} sm={24} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
+                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index*200}>
                                     <a href={filePath} download={title} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{title}</p>
@@ -46,7 +46,7 @@ const Investors = () => {
                         // Handle cases where value is a string (fallback)
                         const fileName = value.split("/").pop(); // Extract the file name
                         return (
-                            <Col xs={24} sm={12} md={8} key={key}> {/* Adjusts layout for different screen sizes */}
+                            <Col xs={24} sm={12} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
                                 <div className="documentCard">
                                     <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
@@ -93,7 +93,7 @@ const Investors = () => {
                                             onClick={() => handleCompanyClick(company)}
                                             style={{
                                                 fontWeight: company === selectedCompany ? "bold" : "normal",
-                                                backgroundColor: company === selectedCompany ? "white" :"whitesmoke"
+                                                backgroundColor: company === selectedCompany ? "white" : "whitesmoke"
                                             }}
                                         >
                                             {company}
