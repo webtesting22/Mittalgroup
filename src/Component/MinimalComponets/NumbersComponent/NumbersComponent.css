@@ -7,13 +7,13 @@
   padding-bottom: 0rem;
   text-align: center;
   background-color: white;
-  height: 60vh;
+  height: 100%;
 }
 
 .number-card {
-  background-color: whitesmoke;
+  background-color: white;
   padding: 20px 0;
-  margin: 20px;
+  margin: 0 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

@@ -22,7 +22,7 @@ const Investors = () => {
 
         return (
             <Row gutter={[16, 16]}> {/* Adds spacing between cards */}
-                {entries.map(([key, value],index) => {
+                {entries.map(([key, value], index) => {
                     if (typeof value === "object" && !value.title) {
                         return (
                             <Col span={24} key={key}> {/* Full width for headings */}
@@ -34,7 +34,7 @@ const Investors = () => {
                         const { title, filePath } = value;
                         return (
                             <Col xs={24} sm={24} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
-                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index*200}>
+                                <div className="documentCard" data-aos="fade-up" data-aos-duration="200" data-aos-delay={index * 100}>
                                     <a href={filePath} download={title} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{title}</p>
@@ -47,7 +47,7 @@ const Investors = () => {
                         const fileName = value.split("/").pop(); // Extract the file name
                         return (
                             <Col xs={24} sm={12} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
-                                <div className="documentCard">
+                            <div className="documentCard" data-aos="fade-up" data-aos-duration="200" data-aos-delay={index * 100}>
                                     <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{fileName}</p>

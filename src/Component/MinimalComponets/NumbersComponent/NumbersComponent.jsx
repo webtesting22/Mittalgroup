@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./NumbersComponent.css";
 import { Row, Col } from 'antd';
+
 // Data Array
 const NumberData = [
     {
-        imgsrc:"/images/industrial-park.png",
+        imgsrc:"/images/factory.gif",
         number: 600000,  // Store numbers as integers for counting effect
         data: "Metric Tonnes Manufactured",
         comparison: " Equivalent to 59+ Eiffel Towers",
     },
     {
-        imgsrc:"/images/handshake.png",
+        imgsrc:"/images/feedback.gif",
         number: 1400,
         data: "Clients",
         comparison: "In 20+ Industries",
@@ -53,7 +54,7 @@ const NumbersComponent = () => {
     }, []);
 
     return (
-        <div className="numbers-container">
+        <div className="numbers-container" >
             <Row>
                 {NumberData.map((item, index) => (
                     <Col lg={8} md={24} xs={24} key={index} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 200}>
