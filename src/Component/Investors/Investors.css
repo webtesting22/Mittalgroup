@@ -56,9 +56,12 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-align: center;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
-
+.documentCard p {
+  margin: 0;
+  padding-top: 10px;
+}
 .documentCard:hover {
   border: 1px solid black;
   background-color: white;

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './Investors.css';
-import investor from "../Home/investor.avif"
+import investor from '/images/investors.jpg'
 import "../AboutUs/AboutUs.css";
 import { Row, Col } from 'antd';
 import { Radio, Tabs } from 'antd';
@@ -12,9 +12,17 @@ const Investors = () => {
         window.scrollTo(0, 0);
     }, []);
     const [selectedCompany, setSelectedCompany] = useState("MSL");
+    const documentSectionRef = useRef(null); // Reference for document section
 
     const handleCompanyClick = (company) => {
         setSelectedCompany(company);
+        // Ensure smooth scrolling using window.scrollTo
+        const documentSectionPosition = documentSectionRef.current.offsetTop;
+        window.scrollTo({
+            top: documentSectionPosition,
+            behavior: "smooth",
+        });
+
     };
 
     const renderDocuments = (data) => {
@@ -43,11 +51,10 @@ const Investors = () => {
                             </Col>
                         );
                     } else {
-                        // Handle cases where value is a string (fallback)
                         const fileName = value.split("/").pop(); // Extract the file name
                         return (
                             <Col xs={24} sm={12} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
-                            <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}>
+                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}>
                                     <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{fileName}</p>
@@ -81,7 +88,7 @@ const Investors = () => {
                         </div>
                     </div>
                 </div>
-                <div className="documentsSection">
+                <div className="documentsSection" ref={documentSectionRef}>
                     <Row>
                         <Col lg={6} sm={24} xs={24}>
                             <div className="companyList"

@@ -76,18 +76,29 @@ const MSLManufacturing = () => {
                             <div className="manufacturingImage"><img src="/images/5s.png" /></div>
                         </Col>
                     </Row>
-                    <div style={{ paddingTop: "2rem" }}>
+                    {/* <div style={{ paddingTop: "2rem" }}>
                         <Row>
                             <Col>
                                 <div className="HeadingContainer">
                                     <h2>Sustainability and Recycling Practices</h2>
                                 </div>
-                                {/* <h4 style={{ marginTop: "1rem" }}>Commitment and Sustainability</h4> */}
                                 <p>Sustainability is integral to our operations. We actively recycle steel waste like mill scale and end cuttings,
                                     repurposing them for various applications. Mill scale is sold to vendors for strengthening cement and improving oil
                                     combustion, while end cuttings are reused as scrap in furnaces. These practices contribute to reduced environmental
                                     impact while promoting the efficient use of resources.</p>
                                 <br></br>
+                            </Col>
+                        </Row>
+                    </div> */}
+                    <div style={{ paddingTop: "2rem" }}>
+                        <Row>
+                            <Col>
+                                <div className="HeadingContainer">
+                                    <h2>Energy Efficiency and Sustainable Operations</h2>
+                                </div>
+                                <p>
+                                    Our setup utilizes coal-fueled furnaces, and to enhance our energy efficiency, we have integrated coal gas recuperators. These recuperators capture and reuse waste heat from the furnace, significantly reducing coal consumption and overall energy use. By recuperating heat that would otherwise be lost, we contribute to both energy conservation and cost efficiency, aligning with our eco-friendly practices. This system allows us to reduce our environmental impact while maintaining efficient production processes.
+                                </p>
                             </Col>
                         </Row>
                     </div>

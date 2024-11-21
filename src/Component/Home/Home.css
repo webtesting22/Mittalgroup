@@ -114,6 +114,9 @@
   object-fit: cover;
   width: 100%;
 }
+.mobileNone button i{
+  font-size: 1.2rem;
+}
 @media (max-width: 769px) {
   .MSLHomeContent {
     position: absolute;
