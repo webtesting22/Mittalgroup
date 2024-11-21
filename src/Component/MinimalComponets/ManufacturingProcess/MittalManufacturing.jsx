@@ -1,14 +1,38 @@
 import React, { useEffect } from "react";
 import { Row, Col } from 'antd';
 import "./ManufacturingProcess.css"
+import "../../AboutUs/AboutUs.css";
 
 const MSLManufacturing = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <>
+        <><div className='TopcontainerPart'>
+            <div className='InsideTop'>
+                <div className='blackOverlay'>
+
+                </div>
+                <div className='ContentContainerAdjust'>
+                    <div>
+                        <h1>MANUFACTURING</h1>
+                        <p>Find Out More About Our Manufacturing Process</p>
+                    </div>
+                </div>
+                <div className='backimageContainer'>
+                    <video src="https://webtesting-upload.vercel.app/assets/Mittal%20Manufacturing-CglOzyGp.mp4"
+                        autoPlay
+                        loop={true}
+                        playsInline
+                        muted
+                        style={{ objectFit: "cover" }}
+                        height={"100%"}
+                        width={"100%"} />
+                </div>
+            </div>
+        </div>
             <section id="ManufacturingProcess">
+
                 <div data-aos="fade-up" data-aos-duration="1000">
 
                     {/* <div className="productsContainer">
@@ -30,7 +54,7 @@ const MSLManufacturing = () => {
 </div> */}
                     {/* <div > */}
                     <div className="HeadingContainer">
-                        <h2>Manufacturing process</h2> 
+                        <h2>Manufacturing process</h2>
                     </div>
                     <p>
                         At MSL , we operate two fully equipped manufacturing units in Changodar,
