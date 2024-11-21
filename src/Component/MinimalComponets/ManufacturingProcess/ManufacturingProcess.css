@@ -18,6 +18,9 @@
     padding-top: 9rem !important;
     padding: 0rem 4rem;
     padding-bottom: 4rem;
+    background-attachment: fixed;
+    background-image: url('/images/4940019.jpg');
+    background-size: cover;
 }
 @media (max-width:769px){
     #ManufacturingProcess{

@@ -9,7 +9,7 @@ const MSLManufacturing = () => {
     return (
         <>
             <section id="ManufacturingProcess">
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" data-aos-duration="1000">
 
                     {/* <div className="productsContainer">
 <h1>Our Products</h1>
@@ -30,7 +30,7 @@ const MSLManufacturing = () => {
 </div> */}
                     {/* <div > */}
                     <div className="HeadingContainer">
-                        <h2>Manufacturing process</h2>
+                        <h2>Manufacturing process</h2> 
                     </div>
                     <p>
                         At MSL , we operate two fully equipped manufacturing units in Changodar,
