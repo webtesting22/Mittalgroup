@@ -6,9 +6,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const serviceData = {
     "Flat-Bars": {
-        title: 'Precision-Made Flat Bars for Every Industry',
+        title: 'Precision-Made MS Flats for Every Industry',
         link: "/Products/Flat-Bars",
-        mainTitle: "Flat Bars",
+        mainTitle: "MS Flats",
         tagline: "Strength and durability in every bar.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
         keywords: [
@@ -220,9 +220,9 @@ const serviceData = {
 
     },
     "Channels": {
-        title: 'Precision-Made Channels for Every Industry',
+        title: 'Precision-Made MS Channels for Every Industry',
         link: '/Products/Channels',
-        mainTitle: "Channels",
+        mainTitle: "MS Channels",
         tagline: "Support and stability in every channel.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
         keywords: [
@@ -314,9 +314,9 @@ const serviceData = {
 
     },
     "Round-Bars": {
-        title: 'Precision-Made Round Bars for Every Industry',
+        title: 'Precision-Made MS Round Bars for Every Industry',
         link: '/Products/Round-Bars',
-        mainTitle: "Round Bars",
+        mainTitle: "MS Round Bars",
         tagline: "Precision crafted for enduring strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
         keywords: [
@@ -419,9 +419,9 @@ const serviceData = {
         ),
     },
     "Angles": {
-        title: 'Precision-Made Angles for Every Industry',
+        title: 'Precision-Made MS Angles for Every Industry',
         link: '/Products/Angles',
-        mainTitle: "Angles",
+        mainTitle: "MS Angles",
         tagline: "Angle your build toward strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
         keywords: [
