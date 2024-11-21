@@ -8,17 +8,17 @@ const QualityData = [
         para: "Our in-house fully equipped testing laboratory ensures that every steel product undergoes rigorous quality assessments, maintaining the highest standards of strength and durability. This commitment to excellence allows us to deliver reliable solutions tailored to meet our clients' needs.",
         subpoints: [
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Location-Chm1T9kP.jpg",
+                imgpath:"https://webtesting-upload.vercel.app/assets/Location-cFD7QPDP.jpg",
                 title: "Location",
                 description: "Each of our manufacturing units features a dedicated laboratory outfitted with the latest testing technology."
             },
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Capabilities-DC3myO7u.jpg",
+                imgpath:"https://webtesting-upload.vercel.app/assets/Capabilities-DatufOdI.jpg",
                 title: "Capabilities",
                 description: "Equipped for a range of tests, including tensile strength, impact resistance, and chemical composition analysis."
             },
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/On-Site%20Testing-DlPc9zAh.jpg",
+                imgpath:"https://webtesting-upload.vercel.app/assets/On%20site%20testing-DqO2lhXE.jpg",
                 title: "On-Site Testing",
                 description: "Enables real-time quality checks during production, reducing delays and ensuring immediate assurance."
             }
@@ -28,17 +28,17 @@ const QualityData = [
         title: "Mechanical and Chemical Testing",
         subpoints: [
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Mechanical%20Testing-COx01wg-.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Mechanical%20Testing-DW2DrspG.jpg",
                 title: "Mechanical Testing",
                 description: "Includes tensile, compressive, and impact tests to assess material strength and durability under stress."
             },
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Chemical%20Testing-CROsws0m.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Chemical%20Testing-D6CMu6H9.jpg",
                 title: "Chemical Testing",
                 description: "Conducted to verify the precise chemical composition of materials, ensuring compliance with required standards."
             },
             {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Safety%20Assurance-DkMy5vGa.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Safety%20Assurance-B0eixl7V.jpg",
                 title: "Safety Assurance",
                 description: "Ensures products meet safety specifications, making them reliable for demanding applications."
             }
