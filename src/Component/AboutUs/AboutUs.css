@@ -541,12 +541,7 @@
     border-radius: 10px;
 }
 
- .founderSlider .swiper-slide {
-    /* object-fit: cover;
-    aspect-ratio: 3/2;
-    width: 100%; */
-}
-
+ 
 .founderSlider .swiper-slide img {
     width: 100%;
     border-radius: 10px;

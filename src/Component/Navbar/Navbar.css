@@ -291,12 +291,7 @@
 .subLinkContainer ul li a {
   padding: 0px !important;
 }
-.about {
-  /* left: -100px; */
-}
-.product {
-  /* right: -100px; */
-}
+
 
 @media (max-width: 769px) {
   .DropdownComponent {
