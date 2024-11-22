@@ -539,3 +539,10 @@
   width: 100%;
   border-radius: 10px;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .OutMV {
+      background-attachment:local;
+      /* Adjust for iOS Safari */
+  }
+}

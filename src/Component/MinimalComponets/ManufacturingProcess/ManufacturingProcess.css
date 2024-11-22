@@ -25,7 +25,7 @@
 }
 @media (max-width:769px){
     #ManufacturingProcess{
-        padding-top: 4rem !important;
-        padding: 0rem 1rem;
+        /* padding-top: 4rem !important; */
+        padding: 2rem 1rem;
     }
 }
