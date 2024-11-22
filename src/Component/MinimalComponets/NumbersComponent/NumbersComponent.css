@@ -1,77 +1,30 @@
-.numbers-container {
-  padding:4rem;
-  text-align: center;
-  height: 100%;
-  position: relative;
-  background-image: url("/images/DSC_0145.JPG");
-  background-size: cover;
-  background-position:center;
-}
-
-.number-card {
-  padding: 20px 0;
-  margin: 0 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  transition: all 0.5s ease;
-}
-
-.data {
-  margin: 0;
-  padding: 10px 0;
-  font-size: 1.2rem;
-  text-align: center;
-  color: white;
-}
-
-.comparison {
-  font-size: 1rem;
-  display: flex;
-  color: white;
-  justify-content: center;
-  gap: 10px;
-  /* padding-top: 10px; */
-  align-items: center;
-  margin: 0;
-}
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
+.ImagesContainer {
+  display: block;
   width: 100%;
+  height: 50vh;
+  position: relative;
 }
-.icon-container img {
-  object-fit: contain;
-  width: 30%;
-  border-radius: 20px;
+
+.ImagesContainer img {
+  width: 50%;
+  height: 100%;
 }
-@media (max-width: 769px) {
-  .numbers-container {
-    padding: 3rem 1rem;
-    padding-bottom: 3rem;
-  }
+
+.numbers-container .ant-row .ant-col:nth-child(1) .ImagesContainer img:nth-child(1) {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
 }
-@media (max-width: 576px) {
-  .number-card {
-    padding: 10px 0;
-  }
-  .number {
-    font-size: 1.5rem;
-  }
-  .data {
-    font-size: 1.2rem;
-  }
-  .comparison {
-    font-size: 1rem;
-  }
+
+.numbers-container .ant-row .ant-col:nth-child(1) .ImagesContainer img:nth-child(2) {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 300px;
+  width: 300px;
+  border: 8px solid white;
+  object-fit: cover;
 }

@@ -128,9 +128,9 @@ const Home = ({ images = [] }) => {
           </button>        </div>
 
       </div>
-      
-      <MSLHomePage />
       <NumbersComponent />
+      <MSLHomePage />
+      
       <ClientHome />
     </>
   );
