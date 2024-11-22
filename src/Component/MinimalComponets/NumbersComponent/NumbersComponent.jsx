@@ -33,27 +33,23 @@ const NumbersComponent = () => {
     const targetNumbers = [600000, 1400, 60];
 
     const startCounting = () => {
-        const duration = 2000; // 2 seconds
-        const interval = 100; // 50 ms
-        const steps = Math.ceil(duration / interval); // Total steps for the animation
+        const duration = 4000; // Total duration for counting animation (in ms)
+        const startTime = performance.now(); // Start time for animation
 
-        // Calculate uniform increments so all numbers finish at the same time
-        const increments = targetNumbers.map((num) => num / steps);
+        const animate = (currentTime) => {
+            const elapsedTime = currentTime - startTime; // Calculate elapsed time
+            const progress = Math.min(elapsedTime / duration, 1); // Progress percentage (0 to 1)
 
-        let currentCounts = [0, 0, 0];
-        let currentStep = 0;
+            // Update counts based on progress
+            const updatedCounts = targetNumbers.map((target) => Math.floor(target * progress));
+            setCounts(updatedCounts);
 
-        const intervalId = setInterval(() => {
-            if (currentStep < steps) {
-                currentCounts = currentCounts.map(
-                    (current, index) => Math.min(current + increments[index], targetNumbers[index])
-                );
-                setCounts([...currentCounts]);
-                currentStep++;
-            } else {
-                clearInterval(intervalId); // Stop when all numbers reach their targets
+            if (progress < 1) {
+                requestAnimationFrame(animate); // Continue animation if not complete
             }
-        }, interval);
+        };
+
+        requestAnimationFrame(animate); // Start animation
     };
 
     useEffect(() => {
@@ -93,26 +89,52 @@ const NumbersComponent = () => {
             <div>
                 <Row>
                     <Col lg={12}>
+                    {/* <div style={{padding:"20px 0px"}}>
+                                <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
+                                </div> */}
                         <div className="ImagesContainer">
-                           <div className="firstNumber"> <h1>{counts[2]}+</h1> <h2>Projects</h2><h3>Average Project Size 10,000 Metric Tonnes</h3></div>
+                            
+                            <div className="firstNumber"> <h1>{counts[2]}+</h1> <h4>Projects</h4></div>
                             <img
                                 src="https://webtesting-upload.vercel.app/assets/G1-CjhU0Zn4.png"
                                 alt=""
                             />
-
-
-
-
                             <img
                                 src="https://webtesting-upload.vercel.app/assets/G4-COAkdo_n.png"
                                 alt=""
                             />
-                            <div className="secondNumber"><h1>{counts[1]}+</h1> <h2>Clients</h2><h3>in 20+ Industries</h3></div>
+                            <div className="secondNumber"><h1>{counts[1]}+</h1> <h4>Clients</h4></div>
 
                         </div>
                     </Col>
                     <Col lg={12}>
-                        <h1>{counts[0]}+</h1><h2>Metric Tonnes Manufactured</h2><h3>Equivalent to 59+ Eiffel Towers</h3>
+                        <div className="rightSideContainerContent ContentContainerHome ">
+                            <div>
+                                <h4>Work Experience</h4>
+                                <h1>Innovative Logistics, Global Reach</h1>
+                               
+                                <p>With a legacy of delivering seamless logistics solutions, our expertise spans global supply chains, ensuring efficiency, reliability, and innovative approaches to meet client needs.</p>
+                                <hr />
+                                <div style={{padding:"20px 0px",paddingBottom:"5px"}}>
+                                <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Personal Protective Equipment (PPE)
+                                    </li>
+                                    <li>
+                                        Hazard Identification and Risk Assessment:
+                                    </li>
+                                    <li>
+                                        Safe Equipment Usage
+                                    </li>
+                                    <li>
+                                        Emergency Preparedness
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </Col>
                 </Row>
             </div>

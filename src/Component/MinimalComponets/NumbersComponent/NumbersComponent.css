@@ -6,16 +6,12 @@
 }
 
 .ImagesContainer img {
-  width: 50%;
+  width: 60%;
   /* height: 100%; */
   z-index: 1;
 }
 
-.numbers-container
-  .ant-row
-  .ant-col:nth-child(1)
-  .ImagesContainer
-  img:nth-child(1) {
+.numbers-container .ant-row .ant-col:nth-child(1) .ImagesContainer img:nth-child(1) {
   position: absolute;
   left: 50px;
   top: 0px;
@@ -24,30 +20,86 @@
   object-fit: contain;
 }
 
-.numbers-container
-  .ant-row
-  .ant-col:nth-child(1)
-  .ImagesContainer
-  img:nth-child(2) {
+.numbers-container .ant-row .ant-col:nth-child(1) .ImagesContainer img:nth-child(2) {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  height: 300px;
+  /* height: 300px; */
   width: 350px;
   border: 8px solid white;
   object-fit: contain;
 }
+
 .ImagesContainer h1 {
   z-index: 100;
   /* position: absolute; */
   /* left: 100px; */
 }
+
 .firstNumber {
   position: absolute;
   top: 0;
-  left: 400px;
+  right: 15%;
+  top: 10%;
 }
+
 .secondNumber {
   position: absolute;
-  left: 20px;
+  left: 13%;
+  bottom: 8%;
+}
+
+.rightSideContainerContent {
+  padding-left: 2rem;
+}
+
+.secondNumber h4,
+.firstNumber h4 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.secondNumber h1,
+.firstNumber h1 {
+  color: #9aa966;
+  font-size: 40px;
+}
+
+.rightSideContainerContent ul {
+  /* padding: 0px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightSideContainerContent ul li {
+  padding: 0px;
+  width: 100%;
+  margin: 10px 0px;
+  list-style: none;
+  position: relative;
+  font-weight: 500;
+}
+
+.rightSideContainerContent ul li::before {
+  content: "\2713";
+  /* Unicode for checkmark */
+  background-color: #9aa966;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  border-radius: 50%;
+  color: white;
+  /* Adjust color to make the checkmark visible */
+  text-align: center;
+  /* Center the checkmark */
+  line-height: 13px;
+  /* Align checkmark vertically */
+  font-size: 13px;
+  /* Adjust font size */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
 }
