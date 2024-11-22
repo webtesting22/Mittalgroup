@@ -114,7 +114,7 @@ const NumbersComponent = () => {
                     <Col lg={12}></Col>
                 </Row>
             </div>
-            <Row>
+            {/* <Row>
                 {NumberData.map((item, index) => (
                     <Col
                         lg={8}
@@ -143,7 +143,7 @@ const NumbersComponent = () => {
                         </div>
                     </Col>
                 ))}
-            </Row>
+            </Row> */}
         </div>
     );
 };
