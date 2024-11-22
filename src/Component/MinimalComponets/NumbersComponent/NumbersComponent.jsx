@@ -33,7 +33,7 @@ const NumbersComponent = () => {
     const targetNumbers = [600000, 1400, 60];
 
     const startCounting = () => {
-        const duration = 4000; // Total duration for counting animation (in ms)
+        const duration = 3000; // Total duration for counting animation (in ms)
         const startTime = performance.now(); // Start time for animation
 
         const animate = (currentTime) => {
