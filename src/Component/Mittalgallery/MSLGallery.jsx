@@ -27,13 +27,13 @@ const MSLGallery = () => {
         { image: "https://webtesting-upload.vercel.app/assets/G6-Bodf-Txg.png", alt: "making of long flat bars" },
         { image: "https://webtesting-upload.vercel.app/assets/G7-BqVS2rfA.png", alt: "many workers near many furnace" },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "Manufacturing Video",poster:"",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "Manufacturing Video", poster: "https://webtesting-upload.vercel.app/assets/VideoThumbnail1-B2eEjmFQ.webp",
         },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%202-DV1crFOn.mp4", alt: "Manufacturing Video",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%202-DV1crFOn.mp4", alt: "Manufacturing Video", poster: "https://webtesting-upload.vercel.app/assets/VideoThumbnail2-B13RYnoh.webp",
         },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%203-BC7D-lcN.mp4", alt: "Manufacturing Video",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%203-BC7D-lcN.mp4", alt: "Manufacturing Video", poster: "https://webtesting-upload.vercel.app/assets/VideoThumbnail3-BD_B9H0D.webp",
         },
 
     ]
@@ -58,7 +58,8 @@ const MSLGallery = () => {
                                         data-aos="fade-up"
                                         data-aos-duration="1000"
                                         loading="lazy"
-                                        // preload="none"
+                                        poster={item.poster}
+                                        preload="none"
                                     >
                                         <source src={item.video} type="video/mp4" />
                                         Your browser does not support the video tag.
