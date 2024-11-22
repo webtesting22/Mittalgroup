@@ -48,9 +48,9 @@
 
 .documentCard {
   display: flex;
-  min-height: 15vh;
+  min-height: 130px;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 15px;
   background-color: whitesmoke;
   /* background-color: whitesmoke; */
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -115,7 +115,7 @@
 
 @supports (-webkit-overflow-scrolling: touch) {
   .documentsSection {
-      background-attachment:local;
-      /* Adjust for iOS Safari */
+    background-attachment: local;
+    /* Adjust for iOS Safari */
   }
 }

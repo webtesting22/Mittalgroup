@@ -60,7 +60,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Customer%20Confidence-DCiUEZPW.jpg",
                 title: "Customer Confidence",
-                description: "This certification underscores our commitment to quality, providing customers with assurance that our products meet international standards."
+                description: "This certification assures customers that our products meet stringent international standards."
             }
         ]
     },
@@ -75,7 +75,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Market%20Credibility-Ck7ZXWM4.jpg",
                 title: "Market Credibility",
-                description: "BIS compliance ensures our products are reliable and safe for critical applications, particularly in construction."
+                description: "BIS compliance ensures product reliability and safety for critical construction applications.",
             },
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Customer%20Trust-C9WOSw7g.jpg",
@@ -90,7 +90,7 @@ const QualityData = [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/ISI%20Mark%20Certification-CnCq62xf.jpg",
                 title: "ISI Mark Certification",
-                description: "Our brand has earned the ISI mark, a symbol of quality recognized across India."
+                description: "Our brand has proudly earned the ISI mark, a trusted symbol of quality recognized across India.",
             },
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Regulatory%20Assurance-C0APrhVs.jpg",

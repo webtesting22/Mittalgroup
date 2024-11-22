@@ -56,8 +56,7 @@ const MSLManufacturing = () => {
                     <div className="HeadingContainer">
                         <h2>Manufacturing process</h2>
                     </div>
-                    <p>
-                        At MSL , we operate two fully equipped manufacturing units in Changodar,
+                    <p>At MSL, we operate two fully equipped manufacturing units in Changodar,
                         Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
                         allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
                         our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
