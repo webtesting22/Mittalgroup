@@ -1,3 +1,6 @@
+.numbers-container{
+  padding-bottom: 0rem;
+}
 .ImagesContainer {
   display: block;
   width: 100%;
@@ -155,6 +158,6 @@
 @media (max-width:400px)
 {
   .ImagesContainer{
-    height: 30vh;
+    height: 35vh;
   }
 }

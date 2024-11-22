@@ -3,26 +3,7 @@ import "./NumbersComponent.css";
 import { Row, Col } from "antd";
 
 // Data Array
-const NumberData = [
-    {
-        imgsrc: "/images/factory.gif",
-        number: 600000,
-        data: "Metric Tonnes Manufactured",
-        comparison: "Equivalent to 59+ Eiffel Towers",
-    },
-    {
-        imgsrc: "/images/feedback.gif",
-        number: 1400,
-        data: "Clients",
-        comparison: "In 20+ Industries",
-    },
-    {
-        imgsrc: "/images/project.gif",
-        number: 60,
-        data: "Projects",
-        comparison: "Average Project: 10,000 Metric Tonnes",
-    },
-];
+
 
 const NumbersComponent = () => {
     const [counts, setCounts] = useState([0, 0, 0]); // Array for three numbers

@@ -27,13 +27,13 @@ const MSLGallery = () => {
         { image: "https://webtesting-upload.vercel.app/assets/G6-Bodf-Txg.png", alt: "making of long flat bars" },
         { image: "https://webtesting-upload.vercel.app/assets/G7-BqVS2rfA.png", alt: "many workers near many furnace" },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "Manufacturing Video",poster:"",
         },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%202-DV1crFOn.mp4", alt: "",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%202-DV1crFOn.mp4", alt: "Manufacturing Video",
         },
         {
-            video: "https://webtesting-upload.vercel.app/assets/Gallery%203-BC7D-lcN.mp4", alt: "",
+            video: "https://webtesting-upload.vercel.app/assets/Gallery%203-BC7D-lcN.mp4", alt: "Manufacturing Video",
         },
 
     ]
@@ -50,13 +50,15 @@ const MSLGallery = () => {
                 <Row gutter={[16, 16]}>
                     {MSLGalleryImages.map((item, index) => (
                         <Col key={index} xs={12} sm={24} md={12} lg={8}>
-                        <div>
+                            <div>
                                 {item.video ? (
                                     <video
                                         controls
                                         className="MSL-gallery-image"
                                         data-aos="fade-up"
                                         data-aos-duration="1000"
+                                        loading="lazy"
+                                        // preload="none"
                                     >
                                         <source src={item.video} type="video/mp4" />
                                         Your browser does not support the video tag.
@@ -68,6 +70,8 @@ const MSLGallery = () => {
                                         className="MSL-gallery-image"
                                         data-aos="fade-up"
                                         data-aos-duration="1000"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 )}
                             </div>
