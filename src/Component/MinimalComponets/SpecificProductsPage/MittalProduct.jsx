@@ -247,7 +247,7 @@ const serviceData = {
                         <h2>MS Channels</h2>
                         <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
                         </p>
-                        <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications</p>
+                        <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications.</p>
 
                         <div className='GalleryImagesProducts'>
                             <img src="https://webtesting-upload.vercel.app/assets/gchannels2-Bere5Un7.jpeg" alt="" />
