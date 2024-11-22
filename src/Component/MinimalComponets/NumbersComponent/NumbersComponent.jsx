@@ -89,11 +89,11 @@ const NumbersComponent = () => {
             <div>
                 <Row>
                     <Col lg={12}>
-                    {/* <div style={{padding:"20px 0px"}}>
+                        {/* <div style={{padding:"20px 0px"}}>
                                 <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
                                 </div> */}
                         <div className="ImagesContainer">
-                            
+
                             <div className="firstNumber"> <h1>{counts[2]}+</h1> <h4>Projects</h4></div>
                             <img
                                 src="https://webtesting-upload.vercel.app/assets/G1-CjhU0Zn4.png"
@@ -103,20 +103,20 @@ const NumbersComponent = () => {
                                 src="https://webtesting-upload.vercel.app/assets/G4-COAkdo_n.png"
                                 alt=""
                             />
-                            <div className="secondNumber"><h1>{counts[1]}+</h1> <h4>Clients</h4></div>
+                            <div className="secondNumber"><h1>{counts[1]}+</h1><h4>Clients</h4></div>
 
                         </div>
                     </Col>
                     <Col lg={12}>
                         <div className="rightSideContainerContent ContentContainerHome ">
                             <div>
-                                <h4>Work Experience</h4>
+                                <h4>Professional Expertise</h4>
                                 <h1>Innovative Logistics, Global Reach</h1>
-                               
+
                                 <p>With a legacy of delivering seamless logistics solutions, our expertise spans global supply chains, ensuring efficiency, reliability, and innovative approaches to meet client needs.</p>
                                 <hr />
-                                <div style={{padding:"20px 0px",paddingBottom:"5px"}}>
-                                <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
+                                <div style={{ padding: "20px 0px", paddingBottom: "5px" }}>
+                                    <h1 style={{ color: "#9aa966", fontSize: "40px" }}>{counts[0]}+</h1><h4 style={{ fontWeight: "600" }}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
                                 </div>
                                 <ul>
                                     <li>
