@@ -27,6 +27,9 @@ const MSLGallery = () => {
         { image: "https://webtesting-upload.vercel.app/assets/G6-Bodf-Txg.png", alt: "making of long flat bars" },
         { image: "https://webtesting-upload.vercel.app/assets/G7-BqVS2rfA.png", alt: "many workers near many furnace" },
         {
+            image: "https://webtesting-upload.vercel.app/assets/GalleryImage-BQwKSS_U.webp", alt: "Welding"
+        },
+        {
             video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "Manufacturing Video", poster: "https://webtesting-upload.vercel.app/assets/VideoThumbnail1-B2eEjmFQ.webp",
         },
         {
@@ -47,7 +50,7 @@ const MSLGallery = () => {
                 </div>
 
                 <br />
-                <Row gutter={[16, 16]}>
+                <Row gutter={[10, 10]}>
                     {MSLGalleryImages.map((item, index) => (
                         <Col key={index} xs={12} sm={24} md={12} lg={8}>
                             <div>
