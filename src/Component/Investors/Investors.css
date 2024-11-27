@@ -76,8 +76,16 @@
   margin-bottom: 10px;
 }
 .InvestorHeadingContainer {
-  margin: 1rem 0;
   font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.companyHeading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #9aa966;
+  font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 999px) {
   .documentCard {

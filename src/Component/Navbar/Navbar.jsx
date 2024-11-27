@@ -81,7 +81,7 @@ const Navbar = () => {
             {NavigationLinks.map((item, index) => (
               <div
                 key={index}
-                className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Infrastructure" ? "aboutLinkWrapper" : ""}
+                className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Manufacturing" ? "aboutLinkWrapper" : ""}
                 style={{
                   margin: "20px 0px",
                   display: "flex",
@@ -98,7 +98,7 @@ const Navbar = () => {
                         hideNav();
                       }}
 
-                      className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Infrastructure" ? "aboutLink" : ""}
+                      className={item.link.trim() === "About" || item.link.trim() === "Products" || item.link.trim() === "Manufacturing" ? "aboutLink" : ""}
                     >
                       {item.link}
                     </Link>
@@ -159,12 +159,12 @@ const Navbar = () => {
                       </div>
                     </div>
                   )}
-                  {item.link.trim() === "Infrastructure" && (
+                  {item.link.trim() === "Manufacturing" && (
                     <div className="DropdownComponent infra">
                       <div className="subLinkContainer">
                         <ul>
                           <li onMouseEnter={() => setHoveredInfrastructureLink("Manufacturing")} onMouseLeave={() => setHoveredInfrastructureLink(null)}>
-                            <Link aria-label="redirect to manufacturing page" to="/Manufacturing" onClick={hideNav}>Manufacturing</Link>
+                            <Link aria-label="redirect to manufacturing page" to="/Manufacturing" onClick={hideNav}>Infrastructure</Link>
                           </li>
                           <li onMouseEnter={() => setHoveredInfrastructureLink("Quality")} onMouseLeave={() => setHoveredInfrastructureLink(null)}>
                             <Link aria-label="redirect to quality page" to="/Quality" onClick={hideNav}>Quality</Link>

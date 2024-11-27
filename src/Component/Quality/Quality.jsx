@@ -84,26 +84,26 @@ const QualityData = [
             }
         ]
     },
-    {
-        title: "ISI Approved Brand",
-        subpoints: [
-            {
-                imgpath: "https://webtesting-upload.vercel.app/assets/ISI%20Mark%20Certification-CnCq62xf.jpg",
-                title: "ISI Mark Certification",
-                description: "Our brand has proudly earned the ISI mark, a trusted symbol of quality recognized across India.",
-            },
-            {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Regulatory%20Assurance-C0APrhVs.jpg",
-                title: "Regulatory Assurance",
-                description: "The ISI mark confirms that our products meet rigorous quality and performance requirements."
-            },
-            {
-                imgpath: "https://webtesting-upload.vercel.app/assets/Brand%20Reputation-DOxEazHy.jpg",
-                title: "Brand Reputation",
-                description: "ISI approval reinforces our reputation as a trusted provider of high-quality, durable, and safe products."
-            }
-        ]
-    }
+    // {
+    //     title: "ISI Approved Brand",
+    //     subpoints: [
+    //         {
+    //             imgpath: "https://webtesting-upload.vercel.app/assets/ISI%20Mark%20Certification-CnCq62xf.jpg",
+    //             title: "ISI Mark Certification",
+    //             description: "Our brand has proudly earned the ISI mark, a trusted symbol of quality recognized across India.",
+    //         },
+    //         {
+    //             imgpath: "https://webtesting-upload.vercel.app/assets/Regulatory%20Assurance-C0APrhVs.jpg",
+    //             title: "Regulatory Assurance",
+    //             description: "The ISI mark confirms that our products meet rigorous quality and performance requirements."
+    //         },
+    //         {
+    //             imgpath: "https://webtesting-upload.vercel.app/assets/Brand%20Reputation-DOxEazHy.jpg",
+    //             title: "Brand Reputation",
+    //             description: "ISI approval reinforces our reputation as a trusted provider of high-quality, durable, and safe products."
+    //         }
+    //     ]
+    // }
 ];
 
 const Quality = () => {

@@ -98,6 +98,8 @@ const NumbersComponent = () => {
                                 <hr />
                                 <div style={{ padding: "20px 0px", paddingBottom: "5px" }}>
                                     <h1 style={{ color: "#9aa966", fontSize: "40px" }}>{counts[0]}+</h1><h4 style={{ fontWeight: "600" }}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
+                                    {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>7947505 </h1><h4 style={{ fontWeight: "600" }}>BIS Approved </h4> */}
+                                    {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>9001:2000</h1><h4 style={{ fontWeight: "600" }}>ISO Company</h4> */}
                                 </div>
                                 <ul>
                                     <li>

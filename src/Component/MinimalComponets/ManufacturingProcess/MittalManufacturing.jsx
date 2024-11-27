@@ -56,12 +56,14 @@ const MSLManufacturing = () => {
                     <div className="HeadingContainer">
                         <h2>Manufacturing process</h2>
                     </div>
+                    <p>The projects are designed and installed by experts having an annual capacity of production up to 50000 MT collectively in both the units. All the machineries, stands & passes are kept in a row perfectly to maintain the consistency and pace of the process. The speed of the machines, stands is matched to the speed of the rolling material which is made possible by organized machinery to get quality end products. High quality mechanical & technical personnel are employed to inspect the process and quality at various stages of the process. Pulverised coal fired Re-heating furnaces are installed to maintain the temperature and provide sufficient heat to the core of raw material which result in better rolling of product.</p>
                     <p>At MSL, we operate two fully equipped manufacturing units in Changodar,
-                        Ahmedabad. Our commitment to excellence is reflected in our fully automated re-rolling mill, which
+                        Ahmedabad. Our commitment to excellence is reflected in our semi-automated re-rolling mill, which
                         allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
                         our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
 
                     </p>
+                    <p>Beside production, keeping the atmosphere green and clean is a major motive at MSL. Both the units are approved from GPCB and environment is the premises are maintained accordingly.</p>
                     <p>We follow the <b>5S manufacturing methodology</b>—Sort, Straighten, Shine, Standardize, and Sustain—to
                         optimize efficiency and maintain an organized, high-performance production environment.</p>
 

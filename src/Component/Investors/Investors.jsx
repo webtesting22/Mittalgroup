@@ -11,29 +11,32 @@ const Investors = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const [selectedCategory, setSelectedCategory] = useState("Issuer Company-MSL");
     const [selectedCompany, setSelectedCompany] = useState("MSL");
-    const documentSectionRef = useRef(null); // Reference for document section
+    const documentSectionRef = useRef(null);
 
-    const handleCompanyClick = (company) => {
-        setSelectedCompany(company);
-        // Ensure smooth scrolling using window.scrollTo
+    const handleCategoryClick = (category, company = null) => {
+        setSelectedCategory(category);
+        if (company) setSelectedCompany(company);
+
         const documentSectionPosition = documentSectionRef.current.offsetTop;
+        const offset=50;
         window.scrollTo({
-            top: documentSectionPosition,
+            top: documentSectionPosition-offset,
             behavior: "smooth",
+            
         });
-
     };
 
     const renderDocuments = (data) => {
         const entries = Object.entries(data);
 
         return (
-            <Row gutter={[16, 16]}> {/* Adds spacing between cards */}
+            <Row gutter={[16, 16]}>
                 {entries.map(([key, value], index) => {
                     if (typeof value === "object" && !value.title) {
                         return (
-                            <Col span={24} key={key}> {/* Full width for headings */}
+                            <Col span={24} key={key}>
                                 <h1 className="InvestorHeadingContainer">{key}</h1>
                                 {renderDocuments(value)}
                             </Col>
@@ -41,23 +44,11 @@ const Investors = () => {
                     } else if (typeof value === "object" && value.title) {
                         const { title, filePath } = value;
                         return (
-                            <Col xs={24} sm={24} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
+                            <Col xs={24} sm={24} md={8} key={key}>
                                 <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}>
                                     <a href={filePath} download={title} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{title}</p>
-                                    </a>
-                                </div>
-                            </Col>
-                        );
-                    } else {
-                        const fileName = value.split("/").pop(); // Extract the file name
-                        return (
-                            <Col xs={24} sm={12} md={8} key={key} > {/* Adjusts layout for different screen sizes */}
-                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}>
-                                    <a href={value} download={fileName} target="_blank" rel="noopener noreferrer">
-                                        <img src={pdfIcon} alt="PDF" />
-                                        <p>{fileName}</p>
                                     </a>
                                 </div>
                             </Col>
@@ -67,6 +58,11 @@ const Investors = () => {
             </Row>
         );
     };
+
+    const currentDocuments =
+    selectedCategory === "Issuer Company"
+        ? DocumentData["Issuer Company"][selectedCompany]
+        : DocumentData["Group Companies"];
 
 
     return (
@@ -91,31 +87,45 @@ const Investors = () => {
                 <div className="documentsSection" ref={documentSectionRef}>
                     <Row>
                         <Col lg={6} sm={24} xs={24}>
-                            <div className="companyList"
-                            >
+                        <div className="companyList">
                                 <ul>
-                                    {Object.keys(DocumentData).map((company) => (
-                                        <li
-                                            key={company}
-                                            onClick={() => handleCompanyClick(company)}
-                                            style={{
-                                                fontWeight: company === selectedCompany ? "bold" : "normal",
-                                                backgroundColor: company === selectedCompany ? "white" : "whitesmoke"
-                                            }}
-                                        >
-                                            {company}
-
-                                        </li>
-                                    ))}
+                                    <li
+                                        onClick={() => handleCategoryClick("Issuer Company", "MSL")}
+                                        style={{
+                                            fontWeight: selectedCategory === "Issuer Company" ? "bold" : "normal",
+                                            backgroundColor: selectedCategory === "Issuer Company" ? "white" : "whitesmoke",
+                                        }}
+                                    >
+                                        Issuer Company
+                                    </li>
+                                    <li
+                                        onClick={() => handleCategoryClick("Group Companies")}
+                                        style={{
+                                            fontWeight: selectedCategory === "Group Companies" ? "bold" : "normal",
+                                            backgroundColor: selectedCategory === "Group Companies" ? "white" : "whitesmoke",
+                                        }}
+                                    > 
+                                    Group Companies
+                                    </li>
                                 </ul>
                             </div>
                         </Col>
                         <Col lg={1} sm={0} xs={0} />
                         <Col lg={17} sm={24} xs={24}>
-
                             <div>
-                                {/* <h3>{selectedCompany}</h3> */}
-                                {renderDocuments(DocumentData[selectedCompany])}
+                                {selectedCategory === "Issuer Company" ? (
+                                    <>
+                                        <h1 className="companyHeading">MSL</h1>
+                                        {renderDocuments(currentDocuments)}
+                                    </>
+                                ) : (
+                                    Object.keys(currentDocuments).map((company) => (
+                                        <div key={company}>
+                                            <h1 className="companyHeading">{company}</h1>
+                                            {renderDocuments(currentDocuments[company])}
+                                        </div>
+                                    ))
+                                )}
                             </div>
                         </Col>
                     </Row>
