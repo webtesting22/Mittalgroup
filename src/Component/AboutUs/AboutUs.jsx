@@ -118,25 +118,25 @@ const AboutUs = () => {
   ]
   const data = [
     {
-      img: "src/Component/AboutUs/quality-.png",
+      img: "/images/quality-.png",
       alt: "showing the quality of mild steel",
       title: "Quality",
       description: " Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture."
     },
     {
-      img: "src/Component/AboutUs/innovation-.png",
+      img: "/images/innovation-.png",
       alt: "power transmission tower made up of mild steel",
       title: "Innovation",
       description: "We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along."
     },
     {
-      img: "src/Component/AboutUs/customer-.png",
+      img: "/images/customer-.png",
       alt: "customer satisfaction with product",
       title: "Customer Satisfaction",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
     {
-      img: "src/Component/AboutUs/integrity.png",
+      img: "/images/integrity.png",
       alt: "strong bond of bridge",
       title: "Integrity",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
