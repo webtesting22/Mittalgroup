@@ -33,7 +33,7 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Flats</h2>
-                        <p>MS flats steel is a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
+                        <p>MS flats are a versatile and durable material widely used across various industries, including construction, automotive, machinery manufacturing, and general engineering. Its strength makes it ideal for fabricating structural components, vehicle reinforcements, and tools. MS flats provide essential support and stability in numerous applications.</p>
                         <p>MS Flats are rectangular cross-section steel products used in fabrication and construction. Manufactured with precision, these sections ensure consistency in mechanical properties and easy processing.
                         </p>
                         <p>Their versatility, weldability, and machinability make MS Flats popular across a variety of industrial uses.</p>
@@ -245,7 +245,7 @@ const serviceData = {
                     <div>
                         <p>Strength and Versatility for Every Application</p>
                         <h2>MS Channels</h2>
-                        <p>MS Channels are U-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
+                        <p>MS Channels are C-shaped steel components widely used in construction and industrial fabrication. Their strength and shape provide excellent load distribution, making them ideal for structural support.
                         </p>
                         <p>With high structural stability and easy weldability, MS Channels are crucial in heavy-duty applications.</p>
 

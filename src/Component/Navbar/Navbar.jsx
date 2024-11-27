@@ -40,7 +40,7 @@ const Navbar = () => {
     { link: "Gallery", path: "/Gallery" },
     // { link: "Products", path: "/Products" },
     { link: "Products" },
-    { link: "Infrastructure" },
+    { link: "Manufacturing" },
     {link:"Investors",path:"/Investors"},
     // { link: "Manufacturing", path: "/Manufacturing" },
     // { link: "Quality", path: "/Quality" },

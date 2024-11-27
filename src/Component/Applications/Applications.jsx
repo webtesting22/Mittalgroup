@@ -20,12 +20,12 @@ const Applications = () => {
             tagline: " Vehicle frames and essential structural components.",
             description: "Precision-engineered steel bars from MSL ensure robust performance in automotive frames, machinery parts, and heavy equipment, providing reliability and longevity for demanding applications."
         },
-        {
-            images: "https://plus.unsplash.com/premium_photo-1661921878223-5d6d29ece773?q=80&w=3061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title: "Pipeline Construction",
-            tagline: "Oil, gas and water pipelines.",
-            description: " MSL’s steel pipes are designed for fluid transport and gas distribution, ensuring safe and efficient pipeline systems that meet the highest industry standards."
-        },
+        // {
+        //     images: "https://plus.unsplash.com/premium_photo-1661921878223-5d6d29ece773?q=80&w=3061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        //     title: "Pipeline Construction",
+        //     tagline: "Oil, gas and water pipelines.",
+        //     description: " MSL’s steel pipes are designed for fluid transport and gas distribution, ensuring safe and efficient pipeline systems that meet the highest industry standards."
+        // },
         {
             images: "https://plus.unsplash.com/premium_photo-1664695710295-b524b34386db?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Power Transmission",

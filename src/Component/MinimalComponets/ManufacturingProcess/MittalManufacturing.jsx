@@ -15,8 +15,8 @@ const MSLManufacturing = () => {
                 </div>
                 <div className='ContentContainerAdjust'>
                     <div>
-                        <h1>MANUFACTURING</h1>
-                        <p>Find Out More About Our Manufacturing Process</p>
+                        <h1>INFRASTRUCTURE</h1>
+                        {/* <p>Find Out More About Our Manufacturing Process</p>     */}
                     </div>
                 </div>
                 <div className='backimageContainer'>
@@ -66,7 +66,7 @@ const MSLManufacturing = () => {
                         optimize efficiency and maintain an organized, high-performance production environment.</p>
 
                     <Row gutter={[16, 16]}>
-                        <Col lg={14}>
+                        <Col lg={16}>
                             <p><b>Sort</b></p>
                             <ul>
                                 <li> Action: Remove unnecessary items from the workspace.</li>
@@ -95,7 +95,7 @@ const MSLManufacturing = () => {
                             </ul>
                             <p>By implementing 5S, steel manufacturers can boost productivity, reduce waste, and contribute to sustainable practices in their industry.</p>
                         </Col>
-                        <Col lg={10}>
+                        <Col lg={8}>
                             <div className="manufacturingImage"><img src="/images/5s.png" /></div>
                         </Col>
                     </Row>
