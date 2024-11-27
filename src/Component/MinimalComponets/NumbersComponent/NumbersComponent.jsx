@@ -120,6 +120,41 @@ const NumbersComponent = () => {
                         </div>
                     </Col>
                 </Row>
+                {/* <Row className="certification-section">
+                    <Col lg={24} className="certification-column" data-aos="fade-up" data-aos-duration="1000">
+                        <div className="certification-container">
+                            <div className="certification-content">
+                                <div className="certification-icon">
+                                    <img src="/images/Isi.png" alt="BIS Approved" className="certification-logo" />
+                                </div>
+                                <div className="certification-details">
+                                    <h2 className="certification-title">Bureau of Indian Standards Certified</h2>
+                                    <p className="certification-number">Approval Number: 7947505</p>
+                                    <p className="certification-description">
+                                        Our commitment to quality is validated by the prestigious BIS certification,
+                                        ensuring our products meet the highest national standards of excellence.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg={24} className="certification-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div className="certification-container">
+                            <div className="certification-content">
+                                <div className="certification-icon">
+                                    <img src="/images/ISO.png" alt="ISO Certified" className="certification-logo" />
+                                </div>
+                                <div className="certification-details">
+                                    <h2 className="certification-title">ISO 9001:2000 Certified</h2>
+                                    <p className="certification-description">
+                                        Our ISO 9001:2000 certification demonstrates our unwavering dedication to
+                                        international quality management standards and continuous improvement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row> */}
             </div>
             {/* <Row>
                 {NumberData.map((item, index) => (
