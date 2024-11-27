@@ -215,10 +215,12 @@
 }
 
 .AnimatedCards {
-  background-color: rgba(244, 244, 244, 0.349);
-  height: 50vh;
-  margin: 5px;
+  background-color: rgba(235, 233, 233, 0.269);
+  height: 22vh;
+  margin: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -238,7 +240,7 @@
   position: absolute;
   z-index: 4;
   bottom: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 100%;
   text-align: center;
   z-index: 5;
@@ -248,16 +250,15 @@
 }
 
 .AnimatedCards img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   transition: 0.5s;
   object-fit: cover;
   opacity: 0.9;
+  padding: 10px;
 }
 
 .AnimatedCards:hover img {
-  width: 100%;
-  height: 100%;
   transform: scale(1.1);
   transition: 0.5s;
   opacity: 1;
@@ -280,7 +281,7 @@
   top: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.555);
+  /* background-color: rgba(247, 243, 243, 0.555); */
   z-index: 4;
   transition: 0.7s;
 }
