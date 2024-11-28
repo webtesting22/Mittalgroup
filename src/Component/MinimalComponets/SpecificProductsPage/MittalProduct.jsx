@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Row, Col } from 'antd'
 import "./MittalProduct.css";
@@ -11,6 +11,10 @@ const serviceData = {
         mainTitle: "MS Flats",
         tagline: "Strength and durability in every bar.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
+        backgroundImages: [
+            "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
+            "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
+        ],
         keywords: [
             "Steel Flat Bars",
             "Mild Steel Flat Bars",
@@ -224,6 +228,10 @@ const serviceData = {
         link: '/Products/Channels',
         mainTitle: "MS Channels",
         tagline: "Support and stability in every channel.",
+        backgroundImages: [
+            "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
+            "https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg",
+        ],
         backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
         keywords: [
             "Steel Channels",
@@ -319,6 +327,9 @@ const serviceData = {
         mainTitle: "MS Round Bars",
         tagline: "Precision crafted for enduring strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        backgroundImages: [
+            "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+        ],
         keywords: [
             "Steel Round Bars",
             "Aluminum Round Bars",
@@ -424,6 +435,11 @@ const serviceData = {
         mainTitle: "MS Angles",
         tagline: "Angle your build toward strength.",
         backgroundImage: "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
+        backgroundImages: [
+            "https://webtesting-upload.vercel.app/assets/angles2-BfrxcBO7.jpg",
+            "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
+            "https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg",
+        ],
         keywords: [
             "Steel Angles",
             "Aluminum Angles",
@@ -554,7 +570,23 @@ const MSLProduct = () => {
     }, [service]);
     const currentMainTitle = currentService.mainTitle;
     const filteredProducts = Object.values(serviceData).filter(item => item.mainTitle !== currentMainTitle).slice(0, 3);
+    const [backgroundImage, setBackgroundImage] = useState(currentService.backgroundImage);
+    useEffect(() => {
+        const imageArray = Array.isArray(currentService.backgroundImages)
+            ? currentService.backgroundImages
+            : [currentService.backgroundImage];
 
+        let currentIndex = 0;
+
+        // Change the background every 5 seconds (for demo purposes)
+        const interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % imageArray.length;
+            setBackgroundImage(imageArray[currentIndex]);
+        }, 3000); // Change every 5 seconds
+
+        // Cleanup the interval on component unmount
+        return () => clearInterval(interval);
+    }, [currentService]);
     // const filteredProducts = QualityData.filter(item => item.title !== currentService.mainTitle).slice(0, 3);
 
     return (
@@ -562,7 +594,7 @@ const MSLProduct = () => {
             <section
                 className="AnimatedStackCards"
                 style={{
-                    backgroundImage: `url(${currentService.backgroundImage})`,
+                    backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     transition: "background-image 0.5s ease",
