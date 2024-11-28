@@ -54,7 +54,7 @@
   padding: 2rem 4rem;
 }
 
-.StackContainersEdit>div:first-child img {
+.StackContainersEdit > div:first-child img {
   max-width: 100%;
   height: auto;
   position: sticky;
@@ -130,7 +130,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-.LeftSideContentajust>div{
+.LeftSideContentajust > div {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -153,29 +153,29 @@
   height: 8vh;
 }
 
-.Dynamicbtn>div:first-child {
+.Dynamicbtn > div:first-child {
   padding: 5px 10px;
   font-weight: 600;
   color: white;
 }
 
-.Dynamicbtn>div:last-child {
+.Dynamicbtn > div:last-child {
   transition: 0.5s;
   border-left: 1px solid rgb(247, 247, 247);
   padding: 5px 10px;
   cursor: pointer;
 }
 
-.Dynamicbtn>div:last-child a {
+.Dynamicbtn > div:last-child a {
   color: white;
 }
 
-.Dynamicbtn>div:last-child a svg {
+.Dynamicbtn > div:last-child a svg {
   transition: 0.5s;
   color: white;
 }
 
-.Dynamicbtn>div:last-child a:hover svg {
+.Dynamicbtn > div:last-child a:hover svg {
   transform: translateX(5px);
   transition: 0.5s;
 }
@@ -242,7 +242,9 @@
   .TableContainer {
     padding: 1rem;
   }
-
+  .LeftSideContentajust > div {
+    flex-direction: column;
+  }
   .LeftSideContentajust h1 {
     color: white;
     padding-bottom: 2rem;
@@ -308,10 +310,10 @@
     border-left: none;
     /* margin-bottom: 30px; */
   }
-  .ProductContentContainer .HeadingContainer::before{
+  .ProductContentContainer .HeadingContainer::before {
     animation: none;
   }
-  .StackContainersEdit>div:first-child img {
+  .StackContainersEdit > div:first-child img {
     max-width: 100%;
     height: auto;
     position: static;
@@ -324,9 +326,19 @@
   }
 
   .Dynamicbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 7vh; */
     padding: 5px;
+    width: 60%;
   }
-
+  .Dynamicbtn>div:first-child{
+    padding: 10px;
+  }
+  .Dynamicbtn > div:last-child{
+    padding: 10px;
+  }
   .productCard {
     margin: 0.3rem;
   }
