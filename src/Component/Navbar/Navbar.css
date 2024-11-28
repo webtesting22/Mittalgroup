@@ -361,7 +361,7 @@
   top: 54px;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 400px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -379,6 +379,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 @media (max-width: 769px) {
   .navigationPanel.show .mobileOnlyNavigation {
