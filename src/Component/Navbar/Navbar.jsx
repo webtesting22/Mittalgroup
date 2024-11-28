@@ -19,7 +19,7 @@ const NavigationData = [
   { link: "Gallery", path: "/Gallery" },
   { link: "Products", path: "/Products" },
   { link: "Manufacturing", path: "" },
-  { link: "Investors", path: "/Investors" },
+  { link: "Investors", path: "" },
   { link: "Contact", path: "/ContactUs" },
 ];
 
@@ -71,7 +71,16 @@ const Manufacturing = [
     imgsrc: QualityNavigation,
   },
 ];
-
+const Investors = [
+  {
+    link: "Issuer Company",
+    path: "/IssuerCompany",
+  },
+  {
+    link: "Group Companies",
+    path: "/GroupCompanies"
+  }
+]
 
 const Navbar = () => {
   const [hoveredSubLink, setHoveredSubLink] = useState({}); // New state
@@ -88,6 +97,9 @@ const Navbar = () => {
         break;
       case "Manufacturing":
         data = Manufacturing;
+        break;
+      case "Investors":
+        data = Investors;
         break;
       default:
         data = [];
@@ -133,6 +145,9 @@ const Navbar = () => {
         break;
       case "Manufacturing":
         data = Manufacturing;
+        break;
+      case "Investors":
+        data = Investors;
         break;
       default:
         data = [];
@@ -222,7 +237,7 @@ const Navbar = () => {
           {isMobile ? (
             <Collapse accordion expandIconPosition="end">
               {NavigationData.map((navItem, index) => {
-                const hasSubLinks = ["About", "Products", "Manufacturing"].includes(navItem.link);
+                const hasSubLinks = ["About", "Products", "Manufacturing", "Investors"].includes(navItem.link);
                 if (hasSubLinks) {
                   return (<>
                     <Collapse.Panel header={navItem.link} key={index} showArrow={true} >

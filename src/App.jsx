@@ -6,7 +6,7 @@ import AboutUs from './Component/AboutUs/AboutUs'
 import ContactUs from './Component/ContactUs/ContactUs'
 // import MSLGallery from './Component/Mittalgallery/Mittalgallery'
 import MSLGallery from './Component/Mittalgallery/MSLGallery'
-import Investors from './Component/Investors/Investors'
+// import Investors from './Component/Investors/Investors'
 import Footer from "./Component/Footer/Footer"
 import MSLHome from './Component/MittalHome/MittalHome'
 import Clients from "./Component/Clients/Clients"
@@ -15,6 +15,10 @@ import MSLProduct from "./Component/MinimalComponets/SpecificProductsPage/Mittal
 import Quality from './Component/Quality/Quality'
 import Applications from './Component/Applications/Applications'
 import MSLManufacturing from "./Component/MinimalComponets/ManufacturingProcess/MittalManufacturing"
+import IssuerCompanyPage from './Component/Investors/IssuerCompanyPage'
+import GroupCompaniesPage from './Component/Investors/GroupCompaniesPage'
+// import IssuerCompanyPage from './IssuerCompanyPage';  
+// import GroupCompaniesPage from './GroupCompaniesPage';  
 const App = () => {
     return (
         <>
@@ -31,7 +35,9 @@ const App = () => {
                 <Route path='/Applications' element={<Applications/>}/>
                 <Route path="/Manufacturing" element={<MSLManufacturing />} />
                 <Route path='/Quality' element={<Quality/>}/>
-                <Route path="/Investors" element={<Investors/>}/>
+                {/* <Route path="/Investors" element={<Investors/>}/> */}
+                <Route path="/IssuerCompany" element={<IssuerCompanyPage />} />
+                <Route path="/GroupCompanies" element={<GroupCompaniesPage />} />
             </Routes>
             <Footer />
 

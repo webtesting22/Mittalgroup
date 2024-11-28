@@ -91,17 +91,17 @@ const NumbersComponent = () => {
                     <Col lg={12}>
                         <div className="rightSideContainerContent ContentContainerHome ">
                             <div>
-                                <h4>Professional Expertise</h4>
+                                {/* <h4>Professional Expertise</h4>
                                 <h1>Innovative Logistics, Global Reach</h1>
 
-                                <p>With a legacy of delivering seamless logistics solutions, our expertise spans global supply chains, ensuring efficiency, reliability, and innovative approaches to meet client needs.</p>
-                                <hr />
+                                <p>With a legacy of delivering seamless logistics solutions, our expertise spans global supply chains, ensuring efficiency, reliability, and innovative approaches to meet client needs.</p> */}
+                                {/* <hr /> */}
                                 <div style={{ padding: "20px 0px", paddingBottom: "5px" }}>
                                     <h1 style={{ color: "#9aa966", fontSize: "40px" }}>{counts[0]}+</h1><h4 style={{ fontWeight: "600" }}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
                                     {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>7947505 </h1><h4 style={{ fontWeight: "600" }}>BIS Approved </h4> */}
                                     {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>9001:2000</h1><h4 style={{ fontWeight: "600" }}>ISO Company</h4> */}
                                 </div>
-                                <ul>
+                                {/* <ul>
                                     <li>
                                         Personal Protective Equipment (PPE)
                                     </li>
@@ -114,14 +114,14 @@ const NumbersComponent = () => {
                                     <li>
                                         Emergency Preparedness
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
 
                         </div>
                     </Col>
                 </Row>
-                {/* <Row className="certification-section">
-                    <Col lg={24} className="certification-column" data-aos="fade-up" data-aos-duration="1000">
+                <Row className="certification-section">
+                    <Col lg={12} className="certification-column" data-aos="fade-up" data-aos-duration="1000">
                         <div className="certification-container">
                             <div className="certification-content">
                                 <div className="certification-icon">
@@ -138,7 +138,7 @@ const NumbersComponent = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={24} className="certification-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <Col lg={12} className="certification-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                         <div className="certification-container">
                             <div className="certification-content">
                                 <div className="certification-icon">
@@ -154,7 +154,7 @@ const NumbersComponent = () => {
                             </div>
                         </div>
                     </Col>
-                </Row> */}
+                </Row>
             </div>
             {/* <Row>
                 {NumberData.map((item, index) => (
