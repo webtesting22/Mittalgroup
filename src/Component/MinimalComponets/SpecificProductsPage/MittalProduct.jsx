@@ -582,7 +582,6 @@ const MSLProduct = () => {
                                 </Link>
                             </div>
                         </button>
-                        <br />
                         <h1 data-aos="fade-up"
                             data-aos-delay={`${300}`}>{currentService.tagline}</h1>
 

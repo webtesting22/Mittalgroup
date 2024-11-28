@@ -135,10 +135,11 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding-bottom: 6rem;
 }
 .LeftSideContentajust h1 {
   color: white;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   font-size: 3rem;
   width: 70%;
 }
@@ -150,7 +151,7 @@
   border-radius: 50px;
   border: none;
   padding: 10px 5px;
-  height: 8vh;
+  /* height: 8vh; */
 }
 
 .Dynamicbtn > div:first-child {
@@ -190,8 +191,6 @@
   padding: 0px 0px;
   overflow: hidden;
   margin: 2rem 0.5rem;
-  /* border: 1px solid  #e6e6e6; */
-  /* border-radius: 10px; */
   box-shadow: 0 2px 5px #e6e6e6;
 }
 
@@ -244,10 +243,11 @@
   }
   .LeftSideContentajust > div {
     flex-direction: column;
+    padding-bottom: 2rem;
   }
   .LeftSideContentajust h1 {
     color: white;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     font-size: 2rem;
     width: 100%;
   }
@@ -331,12 +331,14 @@
     align-items: center;
     /* height: 7vh; */
     padding: 5px;
-    width: 60%;
+    width: 40%;
+    margin-bottom: 1rem;
+    /* height: 6vh; */
   }
-  .Dynamicbtn>div:first-child{
+  .Dynamicbtn > div:first-child {
     padding: 10px;
   }
-  .Dynamicbtn > div:last-child{
+  .Dynamicbtn > div:last-child {
     padding: 10px;
   }
   .productCard {
@@ -345,5 +347,25 @@
 
   .moreProductsSection .HeadingContainer {
     margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .LeftSideContentajust > div {
+    justify-content: center;
+  }
+  .Dynamicbtn {
+    justify-content: flex-start;
+    padding: 10px;
+    /* height: 5vh; */
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+  .Dynamicbtn > div:first-child {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+  .Dynamicbtn > div:last-child {
+    padding: 0 5px;
+    font-size: 14px;
   }
 }
