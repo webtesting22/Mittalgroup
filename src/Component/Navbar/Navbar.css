@@ -1,18 +1,14 @@
 .navigationPanel {
   width: 100%;
   background-color: white;
-  /* background-image: url("./Navigationbackground.jpg"); */
   background-size: cover;
   backface-visibility: 0.4;
   position: absolute;
   transition: 0.5s;
   display: flex;
   align-items: center;
-  /* overflow: hidden; */
   backdrop-filter: blur(47px);
 }
-
-/* Navbar.css */
 .MSLNavigationContainer {
   position: fixed;
   z-index: 555555;
@@ -26,9 +22,6 @@
 
 .transparent {
   background-color: transparent;
-  /* background-color: #00000044; */
-  /* background-color: rgb(242, 242, 242); */
-  /* padding: 20px 0px; */
   transition: 0.5s;
   height: 10vh;
 }
@@ -36,7 +29,6 @@
 .redBackground {
   background-color: rgb(0, 0, 0);
   backdrop-filter: blur(20px);
-  /* padding: 5px 0px; */
   transition: 0.5s;
 }
 
@@ -51,9 +43,6 @@
   align-items: center;
   justify-content: end;
   padding-right: 12rem;
-  /* top: 0px; */
-  /* left: 0; */
-  /* Slides in */
 }
 
 .navigationPanel ul {
@@ -64,7 +53,6 @@
 .navigationPanel.hide {
   height: 10vh;
   width: 0vw;
-  /* bottom: 0vh; */
   transition: 0.5s;
   z-index: 9;
   position: fixed;
@@ -72,25 +60,21 @@
   display: flex;
   align-items: center;
   justify-content: unset;
-  /* right: 100%; */
-  /* Slides out */
 }
 
 .MSLNavigationContainer button {
-  /* position: fixed; */
   cursor: pointer;
   background-color: black;
   border: 1px solid #9aa966;
   top: 20px;
   right: 20px;
   padding: 13px 20px;
-  /* color: #ffcc00; */
   color: #9aa966;
   border-radius: 20px;
   text-transform: uppercase;
   z-index: 10;
 }
-
+/* 
 .navigationPanel a {
   list-style: none;
   font-size: 20px;
@@ -98,13 +82,12 @@
   padding: 40px 0px;
   cursor: pointer;
   color: #000000;
-  /* margin-left: 100px; */
-}
+} */
 
 .navigationPanel a:hover {
   color: #9aa966;
 }
-
+/* 
 .navigationPanel a + hr {
   width: 0px;
   opacity: 0;
@@ -114,10 +97,9 @@
   border: 1px solid transparent;
   margin-left: 100px;
   display: none;
-}
+} */
 
 .MSLShape {
-  /* background-color: #ffcc00; */
   background-color: #9aa966;
   border: 2px solid black;
   width: 50px;
@@ -142,11 +124,7 @@
 .logoContainer {
   z-index: 1000000000;
   border-radius: 30px;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
-  /* outline: 2px solid rgba(0,0,0,0.1); */
-  /* outline-offset: 2px; */
-  /* border: 1px solid #f0f0f0; */
-    /* box-shadow: 0 0 5px rgba(0,0,0,0.2); */
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 .logoContainer img {
@@ -173,12 +151,12 @@
     opacity: 0;
   }
 
-  .navigationPanel a {
+  /* .navigationPanel a {
     list-style: none;
     font-size: 25px;
     margin: 0px 0px;
     margin-left: 0px;
-  }
+  } */
 
   .navigationPanel.show {
     height: 100vh;
@@ -192,9 +170,6 @@
     justify-content: center;
     padding-right: 0rem;
     background-image: none;
-    /* top: 0px; */
-    /* left: 0; */
-    /* Slides in */
   }
 
   .navigationPanel ul {
@@ -205,7 +180,6 @@
   .navigationPanel.hide {
     height: 100vh;
     width: 0vw;
-    /* bottom: 0vh; */
     transition: 0.5s;
     z-index: 9;
     position: fixed;
@@ -213,12 +187,9 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    /* right: 100%; */
-    /* Slides out */
   }
 
   .MSLShape {
-    /* background-color: #ffcc00; */
     background-color: #9aa966;
     border: 2px solid black;
     width: 50px;
@@ -230,12 +201,9 @@
   }
 }
 
-/* Initially hide the dropdown */
-/* Dropdown initially hidden and positioned off-screen */
 .DropdownComponent {
   visibility: hidden;
   transform: translateY(20px);
-  /* Start slightly below */
   transition: opacity 0.3s ease, transform 0.3s ease;
   min-height: 10vh;
   min-width: 200px;
@@ -253,12 +221,9 @@
   justify-content: space-between;
 }
 
-/* On hover, show the dropdown with a smooth transition */
 .aboutLinkWrapper:hover .DropdownComponent {
   visibility: visible;
-  /* display: block; */
   transform: translateY(27px);
-  /* Move to original position */
 }
 .navigationPanel.hide .DropdownComponent {
   visibility: hidden;
@@ -295,22 +260,15 @@
   padding: 0px !important;
 }
 
-
 @media (max-width: 769px) {
   .DropdownComponent {
-    /* top: 70px; */
     top: 70%;
     width: 300px;
     left: -50px;
     flex-direction: column;
   }
-
   .aboutLinkWrapper:hover .DropdownComponent {
-    /* transform: translateY(200px); */
     transform: translateY(10px);
-
-    /* transform: translateX(0px); */
-    /* top: 50px; */
   }
   .DropdownComponent .ImageContainer {
     display: none;
@@ -323,5 +281,139 @@
   }
   .aboutLinkWrapper:hover .product {
     transform: translateY(-30px);
+  }
+}
+
+.dropdown-content {
+  opacity: 0;
+  position: absolute;
+  background-color: transparent;
+  max-width: 500px;
+  left: 0px;
+  right: 0px;
+  z-index: 23423432423;
+  min-height: 40vh;
+  cursor: pointer;
+  transition: 0.2s;
+  visibility: hidden;
+  /* margin-top: 20px; */
+  transform: translateY(20px);
+  border-radius: 20px;
+  /* top: 54px; */
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dropdown-content a:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transition: 0.2s;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.dropbtn {
+  background: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px;
+  font-size: 20px;
+  padding: 40px 0;
+}
+.subLinksContainer {
+  transition: 0.5s;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  padding: 10px;
+  z-index: 10;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+.subLinkImageContainer {
+  width: 40%;
+  height: 20%;
+}
+.subLinksContainer img {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  border-radius: 20px;
+}
+.mobileOnlyNavigation {
+  display: none;
+}
+.dropdownContainer {
+  top: 54px;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdownImageContainer {
+  width: 50%;
+  height: 100%;
+}
+.dropdownImageContainer img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.subLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 769px) {
+  .navigationPanel.show .mobileOnlyNavigation {
+    display: block !important;
+  }
+  .dropdown {
+    margin: 20px 0 !important;
+  }
+  .ant-collapse {
+    border: none !important;
+  }
+  .ant-collapse-item {
+    border: none !important;
+  }
+  .ant-collapse-header {
+    background-color: white;
+    border: none !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .accordionItem {
+    padding: 10px 0;
+  }
+  .ant-collapse-header-text {
+    color: black;
+    font-size: 20px;
+    display: flex !important;
+  }
+  .accordionItem a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px !important;
+  }
+  .navigationPanel.hide .MSLShape {
+    display: none;
   }
 }

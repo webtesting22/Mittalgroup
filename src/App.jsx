@@ -20,11 +20,9 @@ const App = () => {
         <>
 
             <Navbar />
-            {/* <Home /> */}
             <Routes>
                 <Route path='/' element={<MSLHome />} />
                 <Route path='/AboutUs' element={<AboutUs />} />
-                {/* <Route path='/Group' element={<Group />} /> */}
                 <Route path='/Gallery' element={<MSLGallery />} />
                 <Route path='/ContactUs' element={<ContactUs />} />
                 <Route path="/Clients" element={<Clients />} />
@@ -38,10 +36,6 @@ const App = () => {
             <Footer />
 
 
-            {/* <div>
-                <Gallery />
-                <ContactForm />
-            </div> */}
         </>
     )
 }

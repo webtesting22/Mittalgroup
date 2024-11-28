@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "antd";
+import { Collapse } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
@@ -11,13 +11,172 @@ import Navigation2 from "./Navigation2.jpeg";
 import Navigation3 from "./Navigation3.avif";
 import Navigation4 from "./Navigation4.jpg";
 import Navigation5 from "./Navigation5.avif";
+import ManufacturingNavigation from "/images/AbmittalBack.jpeg"
+import QualityNavigation from "/images/GroupImagesBack.avif"
+
+const NavigationData = [
+  { link: "About" },
+  { link: "Gallery", path: "/Gallery" },
+  { link: "Products", path: "/Products" },
+  { link: "Manufacturing", path: "" },
+  { link: "Investors", path: "/Investors" },
+  { link: "Contact", path: "/ContactUs" },
+];
+
+const About = [
+  {
+    link: "Our Legacy",
+    path: "/AboutUs",
+    imgsrc: Navigation1,
+  },
+  {
+    link: "Our Clients",
+    path: "/Clients",
+    imgsrc: Navigation5,
+  },
+];
+
+const Products = [
+  {
+    link: "Flat Bars",
+    path: "/Products/Flat-Bars",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
+  },
+  {
+    link: "Round Bars",
+    path: "/Products/Round-Bars",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
+  },
+  {
+    link: "Channels",
+    path: "/Products/Channels",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
+  },
+  {
+    link: "Angles",
+    path: "/Products/Angles",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
+  },
+];
+
+const Manufacturing = [
+  {
+    link: "Infrastructure",
+    path: "/Manufacturing",
+    imgsrc: ManufacturingNavigation,
+  },
+  {
+    link: "Quality",
+    path: "/Quality",
+    imgsrc: QualityNavigation,
+  },
+];
+
 
 const Navbar = () => {
+  const [hoveredSubLink, setHoveredSubLink] = useState({}); // New state
+
+
+  const renderDropdownContent = (section) => {
+    let data = [];
+    switch (section) {
+      case "About":
+        data = About;
+        break;
+      case "Products":
+        data = Products;
+        break;
+      case "Manufacturing":
+        data = Manufacturing;
+        break;
+      default:
+        data = [];
+    }
+
+    if (data.length > 0) {
+      const hoveredIndex = hoveredSubLink[section] !== undefined ? hoveredSubLink[section] : 0;
+      const hoveredItem = data[hoveredIndex];
+
+      return (
+        <div className="dropdownContainer">
+          <div className="subLinks">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                className="subLinkItem"
+                onMouseEnter={() => setHoveredSubLink({ ...hoveredSubLink, [section]: index })}
+                onMouseLeave={() => setHoveredSubLink({ ...hoveredSubLink, [section]: 0 })}
+              >
+                <Link to={item.path} onClick={toggleNav}>
+                  {item.link}
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="dropdownImageContainer">
+            <img src={hoveredItem.imgsrc} alt={hoveredItem.link} />
+          </div>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  };
+  const renderAccordionContent = (section) => {
+    let data = [];
+    switch (section) {
+      case "About":
+        data = About;
+        break;
+      case "Products":
+        data = Products;
+        break;
+      case "Manufacturing":
+        data = Manufacturing;
+        break;
+      default:
+        data = [];
+    }
+
+    if (data.length > 0) {
+
+      return data.map((item, index) => (
+        <div key={index} className="accordionItem">
+
+          <Link to={item.path} onClick={toggleNav}>
+            {item.link}
+          </Link>
+        </div>
+      ));
+    } else {
+      const navItem = NavigationData.find((item) => item.link === section);
+      const path = navItem?.path || "#";
+
+      return (
+        <div className="accordionItem">
+          <Link to={path} onClick={toggleNav}>
+            {section}
+          </Link>
+        </div>
+      );
+    }
+  };
+
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hoveredAboutSublink, setHoveredAboutSublink] = useState(null);
-  const [hoveredProductsSublink, setHoveredProductsSublink] = useState(null);
-  const [hoveredInfrastructureSublink, setHoveredInfrastructureLink] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 769);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
@@ -35,18 +194,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const NavigationLinks = [
-    { link: "About" },
-    { link: "Gallery", path: "/Gallery" },
-    // { link: "Products", path: "/Products" },
-    { link: "Products" },
-    { link: "Manufacturing" },
-    {link:"Investors",path:"/Investors"},
-    // { link: "Manufacturing", path: "/Manufacturing" },
-    // { link: "Quality", path: "/Quality" },
-    // { link: "Clients", path: "/Clients" },
-    { link: "Contact", path: "/ContactUs" },
-  ];
 
   return (
     <>
@@ -54,10 +201,8 @@ const Navbar = () => {
         <div style={{ width: "95%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logoContainer">
             <Link to="/" onClick={() => {
-
               hideNav();
             }}>
-            {/* <img src="/images/MittalLogo.png" alt="logo of mild steel company"/> */}
               <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
@@ -74,10 +219,57 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
-          <div className="overlayBackImage">
-            <img src={NavigationBackImage} alt="Navigation Background for look attractive" />
-          </div>
-          <ul>
+          {isMobile ? (
+            <Collapse accordion expandIconPosition="end">
+              {NavigationData.map((navItem, index) => {
+                const hasSubLinks = ["About", "Products", "Manufacturing"].includes(navItem.link);
+                if (hasSubLinks) {
+                  return (<>
+                    <Collapse.Panel header={navItem.link} key={index} showArrow={true} >
+                      {renderAccordionContent(navItem.link)}
+                    </Collapse.Panel>
+                  </>
+                  );
+                } else {
+                  return (
+
+                    <Collapse.Panel
+                      header={
+                        <>
+
+                          <Link to={navItem.path || "#"} onClick={toggleNav} style={{ display: 'block' }}>
+                            {navItem.link}
+                          </Link>
+                        </>
+                      }
+                      key={index}
+                      showArrow={false}
+                      collapsible="disabled"
+                    >
+                    </Collapse.Panel>
+                  );
+                }
+              })}
+            </Collapse>
+          ) : (
+            // Render standard navigation for desktop
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
+              {NavigationData.map((navItem, index) => (
+                <li key={index}>
+                  <div className="dropdown">
+                    <Link to={navItem.path || "#"} className="dropbtn" onClick={toggleNav}>
+                      {navItem.link}
+                    </Link>
+                    <div className="dropdown-content">
+                      {renderDropdownContent(navItem.link)}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        {/* <ul>
             {NavigationLinks.map((item, index) => (
               <div
                 key={index}
@@ -182,8 +374,7 @@ const Navbar = () => {
                 </div>
               </div>
             ))}
-          </ul>
-        </div>
+          </ul> */}
       </section>
     </>
   );

@@ -179,6 +179,7 @@
 .MSLShape {
   height: 10px;
   width: 30px;
+  display: block;
   /* background-color: #ffcc00; */
   background-color: #9aa966;
   border: 1px solid black;

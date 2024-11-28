@@ -20,7 +20,6 @@ import Image1 from "./founder5.jpg"
 import Image2 from "./founder1.jpg"
 import Image3 from "./founder2.jpg"
 import Image4 from "./founder3.jpg"
-import Image5 from "./what.jpg"
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -190,7 +189,6 @@ const AboutUs = () => {
                   <SwiperSlide> <img src={Image2} alt="slide2" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image3} alt="slide3" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image4} alt="slide4" /> </SwiperSlide>
-                  <SwiperSlide> <img src={Image5} alt="slide5" /> </SwiperSlide>
                 </Swiper>
 
                 {/* </div> */}
