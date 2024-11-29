@@ -191,7 +191,7 @@
 }
 
 .qualityCard:hover::before {
-  background-color: rgba(0, 0, 0, 0.5); /* Darker black overlay on hover */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 @media (max-width: 769px) {
@@ -210,7 +210,8 @@
     justify-content: center;
     height: 100%;
   }
-
+  .CardContent{
+  }
   #QualitySection {
     padding-top: 9rem;
     padding-left: 1rem;
@@ -221,9 +222,13 @@
     padding: 0px;
   }
   .qualityCard::before {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+
   }
   .CardContent {
     transform: translateY(0%);
+  }
+  .CardContent p{
+    visibility: visible;
   }
 }

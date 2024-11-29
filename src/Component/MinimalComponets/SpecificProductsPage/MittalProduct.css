@@ -318,6 +318,7 @@
 
   .ProductContentContainer .HeadingContainer::before {
     animation: none;
+    background:transparent;
   }
 
   .StackContainersEdit>div:first-child img {
@@ -370,7 +371,7 @@
     padding: 0px;
     height: 5vh;
     margin-bottom: 1rem;
-    width: 65%;
+    width: 45%;
   }
 
   .Dynamicbtn>div:first-child {

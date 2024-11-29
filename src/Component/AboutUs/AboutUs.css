@@ -457,7 +457,7 @@
 
   .AnimatedCards {
     /* background-color: red; */
-    height: 30vh;
+    height: 20vh;
     /* margin: 10px 0; */
     position: relative;
     overflow: hidden;
@@ -546,5 +546,20 @@
   .OutMV {
     background-attachment: local;
     /* Adjust for iOS Safari */
+  }
+}
+@media (max-width:576px)
+{
+  .founderSlider{
+    width: 100%;
+    
+  }
+  .founderSlider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #founderSlides{
+    height: 300px !important;
   }
 }

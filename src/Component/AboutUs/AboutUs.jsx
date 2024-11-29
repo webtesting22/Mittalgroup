@@ -261,12 +261,10 @@ const AboutUs = () => {
                 <img src={backImage} alt="" />
               </div>
               <Col lg={12} md={12}>
-                {/* <div className='foundersImage'> */}
                 <Swiper
-
                   modules={[Autoplay]}
                   autoplay={{ delay: 2500, disableOnInteraction: false }}
-                  className="founderSlider">
+                  className="founderSlider" id='founderSlides'>
                   <SwiperSlide> <img src={Image1} alt="founders" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image2} alt="slide2" /> </SwiperSlide>
                   <SwiperSlide> <img src={Image3} alt="slide3" /> </SwiperSlide>
@@ -386,7 +384,7 @@ const AboutUs = () => {
             <div className='MSLValuesCards'>
               <Row style={{ width: "100%" }}>
                 {data.map((item, index) => (
-                  <Col lg={6} md={12} xs={12} sm={12}>
+                  <Col lg={6} md={12} xs={12} >
                     <div className='Card' data-aos="fade-up"
                       data-aos-delay={`${index * 100}`}>
                       <div className='AnimatedCards'>
