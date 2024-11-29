@@ -121,6 +121,12 @@
   .MSLHomeContent {
     position: absolute;
     z-index: 66666;
+    width: 80%;
+    padding-top: 20rem;
+  }
+  .MSLHomeContent {
+    position: absolute;
+    z-index: 66666;
     width: 90%;
     height: 100%;
     display: flex;
@@ -136,7 +142,7 @@
     color: white;
   }
   #SwiperHome img {
-    height: 50vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
