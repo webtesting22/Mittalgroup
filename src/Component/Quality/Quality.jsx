@@ -8,17 +8,17 @@ const QualityData = [
         para: "Our in-house fully equipped testing laboratory ensures that every steel product undergoes rigorous quality assessments, maintaining the highest standards of strength and durability. This commitment to excellence allows us to deliver reliable solutions tailored to meet our clients' needs.",
         subpoints: [
             {
-                imgpath:"https://webtesting-upload.vercel.app/assets/Location-cFD7QPDP.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Location-cFD7QPDP.jpg",
                 title: "Location",
                 description: "Each of our manufacturing units features a dedicated laboratory outfitted with the latest testing technology."
             },
             {
-                imgpath:"https://webtesting-upload.vercel.app/assets/Capabilities-DatufOdI.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/Capabilities-DatufOdI.jpg",
                 title: "Capabilities",
                 description: "Equipped for a range of tests, including tensile strength, impact resistance, and chemical composition analysis."
             },
             {
-                imgpath:"https://webtesting-upload.vercel.app/assets/On%20site%20testing-DqO2lhXE.jpg",
+                imgpath: "https://webtesting-upload.vercel.app/assets/On%20site%20testing-DqO2lhXE.jpg",
                 title: "On-Site Testing",
                 description: "Enables real-time quality checks during production, reducing delays and ensuring immediate assurance."
             }
@@ -230,28 +230,26 @@ const Quality = () => {
                         <div key={index} className="RowClass">
                             <div className="HeadingContainerQuality">
                                 <Row>
-                                    <Col lg={8} md={24}>
-                                        <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
+                                    <Col lg={24} md={24}>
+                                        <div className="HeadingContainer"> <h2 data-aos="fade-up" data-aos-duration="1000">{qualitySection.title}</h2>
+                                        </div>
 
                                     </Col>
-                                    <Col lg={16} md={24}>
-                                        <p style={{ margin: "0px" }}>{qualitySection.para}</p>
-                                    </Col>
+
                                 </Row>
                             </div>
                             <br />
-                            <Row gutter={[16, 16]} style={{ margin: "0px" }}>
+                            <Row gutter={[16, 16]} style={{ margin: "0px", display: "flex", justifyContent: "flex-start" }}>
                                 {qualitySection.subpoints.map((subpoint, subIndex) => (
-                                    <Col key={subIndex} lg={8} md={8} sm={12} style={{ padding: "2px" }}>
-                                        <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
-
-                                            <div className="CardContent">
-                                                <h3><b>{subpoint.title}</b></h3>
-                                                <p>{subpoint.description}</p>
-                                            </div>
+                                    <Col key={subIndex} lg={7} md={8} sm={24} style={{ paddingRight: "5px" }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
+                                        <div className="qualityCard">
                                             <div className="qualityIconContainer">
-
                                                 <img src={subpoint.imgpath} alt={`${subpoint.title} Icon`} />
+                                            </div>
+                                            <div className="CardContent">
+                                                <h3 className="titleOverlay">{subpoint.title}</h3>
+
+                                                <p>{subpoint.description}</p>
                                             </div>
                                         </div>
                                     </Col>
