@@ -610,7 +610,7 @@ const MSLProduct = () => {
                             </div>
                             <div>
                                 <Link to="/Products" style={{ display: "flex", alignItems: "center" }}>
-                                    See more&nbsp;&nbsp;<FaArrowRightLong />
+                                    See&nbsp;more&nbsp;&nbsp;<FaArrowRightLong />
                                 </Link>
                             </div>
                         </button>

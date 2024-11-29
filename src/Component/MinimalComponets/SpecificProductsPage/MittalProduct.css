@@ -54,7 +54,7 @@
   padding: 2rem 4rem;
 }
 
-.StackContainersEdit > div:first-child img {
+.StackContainersEdit>div:first-child img {
   max-width: 100%;
   height: auto;
   position: sticky;
@@ -130,13 +130,15 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-.LeftSideContentajust > div {
+
+.LeftSideContentajust>div {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding-bottom: 6rem;
 }
+
 .LeftSideContentajust h1 {
   color: white;
   /* padding-bottom: 6rem; */
@@ -148,35 +150,36 @@
   display: flex;
   align-items: center;
   background-color: #9aa966;
-  border-radius: 50px;
+  border-radius: 0px;
   border: none;
-  padding: 10px 5px;
-  /* height: 8vh; */
+  padding: 0px 5px;
+  height: 6vh;
+  border-radius: 8px;
 }
 
-.Dynamicbtn > div:first-child {
+.Dynamicbtn>div:first-child {
   padding: 5px 10px;
   font-weight: 600;
   color: white;
 }
 
-.Dynamicbtn > div:last-child {
+.Dynamicbtn>div:last-child {
   transition: 0.5s;
   border-left: 1px solid rgb(247, 247, 247);
   padding: 5px 10px;
   cursor: pointer;
 }
 
-.Dynamicbtn > div:last-child a {
+.Dynamicbtn>div:last-child a {
   color: white;
 }
 
-.Dynamicbtn > div:last-child a svg {
+.Dynamicbtn>div:last-child a svg {
   transition: 0.5s;
   color: white;
 }
 
-.Dynamicbtn > div:last-child a:hover svg {
+.Dynamicbtn>div:last-child a:hover svg {
   transform: translateX(5px);
   transition: 0.5s;
 }
@@ -241,10 +244,12 @@
   .TableContainer {
     padding: 1rem;
   }
-  .LeftSideContentajust > div {
+
+  .LeftSideContentajust>div {
     flex-direction: column;
     padding-bottom: 2rem;
   }
+
   .LeftSideContentajust h1 {
     color: white;
     /* padding-bottom: 2rem; */
@@ -310,10 +315,12 @@
     border-left: none;
     /* margin-bottom: 30px; */
   }
+
   .ProductContentContainer .HeadingContainer::before {
     animation: none;
   }
-  .StackContainersEdit > div:first-child img {
+
+  .StackContainersEdit>div:first-child img {
     max-width: 100%;
     height: auto;
     position: static;
@@ -330,17 +337,20 @@
     justify-content: center;
     align-items: center;
     /* height: 7vh; */
-    padding: 5px;
+    padding: 0px;
     width: 40%;
     margin-bottom: 1rem;
     /* height: 6vh; */
   }
-  .Dynamicbtn > div:first-child {
+
+  .Dynamicbtn>div:first-child {
     padding: 10px;
   }
-  .Dynamicbtn > div:last-child {
+
+  .Dynamicbtn>div:last-child {
     padding: 10px;
   }
+
   .productCard {
     margin: 0.3rem;
   }
@@ -349,22 +359,26 @@
     margin-bottom: 1rem;
   }
 }
+
 @media (max-width: 576px) {
-  .LeftSideContentajust > div {
+  .LeftSideContentajust>div {
     justify-content: center;
   }
+
   .Dynamicbtn {
-    justify-content: flex-start;
-    padding: 10px;
-    /* height: 5vh; */
+    justify-content: center;
+    padding: 0px;
+    height: 5vh;
     margin-bottom: 1rem;
-    width: 40%;
+    width: 65%;
   }
-  .Dynamicbtn > div:first-child {
+
+  .Dynamicbtn>div:first-child {
     padding: 0 5px;
     font-size: 14px;
   }
-  .Dynamicbtn > div:last-child {
+
+  .Dynamicbtn>div:last-child {
     padding: 0 5px;
     font-size: 14px;
   }

@@ -135,6 +135,7 @@
 }
 
 @media (max-width: 798px) {
+
   .logoContainer img {
     width: 100px;
   }
@@ -432,20 +433,29 @@
   .accordionItem {
     padding: 10px 0;
   }
-
-  .ant-collapse-header-text {
-    color: black;
-    font-size: 20px;
-    display: flex !important;
+  .accordionItem a{
+    font-size: 16px;
+    font-weight: 500;
   }
-
-  .accordionItem a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px !important;
+  .ant-collapse-header-text{
+     color: black;
+    font-weight:500;
+    font-size: 20px;
+  }
+  .ant-collapse-header-text a span{
+    color: black;
+    font-weight:500;
+    font-size: 20px;
   }
 
   .navigationPanel.hide .MSLShape {
     display: none;
+  }
+  .ant-collapse-content-box{
+    padding-top: 0px !important;
+  }
+
+  .ant-collapse-expand-icon {
+    padding-left: 5rem !important;
   }
 }

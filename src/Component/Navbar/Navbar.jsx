@@ -235,12 +235,12 @@ const Navbar = () => {
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           {isMobile ? (
-            <Collapse accordion expandIconPosition="end">
+            <Collapse accordion expandIconPosition="end" >
               {NavigationData.map((navItem, index) => {
                 const hasSubLinks = ["About", "Products", "Manufacturing", "Investors"].includes(navItem.link);
                 if (hasSubLinks) {
                   return (<>
-                    <Collapse.Panel header={navItem.link} key={index} showArrow={true} >
+                    <Collapse.Panel header={<><Link><span>{navItem.link}</span></Link></>} key={index} showArrow={true} >
                       {renderAccordionContent(navItem.link)}
                     </Collapse.Panel>
                   </>
@@ -253,7 +253,7 @@ const Navbar = () => {
                         <>
 
                           <Link to={navItem.path || "#"} onClick={toggleNav} style={{ display: 'block' }}>
-                            {navItem.link}
+                            <span>{navItem.link}</span>
                           </Link>
                         </>
                       }

@@ -189,8 +189,8 @@
   padding: 0rem 4rem;
   position: relative;
   display: flex;
-  margin: 10px;
-  border-radius: 20px;
+  margin: 0px;
+  /* border-radius: 20px; */
   /* overflow:hidden;
   transition: background-image 0.5s ease;
   transition:transform 0.5s ease;
@@ -247,7 +247,7 @@
   height: 100%;
   width: 100%;
   left: 0px;
-  border-radius: 20px;
+  border-radius: 0px;
 
 }
 
