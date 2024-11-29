@@ -75,17 +75,17 @@ const Investors = [
   {
     link: "Issuer Company",
     path: "/IssuerCompany",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/Investor-DWSPNmk7.webp",
   },
   {
     link: "Group Companies",
-    path: "/GroupCompanies"
-  }
+    path: "/GroupCompanies",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
+  },
 ]
 
 const Navbar = () => {
-  const [hoveredSubLink, setHoveredSubLink] = useState({}); // New state
-
-
+  const [hoveredSubLink, setHoveredSubLink] = useState({});
   const renderDropdownContent = (section) => {
     let data = [];
     switch (section) {
@@ -267,7 +267,6 @@ const Navbar = () => {
               })}
             </Collapse>
           ) : (
-            // Render standard navigation for desktop
             <ul style={{ listStyleType: 'none', padding: 0 }}>
               {NavigationData.map((navItem, index) => (
                 <li key={index}>
