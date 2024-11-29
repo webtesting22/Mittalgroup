@@ -307,8 +307,8 @@
 .TopcontainerPart {
   height: 70vh;
   overflow: hidden;
-  margin: 2px 10px;
-  border-radius: 20px;
+  margin: px 0px;
+  /* border-radius: 20px; */
   position: sticky;
   /* top: 10px; */
 }
@@ -440,10 +440,10 @@
   .TopcontainerPart {
     height: 40vh;
     overflow: hidden;
-    margin: 10px;
-    border-radius: 20px;
+    margin: 0px;
+    /* border-radius: 20px; */
     position: sticky;
-    top: 10px;
+    top: 0px;
   }
 
   .AboutUsimagesStyle {
