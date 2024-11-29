@@ -112,7 +112,10 @@
   color: white;
   width: 50%;
 }
-
+.OutMV .HeadingContainer::before {
+  animation: none !important;
+  position:unset;
+}
 .MissionVisionParent {
   display: flex;
   justify-content: space-between;

@@ -115,6 +115,68 @@ const AboutUs = () => {
     },
 
   ]
+  const qualityPoints = [
+    {
+      icon: "/images/Quality Icons/durability.svg",
+      title: "High Durability",
+    },
+    {
+      icon: "/images/Quality Icons/corrosion.svg",
+      title: "Corrosion Resistant",
+    },
+    {
+      icon: "/images/Quality Icons/engineering.svg",
+      title: "Precision Engineering",
+    },
+    {
+      icon: "/images/Quality Icons/manufacturing.svg",
+      title: "Sustainable Manufacturing",
+    },
+    {
+      icon: "/images/Quality Icons/engineering.svg",
+      title: "Cost-Effective Solutions",
+    },
+    {
+      icon: "/images/Quality Icons/steel.svg",
+      title: "Custom Steel Solutions",
+    },
+    {
+      icon: "/images/Quality Icons/timely.svg",
+      title: "Timely Delivery",
+    },
+    {
+      icon: "/images/Quality Icons/iso.svg",
+      title: "ISO Certified Quality",
+    },
+    {
+      icon: "/images/Quality Icons/technology.svg",
+      title: "Innovative Technologies",
+    },
+    {
+      icon: "/images/Quality Icons/team.svg",
+      title: "Expert Team",
+    },
+    {
+      icon: "/images/Quality Icons/quality.svg",
+      title: "Stringent Quality Control",
+    },
+    {
+      icon: "/images/Quality Icons/testing.svg",
+      title: "Comprehensive Testing",
+    },
+    {
+      icon: "/images/Quality Icons/customer.svg",
+      title: "Customer-Centric Approach",
+    },
+    {
+      icon: "/images/Quality Icons/products.svg",
+      title: "Wide Range of Products",
+    },
+    {
+      icon: "/images/Quality Icons/technique.svg",
+      title: "Advanced Production Techniques",
+    },
+  ];
   const data = [
     {
       img: "/images/high-quality.png",
@@ -159,6 +221,26 @@ const AboutUs = () => {
           </div>
           <div className='backimageContainer'>
             <img src={carousal3} alt="" />
+          </div>
+          <div className="BottomContainer" style={{padding:"5px"}}>
+            <div className="marquee-container">
+              <div className="marquee">
+                {qualityPoints.map((point, index) => (
+                  <div key={index} className="quality-point">
+                    <img src={point.icon} />
+                    <p>{point.title}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="marquee">
+                {qualityPoints.map((point, index) => (
+                  <div key={index} className="quality-point">
+                    <img src={point.icon} />
+                    <p>{point.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

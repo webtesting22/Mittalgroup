@@ -69,7 +69,7 @@ const QualityData = [
         subpoints: [
             {
                 imgpath: "https://webtesting-upload.vercel.app/assets/Bureau%20of%20Indian%20Standards%20(BIS)-BoQEtpLY.jpeg",
-                title: "Bureau of Indian Standards (BIS)",
+                title: "Bureau of Indian Standards",
                 description: "We adhere to BIS norms, ensuring our products align with Indian quality and safety regulations."
             },
             {
@@ -241,7 +241,7 @@ const Quality = () => {
                             <br />
                             <Row gutter={[16, 16]} style={{ margin: "0px", display: "flex", justifyContent: "flex-start" }}>
                                 {qualitySection.subpoints.map((subpoint, subIndex) => (
-                                    <Col key={subIndex} lg={7} md={8} sm={24} style={{ paddingRight: "5px" }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
+                                    <Col key={subIndex} lg={6} md={8} sm={24} style={{ paddingRight: "5px" }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
                                         <div className="qualityCard">
                                             <div className="qualityIconContainer">
                                                 <img src={subpoint.imgpath} alt={`${subpoint.title} Icon`} />

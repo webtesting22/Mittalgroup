@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,  } from "react";
 import { Collapse } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -85,6 +85,11 @@ const Investors = [
 ]
 
 const Navbar = () => {
+  const [activeKey, setActiveKey] = useState([]); // Active panel key for collapsing
+  const handlePanelChange = (key) => {
+    // Toggle the active key to collapse or open the panel
+    setActiveKey(prevKey => (prevKey.includes(key) ? [] : [key])); // Collapse if key is already active
+  };
   const [hoveredSubLink, setHoveredSubLink] = useState({});
   const renderDropdownContent = (section) => {
     let data = [];
@@ -158,7 +163,7 @@ const Navbar = () => {
       return data.map((item, index) => (
         <div key={index} className="accordionItem">
 
-          <Link to={item.path} onClick={toggleNav}>
+          <Link to={item.path} onClick={() => { toggleNav(); }}>
             {item.link}
           </Link>
         </div>
@@ -169,7 +174,7 @@ const Navbar = () => {
 
       return (
         <div className="accordionItem">
-          <Link to={path} onClick={toggleNav}>
+          <Link to={path} onClick={() => { toggleNav(); }}>
             {section}
           </Link>
         </div>
@@ -235,12 +240,14 @@ const Navbar = () => {
         </div>
         <div className={`navigationPanel ${isNavVisible ? "show" : "hide"}`}>
           {isMobile ? (
-            <Collapse accordion expandIconPosition="end" >
+            <Collapse accordion expandIconPosition="end" activeKey={activeKey} // Pass activeKey to Collapse
+              onChange={handlePanelChange} // Handle panel change
+            >
               {NavigationData.map((navItem, index) => {
                 const hasSubLinks = ["About", "Products", "Manufacturing", "Investors"].includes(navItem.link);
                 if (hasSubLinks) {
                   return (<>
-                    <Collapse.Panel header={<><Link><span>{navItem.link}</span></Link></>} key={index} showArrow={true} >
+                    <Collapse.Panel header={<><Link><span>{navItem.link}</span></Link></>} key={navItem.link} showArrow={true} >
                       {renderAccordionContent(navItem.link)}
                     </Collapse.Panel>
                   </>
@@ -260,6 +267,7 @@ const Navbar = () => {
                       key={index}
                       showArrow={false}
                       collapsible="disabled"
+
                     >
                     </Collapse.Panel>
                   );
