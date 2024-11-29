@@ -117,25 +117,25 @@ const AboutUs = () => {
   ]
   const data = [
     {
-      img: "/images/quality-.png",
+      img: "/images/high-quality.png",
       alt: "showing the quality of mild steel",
       title: "Quality",
       description: " Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture."
     },
     {
-      img: "/images/innovation-.png",
+      img: "/images/idea1.png",
       alt: "power transmission tower made up of mild steel",
       title: "Innovation",
       description: "We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along."
     },
     {
-      img: "/images/customer-.png",
+      img: "/images/satisfication.png",
       alt: "customer satisfaction with product",
       title: "Customer Satisfaction",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
     },
     {
-      img: "/images/integrity.png",
+      img: "/images/operation.png",
       alt: "strong bond of bridge",
       title: "Integrity",
       description: "Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.",
@@ -310,8 +310,10 @@ const AboutUs = () => {
                       <div className='AnimatedCards'>
                         <div className='BlackOverlay'>
                         </div>
-                        <img src={item.img} alt={item.alt} />
-                        <h2>{item.title}</h2>
+                        <div className='animatedcardcontent'>
+                          <img src={item.img} alt={item.alt} />
+                          <h2>{item.title}</h2>
+                        </div>
                       </div>
                     </div>
                   </Col>

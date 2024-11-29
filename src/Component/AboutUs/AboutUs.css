@@ -216,16 +216,16 @@
 }
 
 .AnimatedCards {
-  background-color: rgba(235, 233, 233, 0.269);
-  height: 22vh;
   margin: 20px;
   position: relative;
-  display: flex;
-  justify-content: center;
   overflow: hidden;
   transition: 0.5s;
 }
-
+.animatedcardcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .AnimatedCards:last-child,
 .AnimatedCards:first-child {
   margin-right: 0px;
@@ -236,27 +236,24 @@
   transition: 0.5s;
 }
 
-.AnimatedCards h4,
 .AnimatedCards h2 {
-  position: absolute;
-  z-index: 4;
-  bottom: 10px;
   color: rgb(0, 0, 0);
   width: 100%;
   text-align: center;
   z-index: 5;
+  padding: 10px;
 }
 .AnimatedCards h2 {
   font-weight: 600;
 }
 
 .AnimatedCards img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   transition: 0.5s;
   object-fit: cover;
   opacity: 0.9;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .AnimatedCards:hover img {
@@ -544,7 +541,7 @@
 
 @supports (-webkit-overflow-scrolling: touch) {
   .OutMV {
-      background-attachment:local;
-      /* Adjust for iOS Safari */
+    background-attachment: local;
+    /* Adjust for iOS Safari */
   }
 }
