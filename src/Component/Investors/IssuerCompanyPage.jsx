@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import './Investors.css';
 import investor from '/images/investors.jpg'
 import "../AboutUs/AboutUs.css";
@@ -10,24 +10,34 @@ import pdfIcon from "/images/pdf.png";
 const Investors = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+      }, []);
+    const categoryRefs = useRef({});
+    
     const [selectedCategory, setSelectedCategory] = useState("Annual Return");
     const [selectedCompany, setSelectedCompany] = useState("MSL");
 
     const documentSectionRef = useRef(null);
-
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
-
-        const documentSectionPosition = documentSectionRef.current.offsetTop;
-        const offset = 50;
-        window.scrollTo({
-            top: documentSectionPosition - offset,
-            behavior: "smooth",
-
-        });
+        const sectionRef = categoryRefs.current[category];
+        if (sectionRef) {
+            const rect = sectionRef.getBoundingClientRect();
+            const documentSectionPosition = rect.top + window.scrollY;  // Add the current scroll position
+            console.log('scroll to section position (using getBoundingClientRect):', documentSectionPosition);
+            window.scrollTo({
+                top: documentSectionPosition-100, // Adjust the offset as needed
+                behavior: 'smooth',
+            });
+        }
+        
     };
-
+    useEffect(() => {
+        // Ensure smooth scroll behavior is applied universally
+        document.documentElement.style.scrollBehavior = "smooth";  // Enable smooth scroll globally
+        return () => {
+            document.documentElement.style.scrollBehavior = ""; // Reset after component unmount
+        };
+    }, []);
     const renderDocuments = (data) => {
         const entries = Object.entries(data);
 
@@ -37,7 +47,9 @@ const Investors = () => {
                     if (typeof value === "object" && !value.title) {
                         return (
                             <Col span={24} key={key}>
-                                <h1 className="InvestorHeadingContainer">{key}</h1>
+                                <h1 className="InvestorHeadingContainer" ref={(el) => categoryRefs.current[key] = el}>
+                                    {key}
+                                </h1>
                                 {renderDocuments(value)}
                             </Col>
                         );
@@ -87,7 +99,6 @@ const Investors = () => {
                         <Col lg={6} sm={24} xs={24}>
                             <div className="companyList">
                                 <ul>
-                                    {/* Render categories like Annual Return, Corporate Policy dynamically */}
                                     {categories.map((category, index) => (
                                         <li
                                             key={category}
