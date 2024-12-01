@@ -191,7 +191,7 @@
 }
 
 .qualityCard:hover::before {
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 769px) {
@@ -210,8 +210,7 @@
     justify-content: center;
     height: 100%;
   }
-  .CardContent{
-  }
+
   #QualitySection {
     padding-top: 9rem;
     padding-left: 1rem;
@@ -223,12 +222,11 @@
   }
   .qualityCard::before {
     background-color: rgba(0, 0, 0, 0.5);
-
   }
   .CardContent {
     transform: translateY(0%);
   }
-  .CardContent p{
+  .CardContent p {
     visibility: visible;
   }
 }

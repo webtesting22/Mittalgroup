@@ -165,15 +165,14 @@
     height: 300px;
   }
 }
-.certification-section{
-  background-color: rgba(245, 245, 245, 0.797);
-}
+
 .certification-column {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-  padding: 0 2rem;
+  background-color: rgba(245, 245, 245, 0.797);
+
 }
 
 .certification-container {
@@ -217,5 +216,8 @@
 @media (max-width: 769px) {
   .certification-content {
     flex-direction: column;
+  }
+  .certification-column{
+    margin: 1rem;
   }
 }

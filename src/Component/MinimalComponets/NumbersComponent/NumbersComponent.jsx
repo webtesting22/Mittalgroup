@@ -68,7 +68,7 @@ const NumbersComponent = () => {
             ref={containerRef}
         >
             <div>
-                <Row>
+                <Row gutter={[16,16]}>
                     <Col lg={12}>
                         {/* <div style={{padding:"20px 0px"}}>
                                 <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>

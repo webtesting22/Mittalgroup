@@ -337,19 +337,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 7vh; */
     padding: 0px;
     width: 40%;
     margin-bottom: 1rem;
-    /* height: 6vh; */
   }
 
   .Dynamicbtn>div:first-child {
     padding: 10px;
+    width: 100%;
   }
 
   .Dynamicbtn>div:last-child {
     padding: 10px;
+    width: 100%;
   }
 
   .productCard {
@@ -375,12 +375,14 @@
   }
 
   .Dynamicbtn>div:first-child {
-    padding: 0 5px;
+    /* padding: 0 5px; */
     font-size: 14px;
+    width: 100%;
   }
 
   .Dynamicbtn>div:last-child {
-    padding: 0 5px;
+    /* padding: 0 5px; */
     font-size: 14px;
+    width: 100%;
   }
 }
