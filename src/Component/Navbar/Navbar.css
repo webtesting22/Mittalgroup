@@ -135,7 +135,6 @@
 }
 
 @media (max-width: 798px) {
-
   .logoContainer img {
     width: 100px;
   }
@@ -369,11 +368,11 @@
 .dropdownContainer {
   padding: 1rem;
   border-radius: 10px;
-  min-width: 410px;
+  min-width: 310px;
   background-color: white;
   display: flex;
   align-items: center;
-  min-height: 20vh !important;
+  min-height: 15vh !important;
 }
 
 .dropdownImageContainer {
@@ -394,8 +393,8 @@
 .subLinks {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 200px;
+  justify-content: space-evenly;
+  min-width: 150px;
 }
 
 .dropdown {
@@ -431,25 +430,25 @@
   .accordionItem {
     padding: 10px 0;
   }
-  .accordionItem a{
+  .accordionItem a {
     font-size: 16px;
     font-weight: 500;
   }
-  .ant-collapse-header-text{
-     color: black;
-    font-weight:500;
+  .ant-collapse-header-text {
+    color: black;
+    font-weight: 500;
     font-size: 20px;
   }
-  .ant-collapse-header-text a span{
+  .ant-collapse-header-text a span {
     color: black;
-    font-weight:500;
+    font-weight: 500;
     font-size: 20px;
   }
 
   .navigationPanel.hide .MSLShape {
     display: none;
   }
-  .ant-collapse-content-box{
+  .ant-collapse-content-box {
     padding-top: 0px !important;
   }
 

@@ -87,7 +87,6 @@ const Investors = [
 const Navbar = () => {
   const [activeKey, setActiveKey] = useState([]); // Active panel key for collapsing
   const handlePanelChange = (key) => {
-    // Toggle the active key to collapse or open the panel
     setActiveKey(prevKey => (prevKey.includes(key) ? [] : [key])); // Collapse if key is already active
   };
   const [hoveredSubLink, setHoveredSubLink] = useState({});
@@ -258,7 +257,6 @@ const Navbar = () => {
                     <Collapse.Panel
                       header={
                         <>
-
                           <Link to={navItem.path || "#"} onClick={toggleNav} style={{ display: 'block' }}>
                             <span>{navItem.link}</span>
                           </Link>
@@ -267,7 +265,6 @@ const Navbar = () => {
                       key={index}
                       showArrow={false}
                       collapsible="disabled"
-
                     >
                     </Collapse.Panel>
                   );
