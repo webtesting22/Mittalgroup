@@ -49,6 +49,7 @@
 }
 .About-img img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .About-content {

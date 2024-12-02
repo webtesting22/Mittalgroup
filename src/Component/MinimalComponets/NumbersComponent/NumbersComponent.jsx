@@ -87,7 +87,7 @@ const AboutCompany = () => {
                                                     start={0}
                                                     suffix="+"
                                                     end={item.numbers} // Target value
-                                                    duration={5} // Animation duration
+                                                    duration={3} // Animation duration
                                                     delay={0.3 * index} // Staggered delay for each card
                                                 />
                                             )}
