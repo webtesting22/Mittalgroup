@@ -34,43 +34,69 @@ const MSLManufacturing = () => {
             <section id="ManufacturingProcess">
 
                 <div data-aos="fade-up" data-aos-duration="1000">
-
-                    {/* <div className="productsContainer">
-<h1>Our Products</h1>
-<Row>
-    <Col lg={12}>
-        <div className="productCard">Flat Bars</div>
-    </Col>
-    <Col lg={12}>
-        <div className="productCard">Round Bars</div>
-    </Col>
-    <Col lg={12}>
-        <div className="productCard">Channels</div>
-    </Col>
-    <Col lg={12}>
-        <div className="productCard">Angles</div>
-    </Col>
-</Row>
-</div> */}
-                    {/* <div > */}
                     <div className="HeadingContainer">
                         <h2>Manufacturing process</h2>
                     </div>
-                    <p>At MSL, we operate two fully equipped manufacturing units in Changodar,
-                        Ahmedabad. Our commitment to excellence is reflected in our semi-automated re-rolling mill, which
-                        allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
-                        our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
+                    <Row className='About-Row row1'>
+                        <Col lg={10} md={24} >
+                            <div className='About-img' data-aos-duration="1000" data-aos="fade-right" >
+                                <img className="manufacturingImage" src="https://webtesting-upload.vercel.app/assets/1-min-BnI64RRP.jpg" alt="Manufacturing" />
+                            </div>
+                        </Col>
+                        <Col lg={1} md={0} />
+                        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200">
+                            <div className='About-content'>
+                                <p>At MSL, we operate two fully equipped manufacturing units in Changodar,
+                                    Ahmedabad. Our commitment to excellence is reflected in our semi-automated re-rolling mill, which
+                                    allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
+                                    our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
+                                </p>
+                            </div>
+                        </Col>
 
-                    </p>
-                    <p>The projects are designed and installed by experts having an annual capacity of production up to 50000 MT collectively in both the units. All the machineries, stands & passes are kept in a row perfectly to maintain the consistency and pace of the process. The speed of the machines, stands is matched to the speed of the rolling material which is made possible by organized machinery to get quality end products. High quality mechanical & technical personnel are employed to inspect the process and quality at various stages of the process. Pulverised coal fired Re-heating furnaces are installed to maintain the temperature and provide sufficient heat to the core of raw material which result in better rolling of product.</p>
+                    </Row>
 
+                    <Row className='About-Row row2'>
+                        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-right">
+                            <div className='About-content'>
+                                <p>The projects are designed and installed by experts having an annual capacity of production up to 50000 MT collectively in both the units. All the machineries, stands & passes are kept in a row perfectly to maintain the consistency and pace of the process. The speed of the machines, stands is matched to the speed of the rolling material which is made possible by organized machinery to get quality end products. High quality mechanical & technical personnel are employed to inspect the process and quality at various stages of the process. Pulverised coal fired Re-heating furnaces are installed to maintain the temperature and provide sufficient heat to the core of raw material which result in better rolling of product.</p>
+
+                            </div>
+                        </Col>
+                        <Col lg={1} md={0} />
+                        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200">
+                            <div className='About-img'>
+                                <img className="manufacturingImage" src="https://webtesting-upload.vercel.app/assets/5-min-BZ_xFyxz.jpg" alt="Manufacturing" />
+                            </div>
+                        </Col>
+                    </Row>
+                    {/* <Row gutter={[16, 16]} align="middle">
+                        <Col lg={12}>
+                            <p>At MSL, we operate two fully equipped manufacturing units in Changodar,
+                                Ahmedabad. Our commitment to excellence is reflected in our semi-automated re-rolling mill, which
+                                allows us to consistently deliver high-quality products. Each batch undergoes rigorous testing in
+                                our state-of-the-art laboratories to ensure compliance with both mechanical and chemical standards.
+                            </p>
+                        </Col>
+                        <Col lg={12}>
+                            <img className="manufacturingImage" src="https://webtesting-upload.vercel.app/assets/1-min-BnI64RRP.jpg" alt="Manufacturing" />
+                        </Col>
+                    </Row>
+                    <Row gutter={[16, 16]} align="middle">
+                        <Col lg={12}>
+                            <img className="manufacturingImage" src="https://webtesting-upload.vercel.app/assets/5-min-BZ_xFyxz.jpg" alt="Manufacturing" />
+                        </Col>
+                        <Col lg={12}>
+                            <p>The projects are designed and installed by experts having an annual capacity of production up to 50000 MT collectively in both the units. All the machineries, stands & passes are kept in a row perfectly to maintain the consistency and pace of the process. The speed of the machines, stands is matched to the speed of the rolling material which is made possible by organized machinery to get quality end products. High quality mechanical & technical personnel are employed to inspect the process and quality at various stages of the process. Pulverised coal fired Re-heating furnaces are installed to maintain the temperature and provide sufficient heat to the core of raw material which result in better rolling of product.</p>
+                        </Col>
+                    </Row> */}
                     <p>Beside production, keeping the atmosphere green and clean is a major motive at MSL. Both the units are approved from GPCB and environment is the premises are maintained accordingly.</p>
 
                     <p>We follow the <b>5S manufacturing methodology</b>—Sort, Straighten, Shine, Standardize, and Sustain—to
                         optimize efficiency and maintain an organized, high-performance production environment.</p>
 
                     <Row gutter={[16, 16]}>
-                        <Col lg={18}>
+                        <Col lg={18} md={24}>
                             <p><b>Sort</b></p>
                             <ul>
                                 <li> Action: Remove unnecessary items from the workspace.</li>
@@ -99,8 +125,8 @@ const MSLManufacturing = () => {
                             </ul>
                             <p>By implementing 5S, steel manufacturers can boost productivity, reduce waste, and contribute to sustainable practices in their industry.</p>
                         </Col>
-                        <Col lg={6}>
-                            <div className="manufacturingImage"><img src="/images/5s.png" /></div>
+                        <Col lg={6} md={24}>
+                            <div className="fiveSImage"><img src="/images/5s.png" /></div>
                         </Col>
                     </Row>
                     {/* <div style={{ paddingTop: "2rem" }}>

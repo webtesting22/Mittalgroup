@@ -1,11 +1,11 @@
-.manufacturingImage {
+.fiveSImage {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 }
-.manufacturingImage img {
+.fiveSImage img {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
@@ -20,9 +20,100 @@
   background-image: url("/images/4940019.jpg");
   background-size: cover;
 }
+
+.About-Row {
+  margin: 3rem 0rem;
+  /* border-top:1px solid black; */
+  /* border-bottom: 1px solid black; */
+  /* border-right: 0.5px solid rgba(0, 0, 0, 0.51); */
+  /* border-left: 0.5px solid rgba(0, 0, 0, 0.51); */
+  overflow: hidden;
+  /* padding: 2rem 5rem; */
+}
+.row1 {
+  /* border-top: 1px solid black; */
+  z-index: 13000;
+}
 @media (max-width: 769px) {
   #ManufacturingProcess {
-    /* padding-top: 4rem !important; */
     padding: 2rem 1rem;
+  }
+}
+
+.About-img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+}
+.About-img img {
+  width: 100%;
+}
+
+.About-content {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.About-content h1 {
+  color: rgb(188, 119, 66);
+}
+.About-content p {
+  padding-top: 0px;
+  text-align: justify;
+  margin: 0;
+  color: black;
+}
+.row1 .About-img {
+  align-items: flex-start;
+}
+.row2 .About-img {
+  height: 100%;
+  justify-content: center;
+}
+
+.row3 .About-img {
+  align-items: flex-start;
+}
+@media (max-width: 999px) {
+  .row2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .About-content {
+    padding-top: 1rem;
+  }
+  .About-Row{
+    margin:  1rem 0;
+  }
+}
+@media (max-width: 769px) {
+  .About-img img {
+    width: 100%;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .row1 {
+    margin-top: 2rem !important;
+  }
+  .About-Row {
+    margin: 0;
+    /* padding: 0 2rem; */
+  }
+  .About-content {
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .About-content {
+    justify-content: unset;
+  }
+  .About-content p {
+    padding: 1rem 0;
   }
 }
