@@ -1,223 +1,242 @@
-.numbers-container {
-  padding-bottom: 0rem;
-}
-.ImagesContainer {
-  display: block;
-  width: 100%;
-  height: 500px;
+#AboutCompanyContainer {
   position: relative;
+  padding: 4rem 4rem;
 }
 
-.ImagesContainer img {
-  width: 60%;
-  /* height: 100%; */
-  z-index: 1;
-}
-
-.numbers-container
-  .ant-row
-  .ant-col:nth-child(1)
-  .ImagesContainer
-  img:nth-child(1) {
+.FixedImage {
+  height: 100%;
+  background-image: url("../../public/Images/AboutContentBack.png");
+  background-position: center;
+  background-size: cover;
   position: absolute;
-  left: 50px;
+  left: 0px;
+  width: 100%;
   top: 0px;
-  height: 100px;
-  width: 400px;
-  object-fit: contain;
+  opacity: 0.2;
+  background-attachment: fixed;
 }
 
-.numbers-container
-  .ant-row
-  .ant-col:nth-child(1)
-  .ImagesContainer
-  img:nth-child(2) {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  /* height: 300px; */
-  /* width: 350px; */
-  /* width: 60%; */
-  border: 8px solid white;
-  object-fit: contain;
-}
-
-.ImagesContainer h1 {
-  z-index: 100;
-  /* position: absolute; */
-  /* left: 100px; */
-}
-
-.firstNumber {
-  position: absolute;
-  top: 0;
-  right: 15%;
-  top: 10%;
-}
-
-.secondNumber {
-  position: absolute;
-  left: 13%;
-  bottom: 15%;
-}
-
-.rightSideContainerContent {
-  padding-left: 2rem;
-}
-
-.secondNumber h4,
-.firstNumber h4 {
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.secondNumber h1,
-.firstNumber h1 {
-  color: #9aa966;
-  font-size: 40px;
-}
-
-.rightSideContainerContent ul {
-  /* padding: 0px; */
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.rightSideContainerContent ul li {
-  padding: 0px;
+.VideoContainer {
   width: 100%;
-  margin: 10px 0px;
-  list-style: none;
-  position: relative;
-  font-weight: 500;
+  height: 100%;
 }
 
-.rightSideContainerContent ul li::before {
-  content: "\2713";
-  /* Unicode for checkmark */
-  background-color: #9aa966;
-  height: 15px;
-  width: 15px;
-  position: absolute;
-  left: -25px;
-  top: 5px;
-  border-radius: 50%;
-  color: white;
-  /* Adjust color to make the checkmark visible */
-  text-align: center;
-  /* Center the checkmark */
-  line-height: 13px;
-  /* Align checkmark vertically */
-  font-size: 13px;
-  /* Adjust font size */
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-}
-@media (max-width: 576px) {
-  .secondNumber {
-    left: 5%;
-    /* padding-left: 2rem; */
-    bottom: 15%;
-  }
-  .firstNumber {
-    right: 10%;
-    top: 15%;
-  }
-  .ImagesContainer {
-    height: 400px;
-  }
-  .rightSideContainerContent {
-    width: 100%;
-    padding-left: 0.5rem;
-    padding-top: 1rem;
-  }
-  .numbers-container
-    .ant-row
-    .ant-col:nth-child(1)
-    .ImagesContainer
-    img:nth-child(2) {
-    width: 60%;
-  }
-}
-@media (max-width: 500px) {
-  .ImagesContainer {
-    height: 40vh;
-  }
-  .ImagesContainer img {
-    width: 50%;
-  }
-  .numbers-container
-    .ant-row
-    .ant-col:nth-child(1)
-    .ImagesContainer
-    img:nth-child(2) {
-    width: 50%;
-  }
-}
-@media (max-width: 450px) {
-  .ImagesContainer {
-    height: 350px;
-  }
-}
-@media (max-width: 400px) {
-  .ImagesContainer {
-    height: 300px;
-  }
-}
-
-.certification-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
-  background-color: rgba(245, 245, 245, 0.797);
-
-}
-
-.certification-container {
-  border-radius: 12px;
-  padding: 30px;
+.VideoContainer video {
   width: 100%;
+  height: 100%;
 }
 
-.certification-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.AboutCompanyContent {
+  padding-right: 2rem;
 }
 
-.certification-logo {
-  width: 200px;
-  height: 100px;
-  object-fit: contain;
+.DesignedContainer h1 {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: left;
 }
 
-.certification-details {
-  flex-grow: 1;
-}
-
-.certification-title {
-  color: black;
+.DesignedContainer p {
+  font-weight: 300;
+  text-align: left;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.45;
 }
 
-.certification-number {
-  color: black;
-  margin-bottom: 15px;
-  font-weight: 600;
+.AnimatedParallaxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
 }
 
-.certification-description {
-  line-height: 1.6;
-  color: black;
+.AnimatedParallaxContainer div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0rem 1rem;
+}
+
+.AnimatedParallaxContainer div:last-child {
+  padding-top: 6rem;
+}
+
+.AnimatedParallaxContainer div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CompanyContentRow {
+  margin-top: 5rem;
+}
+
+.CompanyContentRow .MiddleImageContainer {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CompanyContentRow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -13rem;
+  padding-right: 2rem;
+}
+
+.ListItemUl {
+  display: flex;
+  height: 100%;
+  justify-content: end;
+}
+
+.ListItemUl ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0px;
+}
+
+.ListItemUl ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 1rem 0rem;
+}
+
+
+.ListItemUl ul li::before {
+  content: "";
+  height: 1px;
+  width: 80px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.506);
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.ListItemUl ul div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-left: 2rem; */
+}
+.statCard{
+ width: 100%;
+
+}
+
+.statCard span {
+  font-size: 40px;
+  font-family: "Satoshi", sans-serif;
+}
+.statCard span::first-letter {
+  color:#9aa966;
+}
+
+.backGroundAttachment {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url("../Components/AboutCompany/BackImage.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  background-attachment: fixed;
 }
 @media (max-width: 769px) {
-  .certification-content {
+  #AboutCompanyContainer {
+    padding: 3rem 1rem;
+    padding-bottom: 0rem;
+  }
+  .CompanyContentRow {
+    margin-top: 5rem;
+    padding-bottom: 0rem;
+  }
+  .ListItemUl ul div:nth-child(odd) {
+    margin-left: 0rem;
+  }
+
+  .ListItemUl ul div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .CompanyContentRow {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .ListItemUl ul li::before {
+    content: "";
+    height: 1px;
+    width: 50px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.506);
+    margin-right: 2rem;
+  }
+
+  .ListItemUl ul li:nth-child(odd) {
+    margin-left: 0px;
+  }
+
+  .CompanyContentRow .MiddleImageContainer {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+  }
+
+  .CompanyContentRow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -8rem;
+    padding-right: 0;
+  }
+
+  .AnimatedParallaxContainer div:last-child {
+    padding-top: 0rem;
+  }
+
+  .AnimatedParallaxContainer div {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0rem 1rem;
+  }
+
+  .AboutCompanyContent {
+    padding-right: 0rem;
+  }
+
+  .AnimatedParallaxContainer {
     flex-direction: column;
   }
-  .certification-column{
-    margin: 1rem;
+
+  .DesignedContainer h1 {
+    font-size: 30px;
+  }
+  .statCard span{
+    font-size: 30px;
   }
 }

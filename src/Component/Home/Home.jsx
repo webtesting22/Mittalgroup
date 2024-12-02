@@ -123,7 +123,7 @@ const Home = ({ images = [] }) => {
               // top: "10px",
               bottom: "1%",
               right: "1%",
-              padding: "10px 15px",
+              padding: "7px 10px",
               backgroundColor: isMuted ? "red" : "green",
               color: "black",
               border: "none",

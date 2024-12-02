@@ -3,7 +3,6 @@ import './Investors.css';
 import investor from '/images/investors.jpg'
 import "../AboutUs/AboutUs.css";
 import { Row, Col } from 'antd';
-import { Radio, Tabs } from 'antd';
 import DocumentData from "./DocumentData.jsx";
 import pdfIcon from "/images/pdf.png";
 

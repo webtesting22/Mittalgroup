@@ -5,7 +5,6 @@
 }
 
 .HeadingContainer {
-  /* border-left: 2px solid black; */
   padding: 0rem 1rem;
 }
 
@@ -65,7 +64,6 @@
   align-items: center;
   height: 100%;
   width: 90%;
-  /* justify-content: center; */
 }
 
 .ContentContainerHome h4 {
@@ -79,7 +77,6 @@
   display: flex;
   align-items: center;
   transition: 0.5s;
-  /* border-radius: 20px; */
 }
 
 .RowAdjust {
@@ -92,7 +89,6 @@
 }
 
 .ContentContainerHome button {
-  /* background-color: black; */
   background-color: #9aa966;
   padding: 10px 30px;
   color: white;
@@ -103,10 +99,8 @@
 }
 
 .ContentContainerHome button:hover {
-  /* background-color: black; */
   background-color: #a7bf51;
   padding: 10px 30px;
-  /* color: white; */
   color: black;
   margin-top: 2rem;
   border: none;
@@ -150,10 +144,8 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
-    /* border-radius: 20px; */
   }
   .MSLProductsCards {
-    /* margin: 2rem 0rem; */
     margin-bottom: 0rem !important;
   }
   .RowAdjust:last-child {

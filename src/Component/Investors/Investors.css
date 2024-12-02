@@ -125,6 +125,5 @@
 @supports (-webkit-overflow-scrolling: touch) {
   .documentsSection {
     background-attachment: local;
-    /* Adjust for iOS Safari */
   }
 }

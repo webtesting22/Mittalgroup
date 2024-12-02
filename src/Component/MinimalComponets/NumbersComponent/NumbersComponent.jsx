@@ -1,193 +1,195 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./NumbersComponent.css";
 import { Row, Col } from "antd";
-
-// Data Array
-
-
-const NumbersComponent = () => {
-    const [counts, setCounts] = useState([0, 0, 0]); // Array for three numbers
-    const containerRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    // Array of target numbers
-    const targetNumbers = [600000, 1400, 60];
-
-    const startCounting = () => {
-        const duration = 3000; // Total duration for counting animation (in ms)
-        const startTime = performance.now(); // Start time for animation
-
-        const animate = (currentTime) => {
-            const elapsedTime = currentTime - startTime; // Calculate elapsed time
-            const progress = Math.min(elapsedTime / duration, 1); // Progress percentage (0 to 1)
-
-            // Update counts based on progress
-            const updatedCounts = targetNumbers.map((target) => Math.floor(target * progress));
-            setCounts(updatedCounts);
-
-            if (progress < 1) {
-                requestAnimationFrame(animate); // Continue animation if not complete
-            }
-        };
-
-        requestAnimationFrame(animate); // Start animation
-    };
+import CountUp from "react-countup"
+import "./NumbersComponent.css";
+// import BackImage from "./BackImage.jpeg"
+const AboutCompany = () => {
+    const [offsetY, setOffsetY] = useState(0);
+    const [startCount, setStartCount] = useState(false); // State to trigger count-up animation
+    const sectionRef = useRef(null); // Ref for the observer
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
+                // Always trigger the counter reset each time the section is in view
                 if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-                else {
-                    setIsVisible(false);
+                    setStartCount(false);  // Reset the count
+                    setTimeout(() => {
+                        setStartCount(true);  // Start the count-up animation again
+                    }, 0);  // Delay the start to ensure reset happens
                 }
             },
-            { threshold: 0.5 }
+            {
+                threshold: 0.5, // Trigger when 50% of the element is visible
+            }
         );
 
-        if (containerRef.current) {
-            observer.observe(containerRef.current);
+        const currentRef = sectionRef.current;
+        if (currentRef) {
+            observer.observe(currentRef); // Observe the section
         }
 
+        // Cleanup observer when component unmounts
         return () => {
-            if (containerRef.current) {
-                observer.unobserve(containerRef.current);
+            if (currentRef) {
+                observer.unobserve(currentRef);
             }
         };
     }, []);
+    // Update scroll position
+    const handleScroll = () => {
+        setOffsetY(window.scrollY);
+    };
+
     useEffect(() => {
-        if (isVisible) {
-            setCounts([0, 0, 0]); // Reset counts
-            startCounting(); // Start animations
-        }
-    }, [isVisible]);
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const CompanyData = [
+        {
+            points: "Metric Tonnes Manufactured",
+            numbers: 600000
+        },
+        {
+            points: "Projects",
+            numbers: 60
+        },
+        {
+            points: "Clients",
+            numbers: 1400
+        },
+        
+    ];
     return (
-        <div
-            className="numbers-container HomePageClientSection"
-            ref={containerRef}
-        >
-            <div>
-                <Row gutter={[16,16]}>
-                    <Col lg={12}>
-                        {/* <div style={{padding:"20px 0px"}}>
-                                <h1 style={{color:"#9aa966",fontSize:"40px"}}>{counts[0]}+</h1><h4 style={{fontWeight:"600"}}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
-                                </div> */}
-                        <div className="ImagesContainer">
+        <>
+            <section id="AboutCompanyContainer" className="section_Padding">
+                {/* <div className="backGroundAttachment">
 
-                            <div className="firstNumber"> <h1>{counts[2]}+</h1> <h4>Projects</h4></div>
-                            <img
-                                src="https://webtesting-upload.vercel.app/assets/G1-CjhU0Zn4.png"
-                                alt=""
-                            />
-                            <img
-                                src="https://webtesting-upload.vercel.app/assets/G4-COAkdo_n.png"
-                                alt=""
-                            />
-                            <div className="secondNumber"><h1>{counts[1]}+</h1><h4>Clients</h4></div>
+                </div> */}
+                <div className="DesignedContainer">
+                    <h1 data-aos="fade-up"><span style={{ color: "#9aa966" }}>Shaping Excellence</span> in Steel Solutions</h1>
+                    <p data-aos="fade-up">Driving the future of infrastructure with high-quality, durable, and innovative steel products.</p>
+                </div>
 
-                        </div>
-                    </Col>
-                    <Col lg={12}>
-                        <div className="rightSideContainerContent ContentContainerHome ">
-                            <div>
-                                {/* <h4>Professional Expertise</h4>
-                                <h1>Innovative Logistics, Global Reach</h1>
+                <div className="CompanyContentRow">
 
-                                <p>With a legacy of delivering seamless logistics solutions, our expertise spans global supply chains, ensuring efficiency, reliability, and innovative approaches to meet client needs.</p> */}
-                                {/* <hr /> */}
-                                <div style={{ padding: "20px 0px", paddingBottom: "5px" }}>
-                                    <h1 style={{ color: "#9aa966", fontSize: "40px" }}>{counts[0]}+</h1><h4 style={{ fontWeight: "600" }}>Metric Tonnes Manufactured Equivalent to 59+ Eiffel Towers</h4>
-                                    {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>7947505 </h1><h4 style={{ fontWeight: "600" }}>BIS Approved </h4> */}
-                                    {/* <h1 style={{ color: "#9aa966", fontSize: "40px" }}>9001:2000</h1><h4 style={{ fontWeight: "600" }}>ISO Company</h4> */}
-                                </div>
-                                {/* <ul>
-                                    <li>
-                                        Personal Protective Equipment (PPE)
-                                    </li>
-                                    <li>
-                                        Hazard Identification and Risk Assessment:
-                                    </li>
-                                    <li>
-                                        Safe Equipment Usage
-                                    </li>
-                                    <li>
-                                        Emergency Preparedness
-                                    </li>
-                                </ul> */}
+                    <Row>
+                        <Col lg={10}>
+                            <div className="ListItemUl" ref={sectionRef}>
+                                <ul>
+                                    {CompanyData.map((item, index) => (
+                                        <div key={index} className="statCard">
+                                            {startCount && ( // Only render CountUp when in view
+                                                <CountUp
+                                                    start={0}
+                                                    suffix="+"
+                                                    end={item.numbers} // Target value
+                                                    duration={5} // Animation duration
+                                                    delay={0.3 * index} // Staggered delay for each card
+                                                />
+                                            )}
+                                            <li>{item.points}</li>
+                                        </div>
+                                    ))}
+                                </ul>
                             </div>
-
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="certification-section">
-                    <Col lg={12} className="certification-column" data-aos="fade-up" data-aos-duration="1000">
-                        <div className="certification-container">
-                            <div className="certification-content">
-                                <div className="certification-icon">
-                                    <img src="/images/Isi.png" alt="BIS Approved" className="certification-logo" />
-                                </div>
-                                <div className="certification-details">
-                                    <h2 className="certification-title">Bureau of Indian Standards Certified</h2>
-                                    <p className="certification-number">Approval Number: 7947505</p>
-                                    <p className="certification-description">
-                                        Our commitment to quality is validated by the prestigious BIS certification,
-                                        ensuring our products meet the highest national standards of excellence.
+                        </Col>
+                        <Col lg={6}>
+                            <div className="MiddleImageContainer">
+                                <img style={{
+                                    transform: `translateY(${offsetY * 0.1}px)`, // Adjust speed with the multiplier
+                                }} src="https://webtesting-upload.vercel.app/assets/G3-BqsGTIGe.png" alt="" />
+                            </div>
+                        </Col>
+                        <Col lg={8}>
+                            <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
+                                <div>
+                                    <h2>BIS Certified and ISO Certified</h2>
+                                    <p>
+                                        Our company holds both BIS (Bureau of Indian Standards) certification and ISO
+                                        certification, reflecting our unwavering commitment to quality, safety, and
+                                        reliability. These certifications ensure that our products and processes adhere
+                                        to the highest global standards, delivering excellence in every aspect.
                                     </p>
+                                    {/* <h2 >We are a dynamic design studio driven by a deep passion for creativity and innovation.</h2> */}
+                                    {/* <p>Our team is dedicated to crafting bespoke, thoughtful designs that not only reflect the individuality of your brand but also connect with your audience on a meaningful level. Every project we undertake is an opportunity to tell a unique story, blending strategy .</p> */}
+                                    <br /><br />
+                                    <div className="SideContentContainer">
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </Col>
-                    <Col lg={12} className="certification-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div className="certification-container">
-                            <div className="certification-content">
-                                <div className="certification-icon">
-                                    <img src="/images/ISO.png" alt="ISO Certified" className="certification-logo" />
-                                </div>
-                                <div className="certification-details">
-                                    <h2 className="certification-title">ISO 9001:2000 Certified</h2>
-                                    <p className="certification-description">
-                                        Our ISO 9001:2000 certification demonstrates our unwavering dedication to
-                                        international quality management standards and continuous improvement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-            {/* <Row>
-                {NumberData.map((item, index) => (
-                    <Col
-                        lg={8}
-                        md={24}
-                        xs={24}
-                        key={index}
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        data-aos-delay={index * 200}
-                    >
-                        <div className="number-card">
-                            <div className="icon-container">
-                                <img src={item.imgsrc} alt={item.data} />
-                            </div>
-                            <h3 className="number">{count[item.data] || 0}+</h3>
-                            <p className="data">{item.data}</p>
-                            {item.comparison && (
-                                <p className="comparison">
-                                    <i
-                                        className="bx bx-line-chart"
-                                        style={{ color: "white" }}
-                                    ></i>
-                                    {item.comparison}
+                        </Col>
+                    </Row>
+                </div>
+                {/* <div className="AnimatedParallaxContainer">
+                    <div >
+                        <img
+                            className="parallax-image"
+                            style={{
+                                transform: `translateY(${offsetY * 0.1}px)`, // Adjust speed with the multiplier
+                            }}
+                            src="https://plus.unsplash.com/premium_photo-1683120974913-1ef17fdec2a8?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                        
+                    </div>
+                    <div>
+                        <img
+                            className="parallax-image"
+                            style={{
+                                transform: `translateY(${offsetY * 0.1}px)`, // Adjust speed for second image
+                            }}
+                            src="https://images.unsplash.com/photo-1639004643579-7286ae5a771d?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                        
+                    </div>
+                </div> */}
+                {/* <div className="FixedImage" /> */}
+                {/* <div style={{ position: "sticky" }}>
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <div className="AboutCompanyContent">
+                                <div className="sectionHeading"><h2>Company Overview</h2></div>
+                                <p>We are a leading provider of Design and Verification solutions.</p>
+                                <p>
+                                    Truechip, the Verification IP specialist, is a leading provider of
+                                    Design and Verification solutions – which help you accelerate your
+                                    design, lowering the cost and risks associated with the development
+                                    of your ASIC, FPGA, and SOC. Truechip is a privately held company,
+                                    with a global footprint and sales coverage across North America,
+                                    Europe, and Asia.
                                 </p>
-                            )}
-                        </div>
-                    </Col>
-                ))}
-            </Row> */}
-        </div>
-    );
-};
+                                <p>
+                                    Truechip has been serving customers for the last 10 years in VLSI
+                                    with strong and experienced leadership. Truechip provides the
+                                    industry’s first 24x5 support model with specialization in VIP
+                                    integration, customization, and SOC Verification.
+                                </p>
+                                <p>Get in Touch with us to learn about our Services.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} md={24}>
+                            <div className="VideoContainer">
+                                <video
+                                    className="BackgroundVideo"
+                                    src={AboutContentVideo}
+                                    autoPlay
+                                    loop
+                                    muted
+                                />
+                            </div>
 
-export default NumbersComponent;
+                        </Col>
+                    </Row>
+
+                </div> */}
+            </section>
+        </>
+    )
+}
+export default AboutCompany

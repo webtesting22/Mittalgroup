@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Image, Button } from "antd";
 import "./MittalSectionHomePageContainer.css"
 import { Link } from "react-router-dom";
-import ClientHome from "../ClientHome/ClientHome";
 import BackOverlay from "./BackOverlay.png"
 const MSLHomePage = () => {
 
