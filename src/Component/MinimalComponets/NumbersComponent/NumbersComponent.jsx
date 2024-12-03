@@ -77,7 +77,7 @@ const AboutCompany = () => {
                 <div className="CompanyContentRow">
 
                     <Row>
-                        <Col lg={10}>
+                        <Col lg={10} md={24}>
                             <div className="ListItemUl" ref={sectionRef}>
                                 <ul>
                                     {CompanyData.map((item, index) => (

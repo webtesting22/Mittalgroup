@@ -117,4 +117,7 @@
   .About-content p {
     padding: 1rem 0;
   }
+  .row2 .About-content p{
+    padding-bottom: 0;
+  }
 }
