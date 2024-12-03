@@ -74,7 +74,7 @@ const Investors = () => {
             <div className='ContentContainerAdjust'>
               <div>
                 <h1>INVESTORS</h1>
-                <p>Find Out More About Our Business</p>
+                <p>Find Out More About Our Group Companies</p>
               </div>
             </div>
             <div className='backimageContainer'>

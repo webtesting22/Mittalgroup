@@ -61,7 +61,7 @@ const AboutCompany = () => {
             points: "Clients",
             numbers: 1400
         },
-        
+
     ];
     return (
         <>
@@ -97,7 +97,7 @@ const AboutCompany = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} md={24} xs={24}>
                             <div className="MiddleImageContainer">
                                 <img style={{
                                     transform: `translateY(${offsetY * 0.1}px)`, // Adjust speed with the multiplier

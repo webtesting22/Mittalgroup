@@ -222,7 +222,7 @@ const Navbar = () => {
             <Link to="/" onClick={() => {
               hideNav();
             }}>
-              <img src={isScrolled ? "/images/MittalLogo.png" : "/images/MittalLogocopy.png"} alt="Logo" />
+              <img src={isScrolled ? "/images/MittalLogoNew.png" : "/images/MittalLogocopy.png"} alt="Logo" />
             </Link>
           </div>
           <button onClick={toggleNav}>
