@@ -124,7 +124,7 @@ const Home = ({ images = [] }) => {
               bottom: "1%",
               right: "1%",
               padding: "7px 10px",
-              backgroundColor: isMuted ? "red" : "green",
+              backgroundColor: isMuted ? "white" : "#9aa966",
               color: "black",
               border: "none",
               borderRadius: "50%",
