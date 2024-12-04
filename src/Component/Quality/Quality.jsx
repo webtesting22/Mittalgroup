@@ -189,7 +189,8 @@ const Quality = () => {
             {/* -------------  ShowCaseImageContainer ------------------- */}
             <div className="ShowCaseBannerContainer">
                 <div className="FitContentImage">
-                    <img src="https://images.unsplash.com/photo-1506855868560-4ae177c39018?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    {/* <img src="https://images.unsplash.com/photo-1506855868560-4ae177c39018?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> */}
+                    <img src="/images/DSC_0145.JPG" />
                     <div className="OverlayBanner">
 
                     </div>
