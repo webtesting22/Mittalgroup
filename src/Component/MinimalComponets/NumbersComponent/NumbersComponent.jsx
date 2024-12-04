@@ -107,19 +107,19 @@ const AboutCompany = () => {
                         <Col lg={8}>
                             <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
                                 <div>
-                                    <h2>BIS Certified and ISO Certified</h2>
-                                    <p>
+                                    <h2 style={{textAlign:"center"}}>BIS And ISO Certified</h2>
+                                    <div className="SideContentContainer">
+                                        <div className="ISOLogoContainer"><img src="/images/Isi.png" /></div>
+                                        <div className="ISOLogoContainer"><img src="/images/ISO.png" /></div>
+                                    </div>
+                                    {/* <p>
                                         Our company holds both BIS (Bureau of Indian Standards) certification and ISO
                                         certification, reflecting our unwavering commitment to quality, safety, and
                                         reliability. These certifications ensure that our products and processes adhere
                                         to the highest global standards, delivering excellence in every aspect.
-                                    </p>
-                                    {/* <h2 >We are a dynamic design studio driven by a deep passion for creativity and innovation.</h2> */}
-                                    {/* <p>Our team is dedicated to crafting bespoke, thoughtful designs that not only reflect the individuality of your brand but also connect with your audience on a meaningful level. Every project we undertake is an opportunity to tell a unique story, blending strategy .</p> */}
-                                    <br /><br />
-                                    <div className="SideContentContainer">
+                                    </p> */}
 
-                                    </div>
+
                                 </div>
                             </div>
                         </Col>
