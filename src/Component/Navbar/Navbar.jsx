@@ -3,13 +3,7 @@ import { Collapse } from "antd";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MdOutlineCancel, MdMenu } from "react-icons/md";
-import NavigationBackImage from "./navigation.jpg";
-import MSLLogocopy from "/images/MittalLogocopy.png";
-import MSLLogo from "/images/MittalLogo.png";
 import Navigation1 from "./Navigation2.jpg";
-import Navigation2 from "./Navigation2.jpeg";
-import Navigation3 from "./Navigation3.avif";
-import Navigation4 from "./Navigation4.jpg";
 import Navigation5 from "./Navigation5.avif";
 import ManufacturingNavigation from "/images/AbmittalBack.jpeg"
 import QualityNavigation from "/images/GroupImagesBack.avif"

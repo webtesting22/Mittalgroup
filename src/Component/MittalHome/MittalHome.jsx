@@ -1,6 +1,5 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Home from "../Home/Home";
-// import MSLOffice from "../MinimalComponets/MSLOffices";
 
 const MSLHome = () => {
     useEffect(() => {
@@ -9,8 +8,7 @@ const MSLHome = () => {
     return (
         <>
             <Home />
-            {/* <MSLHomeAbout /> */}
         </>
     )
 }
-export default MSLHome
+export default MSLHome;

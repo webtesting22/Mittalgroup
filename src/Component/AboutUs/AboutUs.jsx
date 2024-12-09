@@ -1,120 +1,27 @@
 import React, { useEffect } from 'react'
 import './AboutUs.css'
-import bg1 from "./Card1.avif";
-import bg2 from "./Card2.avif";
-import bg3 from "./Card3.avif";
-import bg4 from "./Card4.avif";
-import { Col, Row, Image } from "antd"
-import cofounder from "/images/co-founder.jpg"
-import gallery2 from "/images/gallery2.jpg"
-import picasaImg14 from "/images/picasa-img14.jpg"
+import { Col, Row } from "antd"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import Home from '../Home/Home'
-import BackImage from "./BackImage.jpeg"
-import DiffrentTestImage from "../Navbar/navigation.jpg"
-import MSLGroupLogo from "../../../public/images/MittalGroupLogo.png"
-import MSLGallery from '../Mittalgallery/MSLGallery';
 import carousal3 from "../Home/carousal3.jpeg"
 import Image1 from "./founder5.jpg"
 import Image2 from "./founder1.jpg"
 import Image3 from "./founder2.jpg"
 import Image4 from "./founder3.jpg"
-import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
-
+import { Autoplay } from 'swiper/modules';
 import backImage from "./backImage.png"
-
-
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const images = [DiffrentTestImage, BackImage];
-  const items = [
-    {
-      key: '1',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div> <h4>Excellence</h4>
-          <img src={MSLGroupLogo} alt="company of mild steel" />
-        </>
-      ),
-      children: <><p>Ever since the inception of the group, we have approached every product with the goal of achieving excellence. We deliver the best to our stakeholders and never compromise on the quality of the process and the products we manufacture.</p></>,
-    },
-    {
-      key: '2',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div> <h4>Integrity</h4>
-          <img src={MSLGroupLogo} alt="logo of mild steel company" />
-        </>
-      ),
-      children: <><p>We follow through on the promises we make and that has always been at our core. We translate our belief in transparency into our business model and this is what makes us better every day. Our stakeholders are always at the center of our decisions and that has helped us take the right decisions all along.</p></>,
-    },
-    {
-      key: '3',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div><h4> Trust</h4>
-          <img src={MSLGroupLogo} alt="" />
-        </>
-      ),
-      children: <><p>Over the years we have created a cohesive framework based on trust. It encapsulates us and our stakeholders and helps us in building strong, meaningful relations with all our stakeholders.</p></>,
-    },
-    {
-      key: '4',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div> <h4>Our USP</h4>
-          <img src={MSLGroupLogo} alt="" />
-        </>
-      ),
-      children: <><p>We know what it takes to stay ahead of the curve.
-        We are firm non-believer of the vision- ‘Under commitment, over deliver’. We do commit our best to our customers, and we do deliver our best. Our USP is fuelled by this vision. The cornerstone of our USP is firmly balanced on our four elemental perspectives. Quality, Service, Integrity and Commitment.
-        Our learning tool is our customer’s behavioral analysis, and our satisfaction is our customer’s trust. We are here to build healthy relationships with our customers. That’s why, our commitment towards our customers is our pride, and our integrity designs the quality of our products.</p></>,
-    },
-    {
-      key: '5',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div> <h4>Company Culture</h4>
-          <img src={MSLGroupLogo} alt="" />
-        </>
-      ),
-      children: <><p>We believe that culture breeds commitments. From the very starting point of our journey, the entire workforce behind AB MSL group was focused on building a strong and healthy company culture. We do believe that our vision is our purpose and our strong values help us to outsmart every roadblock we face on the way of achieving our purpose.
-        We hire bright and healthy minds that help us to maintain the free flow of a deviation less knowledge processing environment at the workplace. The core company values are deeply enshrined in our daily practices, and we forge our quality products with these values, commitments and endeavours.</p></>,
-    },
-    {
-      key: '6',
-      label: (
-        <>
-          <div className='MSLShape'>
-          </div>
-          <h4>Corporate Social values</h4>
-          <img src={MSLGroupLogo} alt="" />
-        </>
-      ),
-      children: <><p> Every business is a failed purpose without society. We believe in that, and we are aware of our corporate social responsibilities. Our social wing is strong and widely unrolled. We are a proud donor at Pathmeda Godham . It’s an animal welfare trust, and they help domestic and road animals. AB MSL group is also a proud donor at Akshaya Patra, a big non-profit foundation who serves food to 1.6 million children across 11 states in India. The continuous stewardship of Ab MSL group for ensuring the quality living standards of its workforce has successfully enacted an accidental and health insurance for its workers.</p></>,
-    },
-  ];
+
   useEffect(() => {
     AOS.init({ once: false }); // Initialize AOS with default options
   }, []);
-  const Images = [
-    {
-      image: cofounder
-    },
 
-  ]
   const qualityPoints = [
     {
       icon: "/images/Quality Icons/durability.svg",
@@ -207,7 +114,6 @@ const AboutUs = () => {
 
   return (
     <>
-      {/* <Home images={images} /> */}
       <div className='TopcontainerPart'>
         <div className='InsideTop'>
           <div className='blackOverlay'>
@@ -222,7 +128,7 @@ const AboutUs = () => {
           <div className='backimageContainer'>
             <img src={carousal3} alt="" />
           </div>
-          <div className="BottomContainer" style={{padding:"5px"}}>
+          <div className="BottomContainer" style={{ padding: "5px" }}>
             <div className="marquee-container">
               <div className="marquee">
                 {qualityPoints.map((point, index) => (
@@ -247,15 +153,6 @@ const AboutUs = () => {
       <section className='AboutUsSection' style={{ position: "relative" }}>
         <div className='AboutUsContentContainer'>
           <div className='FounderContainer' data-aos="fade-up">
-            {/* <h2>About Us</h2>
-            <b><i>Yesterday's Vision, Today's Sucess, Tomorrow's Promise</i></b>
-            <b><i>Our Legacy of Excellence</i></b> */}
-            {/* <br /> */}
-            {/* <br /> */}
-            {/* <p>An identity is the reflection of ideals, goals and aspirations that make an organisation. At <b>MSL Section Ltd. (MSL)</b> we believe that coming together is a beginning, Working together is progress & Forging ahead together is success. Our misson is to provide highest quality of end product & services through a spirit of dynamism with a will to achieve full customer delight.</p> */}
-
-
-
             <Row>
               <div className='BackImageOverlay'>
                 <img src={backImage} alt="" />
@@ -271,7 +168,6 @@ const AboutUs = () => {
                   <SwiperSlide> <img src={Image4} alt="slide4" /> </SwiperSlide>
                 </Swiper>
 
-                {/* </div> */}
               </Col>
               <Col lg={12} md={12}>
                 <div className='FounderInfo'>
@@ -290,14 +186,7 @@ const AboutUs = () => {
               </Col>
             </Row>
 
-            {/* <p><b>MSL  (MSL)</b> is one of the largest steel rolling mill located at Changodar,
-              Ahmedabad. MSL is into the rolling of complete ranige of MS sections like<b> Angles, Channels, Squares,
-                Rounds & Flat bars</b> etc. <b>MSL's</b> quest for excellence through various technologies & quality initiatives
-              has helped to establish us as one of the largest manufactureres of entire range. Since inception of the
-              organisation we have grown in reserves, profits and customer base, <b>MSL's</b> large talent pool of skilled technicians,
-              engineers & managers enable the delivery of superior quality product helping the organisation to build a strong,
-              self reliant and modern industrial base.</p>
-            <p><b>MSL </b>is promoted by young, energetic, experienced technocrats having long commercial experience. The project is equipped with abundance of power, raw material, man power with growing rate of industrialisation</p> */}
+
           </div>
         </div>
       </section>
@@ -325,54 +214,6 @@ const AboutUs = () => {
         </div>
       </div>
       <section className='AboutUsSection'>
-        {/* <Row>
-              <Col lg={12} md={24} data-aos="fade-up">
-                <div className=" AboutUsimagesStyle">
-                  {Images.map((item, index) => (
-                    <div key={index}
-                      style={{
-                        marginLeft: index % 2 === 0 ? "0px" : "0px",
-                        marginTop: "10px",
-                        marginBottom: "10px"
-                      }}>
-                      <Image src={item.image} alt="" />
-                    </div>
-                  ))}
-                </div>
-              </Col>
-              <Col lg={12} md={24} data-aos="fade-up">
-
-                <div className=" AboutUsParagraph">
-                 
-                  <div>
-                    <h2>Our Vision:</h2>
-                    <p>To empower our partners with innovative and quality steel solutions, achieving sustainable growth and a brighter future for all.</p>
-
-                  </div>
-                  <div>
-                    <h2>Our Mission:</h2>
-                    <p>We strive to deliver world-class products by understanding the needs of our clients and delivering success at every step of the way.
-                    </p>
-                  </div>
-
-                 
-                </div>
-              </Col>
-            </Row> */}
-        {/* 
-        <div className='WhyChooseSection'>
-          <div className='HeadingContainer'>
-            <p>Expertise You Can Trust</p>
-            <h2>Why Choose MSL ?</h2>
-          </div>
-
-          <p>
-            At MSL , we believe that just like a steel bar that rolls out of a stand can never return, our word is our bond.
-            We stand by our promises and deliver products that exceed industry standards. Our commitment to quality, innovation, and sustainability
-            makes us a trusted partner for industries across Gujarat.
-          </p>
-
-        </div> */}
         <div id='CollapseEdit' >
           <div  >
             <div className='HeadingContainer'>

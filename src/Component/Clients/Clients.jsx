@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "./Clients.css";
-import Home from "../Home/Home";
 import Client from "./ClientsData"
 import { Row, Col } from "antd";
 const Clients = () => {
