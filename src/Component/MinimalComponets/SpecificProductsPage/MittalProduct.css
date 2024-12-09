@@ -3,7 +3,6 @@
   width: 400px;
   overflow: hidden;
   white-space: nowrap;
-  /* border: 1px solid #ccc; */
   padding: 10px;
   box-sizing: border-box;
   margin: auto;
@@ -26,7 +25,6 @@
 
 .marquee-item::before {
   content: "";
-  /* This creates the pseudo-element */
   display: inline-block;
   height: 10px;
   /* Adjust size of the dot */
@@ -54,7 +52,7 @@
   padding: 2rem 4rem;
 }
 
-.StackContainersEdit>div:first-child img {
+.StackContainersEdit > div:first-child img {
   max-width: 100%;
   height: auto;
   position: sticky;
@@ -75,13 +73,6 @@
   border-radius: 10px;
 }
 
-/* .min-img{
-    display: flex;
-    height: 150px;
-    width: 150px;
-    align-items: flex-end;
-
-} */
 .ProductContentContainer .HeadingContainer {
   position: sticky;
   top: 15%;
@@ -98,19 +89,10 @@
   margin: 10px;
 }
 
-/* .GalleryImagesProducts img:last-child {
-  width: 50%;
-  margin: 1rem 0rem;
-  border-radius: 5px;
-} */
-
 .GalleryImagesProducts {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
-  /* justify-content: end; */
-  /* align-items: end;     */
 }
 
 .StackContainersEdit {
@@ -131,7 +113,7 @@
   align-items: flex-end;
 }
 
-.LeftSideContentajust>div {
+.LeftSideContentajust > div {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -141,7 +123,6 @@
 
 .LeftSideContentajust h1 {
   color: white;
-  /* padding-bottom: 6rem; */
   font-size: 3rem;
   width: 70%;
 }
@@ -157,29 +138,29 @@
   border-radius: 8px;
 }
 
-.Dynamicbtn>div:first-child {
+.Dynamicbtn > div:first-child {
   padding: 5px 10px;
   font-weight: 600;
   color: white;
 }
 
-.Dynamicbtn>div:last-child {
+.Dynamicbtn > div:last-child {
   transition: 0.5s;
   border-left: 1px solid rgb(247, 247, 247);
   padding: 5px 10px;
   cursor: pointer;
 }
 
-.Dynamicbtn>div:last-child a {
+.Dynamicbtn > div:last-child a {
   color: white;
 }
 
-.Dynamicbtn>div:last-child a svg {
+.Dynamicbtn > div:last-child a svg {
   transition: 0.5s;
   color: white;
 }
 
-.Dynamicbtn>div:last-child a:hover svg {
+.Dynamicbtn > div:last-child a:hover svg {
   transform: translateX(5px);
   transition: 0.5s;
 }
@@ -207,7 +188,6 @@
 
 .productCard:hover img {
   transform: scale(1.05);
-
   transition: 0.5s;
   overflow: hidden;
   opacity: 1;
@@ -223,18 +203,12 @@
 }
 
 .TableContainer {
-  /* width: 100%; */
   padding: 1rem 4rem;
 }
 
 .productTable h4 {
   padding: 10px;
 }
-
-/* .productTable{
-  display: flex;
-  gap: 10px;
-} */
 .productTable table {
   width: 100%;
   padding: 1rem 2rem !important;
@@ -245,14 +219,13 @@
     padding: 1rem;
   }
 
-  .LeftSideContentajust>div {
+  .LeftSideContentajust > div {
     flex-direction: column;
     padding-bottom: 2rem;
   }
 
   .LeftSideContentajust h1 {
     color: white;
-    /* padding-bottom: 2rem; */
     font-size: 2rem;
     width: 100%;
   }
@@ -269,13 +242,11 @@
     width: 100%;
     border-radius: 0px;
     margin: 10px 0px;
-    /* margin: 2rem 0rem; */
   }
 
   .GalleryImagesProducts img:last-child {
     width: 100%;
     margin: 0;
-    /* margin: 1rem 0rem; */
     border-radius: 0px;
   }
 
@@ -300,7 +271,6 @@
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    /* border: 1px solid #ccc; */
     padding: 10px;
     box-sizing: border-box;
     margin: auto;
@@ -313,15 +283,14 @@
   .ProductContentContainer .HeadingContainer {
     position: static;
     border-left: none;
-    /* margin-bottom: 30px; */
   }
 
   .ProductContentContainer .HeadingContainer::before {
     animation: none;
-    background:transparent;
+    background: transparent;
   }
 
-  .StackContainersEdit>div:first-child img {
+  .StackContainersEdit > div:first-child img {
     max-width: 100%;
     height: auto;
     position: static;
@@ -342,12 +311,12 @@
     margin-bottom: 1rem;
   }
 
-  .Dynamicbtn>div:first-child {
+  .Dynamicbtn > div:first-child {
     padding: 10px;
     width: 100%;
   }
 
-  .Dynamicbtn>div:last-child {
+  .Dynamicbtn > div:last-child {
     padding: 10px;
     width: 100%;
   }
@@ -362,7 +331,7 @@
 }
 
 @media (max-width: 576px) {
-  .LeftSideContentajust>div {
+  .LeftSideContentajust > div {
     justify-content: center;
   }
 
@@ -374,14 +343,12 @@
     width: 45%;
   }
 
-  .Dynamicbtn>div:first-child {
-    /* padding: 0 5px; */
+  .Dynamicbtn > div:first-child {
     font-size: 14px;
     width: 100%;
   }
 
-  .Dynamicbtn>div:last-child {
-    /* padding: 0 5px; */
+  .Dynamicbtn > div:last-child {
     font-size: 14px;
     width: 100%;
   }

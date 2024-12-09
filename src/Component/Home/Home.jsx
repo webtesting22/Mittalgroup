@@ -1,18 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
-import DefaultImage from '/images/AbmittalBack.jpeg'; // Default image
-import MSLGroupLogo from "/images/MittalGroupLogo.png";
-import MSLLogo from "/images/MittalLogo.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import carousal1 from "./carousal1.jpeg"
-import carousal2 from "./carousal2.jpeg"
-import carousal3 from "./carousal3.jpeg"
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import required modules
 import { Autoplay } from 'swiper/modules';
 import MSLHomePage from '../MinimalComponets/HomePageComapanyContent/MittalHomePage';
 import NumbersComponent from '../MinimalComponets/NumbersComponent/NumbersComponent';
@@ -47,25 +38,13 @@ const Home = ({ images = [] }) => {
     }
   }, [images]);
 
-  const carousalImages = [
-    {
-      img: carousal1
-    },
-    {
-      img: carousal2
-    },
-    {
-      img: carousal3
-    }
-  ]
+
 
   return (
     <>
       <div className='AnimatedHomeSlider'>
         <div className='MSLHomeContent'>
-          {/* <h3>Shaping the future of steel piping.</h3> */}
 
-          {/* <h1>MSL Production</h1> */}
           <h2>Shaping the future of Structural Steel</h2>
           <p>MSL provides premium steel products designed for strength and durability. Our precision engineering ensures reliable solutions for every project.</p>
         </div>
@@ -77,17 +56,12 @@ const Home = ({ images = [] }) => {
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
-            // autoplay={{
-            //   delay: 2000,
-            //   disableOnInteraction: false,
-            // }}
             speed={1000}
             modules={[Autoplay]}
             className="mySwiper"
             id='SwiperHome'
             style={{ position: "static" }}
           >
-            {/* {carousalImages.map((item, index) => ( */}
             <SwiperSlide>
               <video
                 src="https://webtesting-upload.vercel.app/assets/AB%20Mittal%20Video-CSf5vDXC.mp4"
@@ -98,10 +72,9 @@ const Home = ({ images = [] }) => {
                 ref={videoRef}
 
 
-                style={{ width: '100%', height: "100%", pointerEvents: 'none',objectFit:"cover" }} // Ensure no interaction triggers fullscreen
+                style={{ width: '100%', height: "100%", pointerEvents: 'none', objectFit: "cover" }} // Ensure no interaction triggers fullscreen
               />
             </SwiperSlide>
-            {/* ))} */}
           </Swiper>
         </div>
         <div className='mobileNone'>

@@ -129,7 +129,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* margin-left: 2rem; */
 }
 .statCard {
   width: 100%;
@@ -155,16 +154,16 @@
   opacity: 0.1;
   background-attachment: fixed;
 }
-.SideContentContainer{
+.SideContentContainer {
   margin-top: 2rem;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
 }
-.ISOLogoContainer{
+.ISOLogoContainer {
   width: 100%;
 }
-.ISOLogoContainer img{
+.ISOLogoContainer img {
   object-fit: contain;
   width: 100%;
   aspect-ratio: 3/2;

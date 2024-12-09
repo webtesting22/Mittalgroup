@@ -93,7 +93,6 @@
   aspect-ratio: 3/2;
   object-fit: contain;
   width: 60%;
-  /* height: auto; */
   margin: auto;
   display: flex;
 }

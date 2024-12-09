@@ -15,18 +15,7 @@ const serviceData = {
             "https://webtesting-upload.vercel.app/assets/flatbar2-AIX5AiwC.jpg",
             "https://webtesting-upload.vercel.app/assets/FlatBars1-DOa6N3xA.jpeg",
         ],
-        keywords: [
-            "Steel Flat Bars",
-            "Mild Steel Flat Bars",
-            "Carbon Steel Flat Bars",
-            "Alloy Steel Flat Bars",
-            "Stainless Steel Flat Bars",
-            "Precision Flat Bars",
-            "Galvanized Flat Bars",
-            "Hot Rolled Flat Bars",
-            "Cold Rolled Flat Bars",
-            "Durable Flat Bars"
-        ],
+
         stackImage: "https://webtesting-upload.vercel.app/assets/gflatbar-A8y9OrP5.jpeg",
         rightSideStackColumn: (
             <>
@@ -233,17 +222,6 @@ const serviceData = {
             "https://webtesting-upload.vercel.app/assets/ChannelsBar1-BN9_sASO.jpeg",
         ],
         backgroundImage: "https://webtesting-upload.vercel.app/assets/channels3-CZ3B0n8e.jpg",
-        keywords: [
-            "Steel Channels",
-            "Aluminum Channels",
-            "C-Channels",
-            "U-Channels",
-            "Channels Beam",
-            "Channels Section",
-            "Channels Framing",
-            "Cold-Formed Channels",
-
-        ],
         stackImage: "https://webtesting-upload.vercel.app/assets/gchannels-Bl-utN2m.jpeg",
         rightSideStackColumn: (
             <>
@@ -330,17 +308,7 @@ const serviceData = {
         backgroundImages: [
             "https://webtesting-upload.vercel.app/assets/RoundBars1-CGZDPqFq.jpeg",
         ],
-        keywords: [
-            "Steel Round Bars",
-            "Aluminum Round Bars",
-            "Carbon Steel Flat Bars",
-            "Metal Fabrication",
-            "Bar stock",
-            "Solid Round Bars",
-            "Cold Round Bars",
-            "Hot Rolled Round Bars",
 
-        ],
         stackImage: "https://webtesting-upload.vercel.app/assets/groundbar-CO_KTVMO.jpeg",
         rightSideStackColumn: (
             <>
@@ -440,16 +408,7 @@ const serviceData = {
             "https://webtesting-upload.vercel.app/assets/angles5-CWuBRgWS.jpg",
             "https://webtesting-upload.vercel.app/assets/angles4-DRl15On2.jpg",
         ],
-        keywords: [
-            "Steel Angles",
-            "Aluminum Angles",
-            "Carbon Steel Angles",
-            "Metal Angles",
-            "Solid Angles",
-            "Cold Angles",
-            "Hot Rolled Angles",
 
-        ],
         stackImage: "https://webtesting-upload.vercel.app/assets/gangles-C43DN7Bi.jpeg",
         rightSideStackColumn: (
             <>
@@ -578,16 +537,13 @@ const MSLProduct = () => {
 
         let currentIndex = 0;
 
-        // Change the background every 5 seconds (for demo purposes)
         const interval = setInterval(() => {
             currentIndex = (currentIndex + 1) % imageArray.length;
             setBackgroundImage(imageArray[currentIndex]);
         }, 3000); // Change every 5 seconds
 
-        // Cleanup the interval on component unmount
         return () => clearInterval(interval);
     }, [currentService]);
-    // const filteredProducts = QualityData.filter(item => item.title !== currentService.mainTitle).slice(0, 3);
 
     return (
         <>
@@ -621,22 +577,6 @@ const MSLProduct = () => {
                 </div>
                 <div className="Overlayback"></div>
             </section>
-            {/* <div className='ProductContentContainer' style={{ paddingBottom: "0px" }}>
-                <div className="marquee-container">
-                    <div className="marquee-text">
-                        {currentService.keywords.map((keyword, index) => (
-                            <span key={index} className="marquee-item">
-                                {keyword}
-                            </span>
-                        ))}
-                        {currentService.keywords.map((keyword, index) => (
-                            <span key={`repeat-${index}`} className="marquee-item">
-                                {keyword}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-            </div> */}
             <div className='ProductContentContainer'>
                 <div className="HeadingContainer">
                     <h2>{currentService.title}</h2>
@@ -663,30 +603,13 @@ const MSLProduct = () => {
                 <div className='HeadingContainer'>
                     <h3>View More Products</h3>
                 </div>
-                {/* <Row gutter={[16, 16]} style={{ margin: "0px" }}>
-                    {filteredProducts.map((subpoint, subIndex) => (
-                        <Col key={subIndex} lg={8} md={18} sm={24} style={{ padding: "2px" }}>
-                        <Link to={subpoint.link}>
-                            <div className="qualityCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={subIndex * 200}>
-                                <div className="CardContent">
-                                    <h3><b>{subpoint.mainTitle}</b></h3>
-                                    
-                                </div>
-                                <div className="qualityIconContainer">
-                                    <img src={subpoint.backgroundImage} alt={`${subpoint.mainTitle} Icon`} />
-                                </div>
-                            </div>
-                            </Link>
-                        </Col>
-                    ))}
-                </Row> */}
+
                 <Row gutter={[16, 16]} style={{ margin: "0px" }}>
                     {filteredProducts.map((product, index) => (
                         <Col key={index} lg={8} md={8} sm={24} style={{ padding: "2px" }}>
                             <Link to={product.link}>
                                 <div className='productCard' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 200}>
                                     <img src={product.backgroundImage} alt={`${product.mainTitle} Icon`} />
-                                    {/* <br /> */}
                                     <h3>{product.mainTitle}</h3>
                                 </div>
                             </Link>

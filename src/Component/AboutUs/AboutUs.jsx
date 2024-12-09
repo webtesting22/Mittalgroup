@@ -243,10 +243,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        {/* <hr /> */}
-        {/* <div>
-            <MSLGallllery />
-          </div> */}
 
       </section>
 

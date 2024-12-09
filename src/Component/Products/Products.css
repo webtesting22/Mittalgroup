@@ -15,8 +15,6 @@ td {
 
 th {
   background-color: #9aa966;
-  /* background-color: #144b24; */
-  /* background-color: #ffcc00; */
 }
 
 h2 {
@@ -40,11 +38,11 @@ h2 {
   flex-wrap: wrap;
 }
 
-#TableContainers>div {
+#TableContainers > div {
   width: 50%;
 }
 
-#TableContainers>div h4 {
+#TableContainers > div h4 {
   margin-bottom: 10px;
 }
 
@@ -67,7 +65,6 @@ h2 {
   justify-content: center;
   height: 50vh;
   transition: 0.5s;
-
 }
 
 .HoverRow {
@@ -78,17 +75,12 @@ h2 {
 
 .MSLCardContainer .HoverRow:hover .HoverImageContainer {
   width: 100%;
-  /* overflow: hidden; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* height: 50vh; */
   transition: 0.5s;
   border-radius: 20px;
 }
 
 .MSLCardContainer .HoverRow:hover .HoverImageContainer img {
   border-radius: 20px;
-
   transition: 0.5s;
 }
 
@@ -126,19 +118,15 @@ h2 {
     flex-direction: column;
   }
 
-  table {
-    /* width: 100% !important; */
-  }
-
   #ProductPage {
     padding: 0rem 0rem;
   }
 
-  #TableContainers>div {
+  #TableContainers > div {
     width: 100%;
   }
 
-  #TableContainers>div h4 {
+  #TableContainers > div h4 {
     margin-bottom: 10px;
     text-align: center;
   }

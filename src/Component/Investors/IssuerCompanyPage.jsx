@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './Investors.css';
 import investor from '/images/investors.jpg'
 import "../AboutUs/AboutUs.css";
 import { Row, Col } from 'antd';
-import { Radio, Tabs } from 'antd';
 import DocumentData from "./DocumentData.jsx";
 import pdfIcon from "/images/pdf.png";
 

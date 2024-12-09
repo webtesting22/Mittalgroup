@@ -23,15 +23,9 @@
 
 .About-Row {
   margin: 3rem 0rem;
-  /* border-top:1px solid black; */
-  /* border-bottom: 1px solid black; */
-  /* border-right: 0.5px solid rgba(0, 0, 0, 0.51); */
-  /* border-left: 0.5px solid rgba(0, 0, 0, 0.51); */
   overflow: hidden;
-  /* padding: 2rem 5rem; */
 }
 .row1 {
-  /* border-top: 1px solid black; */
   z-index: 13000;
 }
 @media (max-width: 769px) {
@@ -104,7 +98,6 @@
   }
   .About-Row {
     margin: 0;
-    /* padding: 0 2rem; */
   }
   .About-content {
     padding: 0.5rem 0;

@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-top: 50px; */
-  /* align-items: center; */
 }
 .contact-details-row {
   padding-top: 50px;
@@ -70,8 +68,6 @@
     justify-content: center;
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
-    /* padding-top: 50px; */
-    /* align-items: center; */
   }
   .contact-form {
     display: flex;

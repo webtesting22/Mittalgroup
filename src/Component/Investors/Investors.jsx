@@ -19,11 +19,11 @@ const Investors = () => {
         if (company) setSelectedCompany(company);
 
         const documentSectionPosition = documentSectionRef.current.offsetTop;
-        const offset=50;
+        const offset = 50;
         window.scrollTo({
-            top: documentSectionPosition-offset,
+            top: documentSectionPosition - offset,
             behavior: "smooth",
-            
+
         });
     };
 
@@ -59,9 +59,9 @@ const Investors = () => {
     };
 
     const currentDocuments =
-    selectedCategory === "Issuer Company"
-        ? DocumentData["Issuer Company"][selectedCompany]
-        : DocumentData["Group Companies"];
+        selectedCategory === "Issuer Company"
+            ? DocumentData["Issuer Company"][selectedCompany]
+            : DocumentData["Group Companies"];
 
 
     return (
@@ -86,7 +86,7 @@ const Investors = () => {
                 <div className="documentsSection" ref={documentSectionRef}>
                     <Row>
                         <Col lg={6} sm={24} xs={24}>
-                        <div className="companyList">
+                            <div className="companyList">
                                 <ul>
                                     <li
                                         onClick={() => handleCategoryClick("Issuer Company", "MSL")}
@@ -103,8 +103,8 @@ const Investors = () => {
                                             fontWeight: selectedCategory === "Group Companies" ? "bold" : "normal",
                                             backgroundColor: selectedCategory === "Group Companies" ? "white" : "whitesmoke",
                                         }}
-                                    > 
-                                    Group Companies
+                                    >
+                                        Group Companies
                                     </li>
                                 </ul>
                             </div>

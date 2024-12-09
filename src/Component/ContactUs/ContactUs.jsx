@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import './ContactUs.css';
 import { Row, Col } from "antd"
-import { Checkbox, Form, Input } from 'antd';
-import Home from '../Home/Home';
+import { Form, Input } from 'antd';
 // import emailjs from '@emailjs/browser';
 
 const { TextArea } = Input;

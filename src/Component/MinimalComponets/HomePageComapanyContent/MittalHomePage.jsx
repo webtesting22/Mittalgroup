@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Image, Button } from "antd";
+import { Row, Col, Image } from "antd";
 import "./MittalSectionHomePageContainer.css"
 import { Link } from "react-router-dom";
 import BackOverlay from "./BackOverlay.png"
