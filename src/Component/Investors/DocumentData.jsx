@@ -49,13 +49,13 @@ const DocumentData = {
                 CP12: { title: "POSH Policy", filePath: "/Documents/MSL/Corporate policies/Signed/12. POSH-Policy.pdf" },
                 CP13: { title: "Dividend Distribution Policy", filePath: "/Documents/MSL/Corporate policies/Signed/13. Dividend-Distribution-Policy.pdf" },
                 CP14: { title: "Web Archival Policy", filePath: "/Documents/MSL/Corporate policies/Signed/14. Web-Archival-Policy.pdf" },
-                CP15:{title:"Code of Conduct to Regulate Monitor and Report Trading by Designated Persons pending", filePath:"/Documents/CorporatePolicy/Code of Conduct to Regulate Monitor and Report Trading by Designated Persons pending.pdf"},
-                CP16:{title:"Directors' Performance Evaluation Policy", filePath:"/Documents/CorporatePolicy/Directors' Performance Evaluation Policy.pdf"},
-                CP17:{title:"Policy for Determining Materiality of Events", filePath:"/Documents/CorporatePolicy/Policy_for_Determining_Materiality_of_Events.pdf"},
-                CP18:{title:"Terms and Conditions of Appointment of Independent Directors", filePath:"/Documents/CorporatePolicy/Terms and Conditions of Appointment of Independent Directors.pdf"},
+                CP15: { title: "Code of Conduct to Regulate Monitor and Report Trading by Designated Persons pending", filePath: "/Documents/CorporatePolicy/Code of Conduct to Regulate Monitor and Report Trading by Designated Persons pending.pdf" },
+                CP16: { title: "Directors' Performance Evaluation Policy", filePath: "/Documents/CorporatePolicy/Directors' Performance Evaluation Policy.pdf" },
+                CP17: { title: "Policy for Determining Materiality of Events", filePath: "/Documents/CorporatePolicy/Policy_for_Determining_Materiality_of_Events.pdf" },
+                CP18: { title: "Terms and Conditions of Appointment of Independent Directors", filePath: "/Documents/CorporatePolicy/Terms and Conditions of Appointment of Independent Directors.pdf" },
 
             }
         }
-    },
+    }
 };
 export default DocumentData;
