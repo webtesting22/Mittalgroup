@@ -76,6 +76,11 @@ const Investors = [
     path: "/GroupCompanies",
     imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
   },
+  {
+    link: "Corporate Policy",
+    path: "/corporate-policy",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
+  },
 ]
 
 const Navbar = () => {

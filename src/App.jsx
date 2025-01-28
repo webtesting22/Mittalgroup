@@ -13,6 +13,7 @@ import Quality from './Component/Quality/Quality'
 import MSLManufacturing from "./Component/MinimalComponets/ManufacturingProcess/MittalManufacturing"
 import IssuerCompanyPage from './Component/Investors/IssuerCompanyPage'
 import GroupCompaniesPage from './Component/Investors/GroupCompaniesPage'
+import CorporatePolicy from './Component/Investors/CorporatePolicy'
 const App = () => {
     return (
         <>
@@ -27,9 +28,10 @@ const App = () => {
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Products/:service" element={<MSLProduct />} />
                 <Route path="/Manufacturing" element={<MSLManufacturing />} />
-                <Route path='/Quality' element={<Quality/>}/>
+                <Route path='/Quality' element={<Quality />} />
                 <Route path="/IssuerCompany" element={<IssuerCompanyPage />} />
                 <Route path="/GroupCompanies" element={<GroupCompaniesPage />} />
+                <Route path="/corporate-policy" element={<CorporatePolicy />} />
             </Routes>
             <Footer />
 
