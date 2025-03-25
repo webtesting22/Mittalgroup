@@ -27,15 +27,15 @@ const DocumentData = {
                 FS2223: { title: "Balance Sheet 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/BALANCE SHEET 2022-23(New).pdf" },
                 CD3: { title: "3CD Report 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/3CD REPORT 2022-23(New).pdf" },
                 FS2224: { title: "Balance Sheet 2022-23", filePath: "Documents/Armanyaa/Anuual Return/BALANCE SHEET 2022-23/BALANCE SHEET 2022-23(New).pdf" },
-                DR21: { title: "Director Report 2022-23", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23/Notice kb(New).docx" },
-                DR22: { title: "Director Report 2022-23", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23/Directors_ Report kb(New).docx" },
+                DR21: { title: "Director Report 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/Notice kb(New).docx" },
+                DR22: { title: "Director Report 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/Directors_ Report kb(New).docx" },
 
 
-                FA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Form_AOC-4_XBRL-sign.pdf" },
-                FSA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/FS-Armaanya 23-24.pdf" },
-                ANRP2324: { title: "Annex I Nomination Remuneration Policy", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Annex I  Nomination-and-Remuneration-Policy.docx" },
-                NO2324: { title: "Notice 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/NOTICE.docx" },
-                DR2324: { title: "Director Report 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Directors Report.docx" },
+                FA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2023-24/Form_AOC-4_XBRL-sign.pdf" },
+                FSA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2023-24/FS-Armaanya 23-24.pdf" },
+                ANRP2324: { title: "Annex I Nomination Remuneration Policy", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2023-24/Annex-Nomination-and-Remuneration-Policy.docx" },
+                NO2324: { title: "Notice 2023-24", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2023-24/NOTICE.docx" },
+                DR2324: { title: "Director Report 2023-24", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2023-24/Directors Report.docx" },
             }
         }
     },
