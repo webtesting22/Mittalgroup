@@ -2,13 +2,19 @@ const DocumentData = {
     "Issuer Company": {
         MSL: {
             "Annual Return": {
-                FS2122: { title: "Annual Return (2021-22)", filePath: "/Documents/MSL/Annual Return/Audited Financial Statements 2021-22.pdf" },
-                FS2223: { title: "Annual Return (2022-23)", filePath: "/Documents/MSL/Annual Return/Audited Financial Statements 2022-23.pdf" },
+                MGT1920: { title: "Annual Return (2019-20)", filePath: "/Documents/MSL/Annual Return/MGT-7 2019-20.pdf" },
+                MGT2021: { title: "Annual Return (2020-21)", filePath: "/Documents/MSL/Annual Return/MGT-7 2020-21.pdf" },
+                MGT2122: { title: "Annual Return (2021-22)", filePath: "/Documents/MSL/Annual Return/MGT-7 2021-22.pdf" },
+                MGT2324: { title: "Annual Return (2023-24)", filePath: "/Documents/MSL/Annual Return/MGT-7 2023-24.pdf" },
             },
 
             "SHP": {
-                SHP1: { title: "SHP 2021-22", filePath: "/Documents/MSL/SHP/SHP-2021-22.pdf" },
-                SHP2: { title: "SHP 2022-23", filePath: "/Documents/MSL/SHP/SHP 2022-23.pdf" },
+                SHP1: { title: "SHP 2019-20", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2019-20.pdf" },
+                SHP2: { title: "SHP 2020-21", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2020-21.pdf" },
+                SHP3: { title: "SHP 2021-22", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2021-22.pdf" },
+                SHP4: { title: "SHP 2022-23", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2022-23.pdf" },
+                SHP5: { title: "SHP 2023-24", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2023-24.pdf" },
+                SHP6: { title: "SHP 2024-25", filePath: "/Documents/MSL/SHP/SHAREHOLDING PATTERN 2024-25.pdf" },
             }
         },
     },
