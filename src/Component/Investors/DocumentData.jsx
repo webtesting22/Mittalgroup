@@ -15,20 +15,27 @@ const DocumentData = {
     "Group Companies": {
         Abhyaryan: {
             "Annual Return": {
-                FS2021: { title: "Annual Return (2020-21)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2020-21.pdf" },
-                FS2122: { title: "Annual Return (2021-22)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22.pdf" },
-                FS2223: { title: "Annual Return (2022-23)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23.pdf" },
-                FS2324: { title: "Annual Return (2023-24)", filePath: "/Documents/AbhyAryan/Annual Return/FS-Abhyaryan 23-24.pdf" },
+                FS2021: { title: "Annual Return (2020-21)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2020-21(New).pdf" },
+                FS2122: { title: "Annual Return (2021-22)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22(New).pdf" },
+                FS2223: { title: "Annual Return (2022-23)", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23(New).pdf" },
+                FS2324: { title: "Annual Return (2023-24)", filePath: "/Documents/AbhyAryan/Annual Return/FS-Abhyaryan 23-24(New).pdf" },
             }
         },
         Armaanya: {
             "Annual Return": {
-                FS2122: { title: "Balance Sheet 2021-22", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2021-22/BALANCE SHEET 2021-22.pdf" },
-                FS2223: { title: "Balance Sheet 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/BALANCE SHEET 2022-23.pdf" },
-                CD3: { title: "3CD Report 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/3CD REPORT 2022-23.pdf" },
-                FS2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/Armanyaa/Annual Return/FS-Armaanya 23-24.pdf" },
-                DR21: { title: "Director Report 2021-22", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22/DIRECTOR REPORT 2021-22.pdf" },
-                DR2223: { title: "Director Report 2022-23", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2021-22/Directors_ Report kb.docx" },
+                FS2122: { title: "Balance Sheet 2021-22", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2021-22/BALANCE SHEET 2021-22(New).pdf" },
+                FS2223: { title: "Balance Sheet 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/BALANCE SHEET 2022-23(New).pdf" },
+                CD3: { title: "3CD Report 2022-23", filePath: "/Documents/Armanyaa/Annual Return/BALANCE SHEET 2022-23/3CD REPORT 2022-23(New).pdf" },
+                FS2224: { title: "Balance Sheet 2022-23", filePath: "Documents/Armanyaa/Anuual Return/BALANCE SHEET 2022-23/BALANCE SHEET 2022-23(New).pdf" },
+                DR21: { title: "Director Report 2022-23", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23/Notice kb(New).docx" },
+                DR22: { title: "Director Report 2022-23", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2022-23/Directors_ Report kb(New).docx" },
+
+
+                FA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Form_AOC-4_XBRL-sign.pdf" },
+                FSA2324: { title: "Balance Sheet 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/FS-Armaanya 23-24.pdf" },
+                ANRP2324: { title: "Annex I Nomination Remuneration Policy", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Annex I  Nomination-and-Remuneration-Policy.docx" },
+                NO2324: { title: "Notice 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/NOTICE.docx" },
+                DR2324: { title: "Director Report 2023-24", filePath: "/Documents/AbhyAryan/Annual Return/BALANCE SHEET 2023-24/Directors Report.docx" },
             }
         }
     },
