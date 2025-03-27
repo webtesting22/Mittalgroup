@@ -67,20 +67,21 @@ const Manufacturing = [
 ];
 const Investors = [
   {
-    link: "Issuer Company",
-    path: "/IssuerCompany",
-    imgsrc: "https://webtesting-upload.vercel.app/assets/Investor-DWSPNmk7.webp",
-  },
-  {
     link: "Group Companies",
     path: "/GroupCompanies",
     imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
   },
   {
-    link: "Corporate Policy",
-    path: "/corporate-policy",
-    imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
+    link: "Issuer Company",
+    path: "/IssuerCompany",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/Investor-DWSPNmk7.webp",
   },
+ 
+  // {
+  //   link: "Corporate Policy",
+  //   path: "/corporate-policy",
+  //   imgsrc: "https://webtesting-upload.vercel.app/assets/GroupCompanies-BAtcutjD.webp",
+  // },
 ]
 
 const Navbar = () => {
