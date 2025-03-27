@@ -56,8 +56,8 @@ const Investors = () => {
                         const { title, filePath } = value;
                         return (
                             <Col xs={24} sm={24} md={8} key={key}>
-                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}>
-                                    <a href={filePath} download={title} target="_blank" rel="noopener noreferrer">
+                                <div className="documentCard" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100} onClick={() => window.open(filePath, "_blank")}>
+                                    <a href={filePath} target="_blank" rel="noopener noreferrer">
                                         <img src={pdfIcon} alt="PDF" />
                                         <p>{title}</p>
                                     </a>
