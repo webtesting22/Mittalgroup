@@ -76,7 +76,12 @@ const Investors = [
     path: "/IssuerCompany",
     imgsrc: "https://webtesting-upload.vercel.app/assets/Investor-DWSPNmk7.webp",
   },
- 
+  {
+    link: "IPO",
+    path: "/IPO",
+    imgsrc: "https://webtesting-upload.vercel.app/assets/Investor-DWSPNmk7.webp",
+  },
+
   // {
   //   link: "Corporate Policy",
   //   path: "/corporate-policy",

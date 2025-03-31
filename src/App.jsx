@@ -14,6 +14,7 @@ import MSLManufacturing from "./Component/MinimalComponets/ManufacturingProcess/
 import IssuerCompanyPage from './Component/Investors/IssuerCompanyPage'
 import GroupCompaniesPage from './Component/Investors/GroupCompaniesPage'
 import CorporatePolicy from './Component/Investors/CorporatePolicy'
+import IPO from './Component/Investors/IPO'
 const App = () => {
     return (
         <>
@@ -32,6 +33,7 @@ const App = () => {
                 <Route path="/IssuerCompany" element={<IssuerCompanyPage />} />
                 <Route path="/GroupCompanies" element={<GroupCompaniesPage />} />
                 <Route path="/corporate-policy" element={<CorporatePolicy />} />
+                <Route path="/IPO" element={<IPO />} />
             </Routes>
             <Footer />
 
