@@ -75,6 +75,13 @@ const DocumentData = {
             }
         }
     },
+    "IPO": {
+        IPO: {
+            "IPO": {
+               IPO:{title:"DRHP", filePath:"/Documents/IPO/DRHP.pdf"}
+            }
+        },
+    },
     // "Corporate Policy": {
     //     MSL: {
     //         "Corporate Policy": {
