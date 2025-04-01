@@ -1,7 +1,7 @@
 const DocumentData = {
     "Issuer Company": {
         MSL: {
-            "Annual Return": {
+            "Annual Return for (2019-2023) years": {
                 MGT1920: { title: "Annual Return (2019-20)", filePath: "/Documents/MSL/Annual Return/MGT-7 2019-20.pdf" },
                 MGT2021: { title: "Annual Return (2020-21)", filePath: "/Documents/MSL/Annual Return/MGT-7 2020-21.pdf" },
                 MGT2122: { title: "Annual Return (2021-22)", filePath: "/Documents/MSL/Annual Return/MGT-7 2021-22.pdf" },
@@ -9,7 +9,7 @@ const DocumentData = {
                 MGT2324: { title: "Annual Return (2023-24)", filePath: "/Documents/MSL/Annual Return/MGT-7 2023-24.pdf" },
 
             },
-            "Annual Report": {
+            "Annual Report for (2019-2023) years": {
 
                 AR1920: { title: "Annual Return (2019-20)", filePath: "/Documents/MSL/Annual Reports/Annual Report 2019-20.pdf" },
                 AR2021: { title: "Annual Return (2020-21)", filePath: "/Documents/MSL/Annual Reports/Annual Report 2020-21.pdf" },
