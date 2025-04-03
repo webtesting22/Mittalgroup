@@ -29,12 +29,12 @@ const MSLGallery = () => {
         {
             image: "https://webtesting-upload.vercel.app/assets/GalleryImage-BQwKSS_U.webp", alt: "Welding"
         },
-        {
-            image: '/images/gallery5.jpg',
-        },
-        {
-            image: '/images/gallery6.jpg',
-        },
+        // {
+        //     image: '/images/gallery5.jpg',
+        // },
+        // {
+        //     image: '/images/gallery6.jpg',
+        // },
 
         {
             image: '/images/gallery8.jpg',
@@ -65,18 +65,18 @@ const MSLGallery = () => {
         {
             image: '/images/gallery19.jpg',
         },
-        {
-            image: '/images/gallery20.jpg',
-        },
-        {
-            image: '/images/gallery21.jpg',
-        },
-        {
-            image: '/images/gallery22.jpg',
-        },
-        {
-            image: '/images/gallery23.jpg',
-        },
+        // {
+        //     image: '/images/gallery20.jpg',
+        // },
+        // {
+        //     image: '/images/gallery21.jpg',
+        // },
+        // {
+        //     image: '/images/gallery22.jpg',
+        // },
+        // {
+        //     image: '/images/gallery23.jpg',
+        // },
 
         {
             video: "https://webtesting-upload.vercel.app/assets/Gallery%201-DrfFseMw.mp4", alt: "Manufacturing Video", poster: "https://webtesting-upload.vercel.app/assets/VideoThumbnail1-B2eEjmFQ.webp",
