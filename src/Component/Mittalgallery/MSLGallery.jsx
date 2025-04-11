@@ -65,6 +65,42 @@ const MSLGallery = () => {
         {
             image: '/images/gallery19.jpg',
         },
+        {
+            image: '/images/GalleryImages/20.JPG',
+        },
+        {
+            image: '/images/GalleryImages/21.JPG',
+        },
+        {
+            image: '/images/GalleryImages/22.JPG',
+        },
+        {
+            image: '/images/GalleryImages/23.JPG',
+        },
+        {
+            image: '/images/GalleryImages/24.JPG',
+        },
+        {
+            image: '/images/GalleryImages/25.JPG',
+        },
+        {
+            image: '/images/GalleryImages/26.JPG',
+        },
+        {
+            image: '/images/GalleryImages/27.JPG',
+        },
+        {
+            image: '/images/GalleryImages/28.JPG',
+        },
+        {
+            image: '/images/GalleryImages/29.png',
+        },
+        {
+            image: '/images/GalleryImages/30.png',
+        },
+        {
+            image: '/images/GalleryImages/31.png',
+        },
         // {
         //     image: '/images/gallery20.jpg',
         // },
