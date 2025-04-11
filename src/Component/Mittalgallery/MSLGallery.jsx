@@ -50,12 +50,12 @@ const MSLGallery = () => {
         {
             image: '/images/gallery14.jpg',
         },
-        {
-            image: '/images/gallery15.jpg',
-        },
-        {
-            image: '/images/gallery16.jpg',
-        },
+        // {
+        //     image: '/images/gallery15.jpg',
+        // },
+        // {
+        //     image: '/images/gallery16.jpg',
+        // },
         {
             image: '/images/gallery17.jpg',
         },
