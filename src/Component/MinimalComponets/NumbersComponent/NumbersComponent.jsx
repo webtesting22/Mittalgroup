@@ -105,11 +105,8 @@ const AboutCompany = () => {
                                     <h2 style={{ textAlign: "center" }}>BIS And ISO Certified</h2>
                                     <div className="SideContentContainer">
                                         <div className="ISOLogoContainer"><img src="/images/Isi.png" /></div>
-                                        <div className="ISOLogoContainer"><img src="/images/ISO.png" /></div>
+                                        <div className="ISOLogoContainer"><img src="/images/ISO_9001-2015.png" /></div>
                                     </div>
-
-
-
                                 </div>
                             </div>
                         </Col>
