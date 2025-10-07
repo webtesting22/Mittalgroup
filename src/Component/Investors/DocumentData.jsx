@@ -261,7 +261,7 @@ const DocumentData = {
   IPO: {
     IPO: {
       IPO: {
-        IPO: { title: "DRHP", filePath: "/Documents/RHP_BSE.pdf" },
+        IPO: { title: "RHP", filePath: "/Documents/RHP_BSE.pdf" },
       },
     },
   },
