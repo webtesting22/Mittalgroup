@@ -259,9 +259,150 @@ const DocumentData = {
     },
   },
   IPO: {
-    IPO: {
-      IPO: {
-        IPO: { title: "RHP", filePath: "/Documents/RHP_BSE.pdf" },
+    RHP: {
+      "Red Herring Prospectus": {
+        RHP1: {
+          title: "RHP - BSE",
+          filePath: "/Documents/RHP_BSE.pdf",
+        },
+        DRHP: {
+          title: "Red Herring Prospectus",
+          filePath: "/Documents/IPO/DRHP.pdf",
+        },
+      },
+    },
+    "Material Contracts": {
+      "Material Contracts": {
+        MC1: {
+          title: "Issue Agreement",
+          filePath: "/Documents/Material Contracts/1. Issue_Agreement.pdf",
+        },
+        MC2: {
+          title: "RTA Agreement with Big Shares",
+          filePath:
+            "/Documents/Material Contracts/2. RTA AGREEMENT WITH BIG SHARES.pdf",
+        },
+        MC3: {
+          title: "Bankers to the Issue Agreement",
+          filePath:
+            "/Documents/Material Contracts/3. Bankers to the Issue Agreement.pdf",
+        },
+        MC4: {
+          title: "Market Making Agreement",
+          filePath:
+            "/Documents/Material Contracts/4. Market Making Agreement (1).pdf",
+        },
+        MC5: {
+          title: "Underwriter Agreement",
+          filePath:
+            "/Documents/Material Contracts/5. Underwriter Agreement.pdf",
+        },
+        MC6: {
+          title: "Syndicate Agreement",
+          filePath: "/Documents/Material Contracts/6. syndicate Agreement.pdf",
+        },
+        MC7: {
+          title: "TPA CDSL",
+          filePath: "/Documents/Material Contracts/7. TPA CDSL.pdf",
+        },
+        MC8: {
+          title: "TPA NSDL with Big Share",
+          filePath:
+            "/Documents/Material Contracts/8. TPA NSDL with Big Share.pdf",
+        },
+        MC9: {
+          title: "TPA NSDL",
+          filePath: "/Documents/Material Contracts/8. TPA NSDL.pdf",
+        },
+        MC10: {
+          title: "Market Making Agreement - Mittal Sections Limited",
+          filePath:
+            "/Documents/Material Contracts/9. MA_Agreement_ Mittal Sections Limited.pdf",
+        },
+      },
+    },
+    "Material Documents": {
+      "Material Documents": {
+        MD1: {
+          title: "MOA & AOA",
+          filePath: "/Documents/Material Documents/1. MOA & AOA.pdf",
+        },
+        MD2: {
+          title: "Certificate of Incorporation",
+          filePath:
+            "/Documents/Material Documents/2. Certificate of Incorporation-020409.PDF",
+        },
+        MD3: {
+          title: "Board Resolution - IPO",
+          filePath: "/Documents/Material Documents/3. BR_IPO.pdf",
+        },
+        MD4: {
+          title: "EGM - IPO",
+          filePath: "/Documents/Material Documents/4. EGM_IPO.pdf",
+        },
+        MD5: {
+          title: "Annual Reports 2022-23 & 2023-24",
+          filePath:
+            "/Documents/Material Documents/5. Annual Reports 2022-23 & 2023-24.pdf",
+        },
+        MD6: {
+          title: "Mittal Sections Signed RFS May 2025",
+          filePath:
+            "/Documents/Material Documents/6. Mittal Sections signed RFS_May_25.pdf",
+        },
+        MD7: {
+          title: "CA Certificate",
+          filePath: "/Documents/Material Documents/7. & 8 CA Certificate.pdf",
+        },
+        MD9: {
+          title: "Consents",
+          filePath: "/Documents/Material Documents/9. Consents.pdf",
+        },
+        MD10: {
+          title: "Board Resolution - DRHP Approval",
+          filePath: "/Documents/Material Documents/10. BR_DRHP Approval.pdf",
+        },
+        MD11: {
+          title: "Due Diligence Certificate",
+          filePath:
+            "/Documents/Material Documents/11. Due_Diligence_Certificate.pdf",
+        },
+        MD12: {
+          title: "IP Approval Letter",
+          filePath:
+            "/Documents/Material Documents/12. MITTAL SECTIONS LIMITED_IP_Approval Letter.pdf",
+        },
+        MD13: {
+          title: "Affidavit - Lease Agreement",
+          filePath:
+            "/Documents/Material Documents/13. AFFIDEVIT -2_Lease Agreement.pdf",
+        },
+        MD14: {
+          title: "Search Report",
+          filePath: "/Documents/Material Documents/14. Search Report.pdf",
+        },
+        MD15: {
+          title: "Affidavits",
+          filePath: "/Documents/Material Documents/15. Affidavits.pdf",
+        },
+        MD16: {
+          title: "Civil Engineer Certificate",
+          filePath:
+            "/Documents/Material Documents/16. Civil Engineer Certificate 23.09.2025.pdf",
+        },
+        MD17: {
+          title: "Certificates",
+          filePath: "/Documents/Material Documents/17. Certificates.pdf",
+        },
+        MD18: {
+          title: "Valuation Report",
+          filePath: "/Documents/Material Documents/18. Valuation Report.pdf",
+        },
+        MD19: {
+          title: "Non Compete Agreements",
+          filePath:
+            "/Documents/Material Documents/19. Non Compete Agreements.pdf",
+        },
       },
     },
   },
