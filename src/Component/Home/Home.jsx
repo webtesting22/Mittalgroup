@@ -80,7 +80,7 @@ const Home = ({ images = [] }) => {
         </div>
         <div className="mobileNone">
           <video
-            src="https://webtesting-upload.vercel.app/assets/AB%20Mittal%20Video-CSf5vDXC.mp4"
+            src="https://prepseed.s3.ap-south-1.amazonaws.com/ABmittal_1.mp4"
             loop={true} // Set loop to true for continuous playback
             autoPlay
             muted={isMuted}
